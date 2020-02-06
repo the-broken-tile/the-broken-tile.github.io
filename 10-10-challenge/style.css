@@ -1,0 +1,46 @@
+@font-face {
+    /** Font by https://boardgamegeek.com/filepage/89695/carcassonne-icons-font */
+    font-family: 'CarcassonneSymbols';
+    src: url('./font/CarcassonneSymbols.woff2') format('woff2'),
+    url('./font/CarcassonneSymbols.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 3em auto;
+}
+tr {
+    height: 33px;
+}
+td, th {
+    border: 1px solid black;
+}
+td {
+    width: 33px;
+    height: 33px;
+    padding: 0;
+}
+.meeple {
+    font-family: 'CarcassonneSymbols';
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+}
+.meeple:before {
+    content: 'o';
+    font-size: 32px;
+    line-height: 32px;
+}
