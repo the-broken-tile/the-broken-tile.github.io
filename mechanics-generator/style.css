@@ -1,0 +1,24 @@
+#container {
+    display: flex;
+    max-width: 960px;
+    margin: 2em auto;
+}
+.column {
+    flex: 33%;
+    padding: 2em;
+    text-align: center;
+}
+
+input[type="number"] {
+    display: block;
+    width: 100%;
+}
+
+.die {
+    display: inline-block;
+    cursor: pointer;
+}
+.results-on .die,
+.results-on .value {
+    display: none;
+}
