@@ -85,11 +85,11 @@ const fillResults = r => {
     Object.keys(CONFIG).forEach(key => {
         const value = r[key];
         if (!value || !value.length) {
-            $results[key].innerHTML = '';
+            $results[key].innerText = '';
             $containers[key].classList.remove(RESULTS_ON_CLASS);
             return;
         }
-        $results[key].innerHTML = value.join(', ');
+        $results[key].innerText = value.join(', ');
         $containers[key].classList.add(RESULTS_ON_CLASS);
     });
 };
