@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <title>Battalia Tracker</title>
+        <meta name="viewport" content="width=device-width">
+        <link href="./style.css" rel="stylesheet">
+</head>
+<body>
+        <div id="container">
+            <div id="phase-menu" class="phase active">
+                <button id="button-new" class="state-changer">New</button>
+                <button id="button-load" class="state-changer">Load</button>
+            </div>
+            <div id="phase-setup" class="phase">
+                <div><label>Team 1: <input id="team-1-name-input"></label></div>
+                <div><label>Team 2: <input id="team-2-name-input"></label></div>
+                <div><label>Time: <input id="time-input" type="number" inputmode="number"></label></div>
+                <button id="button-create">Create game</button>
+            </div>
+            <div id="phase-playing" class="phase">
+                <div id="wheel">
+                </div>
+                <div>Timers and stuff</div>
+            </div>
+        </div>
+        <script type="module" src="./script.js"></script>
+</body>
+</html>
