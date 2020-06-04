@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bingo</title>
+  <meta name="viewport" content="width=device-width">
+  <link href="./style.css" rel="stylesheet">
+</head>
+<body class="menu-view">
+  <div class="title" id="title">Bingo</div>
+  <div id="grid" class="grid"></div>
+  <form id="menu" class="menu" method="post">
+    <div class="form-row">
+      <label>Enter title here: <input id="title-input"></label>
+    </div>
+    <div class="form-row">
+      <label for="words">Enter words and phrases here, one per row</label>
+      <textarea id="words"></textarea>
+    </div>
+    <div class="form-row">
+      <input type="submit">
+    </div>
+  </form>
+  <script src="./script.js"></script>
+</body>
+</html>

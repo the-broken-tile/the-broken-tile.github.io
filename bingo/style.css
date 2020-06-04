@@ -1,0 +1,63 @@
+* {
+  user-select: none;
+}
+.grid {
+  width: 750px;
+  margin: 0 auto;
+}
+.title {
+  width: 750px;
+  margin: 0 auto;
+  font-size: 3em;
+  letter-spacing: 50px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+.cell {
+  position: relative;
+  box-sizing: border-box;
+  float: left;
+  border: 1px solid black;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.cell p {
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+.cell:nth-child(5n + 1) {
+  clear: left;
+}
+.star {
+  background: url("./img/star.png");
+  background-size: 100% 100%;
+  background-position: middle middle;
+}
+.cell::after {
+  display: none;
+  content: '';
+  border: 2px solid red;
+  border-radius: 50%;
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  bottom: 10%;
+  right: 10%;
+}
+.selected.cell::after {
+  display: block;
+}
+.menu-view #grid,
+.playing-view #menu {
+  display: none;
+}
+#words {
+  display: block;
+  width: 100%;
+  min-height: 20em;
+}
