@@ -1,0 +1,10 @@
+#container {
+    margin: 5em auto;
+    padding: 2em;
+    width: 960px;
+    background: lightgray;
+}
+textarea {
+    display: block;
+    width: 100%;
+}
