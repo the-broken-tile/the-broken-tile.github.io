@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eternal Heroes</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body id="container">
+    <h1>Eternal Throne Heroes</h1>
+    <section id="settings-section">
+        <form id="settings-form">
+            <h2>Settings</h2>
+            <div class="panel">
+                <h3>Sets</h3>
+                <ul id="sets-list"></ul>
+            </div>
+            <div class="panel">
+                <h3>Factions</h3>
+                <ul id="factions-list"></ul>
+                <label><input type="checkbox" id="include-all-factions">Cards must have all selected factions</label>
+            </div>
+            <div class="panel">
+                <label><input type="checkbox" id="force-order" checked> Force order</label>
+                <label><input type="checkbox" id="randomize" checked>Randomize</label>
+            </div>
+            <br>
+            <input type="submit" value="Start">
+        </form>
+    </section>
+    <section id="playing-section">
+        <div id="menu">
+            <form id="playing-form">
+                <div><span id="info"></span> time: <span id="timer">00:00</span></div>
+                <button type="button" id="previous">Previous</button>
+                <label for="input" id="current-hero"></label>
+                <input type="text" id="input">
+                <button type="button" id="skip">Skip</button>
+            </form>
+            <hr>
+            <label><input type="checkbox" id="show-sets">Show sets</label>
+            <label><input type="checkbox" id="show-factions">Show factions</label>
+            <label><input type="checkbox" id="show-missed">Show missed</label>
+            <button type="button" id="give-up">Give up</button>
+            <button type="button" id="try-again">Try again</button>
+        </div>
+        <table id="results-table"></table>
+    </section>
+    <script src="./script.js" ></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    max-width: 960px;
+    margin: 0 auto;
+    padding-bottom: 15em;
+    background: white;
+}
+#playing-section,
+.playing #settings-section {
+    display: none;
+}
+.playing #playing-section {
+    display: block;
+}
+#try-again {
+    display: none;
+}
+.end-game #try-again {
+    display: inline-block;
+}
+table {;
+    width: 100%;
+    border-collapse: collapse;
+}
+tr, td, th {
+    border: 1px solid black;
+}
+td {
+    width: 50%;
+}
+.show-sets td,
+.show-sets th,
+.show-factions td,
+.show-factions th {
+    width: 33%;
+}
+.show-sets.show-factions td,
+.show-sets.show-factions th {
+    width: 25%;
+}
+.faction,
+.set,
+.missed {
+    display: none;
+}
+.missed {
+    color: red;
+}
+.show-factions .faction,
+.show-sets .set {
+    display: table-cell;
+}
+.show-missed .missed {
+    display: inline;
+}
+#previous, #skip, #current-hero {
+    display: none;
+}
+.force-order #previous,
+.force-order #skip,
+.force-order #current-hero {
+    display: inline-block;
+}
+#menu {
+    background: white;
+    position: sticky;
+    top: 0;
+    border-radius: 8px;
+    box-shadow: 3px 3px 3px lightgray;
+}
+.panel {
+    border: 1px solid black;
+    padding: 8px;
+    margin: 4px;
+    border-radius: 8px;
+}
+.faction-icon {
+    background: url("./icons.png") no-repeat 0 -24px;
+    height: 24px;
+    width: 24px;
+    display: inline-block;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    line-height: 24px;
+}
+.faction-icon.f {
+    background-position-x: 0;
+}
+.faction-icon.t {
+    background-position-x: -24px;
+}
+.faction-icon.j {
+    background-position-x: -48px;
+}
+.faction-icon.p {
+    background-position-x: -72px;
+}
+.faction-icon.s {
+    background-position-x: -96px;
+}
+.faction-icon.m {
+    background-position-x: -120px;
+}
+.faction-icon.n {
+    background-position-x: -144px;
+}
