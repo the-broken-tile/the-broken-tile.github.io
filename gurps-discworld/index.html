@@ -11,28 +11,50 @@
                 DISCWORLD ROLEPLAYING GAME
                 <div>Character sheet</div>
             </aside>
-            <label>Name <input name="name"></label>
-            <label>Player <input name="player"></label>
-            <label>Point Total <input name="point-total"></label>
-            <label>Ht <input name="ht"></label>
-            <label>Wt <input name="wt"></label>
-            <label>Size modifier <input name="size-modifier"></label>
-            <label>Age <input name="age"></label>
-            <label>Unspent points <input name="unspent-points"></label>
-            <label for="notes">Notes</label>
-            <textarea id="notes"></textarea>
+            <div>
+                <label>Name <input name="name" data-save-me="name"></label>
+                <label>Player <input name="player" data-save-me="player"></label>
+                <label>Point Total <input name="point-total" data-save-me="point-total"></label>
+                <label>Ht <input name="ht" data-save-me="ht"></label>
+                <label>Wt <input name="wt" data-save-me="wt"></label>
+                <label>Size modifier <input name="size-modifier" data-save-me="size-modifier"></label>
+                <label>Age <input name="age" data-save-me="age"></label>
+                <label>Unspent points <input name="unspent-points" data-save-me="unspent-points"></label>
+                <label for="notes">Notes</label>
+                <textarea id="notes" data-save-me="notes"></textarea>
+            </div>
         </header>
         <section>
             <div>
-                <label>ST <input name="st"></label>
-                <label>DX <input name="dx"></label>
-                <label>IQ <input name="iq"></label>
-                <label>HT <input name="ht"></label>
-                <label>HP <input name="hp"></label>
-                <label>Will <input name="will"></label>
-                <label>Per <input name="per"></label>
-                <label>FP <input name="fp"></label>
+                <table>
+                    <tr>
+                        <td><label class="stats" for="st">ST</label></td>
+                        <td><input name="st" data-save-me="st" id="st"></td>
+                        <td><label class="stats" for="hp">HP</label></td>
+                        <td><input name="hp" data-save-me="hp" id="hp"></td>
+                    </tr>
+                    <tr>
+                        <td><label class="stats" for="dx">DX</label></td>
+                        <td><input name="dx" data-save-me="dx" id="dx"></td>
+                        <td><label class="stats" for="will">Will</label></td>
+                        <td><input name="will" data-save-me="will" id="will"></td>
+                    </tr>
+                    <tr>
+                        <td><label class="stats" for="iq">IQ</label></td>
+                        <td><input name="iq" data-save-me="iq" id="iq"></td>
+                        <td><label class="stats" for="per">Per</label></td>
+                        <td><input name="per" data-save-me="per" id="per"></td>
+                    </tr>
+                    <tr>
+                        <td><label class="stats" for="ht">HT</label></td>
+                        <td><input name="ht" data-save-me="ht" id="ht"></td>
+                        <td><label class="stats" for="fp">FP</label></td>
+                        <td><input name="fp" data-save-me="fp" id="fp"></td>
+                    </tr>
+                </table>
+
             </div>
         </section>
+        <script src="../scripts/save_me.js"></script>
     </body>
 </html>
