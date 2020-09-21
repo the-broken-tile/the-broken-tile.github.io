@@ -12,7 +12,7 @@
   
 **Red seal**
 
-* Read [2](./2.md)
+* Read [3](./3.md)
 
 **End game**
 
