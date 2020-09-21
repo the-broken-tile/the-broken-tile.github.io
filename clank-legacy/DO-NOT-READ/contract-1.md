@@ -1,3 +1,5 @@
+***[Contract] Trying to escape***
+
 * Every time you enter a town or a ruins space and there is a cube of your color, pick it and add it to your health tracker.
 * Ignore all monsters on the road.
 * Couches and markets don't work.
