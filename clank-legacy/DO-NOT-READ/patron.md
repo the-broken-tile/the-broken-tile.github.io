@@ -8,6 +8,7 @@
 * Add only 13 black cubes to the bag, remove the rest from the game.
 * Replace the *Cultist* with the *Wraith* monster card.
   * If you don't know what a *Wraith* is, fetch card 99 from the *Cardporium*.
+* Don't place Dran agent tokens.
   
 **Red seal**
 
