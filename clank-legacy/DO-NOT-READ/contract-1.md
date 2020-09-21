@@ -2,4 +2,4 @@
 * Ignore all monsters on the road.
 * Couches and markets don't work.
 * When you pull a wight or black cube from the bag - heal one instead.
-* The first time someone dies read [1](./1.md) - do not wait for the end of the turn.
+* The first time someone dies read [2](./2.md) - do not wait for the end of the turn.
