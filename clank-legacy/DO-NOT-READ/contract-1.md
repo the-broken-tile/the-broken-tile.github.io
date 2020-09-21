@@ -3,3 +3,7 @@
 * Couches and markets don't work.
 * When you pull a wight or black cube from the bag - heal one instead.
 * The first time someone dies read [2](./2.md) - do not wait for the end of the turn.
+
+
+---
+[Back to 1](./1.md)
