@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+input {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+.search-container {
+    width: 50%;
+}
+@media(max-width: 640px) {
+    .search-container {
+        width: 100%;
+    }
+}
+
+.search-container input {
+    display: inline-block;
+    width: 50%;
+    border: 1px solid cornflowerblue;
+}
+.search-container td {
+    position: relative;
+}
+.results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    max-height: 200px;
+    overflow-x: auto;
+    background: white;
+    z-index: 1;
+    border: 1px solid cornflowerblue;;
+}
+.results div:hover {
+    background-color: cornflowerblue;
+    color: white;
+    cursor: pointer;
+}
+.submit {
+    display: none;
+    width: 50%;
+    background: cornflowerblue;
+    color: white;
+    font-size: 1.5em;
+    border: none;
+    /*padding: 0.5em;*/
+    cursor: pointer;
+    height: 3em;
+}
+.submit:disabled {
+    cursor: not-allowed;
+    background: aliceblue;
+    color: gray;
+}
+.submit.loading {
+    background: white;
+    border: 1px solid cornflowerblue;
+    cursor: wait;
+}
+.submit.loading .text {
+    display: none;
+}
+.loading-gif {
+    max-height: 100%;
+    display: none;
+}
+
+.submit.loading .loading-gif {
+    display: inline-block;
+}
+.delete {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+}
+.canvas {
+    width: 50vw;
+    height: 50vw;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.canvas > div {
+    width: 33%;
+    height: 33%;
+    overflow-x: hidden;
+}
+.canvas img {
+    max-width: 100%;
+}
