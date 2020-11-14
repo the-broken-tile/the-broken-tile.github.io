@@ -166,7 +166,7 @@ const generateImage = () => {
             renderImages(alignments.map(a => a.game.image));
             return;
         }
-        window.location = API_FLASH + encodeURIComponent(location.protocol + '//' + location.hostname + location.pathname + '?images=' + alignments.map(a => a.game.image).join(','));
+        window.location = API_FLASH + encodeURIComponent(location.protocol + '//' + location.hostname + location.pathname + '?images=' + encodeURIComponent(alignments.map(a => a.game.image).join(',')));
     });
 };
 
