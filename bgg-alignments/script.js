@@ -53,15 +53,6 @@ $canvas.style.display = 'none';
 const toArray = nodeList => Array.prototype.slice.call(nodeList);
 const parseXML = xmlString => parser.parseFromString(xmlString, "application/xml");
 
-const parseQuery = queryString => {
-    const query = {};
-    const pairs = (queryString[0] === '?' ? queryString.substr(1) : queryString).split('&');
-    for (let i = 0; i < pairs.length; i++) {
-        let pair = pairs[i].split('=');
-        query[decodeURIComponent(pair[0])] = decodeURIComponent(pair[1] || '');
-    }
-    return query;
-}
 const renderImages = images => {
     $canvas.style.display = '';
     $submit.style.display = 'none';
@@ -74,8 +65,7 @@ const renderImages = images => {
 const init = () => {
     const queryParams = location.href.split('?');
     if (queryParams.length > 1) {
-        renderImages(parseQuery(queryParams[1]).images.split(encodeURIComponent(',')));
-        // window.location=`https://api.apiflash.com/v1/urltoimage?access_key=${API_FLASH_KEY}`
+        renderImages(location.href.replace(/.+images=/, '').split(/%2C|,/));
         return;
     }
     $submit.style.display = 'inline-block';
