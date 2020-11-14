@@ -65,7 +65,7 @@ const renderImages = images => {
 const init = () => {
     const queryParams = location.href.split('?');
     if (queryParams.length > 1) {
-        renderImages(location.href.replace(/.+images=/, '').split(/%2C|,/));
+        renderImages(location.href.replace(/.+images=/, '').split(/%2C|,/).map(decodeURIComponent));
         return;
     }
     $submit.style.display = 'inline-block';
