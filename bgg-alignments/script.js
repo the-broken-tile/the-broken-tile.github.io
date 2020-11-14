@@ -74,7 +74,7 @@ const renderImages = images => {
 const init = () => {
     const queryParams = location.href.split('?');
     if (queryParams.length > 1) {
-        renderImages(parseQuery(queryParams[1]).images.split(','));
+        renderImages(parseQuery(queryParams[1]).images.split(encodeURIComponent(',')));
         // window.location=`https://api.apiflash.com/v1/urltoimage?access_key=${API_FLASH_KEY}`
         return;
     }
@@ -176,7 +176,7 @@ const generateImage = () => {
             renderImages(alignments.map(a => a.game.image));
             return;
         }
-        window.location = API_FLASH + encodeURIComponent(location.protocol + '//' + location.hostname + location.pathname + alignments.map(a => a.game.image).join(','));
+        window.location = API_FLASH + encodeURIComponent(location.protocol + '//' + location.hostname + location.pathname + '?images=' + alignments.map(a => a.game.image).join(','));
     });
 };
 
