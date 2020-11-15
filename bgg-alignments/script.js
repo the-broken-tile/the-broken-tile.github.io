@@ -2,42 +2,30 @@ const alignments = [
     {
         name: 'Lawful good',
         id: 'lawful-good',
-        game: {
-            id: '822',
-            name: 'Carcassonne',
-        },
     }, {
         name: 'Neutral good',
         id: 'neutral-good',
-        game: {name: "Catan", id: "13"}
     }, {
         name: 'Chaotic good',
         id: 'chaotic-good',
-        game: {name: "Dominion", id: "36218"},
     }, {
         name: 'Lawful neutral',
         id: 'lawful-neutral',
-        game: {name: "Hero Realms", id: "198994"},
     }, {
         name: 'True neutral',
         id: 'true-neutral',
-        game: {name: "Discworld: Ankh-Morpork", id: "91312"},
     }, {
         name: 'Chaotic neutral',
         id: 'chaotic-neutral',
-        game: {name: "AVP", id: "149896"},
     }, {
         name: 'Lawful evil',
         id: 'lawful-evil',
-        game: {name: "Tzolk'in: The Mayan Calendar", id: "126163"},
     }, {
         name: 'Neutral evil',
         id: 'neutral-evil',
-        game: {name: "Munchkin", id: "1927"},
     }, {
         name: 'Chaotic evil',
         id: 'chaotic-evil',
-        game: {name: "Exploding Kittens", id: "172225"},
     },
 ];
 let to;
@@ -102,6 +90,9 @@ const closeResults = () => {
 const renderResults = alignment => {
     window.requestAnimationFrame(() => {
         closeResults();
+        if (!alignment.games.length) {
+            return;
+        }
         const $results = document.createElement('div');
         $results.classList.add('results');
 
@@ -161,10 +152,11 @@ const fetchGames = () => axios.get(THING_API, {
     });
 
 const generateImage = () => {
-    $searchContainer.style.display = 'none';
     if (!alignments.every(alignment => alignment.game)) {
         return;
     }
+    $submit.classList.add('loading');
+    $searchContainer.style.display = 'none';
     fetchGames().then(() => {
         if (location.hostname === 'localhost') {
             renderImages(alignments.map(a => a.game.image));
@@ -208,7 +200,6 @@ document.addEventListener('click', e => {
 });
 $submit.addEventListener('click', e => {
     e.preventDefault();
-    $submit.classList.add('loading');
     generateImage();
 })
 init();
