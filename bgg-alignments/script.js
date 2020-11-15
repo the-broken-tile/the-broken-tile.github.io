@@ -57,8 +57,12 @@ const renderImages = images => {
     $canvas.style.display = '';
     $submit.style.display = 'none';
     window.requestAnimationFrame(() => {
-        images.forEach(image => {
-            $canvas.innerHTML += `<div><img src="${image}"></div>`;
+        images.forEach((image, i) => {
+            $canvas.innerHTML += `
+                <div>
+                    <div class="img" style="background-image:url('${image}')"></div>
+                    <div class="name">${alignments[i].name}</div>
+                </div>`;
         });
     });
 }
