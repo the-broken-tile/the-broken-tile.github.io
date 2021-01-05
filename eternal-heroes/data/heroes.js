@@ -227,6 +227,7 @@ const HEROES = [
         "title": "& Nakova",
         "alt": [
             "nakova",
+            "and nakova",
         ],
         "faction": "FFFPPP",
         "set": 2,
