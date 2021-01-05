@@ -3,11 +3,11 @@ const MAX_PLAYS = 10;
 const CACHE_KEY = 'ten10';
 
 const generateTable = () => {
-    return '<table id="grid"><thead><tr><th>Name</th>'
+    return '<table id="grid"><thead><tr><th class="name-header">Name</th>'
         + [...Array(MAX_PLAYS).keys()].map(i => '<th>' + (i + 1) + '</th>').join('')
         + '<th class="no-border"></th></tr></thead>'
         + '<tbody>'
-        + [...Array(GAMES).keys()].map(() => '<tr><th contenteditable></th>'
+        + [...Array(GAMES).keys()].map(() => '<tr><th class="name"><div contenteditable></div></th>'
             + [...Array(MAX_PLAYS).keys()].map(() => '<td></td>').join('')
             + '<td class="no-border"><label class="cog"><input type="color"></label></td>'
             + '</tr>').join('')
