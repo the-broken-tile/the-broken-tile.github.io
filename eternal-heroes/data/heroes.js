@@ -1306,6 +1306,75 @@ const HEROES = [
         "faction": "PPSSSS",
         "set": 9,
     },
+    {
+        "name": "Djang-li",
+        "title": "The Misfit",
+        "faction": "FF",
+        "set": 10,
+        "alt": [
+            "misfit",
+        ],
+    },
+    {
+        "name": "Deheen",
+        "title": "Blitz",
+        "faction": "FFF",
+        "set": 10,
+    },
+    {
+        "name": "Opum",
+        "title": "the Gemblazer",
+        "faction": "FF",
+        "set": 10,
+        "alt": [
+            "gemblazer",
+        ],
+    },
+    {
+        "name": "Izha Chi",
+        "title": "Daredevil",
+        "faction": "FF",
+        "set": 10,
+    },
+    {
+        "name": "Onoris",
+        "title": "Roa",
+        "faction": "TT",
+        "set": 10,
+    },
+    {
+        "name": "Ayur",
+        "title": "Ageless Behemoth",
+        "faction": "TT",
+        "set": 10,
+    },
+    {
+        "name": "Talir",
+        "title": "Timejumper",
+        "faction": "TTT",
+        "set": 10,
+    },
+    {
+        "name": "Kudzu",
+        "title": "The Great",
+        "faction": "TTT",
+        "set": 10,
+        "alt": [
+            "great",
+        ],
+    },
+    {
+        "name": "Rhum",
+        "title": "First Constructor",
+        "faction": "TTT",
+        "set": 10,
+    },
+    {
+        "name": "Argo",
+        "title": "Ironthorn",
+        "faction": "JJ",
+        "set": 10,
+    },
 ].map((hero, i) => ({
     ...hero,
     id: i + 1,
