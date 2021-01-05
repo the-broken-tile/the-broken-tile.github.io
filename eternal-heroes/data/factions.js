@@ -1,26 +1,26 @@
 const FACTIONS = [
     {
-        "id": "F",
-        "name": "Fire",
+        id: 'F',
+        name: 'Fire',
     },
     {
-        "id": "T",
-        "name": "Time",
+        id: 'T',
+        name: 'Time',
     },
     {
-        "id": "J",
-        "name": "Justice",
+        id: 'J',
+        name: 'Justice',
     },
     {
-        "id": "P",
-        "name": "Primal",
+        id: 'P',
+        name: 'Primal',
     },
     {
-        "id": "S",
-        "name": "Shadow",
+        id: 'S',
+        name: 'Shadow',
     },
     {
-        "id": "N",
-        "name": "Neutral",
+        id: 'N',
+        name: 'Neutral',
     },
 ];
