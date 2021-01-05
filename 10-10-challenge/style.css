@@ -62,3 +62,9 @@ td {
 tr:hover .cog {
     display: inline-block;
 }
+.name-header {
+    min-width: 100px;
+}
+.name {
+    padding: 0 1em;
+}
