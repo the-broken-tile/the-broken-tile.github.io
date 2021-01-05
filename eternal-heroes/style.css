@@ -2,10 +2,13 @@
     box-sizing: border-box;
 }
 body {
-    max-width: 960px;
+    max-width: 1600px;
     margin: 0 auto;
     padding-bottom: 15em;
     background: white;
+}
+h1 {
+    text-align: center;
 }
 #playing-section,
 .playing #settings-section {
@@ -61,13 +64,12 @@ td {
 .force-order #previous,
 .force-order #skip,
 .force-order #current-hero {
-    display: inline-block;
+    display: inline;
 }
 #menu {
     background: white;
     position: sticky;
     top: 0;
-    border-radius: 8px;
     box-shadow: 3px 3px 3px lightgray;
 }
 .panel {
@@ -106,4 +108,39 @@ td {
 }
 .faction-icon.n {
     background-position-x: -144px;
+}
+.current {
+    background: lightyellow;
+}
+
+.two-columns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.two-columns .column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+#results-table {
+    margin: 8px;
+}
+#results-table .column:nth-child(1) tbody tr:last-child,
+#results-table .column:nth-child(1) tbody tr:last-child td {
+    border-bottom: none;
+}
+#results-table.two-columns .column:nth-child(1) tbody tr:last-child,
+#results-table.two-columns .column:nth-child(1) tbody tr:last-child td {
+    border-bottom: 1px solid black;
+}
+
+#results-table .column:nth-child(2) thead {
+    display: none;
+}
+#results-table.two-columns .column:nth-child(2) thead {
+    display: table-header-group;
+}
+#playing-form {
+    text-align: center;
 }
