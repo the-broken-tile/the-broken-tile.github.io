@@ -46,5 +46,9 @@ const SETS = [
     {
         name: 'The Tale of Horus Traver',
         id: 1002,
-    }
+    },
+    {
+        name: 'Dead Reckoning',
+        id: 1003,
+    },
 ];
