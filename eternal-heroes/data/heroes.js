@@ -1294,6 +1294,16 @@ const HEROES = [
         set: 6,
     },
     {
+        name: 'Ghodan',
+        title: 'Undefeated',
+        faction: 'FFFFF',
+        rarity: 'legendary',
+        cost: 5,
+        stats: [5, 5],
+        type: 'Gunslinger Oni',
+        set: 6,
+    },
+    {
         name: 'Kimi',
         title: 'Expedition Guide',
         faction: 'T',
