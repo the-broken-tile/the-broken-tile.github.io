@@ -36,7 +36,11 @@ const SETS = [
     {
         name: 'Argent Depths',
         type: SET_SIZE_LARGE,
-    }
+    },
+    {
+        name: 'Empire of Glass',
+        type: SET_SIZE_LARGE,
+    },
 ].map((set, i) => ({
     ...set,
     id: i + 1,
