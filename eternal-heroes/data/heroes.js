@@ -2493,6 +2493,16 @@ const HEROES = [
         set: 9,
     },
     {
+        name: 'Coslo',
+        title: 'Friendly Scavenger',
+        faction: 'TTSS',
+        rarity: 'promo',
+        cost: 4,
+        stats: [1, 5],
+        type: 'Rogue',
+        set: 9,
+    },
+    {
         name: 'Katra',
         title: 'The First Seal',
         alt: [
