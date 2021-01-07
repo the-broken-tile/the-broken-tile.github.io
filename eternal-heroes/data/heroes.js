@@ -662,7 +662,7 @@ const HEROES = [
         name: 'Eilyn',
         title: 'Clan Mother',
         influence: 'JJPP',
-        rarity: 'legendaary',
+        rarity: 'legendary',
         cost: 7,
         stats: [6, 7],
         type: 'Scion',
