@@ -2589,6 +2589,19 @@ const HEROES = [
         type: 'Tinker',
         set: 10,
     },
+    {
+        name: 'Jekk',
+        title: 'the Bounty Hunter',
+        alt: [
+            'bounty hunter',
+        ],
+        faction: 'FJ',
+        rarity: 'legendary',
+        cost: 6,
+        stats: [6, 4],
+        type: 'Gunslinger',
+        set: 1001,
+    },
 ].map((hero, i) => ({
     ...hero,
     id: i + 1,

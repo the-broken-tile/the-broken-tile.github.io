@@ -39,4 +39,8 @@ const SETS = [
         name: 'Empire of Glass',
         id: 10,
     },
+    {
+        name: "Jekk's Bounty",
+        id: 1001,
+    },
 ];
