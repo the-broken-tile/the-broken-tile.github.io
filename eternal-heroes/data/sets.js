@@ -1,47 +1,42 @@
-const SET_SIZE_LARGE = 'large';
-const SET_SIZE_SMALL = 'small';
 const SETS = [
     {
         name: 'The Empty Throne',
-        type: SET_SIZE_LARGE,
+        id: 1,
     },
     {
         name: 'Omens of the Past',
-        type: SET_SIZE_LARGE,
+        id: 2,
     },
     {
         name: 'The Dusk road',
-        type: SET_SIZE_LARGE,
+        id: 3,
     },
     {
         name: 'The Fall of Argenport',
-        type: SET_SIZE_LARGE,
+        id: 4,
     },
     {
         name: 'Defiance',
-        type: SET_SIZE_LARGE,
+        id: 5,
     },
     {
         name: 'Dark Frontier',
-        type: SET_SIZE_SMALL,
+        id: 6,
     },
     {
         name: 'Flame of Xulta',
-        type: SET_SIZE_SMALL,
+        id: 7,
     },
     {
         name: 'Echoes of Eternity',
-        type: SET_SIZE_SMALL,
+        id: 8,
     },
     {
         name: 'Argent Depths',
-        type: SET_SIZE_LARGE,
+        id: 9,
     },
     {
         name: 'Empire of Glass',
-        type: SET_SIZE_LARGE,
+        id: 10,
     },
-].map((set, i) => ({
-    ...set,
-    id: i + 1,
-}));
+];
