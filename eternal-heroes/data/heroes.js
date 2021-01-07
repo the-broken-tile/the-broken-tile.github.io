@@ -1360,6 +1360,19 @@ const HEROES = [
         set: 6,
     },
     {
+        name: 'Kira',
+        title: 'the Prodigy',
+        alt: [
+            'prodigy',
+        ],
+        faction: 'J',
+        rarity: 'rare',
+        cost: 2,
+        stats: [2, 3],
+        type: 'Unseen',
+        set: 6,
+    },
+    {
         name: 'Siraf',
         title: 'Grand Strategist',
         faction: 'J',
