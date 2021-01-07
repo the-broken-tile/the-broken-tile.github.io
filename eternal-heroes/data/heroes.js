@@ -1304,6 +1304,16 @@ const HEROES = [
         set: 6,
     },
     {
+        name: 'Brenn',
+        title: 'Archmagister',
+        faction: 'FF',
+        rarity: 'legendary',
+        cost: 7,
+        stats: [5, 5],
+        type: 'Mage',
+        set: 6,
+    },
+    {
         name: 'Kimi',
         title: 'Expedition Guide',
         faction: 'T',
