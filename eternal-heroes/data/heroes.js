@@ -2168,6 +2168,16 @@ const HEROES = [
         set: 9,
     },
     {
+        name: 'Kaleb',
+        title: 'Executioner',
+        faction: 'FFF',
+        rarity: 'promo',
+        cost: 8,
+        stats: [8, 8],
+        type: 'Nightmare',
+        set: 9,
+    },
+    {
         name: 'Ubsat',
         title: 'the Savior',
         alt: [
