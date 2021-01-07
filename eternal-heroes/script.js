@@ -15,7 +15,7 @@ const $currentHero = document.getElementById('current-hero');
 const $prev = document.getElementById('previous');
 const $next = document.getElementById('skip');
 const $showSets = document.getElementById('show-sets');
-const $showFactions = document.getElementById('show-factions');
+const $showInfluence = document.getElementById('show-influence');
 const $showRarity = document.getElementById('show-rarity');
 const $showCost = document.getElementById('show-cost');
 const $showStats = document.getElementById('show-stats');
@@ -47,12 +47,12 @@ const intersect = (arrA, arrB) =>
 const unique = array => array.filter((value, index, self) =>
     self.indexOf(value) === index
 );
-const $getFactionIcons = faction => {
-    if (faction.length > 1) {
-        return faction.split('').map($getFactionIcons).join('');
+const $getInfluenceIcons = influence => {
+    if (influence.length > 1) {
+        return influence.split('').map($getInfluenceIcons).join('');
     }
 
-    return `<span class="faction-icon ${faction.toLowerCase()}"></span>`;
+    return `<span class="influence-icon ${influence.toLowerCase()}"></span>`;
 };
 const generateGuessMap = () => {
     guessMap = chosenHeroes.reduce((carry, hero) => {
@@ -85,7 +85,7 @@ const generateChosenHeroes = randomize => {
     chosenHeroes = HEROES
         .filter(hero => selectedSets.includes(hero.set))
         .filter(hero => {
-            const factions = unique(hero.faction.split(''));
+            const factions = unique(hero.influence.split(''));
             const factionsMatch = intersect(factions, selectedFactions).length;
 
             return factionsMatch > 0;
@@ -114,7 +114,7 @@ const initResultsTable = () => {
                 '<th>Name</th>' +
                 '<th>Title</th>' +
                 '<th class="set">Set</th>' +
-                '<th class="faction">Faction</th>' +
+                '<th class="influence">Influence</th>' +
                 '<th class="rarity">Rarity</th>' +
                 '<th class="cost">Cost</th>' +
                 '<th class="stats">Stats</th>' +
@@ -126,7 +126,7 @@ const initResultsTable = () => {
             `<tr id="hero-${hero.id}"><td>${hero.name}</td>
             <td class="guess"></td>
             <td class="set">${SET_MAP[hero.set].name}</td>
-            <td class="faction">${$getFactionIcons(hero.faction)}</td>
+            <td class="influence">${$getInfluenceIcons(hero.influence)}</td>
             <td class="rarity">${hero.rarity}</td>
             <td class="cost">${hero.cost}</td>
             <td class="stats">${hero.stats.join('/')}</td>
@@ -144,7 +144,7 @@ const updateInfo = () => {
     $info.innerText = result + '/' + totalAnswers;
     if (currentHero) {
         $currentHero.innerHTML = `
-            <span class="faction">${$getFactionIcons(currentHero.faction)}</span>
+            <span class="influence">${$getInfluenceIcons(currentHero.influence)}</span>
             ${currentHero.name}<span class="set">(${SET_MAP[currentHero.set].name})</span>`;
     }
 };
@@ -288,9 +288,9 @@ $showSets.addEventListener('change',  () => {
     $container.classList.toggle('show-sets', $showSets.checked);
     updateColumnsWidth($showSets.checked);
 });
-$showFactions.addEventListener('change', () => {
-    $container.classList.toggle('show-factions', $showFactions.checked);
-    updateColumnsWidth($showFactions.checked);
+$showInfluence.addEventListener('change', () => {
+    $container.classList.toggle('show-influence', $showInfluence.checked);
+    updateColumnsWidth($showInfluence.checked);
 });
 $showRarity.addEventListener('change', () => {
     $container.classList.toggle('show-rarity', $showRarity.checked);
