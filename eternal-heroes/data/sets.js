@@ -59,4 +59,8 @@ const SETS = [
         name: 'Homecoming',
         id: 1005,
     },
+    {
+        name: 'Trials of Grodov',
+        id: 1006,
+    },
 ];
