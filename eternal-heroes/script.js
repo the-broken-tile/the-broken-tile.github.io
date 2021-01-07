@@ -6,6 +6,7 @@ const $setsList = document.getElementById('sets-list');
 const $factionsList = document.getElementById('factions-list');
 const $typeList = document.getElementById('type-list');
 const $rarityList = document.getElementById('rarity-list');
+const $costList = document.getElementById('cost-list');
 const $settingsForm = document.getElementById('settings-form');
 const $container = document.getElementById('container');
 const $input = document.getElementById('input');
@@ -79,6 +80,8 @@ const generateChosenHeroes = () => {
         .map($input => $input.value);
     const selectedRarities = [...$rarityList.querySelectorAll('input[type="checkbox"]:checked')]
         .map($input => $input.value);
+    const selectedCosts = [...$costList.querySelectorAll('input[type="checkbox"]:checked')]
+        .map($input => parseInt($input.value, 10));
 
     chosenHeroes = HEROES
         .filter(hero => selectedSets.includes(hero.set))
@@ -88,7 +91,8 @@ const generateChosenHeroes = () => {
             return intersect(factions, selectedFactions).length > 0;
         })
         .filter(hero => intersect(hero.type, selectedTypes).length > 0)
-        .filter(hero => selectedRarities.includes(hero.rarity));
+        .filter(hero => selectedRarities.includes(hero.rarity))
+        .filter(hero => selectedCosts.includes(hero.cost));
 };
 const init = () => {
     $setsList.innerHTML = SETS.map(set =>
@@ -109,16 +113,23 @@ const init = () => {
         }, [])
         .sort()
         .map(type =>
-        `<li><label><input type="checkbox" value="${type}" checked>${type}</label></li>`
+            `<li><label><input type="checkbox" value="${type}" checked>${type}</label></li>`
         )
         .join('');
     $rarityList.innerHTML = HEROES
         .reduce((rarities, hero) => rarities.includes(hero.rarity) ? rarities : [...rarities, hero.rarity], [])
         .sort()
         .map(rarity =>
-        `<li><label><input type="checkbox" value=${rarity} checked>${rarity}</label></li>`
+            `<li><label><input type="checkbox" value=${rarity} checked>${rarity}</label></li>`
         )
         .join('');
+    $costList.innerHTML = HEROES
+        .reduce((costs, hero) => costs.includes(hero.cost) ? costs : [...costs, hero.cost], [])
+        .sort((a, b) => a - b)
+        .map(cost =>
+            `<li><label><input type="checkbox" value="${cost}" checked>${cost}</label></li>`
+        )
+        .join('')
 };
 const initResultsTable = () => {
     $resultsTable.innerHTML =
@@ -383,4 +394,5 @@ selectAll($setsList.parentElement);
 selectAll($factionsList.parentElement);
 selectAll($typeList.parentElement);
 selectAll($rarityList.parentElement);
+selectAll($costList.parentElement);
 init();
