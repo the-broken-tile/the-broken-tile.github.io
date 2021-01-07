@@ -233,6 +233,15 @@ const getTime = sets => sets
     .reduce((carry, set) => carry + (set.type === SET_SIZE_LARGE ? 10 : 5), 0);
 const getDefaultTime = () =>
     getTime(SETS.filter(set => selectedSets.includes(set.id)));
+const pad = i => i < 10 ? `0${i}` : i;
+const tick = () => {
+    const time = Math.floor(timer.getTime() / 1000);
+    $time.innerText = `${pad(Math.floor(time / 60))}:${pad(time % 60)}`;
+};
+const reset = () => {
+    result = 0;
+    currentHero = null;
+};
 const start = () => {
     $input.disabled = false;
     $giveUp.disabled = false;
@@ -250,10 +259,7 @@ const start = () => {
     $container.classList.remove('end-game');
     $input.focus();
     timer.start(getDefaultTime());
-    timer.onTick(() => {
-        const time = Math.floor(timer.getTime() / 1000);
-        $time.innerText = `${Math.floor(time / 60)}:${time % 60}`;
-    });
+    timer.onTick(tick);
     timer.onTimeUp(lose);
 };
 
@@ -315,5 +321,6 @@ $giveUp.addEventListener('click', e => {
 $tryAgain.addEventListener('click', e => {
     e.preventDefault();
     $container.classList.remove('playing', 'end-game');
+    reset();
 })
 init();
