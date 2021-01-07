@@ -1174,6 +1174,16 @@ const HEROES = [
         set: 5,
     },
     {
+        name: 'Chunk',
+        title: 'Chunk',
+        faction: 'FFPP',
+        rarity: 'rare',
+        cost: 4,
+        stats: [4, 3],
+        type: 'Yeti',
+        set: 5,
+    },
+    {
         name: 'Syl',
         title: 'Hand of the Cabal',
         alt: [
