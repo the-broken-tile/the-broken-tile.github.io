@@ -71,4 +71,8 @@ const SETS = [
         name: 'Whispers of the Throne',
         id: 1008, //1085 in ewc
     },
+    {
+        name: 'Shadow of the Spire',
+        id: 1009, //1087 in ewc
+    },
 ];
