@@ -1271,6 +1271,16 @@ const HEROES = [
         set: 5,
     },
     {
+        name: 'Clodagh',
+        title: 'Loyal Advisor',
+        faction: 'F',
+        rarity: 'rare',
+        cost: 2,
+        stats: [2, 2],
+        type: 'Explorer Gunslinger',
+        set: 6,
+    },
+    {
         name: 'Jishu',
         title: 'the Burning Brush',
         alt: [
