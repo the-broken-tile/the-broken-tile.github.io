@@ -4,6 +4,7 @@ const SET_MAP = SETS.reduce((carry, set) => {
 }, {});
 const $setsList = document.getElementById('sets-list');
 const $factionsList = document.getElementById('factions-list');
+const $typeList = document.getElementById('type-list');
 const $settingsForm = document.getElementById('settings-form');
 const $container = document.getElementById('container');
 const $input = document.getElementById('input');
@@ -68,35 +69,22 @@ const generateGuessMap = () => {
         return carry;
     }, {});
 };
-const generateChosenHeroes = randomize => {
-    selectedSets = [].filter.call($setsList.querySelectorAll('input[type="checkbox"]'), $input => {
-        return $input.checked;
-    }).map($input => parseInt($input.value, 10));
-    selectedFactions = [].filter.call($factionsList.querySelectorAll('input[type="checkbox"]'), $input => {
-        return $input.checked;
-    }).map($input => $input.value);
+const generateChosenHeroes = () => {
+    selectedSets = [...$setsList.querySelectorAll('input[type="checkbox"]:checked')]
+        .map($input => parseInt($input.value, 10));
+    selectedFactions = [...$factionsList.querySelectorAll('input[type="checkbox"]:checked')]
+        .map($input => $input.value);
+    const selectedTypes = [...$typeList.querySelectorAll('input[type="checkbox"]:checked')]
+        .map($input => $input.value);
 
-    if (selectedSets.length === 0) {
-        selectedSets = SETS.map(set => set.id);
-    }
-    if (selectedFactions.length === 0) {
-        selectedFactions = FACTIONS.map(faction => faction.id);
-    }
     chosenHeroes = HEROES
         .filter(hero => selectedSets.includes(hero.set))
         .filter(hero => {
             const factions = unique(hero.influence.split(''));
-            const factionsMatch = intersect(factions, selectedFactions).length;
 
-            return factionsMatch > 0;
-        });
-    if (randomize) {
-        shuffle(chosenHeroes);
-    } else {
-        sort(chosenHeroes);
-    }
-    totalAnswers = chosenHeroes.length;
-    generateGuessMap();
+            return intersect(factions, selectedFactions).length > 0;
+        })
+        .filter(hero => intersect(hero.type, selectedTypes).length > 0);
 };
 const init = () => {
     $setsList.innerHTML = SETS.map(set =>
@@ -105,6 +93,21 @@ const init = () => {
     $factionsList.innerHTML = FACTIONS.map(faction =>
         `<li><label><input type="checkbox" value="${faction.id}" checked>${faction.name}</label></li>`
     ).join('');
+    $typeList.innerHTML = HEROES
+        .reduce((types, hero) => {
+            hero.type.forEach(type => {
+                if (!types.includes(type)) {
+                    types.push(type);
+                }
+            });
+
+            return types;
+        }, [])
+        .sort()
+        .map(type =>
+        `<li><label><input type="checkbox" value="${type}" checked>${type}</label></li>`
+        )
+        .join('');
 };
 const initResultsTable = () => {
     $resultsTable.innerHTML =
@@ -256,17 +259,30 @@ const reset = () => {
     currentHero = null;
 };
 const start = () => {
+    generateChosenHeroes();
+    if (chosenHeroes.length === 0) {
+        alert('No heroes found with this criteria');
+
+        return;
+    }
     $input.disabled = false;
     $giveUp.disabled = false;
     $prev.disabled = false;
     $next.disabled = false;
-    generateChosenHeroes($randomize.checked);
+    if ($randomize.checked) {
+        shuffle(chosenHeroes);
+    } else {
+        sort(chosenHeroes);
+    }
+    totalAnswers = chosenHeroes.length;
+    generateGuessMap();
     forceOrder = $forceOrder.checked;
     initResultsTable();
     if (forceOrder) {
         setCurrentHero(chosenHeroes[0]);
         $container.classList.add('force-order');
     }
+    window.scrollTo(0, 0);
     updateInfo();
     $container.classList.add('playing', 'columns-2');
     $container.classList.remove('end-game');
@@ -354,4 +370,5 @@ $tryAgain.addEventListener('click', e => {
 })
 selectAll($setsList.parentElement);
 selectAll($factionsList.parentElement);
+selectAll($typeList.parentElement);
 init();
