@@ -352,4 +352,6 @@ $tryAgain.addEventListener('click', e => {
     $container.classList.remove('playing', 'end-game');
     reset();
 })
+selectAll($setsList.parentElement);
+selectAll($factionsList.parentElement);
 init();
