@@ -1638,7 +1638,7 @@ const HEROES = [
         rarity: 'legendary',
         cost: 1,
         stats: [4, 5],
-        type: 'Driud Direbeast',
+        type: 'Druid Direbeast',
         set: 7,
     },
     {
