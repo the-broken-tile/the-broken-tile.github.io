@@ -245,8 +245,7 @@ const checkGuess = guess => {
     next(nextHero);
     updateInfo();
 };
-const getTime = sets => sets
-    .reduce((carry, set) => carry + (set.type === SET_SIZE_LARGE ? 10 : 5), 0);
+const getTime = sets => sets.length * 5;
 const getDefaultTime = () =>
     getTime(SETS.filter(set => selectedSets.includes(set.id)));
 const pad = i => i < 10 ? `0${i}` : i;
