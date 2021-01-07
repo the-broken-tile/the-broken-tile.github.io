@@ -959,9 +959,72 @@ const HEROES = [
         set: 6,
     },
     {
+        name: 'Akko',
+        title: 'Inspired Artist',
+        faction: 'F',
+        set: 7,
+    },
+    {
+        name: 'Cozin',
+        title: 'Darkheart',
+        faction: 'FF',
+        set: 7,
+    },
+    {
+        name: 'Galai',
+        title: "Shavka's Listener",
+        alt: [
+            'shavkas listener',
+        ],
+        faction: 'FFF',
+        set: 7,
+    },
+    {
+        name: 'Gnash',
+        title: 'Unrelenting',
+        faction: 'TT',
+        set: 7,
+    },
+    {
+        name: 'Woda',
+        title: "Grodov's Liastener",
+        alt: [
+            'grodovs listener',
+        ],
+        faction: 'TTT',
+        set: 7,
+    },
+    {
         name: 'Merizo',
         title: 'Gladiator Hero',
         faction: 'TT',
+        set: 7,
+    },
+    {
+        name: 'Shen-Ra',
+        title: 'Unbreakable',
+        faction: 'J',
+        set: 7,
+    },
+    {
+        name: 'Hanaka',
+        title: 'Loremaster',
+        faction: 'J',
+        set: 7,
+    },
+    {
+        name: 'Ezuzu',
+        title: "Kodosh's Listener",
+        alt: [
+            'kodoshs listener',
+        ],
+        faction: 'JJJ',
+        set: 7
+    },
+    {
+        name: 'Socrato',
+        title: 'Furyheart',
+        faction: 'P',
         set: 7,
     },
     {
@@ -974,9 +1037,159 @@ const HEROES = [
         set: 7,
     },
     {
+        name: 'Blitrok',
+        title: "Linrei's Listener",
+        alt: [
+            'linreis listener',
+        ],
+        faction: 'PPP',
+    },
+    {
         name: 'Verro',
         title: 'Banished Inquisitor',
         faction: 'SS',
+        set: 7,
+    },
+    {
+        name: 'Incarnus',
+        title: "Makkar's Listener",
+        alt: [
+            'makkars listener',
+        ],
+        faction: 'SSS',
+        set: 7,
+    },
+    {
+        name: 'Karvet',
+        title: 'Solar Dragon',
+        faction: 'SS',
+        set: 7,
+    },
+    {
+        name: 'Eremot',
+        title: 'Death Incarnate',
+        faction: 'SS',
+        set: 7,
+    },
+    {
+        name: 'Ramba',
+        title: 'Arena Showman',
+        faction: 'FFTT',
+        set: 7,
+    },
+    {
+        name: 'Kairos',
+        title: 'Grand Champion',
+        faction: 'FFFTTT',
+        set: 7,
+    },
+    {
+        name: 'Rujin',
+        title: 'Conflict Within',
+        faction: 'FFFJJJ',
+        set: 7,
+    },
+    {
+        name: 'Geminon',
+        title: 'the Double Helix',
+        faction: 'FFFPPP',
+        set: 7,
+    },
+    {
+        name: 'Razca',
+        title: 'Dracowitch',
+        faction: 'FS',
+        set: 7,
+    },
+    {
+        name: 'Voprex',
+        title: "Hope's End",
+        alt: [
+            'hopes end',
+        ],
+        faction: 'FFFSSS',
+        set: 7,
+    },
+    {
+        name: 'Amri',
+        title: 'Dragonbane',
+        faction: 'TTTJJJ',
+        set: 7,
+    },
+    {
+        name: 'Sodi',
+        title: 'the Metamorph',
+        alt: [
+            'metamorph',
+        ],
+        faction: 'TTTPPP',
+        set: 7,
+    },
+    {
+        name: 'Ila',
+        title: '& Mizo',
+        alt: [
+            'mizo',
+            'and mizo',
+        ],
+        faction: 'TTPP',
+        set: 7,
+    },
+    {
+        name: 'Mandrake',
+        title: 'The Merriest',
+        alt: [
+            'merriest',
+        ],
+        faction: 'TS',
+        set: 7,
+    },
+    {
+        name: 'Zhen-Zu',
+        title: 'Hand of Nahid',
+        alt: [
+            'hand nahid',
+        ],
+        faction: 'TS',
+        set: 7,
+    },
+    {
+        name: 'Nahid',
+        title: 'the Immortal',
+        alt: [
+            'immortal',
+        ],
+        faction: 'TTTSSS',
+        set: 7,
+    },
+    {
+        name: 'Parul',
+        title: 'Sealkeeper',
+        faction: 'JJJPPP',
+        set: 7,
+    },
+    {
+        name: 'Nivia',
+        title: 'Most Devoted',
+        faction: 'JJSS',
+        set: 7,
+    },
+    {
+        name: 'Eloz',
+        title: 'Martial Scholar',
+        faction: 'JJJSSS',
+        set: 7,
+    },
+    {
+        name: 'Kindo',
+        title: 'Shadowstep',
+        faction: 'PSS',
+        set: 7,
+    },
+    {
+        name: 'Felruak',
+        title: 'the Outcast',
+        faction: 'PPPSSS',
         set: 7,
     },
     {
