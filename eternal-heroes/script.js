@@ -17,6 +17,10 @@ const $prev = document.getElementById('previous');
 const $next = document.getElementById('skip');
 const $showSets = document.getElementById('show-sets');
 const $showFactions = document.getElementById('show-factions');
+const $showRarity = document.getElementById('show-rarity');
+const $showCost = document.getElementById('show-cost');
+const $showStats = document.getElementById('show-stats');
+const $showType = document.getElementById('show-type');
 const $randomize = document.getElementById('randomize');
 const $time = document.getElementById('timer');
 const $giveUp = document.getElementById('give-up');
@@ -24,6 +28,7 @@ const $showMissed = document.getElementById('show-missed');
 const $tryAgain = document.getElementById('try-again');
 const $menu = document.getElementById('menu');
 
+let columns = 2;
 let forceOrder = false;
 let currentHero = null;
 let chosenHeroes;
@@ -104,20 +109,33 @@ const init = () => {
     ).join('');
 };
 const initResultsTable = () => {
-    let html = '<table><thead><tr><th>Name</th><th>Title</th><th class="set">Set</th><th class="faction">Faction</th></tr></thead>';
-
-    html += '<tbody>';
-    html += chosenHeroes.map(hero =>
-         `<tr id="hero-${hero.id}"><td>${hero.name}</td>
+    $resultsTable.innerHTML =
+        '<table>' +
+        '<thead>' +
+            '<tr>' +
+                '<th>Name</th>' +
+                '<th>Title</th>' +
+                '<th class="set">Set</th>' +
+                '<th class="faction">Faction</th>' +
+                '<th class="rarity">Rarity</th>' +
+                '<th class="cost">Cost</th>' +
+                '<th class="stats">Stats</th>' +
+                '<th class="type">Type</th>' +
+            '</tr>' +
+        '</thead>' +
+        '<tbody>' +
+        chosenHeroes.map(hero =>
+            `<tr id="hero-${hero.id}"><td>${hero.name}</td>
             <td class="guess"></td>
             <td class="set">${SET_MAP[hero.set].name}</td>
             <td class="faction">${$getFactionIcons(hero.faction)}</td>
-        </tr>`
-    ).join('');
-    html += '</tbody>';
-    html += '</table>';
-
-    $resultsTable.innerHTML = html;
+            <td class="rarity">${hero.rarity}</td>
+            <td class="cost">${hero.cost}</td>
+            <td class="stats">${hero.stats.join('/')}</td>
+            <td class="type">${hero.type.join(' ')}</td>
+        </tr>`).join('') +
+        '</tbody>' +
+        '</table>';
 };
 const fillMissedAnswers = () => {
     chosenHeroes.forEach(hero => {
@@ -131,6 +149,11 @@ const updateInfo = () => {
             <span class="faction">${$getFactionIcons(currentHero.faction)}</span>
             ${currentHero.name}<span class="set">(${SET_MAP[currentHero.set].name})</span>`;
     }
+};
+const updateColumnsWidth = addOrRemove => {
+    $container.classList.remove('columns-' + columns);
+    columns += addOrRemove ? 1 : -1;
+    $container.classList.add('columns-' + columns);
 };
 const endGame = () => {
     $currentHero.innerText = '';
@@ -248,7 +271,7 @@ const start = () => {
         $container.classList.add('force-order');
     }
     updateInfo();
-    $container.classList.add('playing');
+    $container.classList.add('playing', 'columns-2');
     $container.classList.remove('end-game');
     $input.focus();
     timer.start(getDefaultTime());
@@ -266,12 +289,31 @@ $input.addEventListener('input', e => {
 });
 $showSets.addEventListener('change',  () => {
     $container.classList.toggle('show-sets', $showSets.checked);
+    updateColumnsWidth($showSets.checked);
 });
 $showFactions.addEventListener('change', () => {
     $container.classList.toggle('show-factions', $showFactions.checked);
+    updateColumnsWidth($showFactions.checked);
+});
+$showRarity.addEventListener('change', () => {
+    $container.classList.toggle('show-rarity', $showRarity.checked);
+    updateColumnsWidth($showRarity.checked);
+});
+$showCost.addEventListener('change', () => {
+    $container.classList.toggle('show-cost', $showCost.checked);
+    updateColumnsWidth($showCost.checked);
+});
+$showStats.addEventListener('change', () => {
+    $container.classList.toggle('show-stats', $showStats.checked);
+    updateColumnsWidth($showStats.checked);
+});
+$showType.addEventListener('change', () => {
+    $container.classList.toggle('show-type', $showType.checked);
+    updateColumnsWidth($showType.checked);
 });
 $showMissed.addEventListener('change', () => {
     $container.classList.toggle('show-missed', $showMissed.checked);
+    updateColumnsWidth($showMissed.checked);
 })
 $prev.addEventListener('click', e => {
     e.preventDefault();
