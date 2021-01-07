@@ -5,6 +5,7 @@ const SET_MAP = SETS.reduce((carry, set) => {
 const $setsList = document.getElementById('sets-list');
 const $factionsList = document.getElementById('factions-list');
 const $typeList = document.getElementById('type-list');
+const $rarityList = document.getElementById('rarity-list');
 const $settingsForm = document.getElementById('settings-form');
 const $container = document.getElementById('container');
 const $input = document.getElementById('input');
@@ -76,6 +77,8 @@ const generateChosenHeroes = () => {
         .map($input => $input.value);
     const selectedTypes = [...$typeList.querySelectorAll('input[type="checkbox"]:checked')]
         .map($input => $input.value);
+    const selectedRarities = [...$rarityList.querySelectorAll('input[type="checkbox"]:checked')]
+        .map($input => $input.value);
 
     chosenHeroes = HEROES
         .filter(hero => selectedSets.includes(hero.set))
@@ -84,7 +87,8 @@ const generateChosenHeroes = () => {
 
             return intersect(factions, selectedFactions).length > 0;
         })
-        .filter(hero => intersect(hero.type, selectedTypes).length > 0);
+        .filter(hero => intersect(hero.type, selectedTypes).length > 0)
+        .filter(hero => selectedRarities.includes(hero.rarity));
 };
 const init = () => {
     $setsList.innerHTML = SETS.map(set =>
@@ -106,6 +110,13 @@ const init = () => {
         .sort()
         .map(type =>
         `<li><label><input type="checkbox" value="${type}" checked>${type}</label></li>`
+        )
+        .join('');
+    $rarityList.innerHTML = HEROES
+        .reduce((rarities, hero) => rarities.includes(hero.rarity) ? rarities : [...rarities, hero.rarity], [])
+        .sort()
+        .map(rarity =>
+        `<li><label><input type="checkbox" value=${rarity} checked>${rarity}</label></li>`
         )
         .join('');
 };
@@ -371,4 +382,5 @@ $tryAgain.addEventListener('click', e => {
 selectAll($setsList.parentElement);
 selectAll($factionsList.parentElement);
 selectAll($typeList.parentElement);
+selectAll($rarityList.parentElement);
 init();
