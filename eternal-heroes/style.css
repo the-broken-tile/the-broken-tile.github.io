@@ -30,29 +30,24 @@ table {;
 tr, td, th {
     border: 1px solid black;
 }
-td {
-    width: 50%;
-}
-.show-sets td,
-.show-sets th,
-.show-factions td,
-.show-factions th {
-    width: 33%;
-}
-.show-sets.show-factions td,
-.show-sets.show-factions th {
-    width: 25%;
-}
 .faction,
 .set,
-.missed {
+.missed,
+.rarity,
+.cost,
+.stats,
+.type {
     display: none;
 }
 .missed {
     color: red;
 }
 .show-factions .faction,
-.show-sets .set {
+.show-sets .set,
+.show-rarity .rarity,
+.show-cost .cost,
+.show-stats .stats,
+.show-type .type {
     display: table-cell;
 }
 .show-missed .missed {
@@ -113,34 +108,30 @@ td {
     background: lightyellow;
 }
 
-.two-columns {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.two-columns .column {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-}
 #results-table {
     margin: 8px;
 }
-#results-table .column:nth-child(1) tbody tr:last-child,
-#results-table .column:nth-child(1) tbody tr:last-child td {
-    border-bottom: none;
-}
-#results-table.two-columns .column:nth-child(1) tbody tr:last-child,
-#results-table.two-columns .column:nth-child(1) tbody tr:last-child td {
-    border-bottom: 1px solid black;
-}
-
-#results-table .column:nth-child(2) thead {
-    display: none;
-}
-#results-table.two-columns .column:nth-child(2) thead {
-    display: table-header-group;
-}
 #playing-form {
     text-align: center;
+}
+.columns-2 td {
+    width: 50%;
+}
+.columns-3 td {
+    width: 33.3333%;
+}
+.columns-4 td {
+    width: 25%;
+}
+.columns-5 td {
+    width: 20%;
+}
+.columns-6 td {
+    width: 16.6666%;
+}
+.columns-7 td {
+    width: 14.2857142857%;
+}
+.columns-8 td {
+    width: 12.5%;
 }
