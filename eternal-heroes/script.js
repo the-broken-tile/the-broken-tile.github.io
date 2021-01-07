@@ -22,7 +22,6 @@ const $time = document.getElementById('timer');
 const $giveUp = document.getElementById('give-up');
 const $showMissed = document.getElementById('show-missed');
 const $tryAgain = document.getElementById('try-again');
-const $twoColumns = document.getElementById('two-columns');
 const $menu = document.getElementById('menu');
 
 let forceOrder = false;
@@ -44,10 +43,6 @@ const intersect = (arrA, arrB) =>
 const unique = array => array.filter((value, index, self) =>
     self.indexOf(value) === index
 );
-const split = array => {
-    const half = Math.ceil(array.length / 2);
-    return [array.slice(0, half), array.slice(half, array.length)];
-}
 const $getFactionIcons = faction => {
     if (faction.length > 1) {
         return faction.split('').map($getFactionIcons).join('');
@@ -109,20 +104,18 @@ const init = () => {
     ).join('');
 };
 const initResultsTable = () => {
-    let html = '';
-    split(chosenHeroes).forEach(halfArray => {
-        html += '<div class="column"><table><thead><tr><th>Name</th><th>Title</th><th class="set">Set</th><th class="faction">Faction</th></tr></thead>';
-        html += '<tbody>';
-        html += halfArray.map(hero =>
-             `<tr id="hero-${hero.id}"><td>${hero.name}</td>
-                <td class="guess"></td>
-                <td class="set">${SET_MAP[hero.set].name}</td>
-                <td class="faction">${$getFactionIcons(hero.faction)}</td>
-            </tr>`
-        ).join('');
-        html += '</tbody>';
-        html += '</table></div>';
-    });
+    let html = '<table><thead><tr><th>Name</th><th>Title</th><th class="set">Set</th><th class="faction">Faction</th></tr></thead>';
+
+    html += '<tbody>';
+    html += chosenHeroes.map(hero =>
+         `<tr id="hero-${hero.id}"><td>${hero.name}</td>
+            <td class="guess"></td>
+            <td class="set">${SET_MAP[hero.set].name}</td>
+            <td class="faction">${$getFactionIcons(hero.faction)}</td>
+        </tr>`
+    ).join('');
+    html += '</tbody>';
+    html += '</table>';
 
     $resultsTable.innerHTML = html;
 };
@@ -280,9 +273,6 @@ $showFactions.addEventListener('change', () => {
 $showMissed.addEventListener('change', () => {
     $container.classList.toggle('show-missed', $showMissed.checked);
 })
-$twoColumns.addEventListener('click', () => {
-    $resultsTable.classList.toggle('two-columns', $twoColumns.checked);
-});
 $prev.addEventListener('click', e => {
     e.preventDefault();
     prev();
