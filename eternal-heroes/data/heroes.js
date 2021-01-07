@@ -2602,6 +2602,26 @@ const HEROES = [
         type: 'Gunslinger',
         set: 1001,
     },
+    {
+        name: 'Tavrod',
+        title: 'Auric Broker',
+        faction: 'JJSS',
+        rarity: 'legendary',
+        cost: 5,
+        stats: [5, 7],
+        type: 'Minotaur',
+        set: 1002,
+    },
+    {
+        name: 'Horus',
+        title: 'Traver',
+        faction: 'N',
+        rarity: 'rare',
+        cost: 1,
+        stats: [1, 1],
+        type: 'Stranger',
+        set: 1002,
+    }
 ].map((hero, i) => ({
     ...hero,
     id: i + 1,

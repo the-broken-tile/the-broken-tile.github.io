@@ -43,4 +43,8 @@ const SETS = [
         name: "Jekk's Bounty",
         id: 1001,
     },
+    {
+        name: 'The Tale of Horus Traver',
+        id: 1002,
+    }
 ];
