@@ -51,4 +51,8 @@ const SETS = [
         name: 'Dead Reckoning',
         id: 1003,
     },
+    {
+        name: 'Into Shadow',
+        id: 1004,
+    },
 ];
