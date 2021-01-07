@@ -1094,7 +1094,7 @@ const HEROES = [
         rarity: 'promo',
         cost: 1,
         stats: [2, 1],
-        type: 'mage',
+        type: 'Mage',
         set: 5,
     },
     {
@@ -1481,7 +1481,7 @@ const HEROES = [
         rarity: 'rare',
         cost: 3,
         stats: [3, 2],
-        type: 'ELf Shaman',
+        type: 'Elf Shaman',
         set: 6,
     },
     {
