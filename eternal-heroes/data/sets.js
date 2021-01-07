@@ -67,4 +67,8 @@ const SETS = [
         name: 'Promises by Firelight',
         id: 1007,
     },
+    {
+        name: 'Whispers of the Throne',
+        id: 1008, //1085 in ewc
+    },
 ];
