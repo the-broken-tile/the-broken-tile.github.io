@@ -63,4 +63,8 @@ const SETS = [
         name: 'Trials of Grodov',
         id: 1006,
     },
+    {
+        name: 'Promises by Firelight',
+        id: 1007,
+    },
 ];
