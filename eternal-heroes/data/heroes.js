@@ -1397,6 +1397,7 @@ const HEROES = [
         alt: [
             'steyers adjutant',
         ],
+        faction: 'JJ',
         set: 10,
     },
     {
