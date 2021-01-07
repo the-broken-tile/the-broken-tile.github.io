@@ -2,7 +2,7 @@ const HEROES = [
     {
         name: 'Izalio',
         title: 'General',
-        faction: 'FF',
+        influence: 'FF',
         rarity: 'rare',
         cost: 6,
         stats: [6, 4],
@@ -12,7 +12,7 @@ const HEROES = [
     {
         name: 'Kaleb',
         title: 'Uncrowned Prince',
-        faction: 'FFF',
+        influence: 'FFF',
         rarity: 'legendary',
         cost: 8,
         stats: [6, 6],
@@ -25,7 +25,7 @@ const HEROES = [
         alt: [
             'eldest',
         ],
-        faction: 'TT',
+        influence: 'TT',
         rarity: 'legendary',
         cost: 8,
         stats: [4, 7],
@@ -35,7 +35,7 @@ const HEROES = [
     {
         name: 'Talir',
         title: 'Who Sees Beyond',
-        faction: 'TTT',
+        influence: 'TTT',
         rarity: 'legendary',
         cost: 8,
         stats: [6, 6],
@@ -45,7 +45,7 @@ const HEROES = [
     {
         name: 'Ironthorn',
         title: 'Marshal',
-        faction: 'JJ',
+        influence: 'JJ',
         rarity: 'legendary',
         cost: 5,
         stats: [5, 5],
@@ -58,7 +58,7 @@ const HEROES = [
         alt: [
             'iron fist',
         ],
-        faction: 'JJJ',
+        influence: 'JJJ',
         rarity: 'legendary',
         cost: 8,
         stats: [6, 6],
@@ -68,7 +68,7 @@ const HEROES = [
     {
         name: 'Wump',
         title: 'Party Starter',
-        faction: 'PP',
+        influence: 'PP',
         rarity: 'legendary',
         cost: 3,
         stats: [2, 2],
@@ -78,7 +78,7 @@ const HEROES = [
     {
         name: 'Jarrall',
         title: 'Iceheart',
-        faction: 'PPP',
+        influence: 'PPP',
         rarity: 'legendary',
         cost: 6,
         stats: [6, 7],
@@ -92,7 +92,7 @@ const HEROES = [
             'queen of wilds',
             'queen wilds',
         ],
-        faction: 'PPP',
+        influence: 'PPP',
         rarity: 'legendary',
         cost: 8,
         stats: [6, 6],
@@ -105,7 +105,7 @@ const HEROES = [
         alt: [
             'deadshot',
         ],
-        faction: 'SS',
+        influence: 'SS',
         rarity: 'rare',
         cost: 5,
         stats: [6, 3],
@@ -118,7 +118,7 @@ const HEROES = [
         alt: [
             'fate touched',
         ],
-        faction: 'SSS',
+        influence: 'SSS',
         rarity: 'legendary',
         cost: 8,
         stats: [6, 6],
@@ -128,7 +128,7 @@ const HEROES = [
     {
         name: 'Ijin',
         title: 'Imperial Armorer',
-        faction: 'FFJ',
+        influence: 'FFJ',
         rarity: 'legendary',
         cost: 3,
         stats: [3, 2],
@@ -138,7 +138,7 @@ const HEROES = [
     {
         name: 'Navani',
         title: 'Warsinger',
-        faction: 'FJ',
+        influence: 'FJ',
         rarity: 'legendary',
         cost: 4,
         stats: [4, 4],
@@ -151,7 +151,7 @@ const HEROES = [
         alt: [
             'liberator',
         ],
-        faction: 'FFFJJJ',
+        influence: 'FFFJJJ',
         rarity: 'legendary',
         cost: 7,
         stats: [5, 5],
@@ -164,7 +164,7 @@ const HEROES = [
         alt: [
             'great ruin',
         ],
-        faction: 'FFFSSS',
+        influence: 'FFFSSS',
         rarity: 'legendary',
         cost: 7,
         stats: [5, 5],
@@ -177,7 +177,7 @@ const HEROES = [
         alt: [
             'knight chancellor',
         ],
-        faction: 'TJ',
+        influence: 'TJ',
         rarity: 'legendary',
         cost: 3,
         stats: [3, 4],
@@ -187,7 +187,7 @@ const HEROES = [
     {
         name: 'Vodakhan',
         title: 'Temple Speaker',
-        faction: 'TTTJJJ',
+        influence: 'TTTJJJ',
         rarity: 'legendary',
         cost: 7,
         stats: [0, 0],
@@ -200,7 +200,7 @@ const HEROES = [
         alt: [
             'great glutton',
         ],
-        faction: 'TTPP',
+        influence: 'TTPP',
         rarity: 'legendary',
         cost: 5,
         stats: [6, 6],
@@ -213,7 +213,7 @@ const HEROES = [
         alt: [
             'collector',
         ],
-        faction: 'TTTPPP',
+        influence: 'TTTPPP',
         rarity: 'legendary',
         cost: 7,
         stats: [6, 6],
@@ -226,7 +226,7 @@ const HEROES = [
         alt: [
             'wayfinder',
         ],
-        faction: 'TTSS',
+        influence: 'TTSS',
         rarity: 'promo',
         cost: 4,
         stats: [0, 5],
@@ -236,7 +236,7 @@ const HEROES = [
     {
         name: 'Rilgon',
         title: 'Hooru Operative',
-        faction: 'FFPP',
+        influence: 'FFPP',
         rarity: 'promo',
         cost: 4,
         stats: [2, 4],
@@ -246,7 +246,7 @@ const HEROES = [
     {
         name: 'Nightmaw',
         title: 'Sight Unseen',
-        faction: 'PPPSSS',
+        influence: 'PPPSSS',
         rarity: 'legendary',
         cost: 7,
         stats: [7, 7],
@@ -256,7 +256,7 @@ const HEROES = [
     {
         name: 'Sindok',
         title: 'Rage Incarnate',
-        faction: 'FF',
+        influence: 'FF',
         rarity: 'legendary',
         cost: 9,
         stats: [7, 4],
@@ -266,7 +266,7 @@ const HEROES = [
     {
         name: 'Evelina',
         title: 'Valley Searcher',
-        faction: 'T',
+        influence: 'T',
         rarity: 'rare',
         cost: 2,
         stats: [2, 2],
@@ -276,7 +276,7 @@ const HEROES = [
     {
         name: 'Tesya',
         title: 'Omen Shaper',
-        faction: 'TT',
+        influence: 'TT',
         rarity: 'promo',
         cost: 7,
         stats: [7, 6],
@@ -289,7 +289,7 @@ const HEROES = [
         alt: [
             'broken wing',
         ],
-        faction: 'JJJJ',
+        influence: 'JJJJ',
         rarity: 'legendary',
         cost: 8,
         stats: [8, 4],
@@ -299,7 +299,7 @@ const HEROES = [
     {
         name: 'Torgov',
         title: 'Icecap Trader',
-        faction: 'PP',
+        influence: 'PP',
         rarity: 'rare',
         cost: 4,
         stats: [4, 5],
@@ -312,7 +312,7 @@ const HEROES = [
         alt: [
             'feaster',
         ],
-        faction: 'SSS',
+        influence: 'SSS',
         rarity: 'legendary',
         cost: 5,
         stats: [7, 7],
@@ -325,7 +325,7 @@ const HEROES = [
         alt: [
             'malaga',
         ],
-        faction: 'FFT',
+        influence: 'FFT',
         rarity: 'legendary',
         cost: 4,
         stats: [3, 5],
@@ -335,7 +335,7 @@ const HEROES = [
     {
         name: 'Vadius',
         title: 'Clan Father',
-        faction: 'FFP',
+        influence: 'FFP',
         rarity: 'legendary',
         cost: 3,
         stats: [3, 2],
@@ -349,7 +349,7 @@ const HEROES = [
             'nakova',
             'and nakova',
         ],
-        faction: 'FFFPPP',
+        influence: 'FFFPPP',
         rarity: 'legendary',
         cost: 8,
         stats: [8, 8],
@@ -362,7 +362,7 @@ const HEROES = [
         alt: [
             'abductor',
         ],
-        faction: 'TSS',
+        influence: 'TSS',
         rarity: 'legendary',
         cost: 3,
         stats: [3, 3],
@@ -375,7 +375,7 @@ const HEROES = [
         alt: [
             'devoted',
         ],
-        faction: 'TTSS',
+        influence: 'TTSS',
         rarity: 'rare',
         cost: 4,
         stats: [3, 3],
@@ -390,7 +390,7 @@ const HEROES = [
             'the far watcher',
             'far watcher',
         ],
-        faction: 'JP',
+        influence: 'JP',
         rarity: 'legendary',
         cost: 2,
         stats: [2, 3],
@@ -403,7 +403,7 @@ const HEROES = [
         alt: [
             'lord visions',
         ],
-        faction: 'JJJPPP',
+        influence: 'JJJPPP',
         rarity: 'rare',
         cost: 6,
         stats: [5, 7],
@@ -416,7 +416,7 @@ const HEROES = [
         alt: [
             'seducer',
         ],
-        faction: 'JJS',
+        influence: 'JJS',
         rarity: 'legendary',
         cost: 3,
         stats: [2, 2],
@@ -426,7 +426,7 @@ const HEROES = [
     {
         name: 'Makto',
         title: 'Inquisitor',
-        faction: 'JJSS',
+        influence: 'JJSS',
         rarity: 'legendary',
         cost: 5,
         stats: [5, 5],
@@ -439,7 +439,7 @@ const HEROES = [
         alt: [
             'judge battles',
         ],
-        faction: 'JJJSSS',
+        influence: 'JJJSSS',
         rarity: 'legendary',
         cost: 7,
         stats: [7, 9],
@@ -453,7 +453,7 @@ const HEROES = [
             'heir rebellion',
             'heir to the rebellion',
         ],
-        faction: 'FF',
+        influence: 'FF',
         rarity: 'rare',
         cost: 3,
         stats: [2, 3],
@@ -463,7 +463,7 @@ const HEROES = [
     {
         name: 'Kyojun',
         title: 'Grand Shugo',
-        faction: 'FF',
+        influence: 'FF',
         rarity: 'legendary',
         cost: 4,
         stats: [3, 2],
@@ -473,7 +473,7 @@ const HEROES = [
     {
         name: 'Jekk',
         title: 'Hunted Fugitive',
-        faction: 'FFF',
+        influence: 'FFF',
         rarity: 'legendary',
         cost: 5,
         stats: [7, 5],
@@ -483,7 +483,7 @@ const HEROES = [
     {
         name: 'Talir',
         title: 'Unbound',
-        faction: 'TTT',
+        influence: 'TTT',
         rarity: 'legendary',
         cost: 7,
         stats: [7, 7],
@@ -493,7 +493,7 @@ const HEROES = [
     {
         name: 'Bisma',
         title: 'Revered Elder',
-        faction: 'JJ',
+        influence: 'JJ',
         rarity: 'rare',
         cost: 3,
         stats: [3, 3],
@@ -506,7 +506,7 @@ const HEROES = [
         alt: [
             'shotcaller',
         ],
-        faction: 'J',
+        influence: 'J',
         rarity: 'legendary',
         cost: 3,
         stats: [2, 2],
@@ -516,7 +516,7 @@ const HEROES = [
     {
         name: 'Amilli',
         title: 'Cloudmarshal',
-        faction: 'JJJ',
+        influence: 'JJJ',
         rarity: 'legendary',
         cost: 5,
         stats: [4, 8],
@@ -529,7 +529,7 @@ const HEROES = [
         alt: [
             'peerless',
         ],
-        faction: 'J',
+        influence: 'J',
         rarity: 'legendary',
         cost: 7,
         stats: [5, 5],
@@ -539,7 +539,7 @@ const HEROES = [
     {
         name: 'Relia',
         title: 'Lieutenant',
-        faction: 'JJ',
+        influence: 'JJ',
         rarity: 'promo',
         cost: 8,
         stats: [3, 3],
@@ -549,7 +549,7 @@ const HEROES = [
     {
         name: 'Thudrock',
         title: 'Arctic Artisan',
-        faction: 'PP',
+        influence: 'PP',
         rarity: 'legendary',
         cost: 4,
         stats: [5, 4],
@@ -562,7 +562,7 @@ const HEROES = [
         alt: [
             'death dreamer',
         ],
-        faction: 'PP',
+        influence: 'PP',
         rarity: 'legendary',
         cost: 5,
         stats: [3, 6],
@@ -572,7 +572,7 @@ const HEROES = [
     {
         name: 'Lida',
         title: 'Most Skilled',
-        faction: 'PP',
+        influence: 'PP',
         rarity: 'rare',
         cost: 5,
         stats: [4, 5],
@@ -582,7 +582,7 @@ const HEROES = [
     {
         name: 'Miris',
         title: 'Nightshade',
-        faction: 'S',
+        influence: 'S',
         rarity: 'rare',
         cost: 2,
         stats: [3, 2],
@@ -592,7 +592,7 @@ const HEROES = [
     {
         name: 'Ashara',
         title: 'Ruthless Assassin',
-        faction: 'SS',
+        influence: 'SS',
         rarity: 'rare',
         cost: 3,
         stats: [3, 3],
@@ -602,7 +602,7 @@ const HEROES = [
     {
         name: 'Dizo',
         title: 'Cabal Chairman',
-        faction: 'SS',
+        influence: 'SS',
         rarity: 'promo',
         cost: 6,
         stats: [4, 6],
@@ -615,7 +615,7 @@ const HEROES = [
         alt: [
             'vain',
         ],
-        faction: 'SS',
+        influence: 'SS',
         rarity: 'legendary',
         cost: 6,
         stats: [4, 5],
@@ -628,7 +628,7 @@ const HEROES = [
         alt: [
             'chronicler ages',
         ],
-        faction: 'FT',
+        influence: 'FT',
         rarity: 'promo',
         cost: 2,
         stats: [1, 3],
@@ -638,7 +638,7 @@ const HEROES = [
     {
         name: 'Kaleb',
         title: 'Reborn',
-        faction: 'FFPP',
+        influence: 'FFPP',
         rarity: 'legendary',
         cost: 4,
         stats: [4, 4],
@@ -651,7 +651,7 @@ const HEROES = [
         alt: [
             'orene kosul',
         ],
-        faction: 'JP',
+        influence: 'JP',
         rarity: 'promo',
         cost: 4,
         stats: [4, 4],
@@ -661,7 +661,7 @@ const HEROES = [
     {
         name: 'Eilyn',
         title: 'Clan Mother',
-        faction: 'JJPP',
+        influence: 'JJPP',
         rarity: 'legendaary',
         cost: 7,
         stats: [6, 7],
@@ -674,7 +674,7 @@ const HEROES = [
         alt: [
             'duskblade',
         ],
-        faction: 'PPSS',
+        influence: 'PPSS',
         rarity: 'legendary',
         cost: 4,
         stats: [5, 5],
@@ -684,7 +684,7 @@ const HEROES = [
     {
         name: 'Curiox',
         title: 'Insatiable Seeker',
-        faction: 'FFTTPP',
+        influence: 'FFTTPP',
         rarity: 'legendary',
         cost: 6,
         stats: [5, 5],
@@ -694,7 +694,7 @@ const HEROES = [
     {
         name: 'Rika',
         title: 'Desert Navigator',
-        faction: 'F',
+        influence: 'F',
         rarity: 'rare',
         cost: 3,
         stats: [1, 5],
@@ -707,7 +707,7 @@ const HEROES = [
         alt: [
             'crimson scythe',
         ],
-        faction: 'FF',
+        influence: 'FF',
         rarity: 'rare',
         cost: 4,
         stats: [4, 2],
@@ -720,7 +720,7 @@ const HEROES = [
         alt: [
             'usurper',
         ],
-        faction: 'FFF',
+        influence: 'FFF',
         rarity: 'promo',
         cost: 4,
         stats: [4, 4],
@@ -730,7 +730,7 @@ const HEROES = [
     {
         name: 'Zuberi',
         title: 'Outlands Warlord',
-        faction: 'FF',
+        influence: 'FF',
         rarity: 'legendary',
         cost: 4,
         stats: [4, 5],
@@ -743,7 +743,7 @@ const HEROES = [
         alt: [
             'fear',
         ],
-        faction: 'FF',
+        influence: 'FF',
         rarity: 'none',
         cost: 6,
         stats: [8, 6],
@@ -753,7 +753,7 @@ const HEROES = [
     {
         name: 'Gnash',
         title: 'Pridemaster',
-        faction: 'TT',
+        influence: 'TT',
         rarity: 'legendary',
         cost: 4,
         stats: [4, 4],
@@ -763,7 +763,7 @@ const HEROES = [
     {
         name: 'Alhed',
         title: 'Mount Breaker',
-        faction: 'TT',
+        influence: 'TT',
         rarity: 'legendary',
         cost: 5,
         stats: [6, 6],
@@ -776,7 +776,7 @@ const HEROES = [
         alt: [
             'steel tempest',
         ],
-        faction: 'JJ',
+        influence: 'JJ',
         rarity: 'legendary',
         cost: 4,
         stats: [3, 2],
@@ -786,7 +786,7 @@ const HEROES = [
     {
         name: 'Marley',
         title: 'Sheriff',
-        faction: 'JJ',
+        influence: 'JJ',
         rarity: 'rare',
         cost: 4,
         stats: [4, 4],
@@ -799,7 +799,7 @@ const HEROES = [
         alt: [
             'last bastion',
         ],
-        faction: 'JJ',
+        influence: 'JJ',
         rarity: 'legendary',
         cost: 11,
         stats: [4, 5],
@@ -812,7 +812,7 @@ const HEROES = [
         alt: [
             'eilyns elite',
         ],
-        faction: 'PP',
+        influence: 'PP',
         rarity: 'rare',
         cost: 4,
         stats: [3, 4],
@@ -827,7 +827,7 @@ const HEROES = [
             'shaman of scale',
             'shaman the scale',
         ],
-        faction: 'PPP',
+        influence: 'PPP',
         rarity: 'legendary',
         cost: 7,
         stats: [5, 6],
@@ -837,7 +837,7 @@ const HEROES = [
     {
         name: 'Fenris',
         title: 'Nightshade',
-        faction: 'S',
+        influence: 'S',
         rarity: 'rare',
         cost: 2,
         stats: [3, 2],
@@ -850,7 +850,7 @@ const HEROES = [
         alt: [
             'waking terror',
         ],
-        faction: 'SSS',
+        influence: 'SSS',
         rarity: 'legendary',
         cost: 4,
         stats: [6, 4],
@@ -860,7 +860,7 @@ const HEROES = [
     {
         name: 'Rizahn',
         title: 'Greatbow Master',
-        faction: 'FFJJ',
+        influence: 'FFJJ',
         rarity: 'legendary',
         cost: 6,
         stats: [5, 4],
@@ -873,7 +873,7 @@ const HEROES = [
         alt: [
             'hoarder',
         ],
-        faction: 'FP',
+        influence: 'FP',
         rarity: 'rare',
         cost: 3,
         stats: [3, 3],
@@ -886,7 +886,7 @@ const HEROES = [
         alt: [
             'geomancer',
         ],
-        faction: 'FP',
+        influence: 'FP',
         rarity: 'promo',
         cost: 5,
         stats: [4, 4],
@@ -896,7 +896,7 @@ const HEROES = [
     {
         name: 'Crill',
         title: 'Merciless Pillager',
-        faction: 'FFPP',
+        influence: 'FFPP',
         rarity: 'legendary',
         cost: 7,
         stats: [5, 5],
@@ -906,7 +906,7 @@ const HEROES = [
     {
         name: 'Wyatt',
         title: 'Junk Collector',
-        faction: 'FS',
+        influence: 'FS',
         rarity: 'promo',
         cost: 2,
         stats: [2, 2],
@@ -916,7 +916,7 @@ const HEROES = [
     {
         name: 'Jekk',
         title: 'Lone Gun',
-        faction: 'FFSS',
+        influence: 'FFSS',
         rarity: 'legendary',
         cost: 6,
         stats: [7, 7],
@@ -926,7 +926,7 @@ const HEROES = [
     {
         name: 'Alessi',
         title: 'Combrei Archmage',
-        faction: 'TJ',
+        influence: 'TJ',
         rarity: 'rare',
         cost: 1,
         stats: [1, 1],
@@ -936,7 +936,7 @@ const HEROES = [
     {
         name: 'Irel IV',
         title: 'Genetrix',
-        faction: 'TTJJ',
+        influence: 'TTJJ',
         rarity: 'promo',
         cost: 4,
         stats: [2, 2],
@@ -946,7 +946,7 @@ const HEROES = [
     {
         name: 'Derry Cathain',
         title: 'Ripclaw Rider',
-        faction: 'TP',
+        influence: 'TP',
         rarity: 'rare',
         cost: 2,
         stats: [0, 4],
@@ -956,7 +956,7 @@ const HEROES = [
     {
         name: 'Caiphus',
         title: 'Wandering King',
-        faction: 'N',
+        influence: 'N',
         rarity: 'promo',
         cost: 6,
         stats: [5, 5],
@@ -969,7 +969,7 @@ const HEROES = [
         alt: [
             'freescaler',
         ],
-        faction: 'FFF',
+        influence: 'FFF',
         rarity: 'legendary',
         cost: 3,
         stats: [3, 3],
@@ -984,7 +984,7 @@ const HEROES = [
             'the endless hoard',
             'endless hoard',
         ],
-        faction: 'FFFF',
+        influence: 'FFFF',
         rarity: 'legendary',
         cost: 8,
         stats: [6, 6],
@@ -997,7 +997,7 @@ const HEROES = [
         alt: [
             'burning sand',
         ],
-        faction: 'TT',
+        influence: 'TT',
         rarity: 'legendary',
         cost: 4,
         stats: [5, 2],
@@ -1007,7 +1007,7 @@ const HEROES = [
     {
         name: 'Ravid',
         title: 'Insect Master',
-        faction: 'TT',
+        influence: 'TT',
         rarity: 'legendary',
         cost: 7,
         stats: [5, 4],
@@ -1017,7 +1017,7 @@ const HEROES = [
     {
         name: 'Hojan',
         title: 'Crownbreaker',
-        faction: 'J',
+        influence: 'J',
         rarity: 'rare',
         cost: 2,
         stats: [2, 1],
@@ -1030,7 +1030,7 @@ const HEROES = [
         alt: [
             'ijins apprentice',
         ],
-        faction: 'J',
+        influence: 'J',
         rarity: 'legendary',
         cost: 3,
         stats: [3, 3],
@@ -1043,7 +1043,7 @@ const HEROES = [
         alt: [
             'unwavering',
         ],
-        faction: 'JJJ',
+        influence: 'JJJ',
         rarity: 'legendary',
         cost: 6,
         stats: [6, 7],
@@ -1053,7 +1053,7 @@ const HEROES = [
     {
         name: 'Justa',
         title: 'Regglar Jotun',
-        faction: 'PPP',
+        influence: 'PPP',
         rarity: 'promo',
         cost: 6,
         stats: [6, 6],
@@ -1066,7 +1066,7 @@ const HEROES = [
         alt: [
             'rising storm',
         ],
-        faction: 'PPP',
+        influence: 'PPP',
         rarity: 'legendary',
         cost: 8,
         stats: [6, 12],
@@ -1076,7 +1076,7 @@ const HEROES = [
     {
         name: 'Mokhnati',
         title: 'Restored',
-        faction: 'PP',
+        influence: 'PP',
         rarity: 'promo',
         cost: 8,
         stats: [7, 7],
@@ -1090,7 +1090,7 @@ const HEROES = [
             'star reader',
             'starreader',
         ],
-        faction: 'S',
+        influence: 'S',
         rarity: 'promo',
         cost: 1,
         stats: [2, 1],
@@ -1100,7 +1100,7 @@ const HEROES = [
     {
         name: 'Tavia',
         title: 'Lethrai Raidleader',
-        faction: 'S',
+        influence: 'S',
         rarity: 'legendary',
         cost: 2,
         stats: [2, 2],
@@ -1113,7 +1113,7 @@ const HEROES = [
         alt: [
             'acanthas herald',
         ],
-        faction: 'SS',
+        influence: 'SS',
         rarity: 'rare',
         cost: 3,
         stats: [2, 3],
@@ -1123,7 +1123,7 @@ const HEROES = [
     {
         name: 'Sahin',
         title: 'Governor',
-        faction: 'S',
+        influence: 'S',
         rarity: 'legendary',
         cost: 4,
         stats: [3, 4],
@@ -1136,7 +1136,7 @@ const HEROES = [
         alt: [
             'huntress',
         ],
-        faction: 'SS',
+        influence: 'SS',
         rarity: 'rare',
         cost: 9,
         stats: [7, 7],
@@ -1146,7 +1146,7 @@ const HEROES = [
     {
         name: 'Darya',
         title: 'Warrior Poet',
-        faction: 'FFTT',
+        influence: 'FFTT',
         rarity: 'legendary',
         cost: 4,
         stats: [3, 4],
@@ -1156,7 +1156,7 @@ const HEROES = [
     {
         name: 'Milos',
         title: 'Unwavering Idealist',
-        faction: 'FJ',
+        influence: 'FJ',
         rarity: 'promo',
         cost: 3,
         stats: [1, 1],
@@ -1166,7 +1166,7 @@ const HEROES = [
     {
         name: 'Eaton',
         title: 'Seditious Noble',
-        faction: 'FFJJ',
+        influence: 'FFJJ',
         rarity: 'rare',
         cost: 4,
         stats: [4, 4],
@@ -1176,7 +1176,7 @@ const HEROES = [
     {
         name: 'Chunk',
         title: 'Chunk',
-        faction: 'FFPP',
+        influence: 'FFPP',
         rarity: 'rare',
         cost: 4,
         stats: [4, 3],
@@ -1191,7 +1191,7 @@ const HEROES = [
             'hand of cabal',
             'hand the cabal',
         ],
-        faction: 'FFSS',
+        influence: 'FFSS',
         rarity: 'legendary',
         cost: 5,
         stats: [4, 5],
@@ -1201,7 +1201,7 @@ const HEROES = [
     {
         name: 'Deleph',
         title: 'Cursed Prophet',
-        faction: 'TS',
+        influence: 'TS',
         rarity: 'promo',
         cost: 3,
         stats: [1, 4],
@@ -1211,7 +1211,7 @@ const HEROES = [
     {
         name: 'Aniyah',
         title: 'Arctic Sheriff',
-        faction: 'JJPP',
+        influence: 'JJPP',
         rarity: 'legendary',
         cost: 5,
         stats: [4, 4],
@@ -1227,7 +1227,7 @@ const HEROES = [
             'the heartbinder',
             'the heart binder',
         ],
-        faction: 'PPSS',
+        influence: 'PPSS',
         rarity: 'legendary',
         cost: 6,
         stats: [4, 4],
@@ -1240,7 +1240,7 @@ const HEROES = [
         alt: [
             'herald war',
         ],
-        faction: 'FFTTPP',
+        influence: 'FFTTPP',
         rarity: 'legendary',
         cost: 7,
         stats: [7, 5],
@@ -1250,7 +1250,7 @@ const HEROES = [
     {
         name: 'Quinn',
         title: 'Lone Wanderer',
-        faction: 'FFJJPP',
+        influence: 'FFJJPP',
         rarity: 'legendary',
         cost: 6,
         stats: [7, 7],
@@ -1260,7 +1260,7 @@ const HEROES = [
     {
         name: 'Brel',
         title: 'Solist Apostate',
-        faction: 'FFJJSS',
+        influence: 'FFJJSS',
         rarity: 'legendary',
         cost: 7,
         stats: [4, 5],
@@ -1273,7 +1273,7 @@ const HEROES = [
         alt: [
             'breaker will',
         ],
-        faction: 'TTJJSS',
+        influence: 'TTJJSS',
         rarity: 'legendary',
         cost: 6,
         stats: [6, 6],
@@ -1283,7 +1283,7 @@ const HEROES = [
     {
         name: 'Clodagh',
         title: 'Loyal Advisor',
-        faction: 'F',
+        influence: 'F',
         rarity: 'rare',
         cost: 2,
         stats: [2, 2],
@@ -1296,7 +1296,7 @@ const HEROES = [
         alt: [
             'burning brush',
         ],
-        faction: 'F',
+        influence: 'F',
         rarity: 'promo',
         cost: 2,
         stats: [2, 2],
@@ -1306,7 +1306,7 @@ const HEROES = [
     {
         name: 'Ghodan',
         title: 'Undefeated',
-        faction: 'FFFFF',
+        influence: 'FFFFF',
         rarity: 'legendary',
         cost: 5,
         stats: [5, 5],
@@ -1316,7 +1316,7 @@ const HEROES = [
     {
         name: 'Brenn',
         title: 'Archmagister',
-        faction: 'FF',
+        influence: 'FF',
         rarity: 'legendary',
         cost: 7,
         stats: [5, 5],
@@ -1329,7 +1329,7 @@ const HEROES = [
         alt: [
             'master sand mage',
         ],
-        faction: 'T',
+        influence: 'T',
         rarity: 'legendary',
         cost: 1,
         stats: [2 ,1],
@@ -1339,7 +1339,7 @@ const HEROES = [
     {
         name: 'Kimi',
         title: 'Expedition Guide',
-        faction: 'T',
+        influence: 'T',
         rarity: 'rare',
         cost: 3,
         stats: [1, 5],
@@ -1349,7 +1349,7 @@ const HEROES = [
     {
         name: 'Tocas',
         title: 'Waystone Harvester',
-        faction: 'TT',
+        influence: 'TT',
         rarity: 'legendary',
         cost: 3,
         stats: [2, 4],
@@ -1362,7 +1362,7 @@ const HEROES = [
         alt: [
             'surveyor',
         ],
-        faction: 'TTTTT',
+        influence: 'TTTTT',
         rarity: 'legendary',
         cost: 5,
         stats: [7, 7],
@@ -1375,7 +1375,7 @@ const HEROES = [
         alt: [
             'prodigy',
         ],
-        faction: 'J',
+        influence: 'J',
         rarity: 'rare',
         cost: 2,
         stats: [2, 3],
@@ -1385,7 +1385,7 @@ const HEROES = [
     {
         name: 'Siraf',
         title: 'Grand Strategist',
-        faction: 'J',
+        influence: 'J',
         rarity: 'legendary',
         cost: 2,
         stats: [0, 5],
@@ -1398,7 +1398,7 @@ const HEROES = [
         alt: [
             'killing steel',
         ],
-        faction: 'JJJJJ',
+        influence: 'JJJJJ',
         rarity: 'legendary',
         cost: 5,
         stats: [6, 6],
@@ -1411,7 +1411,7 @@ const HEROES = [
         alt: [
             'unifier',
         ],
-        faction: 'JJ',
+        influence: 'JJ',
         rarity: 'legendary',
         cost: 6,
         stats: [5, 5],
@@ -1424,7 +1424,7 @@ const HEROES = [
         alt: [
             'appraiser',
         ],
-        faction: 'P',
+        influence: 'P',
         rarity: 'legendary',
         cost: 3,
         stats: [0, 6],
@@ -1434,7 +1434,7 @@ const HEROES = [
     {
         name: 'Bam',
         title: 'Sneakeepeekee',
-        faction: 'PP',
+        influence: 'PP',
         rarity: 'rare',
         cost: 4,
         stats: [3, 5],
@@ -1447,7 +1447,7 @@ const HEROES = [
         alt: [
             'waking glacier',
         ],
-        faction: 'PPPPP',
+        influence: 'PPPPP',
         rarity: 'legendary',
         cost: 5,
         stats: [7, 7],
@@ -1457,7 +1457,7 @@ const HEROES = [
     {
         name: 'Tamarys',
         title: 'Earthshaker',
-        faction: 'PP',
+        influence: 'PP',
         rarity: 'rare',
         cost: 6,
         stats: [4, 6],
@@ -1467,7 +1467,7 @@ const HEROES = [
     {
         name: 'Olly',
         title: 'Maniacal Graverobber',
-        faction: 'SS',
+        influence: 'SS',
         rarity: 'rare',
         cost: 2,
         stats: [2, 1],
@@ -1477,7 +1477,7 @@ const HEROES = [
     {
         name: 'Livia',
         title: 'Hexweaver',
-        faction: 'SS',
+        influence: 'SS',
         rarity: 'rare',
         cost: 3,
         stats: [3, 2],
@@ -1487,7 +1487,7 @@ const HEROES = [
     {
         name: 'Vishni',
         title: 'Lethrai Highblood',
-        faction: 'SS',
+        influence: 'SS',
         rarity: 'legendary',
         cost: 3,
         stats: [3, 3],
@@ -1500,7 +1500,7 @@ const HEROES = [
         alt: [
             'forbidden',
         ],
-        faction: 'SSSSS',
+        influence: 'SSSSS',
         rarity: 'legendary',
         cost: 5,
         stats: [6, 6],
@@ -1515,7 +1515,7 @@ const HEROES = [
             'of order',
             'the order',
         ],
-        faction: 'TTPP',
+        influence: 'TTPP',
         rarity: 'promo',
         cost: 4,
         stats: [5, 3],
@@ -1525,7 +1525,7 @@ const HEROES = [
     {
         name: 'Oizio',
         title: 'Adaptive Spy',
-        faction: 'PS',
+        influence: 'PS',
         rarity: 'promo',
         cost: 3,
         stats: [0, 1],
@@ -1535,7 +1535,7 @@ const HEROES = [
     {
         name: 'Akko',
         title: 'Inspired Artist',
-        faction: 'F',
+        influence: 'F',
         rarity: 'legendary',
         cost: 1,
         stats: [1, 1],
@@ -1545,7 +1545,7 @@ const HEROES = [
     {
         name: 'Cozin',
         title: 'Darkheart',
-        faction: 'FF',
+        influence: 'FF',
         rarity: 'legendary',
         cost: 3,
         stats: [1, 5],
@@ -1558,7 +1558,7 @@ const HEROES = [
         alt: [
             'shavkas listener',
         ],
-        faction: 'FFF',
+        influence: 'FFF',
         rarity: 'legendary',
         cost: 4,
         stats: [4, 1],
@@ -1568,7 +1568,7 @@ const HEROES = [
     {
         name: 'Gnash',
         title: 'Unrelenting',
-        faction: 'TT',
+        influence: 'TT',
         rarity: 'legendary',
         cost: 3,
         stats: [4, 4],
@@ -1581,7 +1581,7 @@ const HEROES = [
         alt: [
             'grodovs listener',
         ],
-        faction: 'TTT',
+        influence: 'TTT',
         rarity: 'legendary',
         cost: 4,
         stats: [2, 4],
@@ -1591,7 +1591,7 @@ const HEROES = [
     {
         name: 'Merizo',
         title: 'Gladiator Hero',
-        faction: 'TT',
+        influence: 'TT',
         rarity: 'rare',
         cost: 7,
         stats: [7, 7],
@@ -1601,7 +1601,7 @@ const HEROES = [
     {
         name: 'Shen-Ra',
         title: 'Unbreakable',
-        faction: 'J',
+        influence: 'J',
         rarity: 'legendary',
         cost: 1,
         stats: [2, 1],
@@ -1611,7 +1611,7 @@ const HEROES = [
     {
         name: 'Hanaka',
         title: 'Loremaster',
-        faction: 'J',
+        influence: 'J',
         rarity: 'rare',
         cost: 2,
         stats: [1, 1],
@@ -1624,7 +1624,7 @@ const HEROES = [
         alt: [
             'kodoshs listener',
         ],
-        faction: 'JJJ',
+        influence: 'JJJ',
         rarity: 'legendary',
         cost: 4,
         stats: [1, 1],
@@ -1634,7 +1634,7 @@ const HEROES = [
     {
         name: 'Socrato',
         title: 'Furyheart',
-        faction: 'P',
+        influence: 'P',
         rarity: 'legendary',
         cost: 1,
         stats: [4, 5],
@@ -1647,7 +1647,7 @@ const HEROES = [
         alt: [
             'tale keeper',
         ],
-        faction: 'P',
+        influence: 'P',
         rarity: 'promo',
         cost: 2,
         stats: [1, 3],
@@ -1660,7 +1660,7 @@ const HEROES = [
         alt: [
             'linreis listener',
         ],
-        faction: 'PPP',
+        influence: 'PPP',
         rarity: 'legendary',
         cost: 4,
         stats: [1, 3],
@@ -1670,7 +1670,7 @@ const HEROES = [
     {
         name: 'Verro',
         title: 'Banished Inquisitor',
-        faction: 'SS',
+        influence: 'SS',
         rarity: 'promo',
         cost: 3,
         stats: [3, 3],
@@ -1683,7 +1683,7 @@ const HEROES = [
         alt: [
             'makkars listener',
         ],
-        faction: 'SSS',
+        influence: 'SSS',
         rarity: 'legendary',
         cost: 4,
         stats: [3, 2],
@@ -1693,7 +1693,7 @@ const HEROES = [
     {
         name: 'Karvet',
         title: 'Solar Dragon',
-        faction: 'SS',
+        influence: 'SS',
         rarity: 'legendary',
         cost: 6,
         stats: [4, 5],
@@ -1703,7 +1703,7 @@ const HEROES = [
     {
         name: 'Eremot',
         title: 'Death Incarnate',
-        faction: 'SS',
+        influence: 'SS',
         rarity: 'legendary',
         cost: 7,
         stats: [5, 8],
@@ -1713,7 +1713,7 @@ const HEROES = [
     {
         name: 'Ramba',
         title: 'Arena Showman',
-        faction: 'FFTT',
+        influence: 'FFTT',
         rarity: 'rare',
         cost: 3,
         stats: [4, 4],
@@ -1723,7 +1723,7 @@ const HEROES = [
     {
         name: 'Kairos',
         title: 'Grand Champion',
-        faction: 'FFFTTT',
+        influence: 'FFFTTT',
         rarity: 'legendary',
         cost: 9,
         stats: [12, 12],
@@ -1733,7 +1733,7 @@ const HEROES = [
     {
         name: 'Rujin',
         title: 'Conflict Within',
-        faction: 'FFFJJJ',
+        influence: 'FFFJJJ',
         rarity: 'legendary',
         cost: 6,
         stats: [6, 6],
@@ -1743,7 +1743,7 @@ const HEROES = [
     {
         name: 'Geminon',
         title: 'the Double Helix',
-        faction: 'FFFPPP',
+        influence: 'FFFPPP',
         rarity: 'legendary',
         cost: 5,
         stats: [7, 10],
@@ -1753,7 +1753,7 @@ const HEROES = [
     {
         name: 'Razca',
         title: 'Dracowitch',
-        faction: 'FS',
+        influence: 'FS',
         rarity: 'promo',
         cost: 2,
         stats: [2, 2],
@@ -1766,7 +1766,7 @@ const HEROES = [
         alt: [
             'hopes end',
         ],
-        faction: 'FFFSSS',
+        influence: 'FFFSSS',
         rarity: 'legendary',
         cost: 8,
         stats: [8, 8],
@@ -1776,7 +1776,7 @@ const HEROES = [
     {
         name: 'Amri',
         title: 'Dragonbane',
-        faction: 'TTTJJJ',
+        influence: 'TTTJJJ',
         rarity: 'legendary',
         cost: 5,
         stats: [6, 6],
@@ -1789,7 +1789,7 @@ const HEROES = [
         alt: [
             'metamorph',
         ],
-        faction: 'TTTPPP',
+        influence: 'TTTPPP',
         rarity: 'legendary',
         cost: 3,
         stats: [3, 3],
@@ -1803,7 +1803,7 @@ const HEROES = [
             'mizo',
             'and mizo',
         ],
-        faction: 'TTPP',
+        influence: 'TTPP',
         rarity: 'rare',
         cost: 5,
         stats: [6, 6],
@@ -1816,7 +1816,7 @@ const HEROES = [
         alt: [
             'merriest',
         ],
-        faction: 'TS',
+        influence: 'TS',
         rarity: 'promo',
         cost: 2,
         stats: [0, 4],
@@ -1829,7 +1829,7 @@ const HEROES = [
         alt: [
             'hand nahid',
         ],
-        faction: 'TS',
+        influence: 'TS',
         rarity: 'legendary',
         cost: 2,
         stats: [2, 2],
@@ -1842,7 +1842,7 @@ const HEROES = [
         alt: [
             'immortal',
         ],
-        faction: 'TTTSSS',
+        influence: 'TTTSSS',
         rarity: 'legendary',
         cost: 6,
         stats: [7, 7],
@@ -1852,7 +1852,7 @@ const HEROES = [
     {
         name: 'Parul',
         title: 'Sealkeeper',
-        faction: 'JJJPPP',
+        influence: 'JJJPPP',
         rarity: 'legendary',
         cost: 6,
         stats: [5, 5],
@@ -1862,7 +1862,7 @@ const HEROES = [
     {
         name: 'Nivia',
         title: 'Most Devoted',
-        faction: 'JJSS',
+        influence: 'JJSS',
         rarity: 'rare',
         cost: 4,
         stats: [4, 4],
@@ -1872,7 +1872,7 @@ const HEROES = [
     {
         name: 'Eloz',
         title: 'Martial Scholar',
-        faction: 'JJJSSS',
+        influence: 'JJJSSS',
         rarity: 'legendary',
         cost: 6,
         stats: [3, 5],
@@ -1882,7 +1882,7 @@ const HEROES = [
     {
         name: 'Kindo',
         title: 'Shadowstep',
-        faction: 'PSS',
+        influence: 'PSS',
         rarity: 'rare',
         cost: 4,
         stats: [2, 7],
@@ -1892,7 +1892,7 @@ const HEROES = [
     {
         name: 'Felruak',
         title: 'the Outcast',
-        faction: 'PPPSSS',
+        influence: 'PPPSSS',
         rarity: 'legendary',
         cost: 6,
         stats: [5, 2],
@@ -1906,7 +1906,7 @@ const HEROES = [
             'hero in training',
             'hero training',
         ],
-        faction: 'N',
+        influence: 'N',
         rarity: 'legendary',
         cost: 2,
         stats: [2, 3],
@@ -1916,7 +1916,7 @@ const HEROES = [
     {
         name: 'Kazuo',
         title: 'Melee Virtuoso',
-        faction: 'F',
+        influence: 'F',
         rarity: 'rare',
         cost: 1,
         stats: [2, 1],
@@ -1926,7 +1926,7 @@ const HEROES = [
     {
         name: 'Kato',
         title: 'Arena Herald',
-        faction: 'F',
+        influence: 'F',
         rarity: 'legendary',
         cost: 2,
         stats: [2, 1],
@@ -1936,7 +1936,7 @@ const HEROES = [
     {
         name: 'Midias',
         title: 'Leyline Dragon',
-        faction: 'FF',
+        influence: 'FF',
         rarity: 'legendary',
         cost: 6,
         stats: [5, 5],
@@ -1950,7 +1950,7 @@ const HEROES = [
             'and rox',
             'rox',
         ],
-        faction: 'TT',
+        influence: 'TT',
         rarity: 'rare',
         cost: 7,
         stats: [9, 9],
@@ -1960,7 +1960,7 @@ const HEROES = [
     {
         name: 'Eloz',
         title: 'Nightmare General',
-        faction: 'JJ',
+        influence: 'JJ',
         rarity: 'legendary',
         cost: 2,
         stats: [3, 1],
@@ -1970,7 +1970,7 @@ const HEROES = [
     {
         name: 'Camoni',
         title: 'Dusk Rider',
-        faction: 'JJ',
+        influence: 'JJ',
         rarity: 'legendary',
         cost: 6,
         stats: [6, 6],
@@ -1980,7 +1980,7 @@ const HEROES = [
     {
         name: 'Uelo',
         title: 'Sky Tactician',
-        faction: 'PP',
+        influence: 'PP',
         rarity: 'legendary',
         cost: 4,
         stats: [3 ,5],
@@ -1990,7 +1990,7 @@ const HEROES = [
     {
         name: 'Daraka',
         title: 'Loyal Guardian',
-        faction: 'PPP',
+        influence: 'PPP',
         rarity: 'promo',
         cost: 7,
         stats: [7, 7],
@@ -2000,7 +2000,7 @@ const HEROES = [
     {
         name: 'Damara',
         title: 'Deft Saboteur',
-        faction: 'S',
+        influence: 'S',
         rarity: 'legendary',
         cost: 2,
         stats: [3 ,1],
@@ -2010,7 +2010,7 @@ const HEROES = [
     {
         name: 'Eremot',
         title: 'Mindsplinter',
-        faction: 'SSSS',
+        influence: 'SSSS',
         rarity: 'promo',
         cost: 4,
         stats: [3, 5],
@@ -2020,7 +2020,7 @@ const HEROES = [
     {
         name: 'Karvet',
         title: 'Redeemed',
-        faction: 'S',
+        influence: 'S',
         rarity: 'legendary',
         cost: 5,
         stats: [6, 6],
@@ -2030,7 +2030,7 @@ const HEROES = [
     {
         name: 'Acedonis',
         title: 'Untainted',
-        faction: 'FP',
+        influence: 'FP',
         rarity: 'rare',
         cost: 4,
         stats: [3, 4],
@@ -2040,7 +2040,7 @@ const HEROES = [
     {
         name: 'Gerrit',
         title: 'Throne Guardian',
-        faction: 'TJ',
+        influence: 'TJ',
         rarity: 'promo',
         cost: 3,
         stats: [2, 4],
@@ -2050,7 +2050,7 @@ const HEROES = [
     {
         name: 'Albon',
         title: 'Fallen',
-        faction: 'TTPP',
+        influence: 'TTPP',
         rarity: 'rare',
         cost: 5,
         stats: [3, 3],
@@ -2060,7 +2060,7 @@ const HEROES = [
     {
         name: 'Yojimba',
         title: 'Ghostblade',
-        faction: 'JP',
+        influence: 'JP',
         rarity: 'rare',
         cost: 3,
         stats: [0, 6],
@@ -2070,7 +2070,7 @@ const HEROES = [
     {
         name: 'Naoki',
         title: 'Valiant Warrior',
-        faction: 'FFTTJJ',
+        influence: 'FFTTJJ',
         rarity: 'legendary',
         cost: 5,
         stats: [5, 5],
@@ -2084,7 +2084,7 @@ const HEROES = [
             'fearmonger',
             'fear monger',
         ],
-        faction: 'FFTTSS',
+        influence: 'FFTTSS',
         rarity: 'legendary',
         cost: 5,
         stats: [5, 5],
@@ -2097,7 +2097,7 @@ const HEROES = [
         alt: [
             'sky lord',
         ],
-        faction: 'FFPPSS',
+        influence: 'FFPPSS',
         rarity: 'legendary',
         cost: 5,
         stats: [5, 5],
@@ -2107,7 +2107,7 @@ const HEROES = [
     {
         name: 'Wren',
         title: 'Traditionalist',
-        faction: 'TTJJPP',
+        influence: 'TTJJPP',
         rarity: 'legendary',
         cost: 5,
         stats: [5, 5],
@@ -2117,7 +2117,7 @@ const HEROES = [
     {
         name: 'Zadia',
         title: 'Revered Outcast',
-        faction: 'JJPPSS',
+        influence: 'JJPPSS',
         rarity: 'legendary',
         cost: 5,
         stats: [5, 5],
@@ -2130,7 +2130,7 @@ const HEROES = [
         alt: [
             'walking armoury',
         ],
-        faction: 'FF',
+        influence: 'FF',
         rarity: 'rare',
         cost: 3,
         stats: [3, 3],
@@ -2140,7 +2140,7 @@ const HEROES = [
     {
         name: 'Vadius',
         title: 'Proud Duelist',
-        faction: 'FF',
+        influence: 'FF',
         rarity: 'legendary',
         cost: 3,
         stats: [3, 2],
@@ -2150,7 +2150,7 @@ const HEROES = [
     {
         name: 'Ferno',
         title: 'Rageborn',
-        faction: 'FFFFF',
+        influence: 'FFFFF',
         rarity: 'rare',
         cost: 4,
         stats: [3, 3],
@@ -2160,7 +2160,7 @@ const HEROES = [
     {
         name: 'Ragnar',
         title: 'Lord',
-        faction: 'FF',
+        influence: 'FF',
         rarity: 'rare',
         cost: 6,
         stats: [7, 5],
@@ -2170,7 +2170,7 @@ const HEROES = [
     {
         name: 'Kaleb',
         title: 'Claimless',
-        faction: 'FFF',
+        influence: 'FFF',
         rarity: 'legendary',
         cost: 7,
         stats: [6, 6],
@@ -2180,7 +2180,7 @@ const HEROES = [
     {
         name: 'Kaleb',
         title: 'Executioner',
-        faction: 'FFF',
+        influence: 'FFF',
         rarity: 'promo',
         cost: 8,
         stats: [8, 8],
@@ -2195,7 +2195,7 @@ const HEROES = [
             'saviour',
             'the saviour',
         ],
-        faction: 'TTTTT',
+        influence: 'TTTTT',
         rarity: 'rare',
         cost: 4,
         stats: [6, 4],
@@ -2205,7 +2205,7 @@ const HEROES = [
     {
         name: 'Touvon',
         title: 'Skybreak Giant',
-        faction: 'TTT',
+        influence: 'TTT',
         rarity: 'legendary',
         cost: 6,
         stats: [7, 7],
@@ -2215,7 +2215,7 @@ const HEROES = [
     {
         name: 'Talir',
         title: 'Timeless',
-        faction: 'TTT',
+        influence: 'TTT',
         rarity: 'legendary',
         cost: 7,
         stats: [6, 6],
@@ -2225,7 +2225,7 @@ const HEROES = [
     {
         name: 'Oskar',
         title: 'Chief Tinker',
-        faction: 'JJ',
+        influence: 'JJ',
         rarity: 'rare',
         cost: 3,
         stats: [2, 5],
@@ -2238,7 +2238,7 @@ const HEROES = [
         alt: [
             'iron gate',
         ],
-        faction: 'JJJJJ',
+        influence: 'JJJJJ',
         rarity: 'rare',
         cost: 4,
         stats: [5, 5],
@@ -2248,7 +2248,7 @@ const HEROES = [
     {
         name: 'Tavrod',
         title: 'Auric Financier',
-        faction: 'JJJ',
+        influence: 'JJJ',
         rarity: 'legendary',
         cost: 5,
         stats: [5, 7],
@@ -2258,7 +2258,7 @@ const HEROES = [
     {
         name: 'Svetya',
         title: 'Lightbringer',
-        faction: 'JJJ',
+        influence: 'JJJ',
         rarity: 'legendary',
         cost: 6,
         stats: [5, 5],
@@ -2268,7 +2268,7 @@ const HEROES = [
     {
         name: 'Rolant',
         title: 'Merciless',
-        faction: 'JJJ',
+        influence: 'JJJ',
         rarity: 'legendary',
         cost: 7,
         stats: [6, 6],
@@ -2281,7 +2281,7 @@ const HEROES = [
         alt: [
             'valorous saviour',
         ],
-        faction: 'JJ',
+        influence: 'JJ',
         rarity: 'legendary',
         cost: 8,
         stats: [5, 5],
@@ -2294,7 +2294,7 @@ const HEROES = [
         alt: [
             'skywinder',
         ],
-        faction: 'P',
+        influence: 'P',
         rarity: 'rare',
         cost: 6,
         stats: [2, 2],
@@ -2304,7 +2304,7 @@ const HEROES = [
     {
         name: 'Eilyn',
         title: 'Fearless',
-        faction: 'PPP',
+        influence: 'PPP',
         rarity: 'legendary',
         cost: 7,
         stats: [6, 6],
@@ -2314,7 +2314,7 @@ const HEROES = [
     {
         name: 'Ayan',
         title: 'Dark Conduit',
-        faction: 'SS',
+        influence: 'SS',
         rarity: 'rare',
         cost: 3,
         stats: [1, 4],
@@ -2327,7 +2327,7 @@ const HEROES = [
         alt: [
             'tempter',
         ],
-        faction: 'SSSSS',
+        influence: 'SSSSS',
         rarity: 'legendary',
         cost: 4,
         stats: [5, 5],
@@ -2337,7 +2337,7 @@ const HEROES = [
     {
         name: 'Elias',
         title: 'Shadow Wing',
-        faction: 'SSS',
+        influence: 'SSS',
         rarity: 'legendary',
         cost: 5,
         stats: [4, 4],
@@ -2352,7 +2352,7 @@ const HEROES = [
             'of dark',
             'the dark',
         ],
-        faction: 'SS',
+        influence: 'SS',
         rarity: 'rare',
         cost: 7,
         stats: [5, 7],
@@ -2362,7 +2362,7 @@ const HEROES = [
     {
         name: 'Vara',
         title: 'Limitless',
-        faction: 'SSS',
+        influence: 'SSS',
         rarity: 'legendary',
         cost: 7,
         stats: [6, 6],
@@ -2372,7 +2372,7 @@ const HEROES = [
     {
         name: 'Angelica',
         title: 'Praxis Infuser',
-        faction: 'FFTTTT',
+        influence: 'FFTTTT',
         rarity: 'legendary',
         cost: 4,
         stats: [3, 8],
@@ -2382,7 +2382,7 @@ const HEROES = [
     {
         name: 'Ironthorn',
         title: 'Lawman',
-        faction: 'FJJJ',
+        influence: 'FJJJ',
         rarity: 'rare',
         cost: 2,
         stats: [3, 1],
@@ -2392,7 +2392,7 @@ const HEROES = [
     {
         name: 'Marley',
         title: 'Heroic Marshal',
-        faction: 'FFFFJJ',
+        influence: 'FFFFJJ',
         rarity: 'legendary',
         cost: 4,
         stats: [4, 4],
@@ -2402,7 +2402,7 @@ const HEROES = [
     {
         name: 'Crill',
         title: 'Clan Raider',
-        faction: 'FFFP',
+        influence: 'FFFP',
         rarity: 'rare',
         cost: 2,
         stats: [1, 1],
@@ -2412,7 +2412,7 @@ const HEROES = [
     {
         name: 'Kenna',
         title: 'Uncontained',
-        faction: 'FFPPPP',
+        influence: 'FFPPPP',
         rarity: 'legendary',
         cost: 4,
         stats: [4, 5],
@@ -2425,7 +2425,7 @@ const HEROES = [
         alt: [
             'cabal strong arm',
         ],
-        faction: 'FSSS',
+        influence: 'FSSS',
         rarity: 'rare',
         cost: 2,
         stats: [5, 1],
@@ -2438,7 +2438,7 @@ const HEROES = [
         alt: [
             'deaths reach',
         ],
-        faction: 'FFFFSS',
+        influence: 'FFFFSS',
         rarity: 'legendary',
         cost: 4,
         stats: [5, 2],
@@ -2448,7 +2448,7 @@ const HEROES = [
     {
         name: 'Genetrix Irel',
         title: 'Wayward',
-        faction: 'TTTJ',
+        influence: 'TTTJ',
         rarity: 'rare',
         cost: 2,
         stats: [3, 4],
@@ -2461,7 +2461,7 @@ const HEROES = [
         alt: [
             'faiths shield',
         ],
-        faction: 'TTJJJJ',
+        influence: 'TTJJJJ',
         rarity: 'legendary',
         cost: 4,
         stats: [2, 4],
@@ -2475,7 +2475,7 @@ const HEROES = [
             'mizo',
             'and mizo',
         ],
-        faction: 'TPPP',
+        influence: 'TPPP',
         rarity: 'rare',
         cost: 2,
         stats: [2, 2],
@@ -2485,7 +2485,7 @@ const HEROES = [
     {
         name: 'Danica',
         title: 'Runed Witch',
-        faction: 'TTTTP',
+        influence: 'TTTTP',
         rarity: 'legendary',
         cost: 4,
         stats: [3, 4],
@@ -2495,7 +2495,7 @@ const HEROES = [
     {
         name: 'Coslo',
         title: 'Friendly Scavenger',
-        faction: 'TTSS',
+        influence: 'TTSS',
         rarity: 'promo',
         cost: 4,
         stats: [1, 5],
@@ -2508,7 +2508,7 @@ const HEROES = [
         alt: [
             'first seal',
         ],
-        faction: 'TTSSSS',
+        influence: 'TTSSSS',
         rarity: 'legendary',
         cost: 4,
         stats: [5, 3],
@@ -2518,7 +2518,7 @@ const HEROES = [
     {
         name: 'Aniyah',
         title: 'Master Sleuth',
-        faction: 'JJJP',
+        influence: 'JJJP',
         rarity: 'rare',
         cost: 2,
         stats: [3, 2],
@@ -2531,7 +2531,7 @@ const HEROES = [
         alt: [
             'entrancer',
         ],
-        faction: 'JJPPPP',
+        influence: 'JJPPPP',
         rarity: 'legendary',
         cost: 4,
         stats: [1, 1],
@@ -2541,7 +2541,7 @@ const HEROES = [
     {
         name: 'Bartholo',
         title: 'Beguiling',
-        faction: 'JSSS',
+        influence: 'JSSS',
         rarity: 'rare',
         cost: 2,
         stats: [3, 3],
@@ -2551,7 +2551,7 @@ const HEROES = [
     {
         name: 'Rolant',
         title: 'Iron Tyrant',
-        faction: 'JJJSS',
+        influence: 'JJJSS',
         rarity: 'legendary',
         cost: 4,
         stats: [2, 5],
@@ -2561,7 +2561,7 @@ const HEROES = [
     {
         name: 'Rindra',
         title: 'Infiltrator',
-        faction: 'PPSSSS',
+        influence: 'PPSSSS',
         rarity: 'legendary',
         cost: 4,
         stats: [2, 3],
@@ -2574,7 +2574,7 @@ const HEROES = [
         alt: [
             'misfit',
         ],
-        faction: 'FF',
+        influence: 'FF',
         rarity: 'rare',
         cost: 4,
         stats: [3, 4],
@@ -2584,7 +2584,7 @@ const HEROES = [
     {
         name: 'Deheen',
         title: 'Blitz',
-        faction: 'FFF',
+        influence: 'FFF',
         rarity: 'legendary',
         cost: 5,
         stats: [5, 3],
@@ -2597,7 +2597,7 @@ const HEROES = [
         alt: [
             'gemblazer',
         ],
-        faction: 'FF',
+        influence: 'FF',
         rarity: 'legendary',
         cost: 5,
         stats: [5, 5],
@@ -2607,7 +2607,7 @@ const HEROES = [
     {
         name: 'Izha Chi',
         title: 'Daredevil',
-        faction: 'FF',
+        influence: 'FF',
         rarity: 'legendary',
         cost: 6,
         stats: [6, 6],
@@ -2617,7 +2617,7 @@ const HEROES = [
     {
         name: 'Onoris',
         title: 'Roa',
-        faction: 'TT',
+        influence: 'TT',
         rarity: 'legendary',
         cost: 5,
         stats: [5, 5],
@@ -2627,7 +2627,7 @@ const HEROES = [
     {
         name: 'Ayur',
         title: 'Ageless Behemoth',
-        faction: 'TT',
+        influence: 'TT',
         rarity: 'rare',
         cost: 6,
         stats: [7, 7],
@@ -2637,7 +2637,7 @@ const HEROES = [
     {
         name: 'Talir',
         title: 'Timejumper',
-        faction: 'TTT',
+        influence: 'TTT',
         rarity: 'promo',
         cost: 7,
         stats: [6, 6],
@@ -2650,7 +2650,7 @@ const HEROES = [
         'alt': [
             'great',
         ],
-        faction: 'TTT',
+        influence: 'TTT',
         rarity: 'legendary',
         cost: 7,
         stats: [7, 7],
@@ -2660,7 +2660,7 @@ const HEROES = [
     {
         name: 'Rhum',
         title: 'First Constructor',
-        faction: 'TTT',
+        influence: 'TTT',
         rarity: 'legendary',
         cost: 8,
         stats: [10, 10],
@@ -2673,7 +2673,7 @@ const HEROES = [
         alt: [
             'mender',
         ],
-        faction: 'T',
+        influence: 'T',
         rarity: 'promo',
         cost: 3,
         stats: [2, 2],
@@ -2683,7 +2683,7 @@ const HEROES = [
     {
         name: 'Argo',
         title: 'Ironthorn',
-        faction: 'JJ',
+        influence: 'JJ',
         rarity: 'legendary',
         cost: 5,
         stats: [3, 3],
@@ -2693,7 +2693,7 @@ const HEROES = [
     {
         name: 'Dichro',
         title: 'Vindicated',
-        faction: 'JJ',
+        influence: 'JJ',
         rarity: 'rare',
         cost: 6,
         stats: [5, 6],
@@ -2706,7 +2706,7 @@ const HEROES = [
         alt: [
             'steyers adjutant',
         ],
-        faction: 'JJ',
+        influence: 'JJ',
         rarity: 'none',
         cost: 7,
         stats: [6, 6],
@@ -2716,7 +2716,7 @@ const HEROES = [
     {
         name: 'Daru',
         title: 'Lee',
-        faction: 'P',
+        influence: 'P',
         rarity: 'legendary',
         cost: 1,
         stats: [2, 1],
@@ -2726,7 +2726,7 @@ const HEROES = [
     {
         name: 'Zende',
         title: 'Matriarch',
-        faction: 'P',
+        influence: 'P',
         rarity: 'legendary',
         cost: 2,
         stats: [2, 2],
@@ -2740,7 +2740,7 @@ const HEROES = [
             'and snooze',
             'snooze',
         ],
-        faction: 'PP',
+        influence: 'PP',
         rarity: 'legendary',
         cost: 5,
         stats: [8, 8],
@@ -2750,7 +2750,7 @@ const HEROES = [
     {
         name: 'Arach',
         title: 'Razorshaper',
-        faction: 'SS',
+        influence: 'SS',
         rarity: 'legendary',
         cost: 4,
         stats: [1, 3],
@@ -2760,7 +2760,7 @@ const HEROES = [
     {
         name: 'Snapyx',
         title: 'Deathstalker',
-        faction: 'S',
+        influence: 'S',
         rarity: 'legendary',
         cost: 6,
         stats: [2, 4],
@@ -2770,7 +2770,7 @@ const HEROES = [
     {
         name: 'Krull',
         title: 'Xumuc Occultist',
-        faction: 'SSS',
+        influence: 'SSS',
         rarity: 'legendary',
         cost: 8,
         stats: [7, 7],
@@ -2780,7 +2780,7 @@ const HEROES = [
     {
         name: 'Lynax',
         title: 'Moltenwing',
-        faction: 'FFJ',
+        influence: 'FFJ',
         rarity: 'rare',
         cost: 3,
         stats: [3, 3],
@@ -2790,7 +2790,7 @@ const HEROES = [
     {
         name: 'Kitaxius',
         title: 'Battlemaster',
-        faction: 'JS',
+        influence: 'JS',
         rarity: 'legendary',
         cost: 2,
         stats: [2, 3],
@@ -2805,7 +2805,7 @@ const HEROES = [
             'gift-giver',
             'gift giver',
         ],
-        faction: 'FJS',
+        influence: 'FJS',
         rarity: 'promo',
         cost: 3,
         stats: [3, 3],
@@ -2818,7 +2818,7 @@ const HEROES = [
         alt: [
             'bounty hunter',
         ],
-        faction: 'FJ',
+        influence: 'FJ',
         rarity: 'legendary',
         cost: 6,
         stats: [6, 4],
@@ -2828,7 +2828,7 @@ const HEROES = [
     {
         name: 'Tavrod',
         title: 'Auric Broker',
-        faction: 'JJSS',
+        influence: 'JJSS',
         rarity: 'legendary',
         cost: 5,
         stats: [5, 7],
@@ -2838,7 +2838,7 @@ const HEROES = [
     {
         name: 'Horus',
         title: 'Traver',
-        faction: 'N',
+        influence: 'N',
         rarity: 'rare',
         cost: 1,
         stats: [1, 1],
@@ -2848,7 +2848,7 @@ const HEROES = [
     {
         name: 'Icaria',
         title: 'Valkyrie Captain',
-        faction: 'JJ',
+        influence: 'JJ',
         rarity: 'legendary',
         cost: 2,
         stats: [1, 1],
@@ -2858,7 +2858,7 @@ const HEROES = [
     {
         name: 'Daraka',
         title: 'Queensguard',
-        faction: 'PPP',
+        influence: 'PPP',
         rarity: 'legendary',
         cost: 6,
         stats: [7, 7],
@@ -2868,7 +2868,7 @@ const HEROES = [
     {
         name: 'Pokpok',
         title: 'Rockpacker',
-        faction: 'FP',
+        influence: 'FP',
         rarity: 'rare',
         cost: 3,
         stats: [1, 5],
@@ -2878,7 +2878,7 @@ const HEROES = [
     {
         name: 'Jaril',
         title: 'Amaran Ghostblade',
-        faction: 'TJ',
+        influence: 'TJ',
         rarity: 'rare',
         cost: 2,
         stats: [2, 3],
@@ -2891,7 +2891,7 @@ const HEROES = [
         alt: [
             'queens hand',
         ],
-        faction: 'JJ',
+        influence: 'JJ',
         rarity: 'legendary',
         cost: 7,
         stats: [6, 6],
@@ -2904,7 +2904,7 @@ const HEROES = [
         alt: [
             'vengeance seeker',
         ],
-        faction: 'SS',
+        influence: 'SS',
         rarity: 'legendary',
         cost: 4,
         stats: [3, 3],
@@ -2917,7 +2917,7 @@ const HEROES = [
         alt: [
             'gathering dark',
         ],
-        faction: 'SS',
+        influence: 'SS',
         rarity: 'rare',
         cost: 6,
         stats: [3, 6],
@@ -2927,7 +2927,7 @@ const HEROES = [
     {
         name: 'Azindel',
         title: 'Revealed',
-        faction: 'TTSS',
+        influence: 'TTSS',
         rarity: 'legendary',
         cost: 8,
         stats: [7, 7],
@@ -2937,7 +2937,7 @@ const HEROES = [
     {
         name: 'Svetya',
         title: 'Merciful Orene',
-        faction: 'JJJ',
+        influence: 'JJJ',
         rarity: 'legendary',
         cost: 8,
         stats: [6, 6],
@@ -2947,7 +2947,7 @@ const HEROES = [
     {
         name: 'Diogo Málaga',
         title: 'Elonze',
-        faction: 'FTP',
+        influence: 'FTP',
         rarity: 'rare',
         cost: 4,
         stats: [3, 5],
@@ -2957,7 +2957,7 @@ const HEROES = [
     {
         name: 'Vargo',
         title: 'Redclaw',
-        faction: 'FJP',
+        influence: 'FJP',
         rarity: 'rare',
         cost: 4,
         stats: [5, 4],
@@ -2970,7 +2970,7 @@ const HEROES = [
         alt: [
             'fox',
         ],
-        faction: 'FJS',
+        influence: 'FJS',
         rarity: 'rare',
         cost: 4,
         stats: [3, 3],
@@ -2980,7 +2980,7 @@ const HEROES = [
     {
         name: 'Andrik',
         title: 'Renegade Priest',
-        faction: 'TJS',
+        influence: 'TJS',
         rarity: 'rare',
         cost: 4,
         stats: [2, 4],
@@ -2993,7 +2993,7 @@ const HEROES = [
         alt: [
             'mad mage',
         ],
-        faction: 'TPS',
+        influence: 'TPS',
         rarity: 'rare',
         cost: 4,
         stats: [4, 5],
@@ -3003,7 +3003,7 @@ const HEROES = [
     {
         name: 'Aika',
         title: 'Whirling Death',
-        faction: 'FF',
+        influence: 'FF',
         rarity: 'legendary',
         cost: 4,
         stats: [1, 1],
@@ -3013,7 +3013,7 @@ const HEROES = [
     {
         name: 'Gnash',
         title: 'Desert Prince',
-        faction: 'TT',
+        influence: 'TT',
         rarity: 'legendary',
         cost: 6,
         stats: [6, 6],
@@ -3026,7 +3026,7 @@ const HEROES = [
         alt: [
             'equalizer',
         ],
-        faction: 'JJ',
+        influence: 'JJ',
         rarity: 'legendary',
         cost: 4,
         stats: [5, 5],
@@ -3036,7 +3036,7 @@ const HEROES = [
     {
         name: 'Sodi',
         title: 'Wingbreaker',
-        faction: 'PP',
+        influence: 'PP',
         rarity: 'legendary',
         cost: 5,
         stats: [3, 6],
@@ -3046,7 +3046,7 @@ const HEROES = [
     {
         name: 'Uldra',
         title: 'VeilRipper',
-        faction: 'SS',
+        influence: 'SS',
         rarity: 'legendary',
         cost: 6,
         stats: [7, 5],
@@ -3059,7 +3059,7 @@ const HEROES = [
         alt: [
             'champion shavka',
         ],
-        faction: 'FFF',
+        influence: 'FFF',
         rarity: 'legendary',
         cost: 3,
         stats: [2, 2],
@@ -3072,7 +3072,7 @@ const HEROES = [
         alt: [
             'champion grodov',
         ],
-        faction: 'T',
+        influence: 'T',
         rarity: 'legendary',
         cost: 5,
         stats: [0, 0],
@@ -3085,7 +3085,7 @@ const HEROES = [
         alt: [
             'champion kodosh',
         ],
-        faction: 'J',
+        influence: 'J',
         rarity: 'legendary',
         cost: 3,
         stats: [1, 1],
@@ -3098,7 +3098,7 @@ const HEROES = [
         alt: [
             'champion linrei',
         ],
-        faction: 'PPP',
+        influence: 'PPP',
         rarity: 'legendary',
         cost: 6,
         stats: [6, 6],
@@ -3111,7 +3111,7 @@ const HEROES = [
         alt: [
             'champion makkar',
         ],
-        faction: 'SS',
+        influence: 'SS',
         rarity: 'legendary',
         cost: 3,
         stats: [3, 3],
@@ -3121,7 +3121,7 @@ const HEROES = [
     {
         name: 'Dakus',
         title: 'Ancient Flame',
-        faction: 'FS',
+        influence: 'FS',
         rarity: 'rare',
         cost: 4,
         stats: [5, 4],
@@ -3131,7 +3131,7 @@ const HEROES = [
     {
         name: 'Harga',
         title: 'Armory Warden',
-        faction: 'TJ',
+        influence: 'TJ',
         rarity: 'rare',
         cost: 2,
         stats: [0, 8],
@@ -3141,7 +3141,7 @@ const HEROES = [
     {
         name: 'Milos',
         title: 'Rebel Bomber',
-        faction: 'FF',
+        influence: 'FF',
         rarity: 'rare',
         cost: 3,
         stats: [3, 3],
@@ -3151,7 +3151,7 @@ const HEROES = [
     {
         name: 'Yushkov',
         title: 'Brutal Tyrant',
-        faction: 'FF',
+        influence: 'FF',
         rarity: 'legendary',
         cost: 5,
         stats: [5, 5],
@@ -3161,7 +3161,7 @@ const HEROES = [
     {
         name: 'Braun',
         title: 'Regal Courier',
-        faction: 'TTT',
+        influence: 'TTT',
         rarity: 'rare',
         cost: 5,
         stats: [6, 7],
@@ -3174,7 +3174,7 @@ const HEROES = [
         alt: [
             'keen eyed',
         ],
-        faction: 'FTJ',
+        influence: 'FTJ',
         rarity: 'legendary',
         cost: 2,
         stats: [2, 2],
@@ -3184,7 +3184,7 @@ const HEROES = [
     {
         name: 'Vox',
         title: 'Nurturing Sadist',
-        faction: 'FTS',
+        influence: 'FTS',
         rarity: 'legendary',
         cost: 2,
         stats: [3, 2],
@@ -3194,7 +3194,7 @@ const HEROES = [
     {
         name: 'Razca',
         title: 'Rewarded',
-        faction: 'FPS',
+        influence: 'FPS',
         rarity: 'legendary',
         cost: 2,
         stats: [3, 3],
@@ -3204,7 +3204,7 @@ const HEROES = [
     {
         name: 'Kaspar',
         title: 'Oren of Kosul',
-        faction: 'TJP',
+        influence: 'TJP',
         rarity: 'legendary',
         cost: 2,
         stats: [2, 1],
@@ -3214,7 +3214,7 @@ const HEROES = [
     {
         name: 'Keelo',
         title: 'Bold Innovator',
-        faction: 'JPS',
+        influence: 'JPS',
         rarity: 'legendary',
         cost: 2,
         stats: [1, 3],
@@ -3224,7 +3224,7 @@ const HEROES = [
     {
         name: 'Jekk',
         title: 'Mercenary Hunter',
-        faction: 'FFF',
+        influence: 'FFF',
         rarity: 'legendary',
         cost: 3,
         stats: [2, 3],
@@ -3237,7 +3237,7 @@ const HEROES = [
         alt: [
             'svetyas advisor',
         ],
-        faction: 'J',
+        influence: 'J',
         rarity: 'rare',
         cost: 3,
         stats: [2, 4],
@@ -3247,7 +3247,7 @@ const HEROES = [
     {
         name: 'Dizo',
         title: 'Cabal Racketeer',
-        faction: 'S',
+        influence: 'S',
         rarity: 'rare',
         cost: 3,
         stats: [1, 4],
@@ -3257,7 +3257,7 @@ const HEROES = [
     {
         name: 'Icaria',
         title: 'First Reaper',
-        faction: 'SSSSSS',
+        influence: 'SSSSSS',
         rarity: 'legendary',
         cost: 6,
         stats: [5, 5],
@@ -3267,7 +3267,7 @@ const HEROES = [
     {
         name: 'Clodagh',
         title: 'Ascending',
-        faction: 'FF',
+        influence: 'FF',
         rarity: 'legendary',
         cost: 2,
         stats: [3, 1],
@@ -3277,7 +3277,7 @@ const HEROES = [
     {
         name: 'Alhed',
         title: 'Ascending',
-        faction: 'TT',
+        influence: 'TT',
         rarity: 'legendary',
         cost: 2,
         stats: [3, 3],
@@ -3287,7 +3287,7 @@ const HEROES = [
     {
         name: 'Kira',
         title: 'Ascending',
-        faction: 'JJ',
+        influence: 'JJ',
         rarity: 'legendary',
         cost: 2,
         stats: [2, 1],
@@ -3297,7 +3297,7 @@ const HEROES = [
     {
         name: 'Jarrall',
         title: 'Ascending',
-        faction: 'PP',
+        influence: 'PP',
         rarity: 'legendary',
         cost: 2,
         stats: [1, 3],
@@ -3307,7 +3307,7 @@ const HEROES = [
     {
         name: 'Isra',
         title: 'Loyal Mount',
-        faction: 'PP',
+        influence: 'PP',
         rarity: 'rare',
         cost: 5,
         stats: [4, 5],
@@ -3317,7 +3317,7 @@ const HEROES = [
     {
         name: 'Acantha',
         title: 'Ascending',
-        faction: 'SS',
+        influence: 'SS',
         rarity: 'legendary',
         cost: 2,
         stats: [2, 1],
@@ -3327,7 +3327,7 @@ const HEROES = [
     {
         name: 'Zytrom',
         title: 'Doctor',
-        faction: 'S',
+        influence: 'S',
         rarity: 'rare',
         cost: 4,
         stats: [2, 6],
@@ -3337,7 +3337,7 @@ const HEROES = [
     {
         name: 'Erica',
         title: 'Inferno Wing',
-        faction: 'FF',
+        influence: 'FF',
         rarity: 'legendary',
         cost: 6,
         stats: [6, 5],
@@ -3350,7 +3350,7 @@ const HEROES = [
         alt: [
             'malaga',
         ],
-        faction: 'FT',
+        influence: 'FT',
         rarity: 'legendary',
         cost: 5,
         stats: [4, 4],
@@ -3363,7 +3363,7 @@ const HEROES = [
         alt: [
             'bastions hope',
         ],
-        faction: 'TJ',
+        influence: 'TJ',
         rarity: 'rare',
         cost: 1,
         stats: [0, 3],
@@ -3373,7 +3373,7 @@ const HEROES = [
     {
         name: 'Markos',
         title: 'Stormhalt',
-        faction: 'JJPP',
+        influence: 'JJPP',
         rarity: 'legendary',
         cost: 7,
         stats: [6, 6],
@@ -3383,7 +3383,7 @@ const HEROES = [
     {
         name: 'Uxu',
         title: 'Carnivorous Bloom',
-        faction: 'PS',
+        influence: 'PS',
         rarity: 'legendary',
         cost: 7,
         stats: [4, 4],

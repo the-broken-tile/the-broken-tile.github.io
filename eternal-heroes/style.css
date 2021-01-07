@@ -30,7 +30,7 @@ table {;
 tr, td, th {
     border: 1px solid black;
 }
-.faction,
+.influence,
 .set,
 .missed,
 .rarity,
@@ -42,7 +42,7 @@ tr, td, th {
 .missed {
     color: red;
 }
-.show-factions .faction,
+.show-influence .influence,
 .show-sets .set,
 .show-rarity .rarity,
 .show-cost .cost,
@@ -73,7 +73,7 @@ tr, td, th {
     margin: 4px;
     border-radius: 8px;
 }
-.faction-icon {
+.influence-icon {
     background: url("./icons.png") no-repeat 0 -24px;
     height: 24px;
     width: 24px;
@@ -83,25 +83,25 @@ tr, td, th {
     text-align: center;
     line-height: 24px;
 }
-.faction-icon.f {
+.influence-icon.f {
     background-position-x: 0;
 }
-.faction-icon.t {
+.influence-icon.t {
     background-position-x: -24px;
 }
-.faction-icon.j {
+.influence-icon.j {
     background-position-x: -48px;
 }
-.faction-icon.p {
+.influence-icon.p {
     background-position-x: -72px;
 }
-.faction-icon.s {
+.influence-icon.s {
     background-position-x: -96px;
 }
-.faction-icon.m {
+.influence-icon.m {
     background-position-x: -120px;
 }
-.faction-icon.n {
+.influence-icon.n {
     background-position-x: -144px;
 }
 .current {
