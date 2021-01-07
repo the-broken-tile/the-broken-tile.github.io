@@ -75,4 +75,8 @@ const SETS = [
         name: 'Shadow of the Spire',
         id: 1009, //1087 in ewc
     },
+    {
+        name: 'Awakening',
+        id: 1010, //1095 in ewc
+    },
 ];
