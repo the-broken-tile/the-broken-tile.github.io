@@ -1314,6 +1314,19 @@ const HEROES = [
         set: 6,
     },
     {
+        name: 'Ghar',
+        title: 'Master Sandmage',
+        alt: [
+            'master sand mage',
+        ],
+        faction: 'T',
+        rarity: 'legendary',
+        cost: 1,
+        stats: [2 ,1],
+        type: 'Mage',
+        set: 6,
+    },
+    {
         name: 'Kimi',
         title: 'Expedition Guide',
         faction: 'T',
