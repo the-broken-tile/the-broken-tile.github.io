@@ -4,7 +4,6 @@ const SET_MAP = SETS.reduce((carry, set) => {
 }, {});
 const $setsList = document.getElementById('sets-list');
 const $factionsList = document.getElementById('factions-list');
-const $includeAllFactions = document.getElementById('include-all-factions');
 const $settingsForm = document.getElementById('settings-form');
 const $container = document.getElementById('container');
 const $input = document.getElementById('input');
@@ -83,14 +82,13 @@ const generateChosenHeroes = randomize => {
     if (selectedFactions.length === 0) {
         selectedFactions = FACTIONS.map(faction => faction.id);
     }
-    const mustHaveAllSelectedFactions = $includeAllFactions.checked;
     chosenHeroes = HEROES
         .filter(hero => selectedSets.includes(hero.set))
         .filter(hero => {
             const factions = unique(hero.faction.split(''));
             const factionsMatch = intersect(factions, selectedFactions).length;
 
-            return mustHaveAllSelectedFactions ? factionsMatch === selectedFactions.length : factionsMatch > 0;
+            return factionsMatch > 0;
         });
     if (randomize) {
         shuffle(chosenHeroes);
