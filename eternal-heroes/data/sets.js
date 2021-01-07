@@ -79,4 +79,8 @@ const SETS = [
         name: 'Awakening',
         id: 1010, //1095 in ewc
     },
+    {
+        name: 'Bastion Rising',
+        id: 1011, //1097 in ewc
+    },
 ];
