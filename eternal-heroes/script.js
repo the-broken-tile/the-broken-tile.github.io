@@ -291,9 +291,7 @@ const checkGuess = guess => {
     next(nextHero);
     updateInfo();
 };
-const getTime = sets => sets.length * 5;
-const getDefaultTime = () =>
-    getTime(SETS.filter(set => selectedSets.includes(set.id)));
+const getTime = () => chosenHeroes.length / 2;
 const pad = i => i < 10 ? `0${i}` : i;
 const tick = () => {
     const time = Math.floor(timer.getTime() / 1000);
@@ -332,7 +330,7 @@ const start = () => {
     $container.classList.add('playing', 'columns-2');
     $container.classList.remove('end-game');
     $input.focus();
-    timer.start(getDefaultTime());
+    timer.start(getTime());
     timer.onTick(tick);
     timer.onTimeUp(lose);
 };
