@@ -2,16 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Eternal Heroes</title>
+    <title>Eternal Card Game Heroes Quiz</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./icons.css">
 </head>
 <body id="container">
-    <h1>Eternal Throne Heroes</h1>
+    <h1>Eternal Card Game Heroes Quiz</h1>
     <section id="settings-section">
-        <div id="settings-info" class="panel"></div>
         <form id="settings-form">
-            <h2>Settings</h2>
             <div class="panel">
                 <h3>Sets</h3>
                 <ul id="sets-list"></ul>
@@ -28,23 +26,25 @@
                 <h3>Rarity</h3>
                 <ul id="rarity-list"></ul>
             </div>
-            <div class="panel">
-                <h3>Cost</h3>
-                <ul id="cost-list"></ul>
+            <div id="flexy">
+                <div class="panel">
+                    <h3>Cost</h3>
+                    <ul id="cost-list"></ul>
+                </div>
+                <div class="panel">
+                    <h3>Strength</h3>
+                    <ul id="strength-list"></ul>
+                </div><div class="panel">
+                    <h3>Health</h3>
+                    <ul id="health-list"></ul>
+                </div>
             </div>
-            <div class="panel">
-                <h3>Strength</h3>
-                <ul id="strength-list"></ul>
-            </div><div class="panel">
-                <h3>Health</h3>
-                <ul id="health-list"></ul>
-            </div>
-            <div class="panel">
+            <div id="settings-submit">
+                <input type="submit" value="Start">
                 <label><input type="checkbox" id="force-order" checked> Force order</label>
                 <label><input type="checkbox" id="randomize" checked>Randomize</label>
+                | <span id="settings-info"></span>
             </div>
-            <br>
-            <input type="submit" value="Start">
         </form>
     </section>
     <section id="playing-section">

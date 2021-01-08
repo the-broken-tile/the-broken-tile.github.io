@@ -186,7 +186,7 @@ const updateInfo = () => {
     }
 };
 const updateSettingsInfo = () => {
-    $settingsInfo.innerText = totalAnswers;
+    $settingsInfo.innerText = `Filtered heroes: ${totalAnswers}, time: ${printTime(60 * totalAnswers / 2)}`;
     $settingsForm.querySelector('input[type="submit"]').disabled = totalAnswers === 0;
 };
 const updateColumnsWidth = addOrRemove => {
@@ -285,11 +285,12 @@ const checkGuess = guess => {
     next(nextHero);
     updateInfo();
 };
-const getTime = () => chosenHeroes.length / 2;
+const getTime = () => totalAnswers / 2;
 const pad = i => i < 10 ? `0${i}` : i;
+const printTime = time => `${pad(Math.floor(time / 60))}:${pad(time % 60)}`;
 const tick = () => {
     const time = Math.floor(timer.getTime() / 1000);
-    $time.innerText = `${pad(Math.floor(time / 60))}:${pad(time % 60)}`;
+    $time.innerText = printTime(time);
 };
 const reset = () => {
     result = 0;

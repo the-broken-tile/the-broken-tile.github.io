@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 * {
     box-sizing: border-box;
 }
@@ -5,10 +6,53 @@ body {
     max-width: 1600px;
     margin: 0 auto;
     padding-bottom: 15em;
-    background: white;
+    background: whitesmoke;
+    color: darkblue;
+    font-family: 'Roboto', sans-serif;
 }
-h1 {
+h1, h3 {
     text-align: center;
+}
+li {
+    list-style: none;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-bottom: 2px;
+}
+li label {
+    display: block;
+    position: relative;
+}
+li label:active {
+    top: 1px;
+    left: 1px;
+}
+ul {
+    padding: 8px;
+}
+h3 {
+    margin: 0;
+    padding: 8px;
+}
+button[type="button"], input[type="submit"] {
+    position: relative;
+    padding: 4px 8px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: darkblue;
+    background: lightgoldenrodyellow;
+    box-shadow: 3px 3px 1px lightyellow;
+    margin: 0 4px;
+    border-radius: 4px;
+}
+button[type="button"]:active, input[type="submit"]:active {
+    top: 3px;
+    left: 3px;
+}
+button[type="button"]:disabled, input[type="submit"]:disabled {
+    color: black;
+    background: gray;
 }
 #playing-section,
 .playing #settings-section {
@@ -17,14 +61,13 @@ h1 {
 #settings-section {
     position: relative;
 }
-#settings-info {
+#settings-submit {
     position: fixed;
-    box-sizing: border-box;
-    top: 4px;
-    right: 4px;
-    width: 100px;
-    background: white;
-    text-align: center;
+    bottom: 0;
+    width: 100%;
+    padding: 8px;
+    background: whitesmoke;
+    border-top: 1px solid darkblue;
 }
 .playing #playing-section {
     display: block;
@@ -146,4 +189,11 @@ tr, td, th {
 }
 .columns-8 td {
     width: 12.5%;
+}
+
+#flexy {
+    display: flex;
+}
+#flexy > .panel {
+    width: 33%;
 }
