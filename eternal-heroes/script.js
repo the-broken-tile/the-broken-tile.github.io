@@ -10,6 +10,7 @@ const $costList = document.getElementById('cost-list');
 const $strengthList = document.getElementById('strength-list');
 const $healthList = document.getElementById('health-list');
 const $lists = [$setsList, $factionsList, $typeList, $rarityList, $costList, $strengthList, $healthList];
+const $settingsInfo = document.getElementById('settings-info');
 const $settingsForm = document.getElementById('settings-form');
 const $container = document.getElementById('container');
 const $input = document.getElementById('input');
@@ -40,6 +41,7 @@ let chosenHeroes;
 let guessMap;
 let result = 0;
 let totalAnswers;
+let playing = false;
 
 const timer = new Timer();
 
@@ -96,6 +98,8 @@ const generateChosenHeroes = () => {
         .filter(hero => selectedCosts.includes(hero.cost))
         .filter(hero => selectedStrengths.includes(hero.stats[0]))
         .filter(hero => selectedHealths.includes(hero.stats[1]));
+
+    updateSettingsInfo();
 };
 const init = () => {
     const $li = (value, label = null) => `<li><label><input type="checkbox" value="${value}" checked>${label ?? value}</label></li>`;
@@ -136,6 +140,7 @@ const init = () => {
         .map(health => $li(health))
         .join('');
 
+    generateChosenHeroes();
 };
 const initResultsTable = () => {
     $resultsTable.innerHTML =
@@ -179,6 +184,9 @@ const updateInfo = () => {
             ${currentHero.name}<span class="set">(${SET_MAP[currentHero.set].name})</span>`;
     }
 };
+const updateSettingsInfo = () => {
+    $settingsInfo.innerText = chosenHeroes.length;
+};
 const updateColumnsWidth = addOrRemove => {
     $container.classList.remove('columns-' + columns);
     columns += addOrRemove ? 1 : -1;
@@ -191,6 +199,7 @@ const endGame = () => {
     $prev.disabled = true;
     $next.disabled = true;
     $container.classList.add('end-game');
+    playing = false;
 }
 const win = () => {
     endGame();
@@ -310,6 +319,7 @@ const start = () => {
     }
     window.scrollTo(0, 0);
     updateInfo();
+    playing = true;
     $container.classList.add('playing', 'columns-2');
     $container.classList.remove('end-game');
     $input.focus();
@@ -394,5 +404,15 @@ $tryAgain.addEventListener('click', e => {
     $container.classList.remove('playing', 'end-game');
     reset();
 })
-$lists.forEach($list => selectAll($list.parentElement));
+$lists.forEach($list => {
+    const buttons = selectAll($list.parentElement);
+    buttons.forEach(button => button.addEventListener('click', generateChosenHeroes));
+});
+document.addEventListener('change', ({ target }) => {
+    if (playing || target.tagName !== 'INPUT' || target.type !== 'checkbox') {
+        return;
+    }
+
+    generateChosenHeroes();
+});
 init();
