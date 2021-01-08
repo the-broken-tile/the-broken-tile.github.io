@@ -99,6 +99,7 @@ const generateChosenHeroes = () => {
         .filter(hero => selectedStrengths.includes(hero.stats[0]))
         .filter(hero => selectedHealths.includes(hero.stats[1]));
 
+    totalAnswers = chosenHeroes.length;
     updateSettingsInfo();
 };
 const init = () => {
@@ -185,7 +186,8 @@ const updateInfo = () => {
     }
 };
 const updateSettingsInfo = () => {
-    $settingsInfo.innerText = chosenHeroes.length;
+    $settingsInfo.innerText = totalAnswers;
+    $settingsForm.querySelector('input[type="submit"]').disabled = totalAnswers === 0;
 };
 const updateColumnsWidth = addOrRemove => {
     $container.classList.remove('columns-' + columns);
@@ -293,13 +295,9 @@ const reset = () => {
     result = 0;
     currentHero = null;
 };
-const start = () => {
+const start = e => {
+    e.preventDefault();
     generateChosenHeroes();
-    if (chosenHeroes.length === 0) {
-        alert('No heroes found with this criteria');
-
-        return;
-    }
     $input.disabled = false;
     $giveUp.disabled = false;
     $prev.disabled = false;
@@ -309,7 +307,6 @@ const start = () => {
     } else {
         sort(chosenHeroes);
     }
-    totalAnswers = chosenHeroes.length;
     generateGuessMap();
     forceOrder = $forceOrder.checked;
     initResultsTable();
@@ -328,10 +325,7 @@ const start = () => {
     timer.onTimeUp(lose);
 };
 
-$settingsForm.addEventListener('submit', e => {
-    e.preventDefault();
-    start();
-});
+$settingsForm.addEventListener('submit', start);
 $playingForm.addEventListener('submit', e => e.preventDefault());
 $input.addEventListener('input', e => {
     checkGuess($input.value);
