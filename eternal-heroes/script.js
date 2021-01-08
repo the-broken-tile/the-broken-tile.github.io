@@ -7,6 +7,8 @@ const $factionsList = document.getElementById('factions-list');
 const $typeList = document.getElementById('type-list');
 const $rarityList = document.getElementById('rarity-list');
 const $costList = document.getElementById('cost-list');
+const $strengthList = document.getElementById('strength-list');
+const $healthList = document.getElementById('health-list');
 const $settingsForm = document.getElementById('settings-form');
 const $container = document.getElementById('container');
 const $input = document.getElementById('input');
@@ -82,6 +84,10 @@ const generateChosenHeroes = () => {
         .map($input => $input.value);
     const selectedCosts = [...$costList.querySelectorAll('input[type="checkbox"]:checked')]
         .map($input => parseInt($input.value, 10));
+    const selectedStrengths = [...$strengthList.querySelectorAll('input[type="checkbox"]:checked')]
+        .map($input => parseInt($input.value, 10));
+    const selectedHealths = [...$healthList.querySelectorAll('input[type="checkbox"]:checked')]
+        .map($input => parseInt($input.value, 10));
 
     chosenHeroes = HEROES
         .filter(hero => selectedSets.includes(hero.set))
@@ -92,7 +98,9 @@ const generateChosenHeroes = () => {
         })
         .filter(hero => intersect(hero.type, selectedTypes).length > 0)
         .filter(hero => selectedRarities.includes(hero.rarity))
-        .filter(hero => selectedCosts.includes(hero.cost));
+        .filter(hero => selectedCosts.includes(hero.cost))
+        .filter(hero => selectedStrengths.includes(hero.stats[0]))
+        .filter(hero => selectedHealths.includes(hero.stats[1]));
 };
 const init = () => {
     $setsList.innerHTML = SETS.map(set =>
@@ -130,6 +138,21 @@ const init = () => {
             `<li><label><input type="checkbox" value="${cost}" checked>${cost}</label></li>`
         )
         .join('')
+    $strengthList.innerHTML = HEROES
+        .reduce((strengths, hero) => strengths.includes(hero.stats[0]) ? strengths : [...strengths, hero.stats[0]], [])
+        .sort((a, b) => a - b)
+        .map(strength =>
+            `<li><label><input type="checkbox" value="${strength}" checked>${strength}</label></li>`
+        )
+        .join('');
+    $healthList.innerHTML = HEROES
+        .reduce((healths, hero) => healths.includes(hero.stats[1]) ? healths : [...healths, hero.stats[1]], [])
+        .sort((a, b) => a - b)
+        .map(health =>
+            `<li><label><input type="checkbox" value="${health}" checked>${health}</label></li>`
+        )
+        .join('');
+
 };
 const initResultsTable = () => {
     $resultsTable.innerHTML =
@@ -395,4 +418,6 @@ selectAll($factionsList.parentElement);
 selectAll($typeList.parentElement);
 selectAll($rarityList.parentElement);
 selectAll($costList.parentElement);
+selectAll($strengthList.parentElement);
+selectAll($healthList.parentElement);
 init();
