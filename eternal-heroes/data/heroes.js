@@ -1687,7 +1687,7 @@ const HEROES = [
         rarity: 'legendary',
         cost: 4,
         stats: [3, 2],
-        type: 'Muystic',
+        type: 'Mystic',
         set: 7,
     },
     {
