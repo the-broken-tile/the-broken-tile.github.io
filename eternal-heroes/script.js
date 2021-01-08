@@ -4,6 +4,13 @@ const SET_MAP = SETS.reduce((carry, set) => {
 }, {});
 const $setsList = document.getElementById('sets-list');
 const $factionsList = document.getElementById('factions-list');
+const $typeList = document.getElementById('type-list');
+const $rarityList = document.getElementById('rarity-list');
+const $costList = document.getElementById('cost-list');
+const $strengthList = document.getElementById('strength-list');
+const $healthList = document.getElementById('health-list');
+const $lists = [$setsList, $factionsList, $typeList, $rarityList, $costList, $strengthList, $healthList];
+const $settingsInfo = document.getElementById('settings-info');
 const $settingsForm = document.getElementById('settings-form');
 const $container = document.getElementById('container');
 const $input = document.getElementById('input');
@@ -34,8 +41,7 @@ let chosenHeroes;
 let guessMap;
 let result = 0;
 let totalAnswers;
-let selectedSets;
-let selectedFactions;
+let playing = false;
 
 const timer = new Timer();
 
@@ -68,43 +74,73 @@ const generateGuessMap = () => {
         return carry;
     }, {});
 };
-const generateChosenHeroes = randomize => {
-    selectedSets = [].filter.call($setsList.querySelectorAll('input[type="checkbox"]'), $input => {
-        return $input.checked;
-    }).map($input => parseInt($input.value, 10));
-    selectedFactions = [].filter.call($factionsList.querySelectorAll('input[type="checkbox"]'), $input => {
-        return $input.checked;
-    }).map($input => $input.value);
+const generateChosenHeroes = () => {
+    const getChecked = ($list, int = false) => [...$list.querySelectorAll('input[type="checkbox"]:checked')]
+        .map($input => int ? parseInt($input.value, 10) : $input.value);
 
-    if (selectedSets.length === 0) {
-        selectedSets = SETS.map(set => set.id);
-    }
-    if (selectedFactions.length === 0) {
-        selectedFactions = FACTIONS.map(faction => faction.id);
-    }
+    const selectedSets = getChecked($setsList, true);
+    const selectedFactions = getChecked($factionsList);
+    const selectedTypes = getChecked($typeList)
+    const selectedRarities = getChecked($rarityList);
+    const selectedCosts = getChecked($costList, true);
+    const selectedStrengths = getChecked($strengthList, true);
+    const selectedHealths = getChecked($healthList, true);
+
     chosenHeroes = HEROES
         .filter(hero => selectedSets.includes(hero.set))
         .filter(hero => {
             const factions = unique(hero.influence.split(''));
-            const factionsMatch = intersect(factions, selectedFactions).length;
 
-            return factionsMatch > 0;
-        });
-    if (randomize) {
-        shuffle(chosenHeroes);
-    } else {
-        sort(chosenHeroes);
-    }
-    totalAnswers = chosenHeroes.length;
-    generateGuessMap();
+            return intersect(factions, selectedFactions).length > 0;
+        })
+        .filter(hero => intersect(hero.type, selectedTypes).length > 0)
+        .filter(hero => selectedRarities.includes(hero.rarity))
+        .filter(hero => selectedCosts.includes(hero.cost))
+        .filter(hero => selectedStrengths.includes(hero.stats[0]))
+        .filter(hero => selectedHealths.includes(hero.stats[1]));
+
+    updateSettingsInfo();
 };
 const init = () => {
-    $setsList.innerHTML = SETS.map(set =>
-        `<li><label><input type="checkbox" value="${set.id}" checked>${set.name}</label></li>`
-    ).join('');
-    $factionsList.innerHTML = FACTIONS.map(faction =>
-        `<li><label><input type="checkbox" value="${faction.id}" checked>${faction.name}</label></li>`
-    ).join('');
+    const $li = (value, label = null) => `<li><label><input type="checkbox" value="${value}" checked>${label ?? value}</label></li>`;
+
+    $setsList.innerHTML = SETS.map(set => $li(set.id, set.name)).join('');
+    $factionsList.innerHTML = FACTIONS.map(faction => $li(faction.id, faction.name)).join('');
+    $typeList.innerHTML = HEROES
+        .reduce((types, hero) => {
+            hero.type.forEach(type => {
+                if (!types.includes(type)) {
+                    types.push(type);
+                }
+            });
+
+            return types;
+        }, [])
+        .sort()
+        .map(type => $li(type))
+        .join('');
+    $rarityList.innerHTML = HEROES
+        .reduce((rarities, hero) => rarities.includes(hero.rarity) ? rarities : [...rarities, hero.rarity], [])
+        .sort()
+        .map(rarity => $li(rarity))
+        .join('');
+    $costList.innerHTML = HEROES
+        .reduce((costs, hero) => costs.includes(hero.cost) ? costs : [...costs, hero.cost], [])
+        .sort((a, b) => a - b)
+        .map(cost => $li(cost))
+        .join('')
+    $strengthList.innerHTML = HEROES
+        .reduce((strengths, hero) => strengths.includes(hero.stats[0]) ? strengths : [...strengths, hero.stats[0]], [])
+        .sort((a, b) => a - b)
+        .map(strength => $li(strength))
+        .join('');
+    $healthList.innerHTML = HEROES
+        .reduce((healths, hero) => healths.includes(hero.stats[1]) ? healths : [...healths, hero.stats[1]], [])
+        .sort((a, b) => a - b)
+        .map(health => $li(health))
+        .join('');
+
+    generateChosenHeroes();
 };
 const initResultsTable = () => {
     $resultsTable.innerHTML =
@@ -148,6 +184,9 @@ const updateInfo = () => {
             ${currentHero.name}<span class="set">(${SET_MAP[currentHero.set].name})</span>`;
     }
 };
+const updateSettingsInfo = () => {
+    $settingsInfo.innerText = chosenHeroes.length;
+};
 const updateColumnsWidth = addOrRemove => {
     $container.classList.remove('columns-' + columns);
     columns += addOrRemove ? 1 : -1;
@@ -160,6 +199,7 @@ const endGame = () => {
     $prev.disabled = true;
     $next.disabled = true;
     $container.classList.add('end-game');
+    playing = false;
 }
 const win = () => {
     endGame();
@@ -243,9 +283,7 @@ const checkGuess = guess => {
     next(nextHero);
     updateInfo();
 };
-const getTime = sets => sets.length * 5;
-const getDefaultTime = () =>
-    getTime(SETS.filter(set => selectedSets.includes(set.id)));
+const getTime = () => chosenHeroes.length / 2;
 const pad = i => i < 10 ? `0${i}` : i;
 const tick = () => {
     const time = Math.floor(timer.getTime() / 1000);
@@ -256,22 +294,36 @@ const reset = () => {
     currentHero = null;
 };
 const start = () => {
+    generateChosenHeroes();
+    if (chosenHeroes.length === 0) {
+        alert('No heroes found with this criteria');
+
+        return;
+    }
     $input.disabled = false;
     $giveUp.disabled = false;
     $prev.disabled = false;
     $next.disabled = false;
-    generateChosenHeroes($randomize.checked);
+    if ($randomize.checked) {
+        shuffle(chosenHeroes);
+    } else {
+        sort(chosenHeroes);
+    }
+    totalAnswers = chosenHeroes.length;
+    generateGuessMap();
     forceOrder = $forceOrder.checked;
     initResultsTable();
     if (forceOrder) {
         setCurrentHero(chosenHeroes[0]);
         $container.classList.add('force-order');
     }
+    window.scrollTo(0, 0);
     updateInfo();
+    playing = true;
     $container.classList.add('playing', 'columns-2');
     $container.classList.remove('end-game');
     $input.focus();
-    timer.start(getDefaultTime());
+    timer.start(getTime());
     timer.onTick(tick);
     timer.onTimeUp(lose);
 };
@@ -352,6 +404,15 @@ $tryAgain.addEventListener('click', e => {
     $container.classList.remove('playing', 'end-game');
     reset();
 })
-selectAll($setsList.parentElement);
-selectAll($factionsList.parentElement);
+$lists.forEach($list => {
+    const buttons = selectAll($list.parentElement);
+    buttons.forEach(button => button.addEventListener('click', generateChosenHeroes));
+});
+document.addEventListener('change', ({ target }) => {
+    if (playing || target.tagName !== 'INPUT' || target.type !== 'checkbox') {
+        return;
+    }
+
+    generateChosenHeroes();
+});
 init();
