@@ -142,7 +142,7 @@ const HEROES = [
         rarity: 'legendary',
         cost: 4,
         stats: [4, 4],
-        type: 'Warrior',
+        type: 'Bard Warrior',
         set: 1,
     },
     {
@@ -329,7 +329,7 @@ const HEROES = [
         rarity: 'legendary',
         cost: 4,
         stats: [3, 5],
-        type: 'Explorer',
+        type: 'Bard Explorer',
         set: 2,
     },
     {
@@ -1737,7 +1737,7 @@ const HEROES = [
         rarity: 'legendary',
         cost: 6,
         stats: [6, 6],
-        type: 'Oni',
+        type: 'Oni Bard',
         set: 7,
     },
     {
@@ -2951,7 +2951,7 @@ const HEROES = [
         rarity: 'rare',
         cost: 4,
         stats: [3, 5],
-        type: 'Explorer',
+        type: 'Bard Explorer',
         set: 1005,
     },
     {
@@ -3063,7 +3063,7 @@ const HEROES = [
         rarity: 'legendary',
         cost: 3,
         stats: [2, 2],
-        type: 'Rogue',
+        type: 'Bard',
         set: 1007,
     },
     {
