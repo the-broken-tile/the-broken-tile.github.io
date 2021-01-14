@@ -103,10 +103,14 @@ const generateChosenHeroes = () => {
     updateSettingsInfo();
 };
 const init = () => {
-    const $li = (value, label = null) => `<li><label><input type="checkbox" value="${value}" checked>${label ?? value}</label></li>`;
+    const $li = (prefix, value, label) => {
+        const id = prefix + value.toString().toLowerCase();
 
-    $setsList.innerHTML = SETS.map(set => $li(set.id, set.name)).join('');
-    $factionsList.innerHTML = FACTIONS.map(faction => $li(faction.id, faction.name)).join('');
+        return `<li class="option"><input type="checkbox" value="${value}" checked id="${id}"><label for="${id}">${label ?? value}</label></li>`;
+    }
+
+    $setsList.innerHTML = SETS.map(set => $li('set-', set.id, set.name)).join('');
+    $factionsList.innerHTML = FACTIONS.map(faction => $li('faction-', faction.id, faction.name)).join('');
     $typeList.innerHTML = HEROES
         .reduce((types, hero) => {
             hero.type.forEach(type => {
@@ -118,27 +122,27 @@ const init = () => {
             return types;
         }, [])
         .sort()
-        .map(type => $li(type))
+        .map(type => $li('type-', type))
         .join('');
     $rarityList.innerHTML = HEROES
         .reduce((rarities, hero) => rarities.includes(hero.rarity) ? rarities : [...rarities, hero.rarity], [])
         .sort()
-        .map(rarity => $li(rarity))
+        .map(rarity => $li('rarity-', rarity))
         .join('');
     $costList.innerHTML = HEROES
         .reduce((costs, hero) => costs.includes(hero.cost) ? costs : [...costs, hero.cost], [])
         .sort((a, b) => a - b)
-        .map(cost => $li(cost))
+        .map(cost => $li('cost-', cost))
         .join('')
     $strengthList.innerHTML = HEROES
         .reduce((strengths, hero) => strengths.includes(hero.stats[0]) ? strengths : [...strengths, hero.stats[0]], [])
         .sort((a, b) => a - b)
-        .map(strength => $li(strength))
+        .map(strength => $li('strength-', strength))
         .join('');
     $healthList.innerHTML = HEROES
         .reduce((healths, hero) => healths.includes(hero.stats[1]) ? healths : [...healths, hero.stats[1]], [])
         .sort((a, b) => a - b)
-        .map(health => $li(health))
+        .map(health => $li('health-', health))
         .join('');
 
     generateChosenHeroes();

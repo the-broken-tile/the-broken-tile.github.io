@@ -20,13 +20,25 @@ li {
     border-radius: 4px;
     margin-bottom: 2px;
 }
-li label {
+.option label {
     display: block;
     position: relative;
 }
-li label:active {
+.option label::before {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    line-height: 16px;
+}
+.option input {
+    display: none;
+}
+.option label:active {
     top: 1px;
     left: 1px;
+}
+.option input:checked + label::before {
+    content: '✅';
 }
 ul {
     padding: 8px;
