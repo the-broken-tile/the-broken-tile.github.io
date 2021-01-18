@@ -3345,11 +3345,8 @@ const HEROES = [
         set: 1011,
     },
     {
-        name: 'Okesa',
-        title: 'Málaga',
-        alt: [
-            'malaga',
-        ],
+        name: 'Málaga',
+        title: 'Okesa',
         influence: 'FT',
         rarity: 'legendary',
         cost: 5,
