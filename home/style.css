@@ -1,0 +1,53 @@
+body {
+    background-color: #2B8BE1;
+}
+a {
+    color: white;
+}
+.flexy {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.flexy-panel {
+    display: block;
+    color: black;
+    position: relative;
+    box-sizing: border-box;
+    width: 25%;
+    height: 20vh;
+    border-radius: 16px;/* 16px 0 0;*/
+    background-color: white;
+    padding: 8px;
+    margin-bottom: -16px;
+    border: 2px solid black;
+    transition: all 0.5s;
+    text-decoration: none;
+}
+
+.flexy-panel:hover {
+    transform: scale(1.05, 1.05);
+    z-index: 1;
+}
+.title {
+    display: block;
+    text-align: center;
+    font-size: 1.2em;
+}
+.description {
+    box-sizing: border-box;
+    padding: 8px;
+}
+@media (max-width:801px)  {
+    .flexy-panel {
+        width: 50%;
+        height: 30vh;
+    }
+}
+
+@media (max-width:480px) {
+    .flexy-panel {
+        width: 100%;
+        height: 50vh;
+    }
+}
