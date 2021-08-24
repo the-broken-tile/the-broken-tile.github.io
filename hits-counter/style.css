@@ -7,6 +7,7 @@ html, body {
     background-color: black;
     color: white;
 }
+
 body {
     overscroll-behavior: contain;
 }
@@ -21,6 +22,7 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 .inverted {
     transform: rotate(180deg);
 }
@@ -28,12 +30,11 @@ body {
     top: 50%;
     background-color: red;
 }
-#top-half {
 
-}
 .value {
     font-size: 10em;
 }
+
 #reset {
     font-size: 3em;
     width: 5em;
@@ -51,9 +52,9 @@ body {
     padding: 15px 32px;
     text-decoration: none;
     display: inline-block;
-    /*font-size: 16px;*/
     background-color: #555555;
 }
+
 #reset:active {
     margin-left: calc(-2.5em + 1px);
     margin-top: calc(-1em + 1px);
