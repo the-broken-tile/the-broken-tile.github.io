@@ -8,5 +8,6 @@
   "display": "standalone",
   "description": "Hits counter for two players, great for games such as Twilight Imperium.",
   "start_url": "./",
-  "scope": "."
+  "scope": ".",
+  "orientation": "portrait"
 }
