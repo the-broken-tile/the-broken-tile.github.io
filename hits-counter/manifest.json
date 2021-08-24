@@ -1,7 +1,7 @@
 {
   "name": "Hits counter",
   "manifest_version": 2,
-  "version": "0.1",
+  "version": "0.2",
   "author": "Rusi tazzadar Papazov",
   "background_color": "black",
   "theme_color": "black",
@@ -9,5 +9,18 @@
   "description": "Hits counter for two players, great for games such as Twilight Imperium.",
   "start_url": "./",
   "scope": ".",
-  "orientation": "portrait"
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "./icons/mecatol-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    }, {
+      "src": "./icons/mecatol-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ]
 }
