@@ -1,7 +1,7 @@
 {
   "name": "Hits counter",
+  "version": "0.3",
   "manifest_version": 2,
-  "version": "0.2",
   "author": "Rusi tazzadar Papazov",
   "background_color": "black",
   "theme_color": "black",
