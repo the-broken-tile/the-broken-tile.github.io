@@ -23,5 +23,9 @@ const LINKS = [
         title: 'BGG Alignments',
         url: './bgg-alignments',
         description: 'Generate your own good/neutral/evil chart of board games.',
-    },
+    }, {
+        title: 'Hits counter',
+        url: './hits-counter',
+        description: 'Hits counter for two players, great for games such as Twilight Imperium.',
+    }
 ];

@@ -1,0 +1,12 @@
+{
+  "name": "Hits counter",
+  "manifest_version": 2,
+  "version": "0.1",
+  "author": "Rusi tazzadar Papazov",
+  "background_color": "black",
+  "theme_color": "black",
+  "display": "standalone",
+  "description": "Hits counter for two players, great for games such as Twilight Imperium.",
+  "start_url": "./",
+  "scope": "."
+}
