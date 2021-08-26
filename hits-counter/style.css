@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'handel';
+    src: url('./fonts/handel_gothic_d_bold-webfont.woff2') format('woff2'),
+        url('./fonts/handel_gothic_d_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html, body {
     position: absolute;
     top: 0;
@@ -46,6 +54,8 @@ body {
     margin-top: -1em;
     z-index: 1;
     text-align: center;
+    line-height: 1;
+    font-family: 'handel', sans-serif;
 
     border: none;
     color: white;
