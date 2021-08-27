@@ -50,8 +50,7 @@ body {
     position: absolute;
     left: 50%;
     top: 50%;
-    margin-left: -2.5em;
-    margin-top: -1em;
+    transform: translate(-50%, -50%);
     z-index: 1;
     text-align: center;
     line-height: 1;
