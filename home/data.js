@@ -27,5 +27,9 @@ const LINKS = [
         title: 'Hits counter',
         url: './hits-counter',
         description: 'Hits counter for two players, great for games such as Twilight Imperium.',
+    }, {
+        title: 'Viral Life',
+        url: './viral-life',
+        description: "An attempt to make Conway's Game of Life multiplayer",
     }
 ];
