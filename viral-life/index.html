@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Multiplayer Game of Life - Viral Life</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div id="container">
+        </div>
+        <label>Active player:
+            <select id="active-player">
+                <option value="2">Player one</option>
+                <option value="4">Player two</option>
+                <option value="8">Neutral</option>
+            </select>
+        </label>
+        <span id="generation"></span>
+        <button id="next-generation">Next generation</button>
+        <button id="reset">Reset</button>
+        <script src="https://unpkg.com/konva@8/konva.min.js"></script>
+        <script src="./constants.js"></script>
+        <script src="./events.js"></script>
+        <script src="./GameView.js"></script>
+        <script src="./script.js"></script>
+    </body>
+</html>
