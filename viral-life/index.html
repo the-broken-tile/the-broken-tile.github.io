@@ -9,17 +9,35 @@
     <body>
         <div id="container">
         </div>
-        <label>Active player:
-            <select id="active-player">
-                <option value="2">Player one</option>
-                <option value="4">Player two</option>
-                <option value="8">Neutral</option>
+        <section>
+            <label>Active player:
+                <select id="active-player">
+                    <option value="2">Player one</option>
+                    <option value="4">Player two</option>
+                    <option value="8">Neutral</option>
+                </select>
+            </label>
+        </section>
+        <section>
+            Current generation: <span id="generation">1</span> |
+            <button id="next-generation" type="button">Next generation</button>
+            <input type="number" value="5" id="next-generations-count" min="1">
+            <br>
+            <button id="reset">Reset</button>
+        </section>
+        <section>
+            Sector:
+            <input type="number" min="1" max="5" id="sector-row">-<input type="number" min="1" max="5" id="sector-column"><br>
+            <button id="add-event" type="button" disabled>Add event</button>
+            <select id="event">
+                <option value="vulnerable">Vulnerability - cells die if adjacent to two or more</option>
+                <option value="survivor">Survivor - cells don't die if the have one or less neighbours</option>
+                <option value="asexual">Asexual - new cells are born only if they have exactly 1 neighbour</option>
+                <option value="impotence">Impotence - no cells can be born</option>
             </select>
-        </label>
-        <span id="generation">1</span>
-        <button id="next-generation">Next generation</button>
-        <input type="number" value="5" id="next-generations-count">
-        <button id="reset">Reset</button>
+            <br>
+            <button id="nuke" type="button" disabled>Nuke</button>
+        </section>
         <script src="https://unpkg.com/konva@8/konva.min.js"></script>
         <script src="./constants.js"></script>
         <script src="./events.js"></script>
