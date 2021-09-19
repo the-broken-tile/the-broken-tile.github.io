@@ -13,3 +13,8 @@ const CONTRAST_COLOR_MAP = {
     [PLAYER_TWO]: 'black',
     [PLAYER_NEUTRAL]: 'black',
 };
+
+const EVENT_VULNERABILITY = 'vulnerable';
+const EVENT_SURVIVOR = 'survivor';
+const EVENT_ASEXUAL = 'asexual';
+const EVENT_IMPOTENCE = 'impotence';

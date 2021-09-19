@@ -1,0 +1,9 @@
+input[type="number"] {
+    width: 30px;
+}
+section {
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+    width: 500px;
+    padding: 5px;
+}

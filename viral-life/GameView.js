@@ -1,15 +1,18 @@
 /**
  * @param {string} containerId
  * @param {int} size
- * @param {int} sectorSize
+ * @param {int} sectorsCount
  * @param {int} cellSize
  * @constructor
  */
-function GameView(containerId, size, sectorSize, cellSize) {
+function GameView(containerId, size, sectorsCount, cellSize) {
     let stage, chipsLayer, bordersLayer;
     let activePlayer = PLAYER_ONE;
     let cells = [];
     let flatCells = [];
+    let sectors = [];
+    let sectorsFlat = [];
+    const sectorSize = size / sectorsCount;
 
     const validate = () => {
         flatCells.forEach(cell => {
@@ -38,9 +41,6 @@ function GameView(containerId, size, sectorSize, cellSize) {
     };
 
     const getMajorityOwner = cells => {
-        if (cells.length !== 3) {
-            return null;
-        }
         const owners = cells.map(cell => cell.owner).reduce((carry, owner) => {
             carry[owner] = carry[owner] || 0;
             carry[owner]++;
@@ -87,7 +87,20 @@ function GameView(containerId, size, sectorSize, cellSize) {
             const chip = createChip(cell);
             chipsLayer.add(chip);
         });
-    }
+    };
+
+    const isDying = ({sector}, numberOfNeighbours) => {
+        const vulnerable = sector.events.find(event => event.name === EVENT_VULNERABILITY);
+        const survivor = sector.events.find(event => event.name === EVENT_SURVIVOR);
+
+        return numberOfNeighbours >= (vulnerable ? 2 : 4) || (numberOfNeighbours <= 1 && !survivor);
+    };
+    const isBirth = ({sector}, numberOfNeighbours) => {
+        const asexual = sector.events.find(event => event.name === EVENT_ASEXUAL);
+        const impotence = sector.events.find(event => event.name === EVENT_IMPOTENCE);
+
+        return !impotence && numberOfNeighbours === (asexual ? 1 : 3);
+    };
 
     /**
      * @param {empty: boolean, dying: boolean, row: int, column: int} cell
@@ -98,8 +111,8 @@ function GameView(containerId, size, sectorSize, cellSize) {
         const aliveNeighbours = neighbours.filter(n => !n.empty);
 
         if (!cell.empty) {
-            cell.dying = aliveNeighbours.length >= 4 || aliveNeighbours.length <= 1;
-        } else if (aliveNeighbours.length === 3) {
+            cell.dying = isDying(cell, aliveNeighbours.length);
+        } else if (isBirth(cell, aliveNeighbours.length)) {
             const newOwner = getMajorityOwner(aliveNeighbours);
             cell.owner = newOwner;
             cell.birth = newOwner !== null;
@@ -108,20 +121,14 @@ function GameView(containerId, size, sectorSize, cellSize) {
         // check for new births in empty neighbours
         neighbours.filter(n => n.empty).forEach(neighbour => {
             const aliveNeighbours = getNeighbours(neighbour).filter(n => !n.empty);
-            if (aliveNeighbours.length !== 3) {
-                neighbour.owner = null;
-                neighbour.birth = false;
-                return;
-            }
-            const newOwner = getMajorityOwner(aliveNeighbours);
-            neighbour.owner = newOwner;
-            neighbour.birth = newOwner !== null;
+            neighbour.birth = isBirth(neighbour, aliveNeighbours.length);
+            neighbour.owner = neighbour.birth ? getMajorityOwner(aliveNeighbours) : null;
         });
 
         // check for new deaths in non-empty neighbours
         aliveNeighbours.forEach(neighbour => {
             const aliveNeighboursCount = getNeighbours(neighbour).filter(n => !n.empty).length;
-            neighbour.dying = aliveNeighboursCount >= 4 || aliveNeighboursCount <= 1;
+            neighbour.dying = isDying(neighbour, aliveNeighboursCount);
         });
     };
 
@@ -243,15 +250,34 @@ function GameView(containerId, size, sectorSize, cellSize) {
                 cell.owner = null;
             }
         });
+        sectorsFlat.forEach(sector => {
+            sector.events.forEach(event => event.generations--);
+            sector.events = sector.events.filter(event => event.generations > 0);
+        });
+
         flatCells.forEach(checkForUpdates);
 
         render();
     };
 
     this.init = () => {
+        for (let row = sectorsCount - 1; row >= 0; row--) {
+            sectors[row] = [];
+            for (let column = sectorsCount - 1; column >= 0; column--) {
+                sectors[row][column] = {
+                    row,
+                    column,
+                    events: [],
+                    cells: [],
+                };
+                sectorsFlat.push(sectors[row][column]);
+            }
+        }
+
         for (let row = size - 1; row >= 0; row--) {
             cells[row] = [];
             for (let column = size - 1; column >= 0; column--) {
+                const sector = sectors[Math.floor(row / sectorSize)][Math.floor(column / sectorSize)];
                 cells[row][column] = {
                     empty: true,
                     birth: false,
@@ -259,9 +285,12 @@ function GameView(containerId, size, sectorSize, cellSize) {
                     owner: null,
                     row,
                     column,
+                    sector,
                 };
+                sector.cells.push(cells[row][column]);
                 flatCells.push(cells[row][column]);
             }
+
         }
 
         stage = new Konva.Stage({
@@ -289,6 +318,8 @@ function GameView(containerId, size, sectorSize, cellSize) {
         window.chipsLayer = chipsLayer;
         window.cells = cells;
         window.flatCells = flatCells;
+        window.sectors = sectors;
+        window.sectorsFlat = sectorsFlat;
     };
 
     this.updateActivePlayer = newActivePlayer => activePlayer = newActivePlayer;
@@ -301,6 +332,33 @@ function GameView(containerId, size, sectorSize, cellSize) {
             cell.owner = null;
         });
 
+        render();
+    };
+
+    /**
+     * @param {int} row
+     * @param {int} column
+     */
+    this.nukeSector = ({row, column}) => {
+        const sector = sectors[row - 1][column - 1];
+        sector.cells.forEach(cell => {
+            cell.empty = true;
+            cell.dying = false;
+            cell.owner = null;
+            cell.birth = false;
+        });
+        validate();
+        sector.cells.forEach(checkForUpdates);
+        render();
+    };
+
+    this.addEvent = (event, {row, column}, generations) => {
+        const sector = sectors[row - 1][column - 1];
+        sector.events.push({
+            name: event,
+            generations,
+        });
+        sector.cells.forEach(checkForUpdates);
         render();
     };
 }
