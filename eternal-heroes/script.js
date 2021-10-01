@@ -58,7 +58,7 @@ const $getInfluenceIcons = influence => {
         return influence.split('').map($getInfluenceIcons).join('');
     }
 
-    return `<span class="influence-icon ${influence.toLowerCase()}"></span>`;
+    return `<span class="influence-icon highlighted ${influence.toLowerCase()}"></span>`;
 };
 const generateGuessMap = () => {
     guessMap = chosenHeroes.reduce((carry, hero) => {
@@ -80,7 +80,7 @@ const generateChosenHeroes = () => {
 
     const selectedSets = getChecked($setsList, true);
     const selectedFactions = getChecked($factionsList);
-    const selectedTypes = getChecked($typeList)
+    const selectedTypes = getChecked($typeList);
     const selectedRarities = getChecked($rarityList);
     const selectedCosts = getChecked($costList, true);
     const selectedStrengths = getChecked($strengthList, true);

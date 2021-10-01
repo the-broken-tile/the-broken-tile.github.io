@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eternal Pause Guesser</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../eternal-heroes/icons.css">
+</head>
+<body id="container">
+    <h1>Eternal Pause Guesser</h1>
+    <form id="form">
+        <section>
+            <ul>
+                <li><label><input type="checkbox" id="expedition">Expedition (21 July 2021)</label></li>
+                <li><label>Pause shows at <input type="number" id="max-mana-cost" min="0" step="1"> open mana</label></li>
+                <li><label>Pause doesn't show at <input type="number" id="min-mana-cost" min="0" step="0"> open mana</label></li>
+                <li><label><input type="checkbox" id="ambush" readonly class="indeterminable">Ambush - Is it at the end of your turn and when attacking only </label></li>
+            </ul>
+            Opponent's influence
+            <ul id="influence">
+                <li>
+                    <span class="influence-icon f" id="f-1"></span>
+                    <span class="influence-icon f" id="f-2"></span>
+                    <span class="influence-icon f" id="f-3"></span>
+                    <span class="influence-icon f" id="f-4"></span>
+                    <span class="influence-icon f" id="f-5"></span>
+                    <span class="influence-icon f" id="f-6"></span>
+                    <span class="influence-icon f" id="f-7"></span>
+                </li>
+                <li>
+                    <span class="influence-icon t" id="t-1"></span>
+                    <span class="influence-icon t" id="t-2"></span>
+                    <span class="influence-icon t" id="t-3"></span>
+                    <span class="influence-icon t" id="t-4"></span>
+                    <span class="influence-icon t" id="t-5"></span>
+                    <span class="influence-icon t" id="t-6"></span>
+                    <span class="influence-icon t" id="t-7"></span>
+                </li>
+                <li>
+                    <span class="influence-icon j" id="j-1"></span>
+                    <span class="influence-icon j" id="j-2"></span>
+                    <span class="influence-icon j" id="j-3"></span>
+                    <span class="influence-icon j" id="j-4"></span>
+                    <span class="influence-icon j" id="j-5"></span>
+                    <span class="influence-icon j" id="j-6"></span>
+                    <span class="influence-icon j" id="j-7"></span>
+                </li>
+                <li>
+                    <span class="influence-icon p" id="p-1"></span>
+                    <span class="influence-icon p" id="p-2"></span>
+                    <span class="influence-icon p" id="p-3"></span>
+                    <span class="influence-icon p" id="p-4"></span>
+                    <span class="influence-icon p" id="p-5"></span>
+                    <span class="influence-icon p" id="p-6"></span>
+                    <span class="influence-icon p" id="p-7"></span>
+                </li>
+                <li>
+                    <span class="influence-icon s" id="s-1"></span>
+                    <span class="influence-icon s" id="s-2"></span>
+                    <span class="influence-icon s" id="s-3"></span>
+                    <span class="influence-icon s" id="s-4"></span>
+                    <span class="influence-icon s" id="s-5"></span>
+                    <span class="influence-icon s" id="s-6"></span>
+                    <span class="influence-icon s" id="s-7"></span>
+                </li>
+            </ul>
+            <output id="result"></output>
+        </section>
+        <section>
+            <label for="advanced-filters-check">Advanced filters</label><br>
+            <input type="checkbox" id="advanced-filters-check" checked>
+            <ul id="advanced-filters">
+                <li>
+                    <label><input type="checkbox" value="no_units"> There are no units</label>
+                    <ul>
+                        <li><label><input type="checkbox" value="no_flying_units"> There are no flying units</label></li>
+                        <li><label><input type="checkbox" value="no_attacking_units"> There are no attacking units</label></li>
+                        <li><label><input type="checkbox" value="no_units_with_different_power_and_health"> There are no units with different power and current health</label></li>
+                        <li>
+                            <label><input type="checkbox" value="no_enemy_units"> You don't have any units</label>
+                            <ul>
+                                <li><label><input type="checkbox" value="no_two_enemy_units"> You don't have at least 2 units</label></li>
+                                <li><label><input type="checkbox" value="no_enemy_sentinels"> You don't have any sentinels</label></li>
+                                <li>
+                                    <label><input type="checkbox" value="no_enemy_units_with_cost_three_or_less"> You don't have any units with cost 3 or less</label>
+                                    <ul>
+                                        <li><label><input type="checkbox" value="no_enemy_units_with_cost_five_or_less"> You don't have any units with cost 5 or less</label></li>
+                                    </ul>
+                                </li>
+                                <li><label><input type="checkbox" value="no_enemy_units_with_cost_four_or_more"> You don't have any units with cost 4 or more</label></li>
+                                <li><label><input type="checkbox" value="no_enemy_units_played_this_turn"> You haven't played a unit this turn</label></li>
+                                <li><label><input type="checkbox" value="no_enemy_units_with_flying"> You don't have any flying units</label></li>
+                                <li><label><input type="checkbox" value="no_enemy_units_without_endurance"> You don't any units without endurance</label></li>
+                                <li><label><input type="checkbox" value="no_enemy_units_taken_damage_this_turn"> You don't any units that have taken damage this turn</label></li>
+                                <li>
+                                    <label><input type="checkbox" value="no_attacking_enemy_units"> You are not attacking the enemy with a unit</label>
+                                    <ul>
+                                        <li><label><input type="checkbox" value="no_attacking_flying_enemy_units"> You are not attacking with any flying units</label></li>
+                                        <li><label><input type="checkbox" value="no_attacking_lone_enemy_units"> You are not attacking with exactly one unit</label></li>
+                                        <li><label><input type="checkbox" value="no_attacking_enemy_units_with_power_four_or_more"> You are not attacking with any unit with power 4 or more</label></li>
+                                        <li><label><input type="checkbox" value="no_attacking_enemy_units_without_endurance"> You are not attacking with any units without endurance</label></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <label><input type="checkbox" value="no_friendly_units"> Your opponent doesn't have any units</label>
+                            <ul>
+                                <!-- this will change the mana open window -->
+                                <li><label><input type="checkbox" value="no_friendly_sentinels"> Your opponent doesn't have any sentinels</label></li>
+                                <li><label><input type="checkbox" value="no_blocking_friendly_inits"> Your opponent isn't blocking with a unit</label></li>
+                            </ul>
+                        </li>
+                        <li><label><input type="checkbox" value="no_units_with_cost_three_or_less"> There are no units with cost 3 or less</label></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <label><label><input type="checkbox" value="no_attachments">There are no attachments</label></label>
+                    <ul>
+                        <li>
+                            <label><input type="checkbox" value="no_enemy_attachments"> You don't have any attachments</label>
+                            <ul>
+                                <li><label><input type="checkbox" value="no_single_faction_enemy_attachments"> You don't have any single-faction attachments </label></li>
+                                <li>
+                                    <label><input type="checkbox" value="no_enemy_relics"> You don't have any relics</label>
+                                    <ul>
+                                        <li><label><input type="checkbox" value="no_enemy_relic_attack"> You are not attacking with a relic weapon</label></li>
+                                        <li><label><input type="checkbox" value="no_enemy_relic_with_cost_five_or_less"> You don't have any relics with cost 5 or less</label></li>
+                                    </ul>
+                                </li>
+                                <li><label><input type="checkbox" value="no_enemy_curses"> You don't have any curses on the enemy/enemy unit</label></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <label><input type="checkbox" value="no_friendly_attachments"> Your opponent doesn't have any attachments</label>
+                            <ul>
+                                <li><label><input type="checkbox" value="no_friendly_relics"> Your opponent doesn't have a relic</label></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <label><input type="checkbox" value="no_enemy_spells"> You are not playing a spell</label>
+                    <ul>
+                        <li><label><input type="checkbox" value="no_enemy_spells_with_cost_four_or_more"> You are not playing a spell with cost 4 or more</label></li>
+                        <li><label><input type="checkbox" value="no_enemy_single_faction_spells"> You are not playing a single-faction spell</label></li>
+                        <li><label><input type="checkbox" value="no_enemy_slow_spells"> You are not playing a spell that isn't fast</label></li>
+                        <li><label><input type="checkbox" value="no_enemy_fast_spells"> You are not playing a fast spell</label></li>
+                    </ul>
+                </li>
+                <li><label><input type="checkbox" value="no_friendly_attachments_in_void"> Your opponent doesn't have any attachments in their void</label></li>
+                <li>
+                    <label><input type="checkbox" value="no_sites"> There are no sites</label>
+                    <ul>
+                        <li>
+                            <label><input type="checkbox" value="no_enemy_site"> You don't have a site</label>
+                            <ul>
+                                <li><label><input type="checkbox" value="no_enemy_site_with_cost_four_or_more"> You don't have a site with cost 4 or more</label></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><label><input type="checkbox" value="at_least_two_cards_in_hand">Your opponent doesn't have at least 2 cards in hand</label></li>
+            </ul>
+            Out of scope: Tocas, Vargo, Onoris Roa, Authoritarian Creation, units with invulnerable to damage
+        </section>
+    </form>
+
+    <script src="./constants.js"></script>
+    <script src="./advancedFilters.js"></script>
+    <script src="./data.js"></script>
+    <script src="./eternal-cards.json" type="application/json"></script>
+<!--    <script src="../eternal-heroes/data/factions.js"></script>-->
+    <script src="./script.js" ></script>
+</body>
+</html>

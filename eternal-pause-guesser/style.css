@@ -1,0 +1,18 @@
+ul {
+    list-style-type: none;
+}
+#form {
+    display: flex;
+}
+#form section {
+    width: 50%;
+}
+#advanced-filters-check {
+    display: none;
+}
+#advanced-filters {
+    display: none;
+}
+input:checked + #advanced-filters {
+    display: block;
+}

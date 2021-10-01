@@ -1,60 +1,34 @@
-.ew{
+.influence-icon {
     background: url("./icons.png") no-repeat 0 0;
     height: 24px;
     width: 24px;
     display: inline-block;
-    vertical-align: middle;
-    margin-top: -2px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    line-height: 24px;
 }
-.ew.ew-highlighted {
+.influence-icon.highlighted {
     background-position-y:-24px;
 }
-.ew.ew-fire{
+.influence-icon.f {
     background-position-x: 0;
 }
-.ew.ew-time {
+.influence-icon.t {
     background-position-x: -24px;
 }
-.ew.ew-justice {
+.influence-icon.j {
     background-position-x: -48px;
 }
-.ew.ew-primal {
+.influence-icon.p {
     background-position-x: -72px;
 }
-.ew.ew-shadow {
+.influence-icon.s {
     background-position-x: -96px;
 }
-.ew.ew-multi {
+.influence-icon.m {
     background-position-x: -120px;
 }
-.ew.ew-none {
+.influence-icon.n {
     background-position-x: -144px;
-}
-.ew.ew-power {
-    background-position-x: -168px;
-}
-.ew.ew-yellow {
-    background-position-x: -192px;
-}
-.ew.ew-red {
-    background-position-x: -216px;
-}
-.ew.ew-sword {
-    background-position-x: -240px;
-}
-.ew.ew-heart {
-    background-position-x: -264px;
-}
-.ew.ew-armor {
-    background-position-x: -288px;
-}
-.ew.ew-shiftstone {
-    background-position-x: -312px;
-    width :19px;
-}
-.ew.ew-gold {
-    background-position-x: -336px;
-}
-.ew.ew-gem {
-    background-position-x: -360px;
 }

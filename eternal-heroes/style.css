@@ -85,37 +85,7 @@ tr, td, th {
     margin: 4px;
     border-radius: 8px;
 }
-.influence-icon {
-    background: url("./icons.png") no-repeat 0 -24px;
-    height: 24px;
-    width: 24px;
-    display: inline-block;
-    padding: 0;
-    color: #fff;
-    text-align: center;
-    line-height: 24px;
-}
-.influence-icon.f {
-    background-position-x: 0;
-}
-.influence-icon.t {
-    background-position-x: -24px;
-}
-.influence-icon.j {
-    background-position-x: -48px;
-}
-.influence-icon.p {
-    background-position-x: -72px;
-}
-.influence-icon.s {
-    background-position-x: -96px;
-}
-.influence-icon.m {
-    background-position-x: -120px;
-}
-.influence-icon.n {
-    background-position-x: -144px;
-}
+
 .current {
     background: lightyellow;
 }
