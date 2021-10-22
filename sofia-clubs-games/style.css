@@ -1,6 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@font-face {
+    font-family: "Sofia Sans";
+    src: url("./fonts/SofiaSans-Regular.woff2") format("woff2"),
+    url("./fonts/SofiaSans-Regular.woff") format("woff");
+}
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Sofia Sans', sans-serif;
     padding-top: 52px;
     background: whitesmoke;
 }
