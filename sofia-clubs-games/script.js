@@ -41,9 +41,18 @@ const renderClub = slug => {
 const renderClubs = memoize(clubs => `<ul>${clubs.map(renderClub).join('')}</ul>`);
 
 const renderResults = results => {
+    // Double content FTW!
     return `<table>
-        <thead><tr><th>Какво</th><th>Къде</th></tr></thead>
-        <tbody>${results.map(game => `<tr><td>${game.name}</td><td>${renderClubs(game.clubs)}</td></tr>`).join('')}</tbody>
+        <thead><tr><th>Какво</th><th class="hide-sm">Къде</th></tr></thead>
+        <tbody>${results.map(game => {
+            const clubs = renderClubs(game.clubs);
+
+            return `<tr>
+                <td>${game.name}<span class="hide-lg">${clubs}</span></td>
+                <td class="hide-sm">${clubs}</td>
+            </tr>`;
+        }
+    ).join('')}</tbody>
     </table>`
 };
 

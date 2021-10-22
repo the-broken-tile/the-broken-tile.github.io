@@ -3,12 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sofia board game clubs' games</title>
+        <title>Къде да играя</title>
         <link rel="stylesheet" href="./style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     </head>
     <body>
-        <div class="container">
+        <header>
+            <h1>Къде да играя?</h1>
             <form id="form" class="wrap">
                 <div class="search">
                     <input name="q" id="q" type="text" class="search-term" autofocus>
@@ -17,8 +18,8 @@
                     </button>
                 </div>
             </form>
-            <div id="results"></div>
-        </div>
+        </header>
+        <div id="results"></div>
         <script src="/utils/loadJSON.js"></script>
         <script src="/utils/memoize.js"></script>
         <script src="./script.js"></script>

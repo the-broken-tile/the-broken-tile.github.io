@@ -5,8 +5,26 @@
 }
 body {
     font-family: 'Sofia Sans', sans-serif;
-    padding-top: 52px;
+    padding-top: 111px;
     background: whitesmoke;
+}
+header {
+    border-bottom: 1px solid black;
+    position: fixed;
+    top: 0;
+    background: whitesmoke;
+    width: 100%;
+}
+header h1 {
+    margin: 8px;
+}
+
+#form {
+    position: relative;
+    width: 30%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-bottom: 8px;
 }
 
 .search {
@@ -40,14 +58,6 @@ body {
     border-radius: 0 5px 5px 0;
     cursor: pointer;
     font-size: 20px;
-}
-
-.wrap {
-    position: fixed;
-    width: 30%;
-    top: 8px;
-    left: 50%;
-    transform: translate(-50%, 0);
 }
 
 .icon:after {
@@ -99,4 +109,16 @@ ul {
     padding: 0;
     margin: 8px;
     list-style: none;
+}
+
+@media(max-width:800px){
+    .hide-sm{
+        display:none;
+    }
+}
+
+@media (min-width: 801px) {
+    .hide-lg {
+        display: none;
+    }
 }
