@@ -1,646 +1,488 @@
 [
     {
-        "id": "6171a4d80d7d0",
         "name": "7 Wonders"
     },
     {
-        "id": "6171a4d80d83a",
         "name": "7 Wonders Duel (Ukrainian\/Bulgarian\/Korean edition)"
     },
     {
-        "id": "6171a4d80d87e",
         "name": "Abyss"
     },
     {
-        "id": "6171a4d80d8c2",
         "name": "Alchemists"
     },
     {
-        "id": "6171a4d80d900",
         "name": "Among Thieves (English edition)"
     },
     {
-        "id": "6171a4d80d93e",
         "name": "Arcana Magica (English edition)"
     },
     {
-        "id": "6171a4d80d97b",
         "name": "Arkham Horror: The Card Game"
     },
     {
-        "id": "6171a4d80d9bc",
         "name": "Azul: Stained Glass of Sintra"
     },
     {
-        "id": "6171a4d80da11",
         "name": "Backgammon"
     },
     {
-        "id": "6171a4d80da5a",
         "name": "Beer & Vikings (English\/Italian edition)"
     },
     {
-        "id": "6171a4d80da96",
         "name": "Beowulf: The Legend"
     },
     {
-        "id": "6171a4d80dad3",
         "name": "Betrayal at House on the Hill"
     },
     {
-        "id": "6171a4d80db11",
         "name": "Biblios (English edition 2015)"
     },
     {
-        "id": "6171a4d80db59",
         "name": "Blanko"
     },
     {
-        "id": "6171a4d80db98",
         "name": "Blood Bound (English second edition)"
     },
     {
-        "id": "6171a4d80dbd4",
         "name": "Blood Rage"
     },
     {
-        "id": "6171a4d80dc14",
         "name": "Bright Future"
     },
     {
-        "id": "6171a4d80dc51",
         "name": "Bunny Kingdom"
     },
     {
-        "id": "6171a4d80dc8e",
         "name": "Camel Up"
     },
     {
-        "id": "6171a4d80dccb",
         "name": "Canasta"
     },
     {
-        "id": "6171a4d80dd0a",
         "name": "Captain Sonar"
     },
     {
-        "id": "6171a4d80dd4e",
         "name": "Cargo Noir"
     },
     {
-        "id": "6171a4d80dd9b",
         "name": "Carnac"
     },
     {
-        "id": "6171a4d80ddee",
         "name": "Carrot and Stick"
     },
     {
-        "id": "6171a4d80de33",
         "name": "Castles of Mad King Ludwig"
     },
     {
-        "id": "6171a4d80de6e",
         "name": "Catan: 5-6 Player Extension"
     },
     {
-        "id": "6171a4d80dea9",
         "name": "Celestia"
     },
     {
-        "id": "6171a4d80dee4",
         "name": "Checkers"
     },
     {
-        "id": "6171a4d80df20",
         "name": "Chess"
     },
     {
-        "id": "6171a4d80df5b",
         "name": "Chronicles of Crime"
     },
     {
-        "id": "6171a4d80df8e",
         "name": "Citadels (Fantasy Flight edition with Dark City expansion)"
     },
     {
-        "id": "6171a4d80dfc2",
         "name": "Clans of Caledonia"
     },
     {
-        "id": "6171a4d80dffb",
         "name": "Clue"
     },
     {
-        "id": "6171a4d80e07f",
         "name": "Codenames"
     },
     {
-        "id": "6171a4d80e0c4",
         "name": "Colt Express"
     },
     {
-        "id": "6171a4d80e10c",
         "name": "Concept"
     },
     {
-        "id": "6171a4d80e147",
         "name": "Connect Four"
     },
     {
-        "id": "6171a4d80e17e",
         "name": "Coup"
     },
     {
-        "id": "6171a4d80e203",
         "name": "Decrypto"
     },
     {
-        "id": "6171a4d80e248",
         "name": "Deus"
     },
     {
-        "id": "6171a4d80e284",
         "name": "Dixit"
     },
     {
-        "id": "6171a4d80e2be",
         "name": "Dixit: Anniversary"
     },
     {
-        "id": "6171a4d80e2f5",
         "name": "Dixit: Daydreams"
     },
     {
-        "id": "6171a4d80e32b",
         "name": "Dixit: Journey"
     },
     {
-        "id": "6171a4d80e35f",
         "name": "Dixit: Odyssey"
     },
     {
-        "id": "6171a4d80e398",
         "name": "Dobble"
     },
     {
-        "id": "6171a4d80e3cc",
         "name": "Dominion"
     },
     {
-        "id": "6171a4d80e3ff",
         "name": "Dominoes"
     },
     {
-        "id": "6171a4d80e432",
         "name": "Dream Home"
     },
     {
-        "id": "6171a4d80e465",
         "name": "Dungeon Mayhem"
     },
     {
-        "id": "6171a4d80e498",
         "name": "Dungeons & Dragons: The Legend of Drizzt Board Game"
     },
     {
-        "id": "6171a4d80e4fe",
+        "name": "Eight-Minute Empire"
+    },
+    {
         "name": "Elinor: The Deserted Valley"
     },
     {
-        "id": "6171a4d80e530",
         "name": "Escape from the Aliens in Outer Space"
     },
     {
-        "id": "6171a4d80e562",
         "name": "Exploding Kittens"
     },
     {
-        "id": "6171a4d80e595",
         "name": "The Fox in the Forest"
     },
     {
-        "id": "6171a4d80e5c6",
         "name": "A Game of Thrones: The Board Game (Second Edition)"
     },
     {
-        "id": "6171a4d80e5f8",
         "name": "Game of Thrones: The Card Game"
     },
     {
-        "id": "6171a4d80e62b",
         "name": "Gauntlet of Fools"
     },
     {
-        "id": "6171a4d80e65d",
         "name": "Ghooost!"
     },
     {
-        "id": "6171a4d80e692",
         "name": "Go"
     },
     {
-        "id": "6171a4d80e6c6",
         "name": "Guess Who?"
     },
     {
-        "id": "6171a4d80e6f8",
         "name": "Hearts"
     },
     {
-        "id": "6171a4d80e72a",
         "name": "Hellapagos"
     },
     {
-        "id": "6171a4d80e75b",
         "name": "HINT"
     },
     {
-        "id": "6171a4d80e78d",
         "name": "Hive Pocket"
     },
     {
-        "id": "6171a4d80e7bf",
         "name": "Horus Heresy"
     },
     {
-        "id": "6171a4d80e7f0",
         "name": "Ishtar: Gardens of Babylon"
     },
     {
-        "id": "6171a4d80e823",
         "name": "Jenga"
     },
     {
-        "id": "6171a4d80e856",
         "name": "Jungle Speed"
     },
     {
-        "id": "6171a4d80e88a",
         "name": "Kabuki"
     },
     {
-        "id": "6171a4d80e8be",
         "name": "KeyForge: Call of the Archons"
     },
     {
-        "id": "6171a4d80e8f2",
         "name": "King of Tokyo"
     },
     {
-        "id": "6171a4d80e928",
         "name": "Lembitu"
     },
     {
-        "id": "6171a4d80e95c",
         "name": "Loot"
     },
     {
-        "id": "6171a4d80e994",
         "name": "Lords of Waterdeep"
     },
     {
-        "id": "6171a4d80e9ce",
         "name": "Lords of Waterdeep: Scoundrels of Skullport"
     },
     {
-        "id": "6171a4d80ea09",
         "name": "Lost Legacy: Second Chronicle \u2013 Vorpal Sword & Whitegold Spire"
     },
     {
-        "id": "6171a4d80ea46",
         "name": "Love Letter"
     },
     {
-        "id": "6171a4d80ea97",
         "name": "Love Letter: Batman"
     },
     {
-        "id": "6171a4d80eafc",
         "name": "Mahjong"
     },
     {
-        "id": "6171a4d80eb49",
         "name": "Mascarade"
     },
     {
-        "id": "6171a4d80eb89",
         "name": "Monopoly: Assassin's Creed Syndicate"
     },
     {
-        "id": "6171a4d80ebc2",
         "name": "Monopoly: The Big Bang Theory"
     },
     {
-        "id": "6171a4d80ec09",
         "name": "Mountains of Madness"
     },
     {
-        "id": "6171a4d80ec3f",
         "name": "Munchkin"
     },
     {
-        "id": "6171a4d80ec73",
         "name": "Mysterium (Bulgarian edition)"
     },
     {
-        "id": "6171a4d80eca6",
         "name": "Mysterium (Bulgarian edition)"
     },
     {
-        "id": "6171a4d80ecd9",
         "name": "Mystic ScROLLS"
     },
     {
-        "id": "6171a4d80ed0c",
         "name": "Night of the Grand Octopus"
     },
     {
-        "id": "6171a4d80ed3f",
         "name": "Odin's Ravens (Second Edition)"
     },
     {
-        "id": "6171a4d80ed71",
         "name": "One Night Ultimate Werewolf: Daybreak"
     },
     {
-        "id": "6171a4d80eda3",
         "name": "Password Express"
     },
     {
-        "id": "6171a4d80edd5",
         "name": "Patchwork"
     },
     {
-        "id": "6171a4d80ee09",
         "name": "Photosynthesis"
     },
     {
-        "id": "6171a4d80ee3c",
         "name": "Pictomania (Second Edition)"
     },
     {
-        "id": "6171a4d80ee71",
         "name": "A Place in the Sun (English edition)"
     },
     {
-        "id": "6171a4d80eea4",
         "name": "Port Royal"
     },
     {
-        "id": "6171a4d80eed8",
         "name": "Port Royal: Just One More Contract..."
     },
     {
-        "id": "6171a4d80ef0b",
         "name": "Pylos"
     },
     {
-        "id": "6171a4d80ef3f",
         "name": "Race for the Galaxy"
     },
     {
-        "id": "6171a4d80efab",
         "name": "Ramen Fury"
     },
     {
-        "id": "6171a4d80f024",
         "name": "Raptor"
     },
     {
-        "id": "6171a4d80f07b",
         "name": "Raverun"
     },
     {
-        "id": "6171a4d80f0bf",
         "name": "The Resistance"
     },
     {
-        "id": "6171a4d80f0fc",
         "name": "The Resistance: Avalon"
     },
     {
-        "id": "6171a4d80f135",
         "name": "Rummikub"
     },
     {
-        "id": "6171a4d80f16f",
         "name": "Rummikub Twist"
     },
     {
-        "id": "6171a4d80f1a5",
         "name": "Saboteur"
     },
     {
-        "id": "6171a4d80f1dd",
         "name": "Sagrada"
     },
     {
-        "id": "6171a4d80f21f",
         "name": "Secrets"
     },
     {
-        "id": "6171a4d80f264",
         "name": "Sequence"
     },
     {
-        "id": "6171a4d80f2a0",
         "name": "The Settlers of Catan"
     },
     {
-        "id": "6171a4d80f2d5",
         "name": "Sheriff of Nottingham"
     },
     {
-        "id": "6171a4d80f307",
         "name": "Shit Happens"
     },
     {
-        "id": "6171a4d80f33b",
         "name": "Skull"
     },
     {
-        "id": "6171a4d80f372",
         "name": "Small World Underground"
     },
     {
-        "id": "6171a4d80f3a5",
         "name": "Smash Up"
     },
     {
-        "id": "6171a4d80f3d9",
         "name": "Splendor"
     },
     {
-        "id": "6171a4d80f40b",
         "name": "Splendor"
     },
     {
-        "id": "6171a4d80f43e",
         "name": "Spyfall 2"
     },
     {
-        "id": "6171a4d80f470",
         "name": "Steam"
     },
     {
-        "id": "6171a4d80f4a4",
         "name": "Taboo"
     },
     {
-        "id": "6171a4d80f4d8",
         "name": "Telestrations"
     },
     {
-        "id": "6171a4d80f50a",
         "name": "Three-Dragon Ante"
     },
     {
-        "id": "6171a4d80f53d",
         "name": "Tichu"
     },
     {
-        "id": "6171a4d80f56f",
         "name": "Ticket to Ride"
     },
     {
-        "id": "6171a4d80f5a2",
         "name": "Ticket to Ride: Europe"
     },
     {
-        "id": "6171a4d80f5d4",
         "name": "Ticket to Ride: Europe"
     },
     {
-        "id": "6171a4d80f608",
         "name": "Trains and Stations"
     },
     {
-        "id": "6171a4d80f63b",
         "name": "Travelin'"
     },
     {
-        "id": "6171a4d80f66d",
         "name": "Trial by Trolley"
     },
     {
-        "id": "6171a4d80f69e",
         "name": "Ugh!"
     },
     {
-        "id": "6171a4d80f6d1",
         "name": "Ultimate Werewolf: Inquisition"
     },
     {
-        "id": "6171a4d80f704",
         "name": "UNO"
     },
     {
-        "id": "6171a4d80f735",
         "name": "Unstable Unicorns"
     },
     {
-        "id": "6171a4d80f768",
         "name": "Vikings"
     },
     {
-        "id": "6171a4d80f799",
         "name": "Warehouse 51"
     },
     {
-        "id": "6171a4d80f7cd",
         "name": "Warhammer Underworlds: Shadespire"
     },
     {
-        "id": "6171a4d80f7fe",
         "name": "Warhammer: Diskwars"
     },
     {
-        "id": "6171a4d80f830",
         "name": "Welcome Back to the Dungeon"
     },
     {
-        "id": "6171a4d80f863",
         "name": "When I Dream"
     },
     {
-        "id": "6171a4d80f895",
         "name": "The Witcher: The Adventure Card Game"
     },
     {
-        "id": "6171a4d80f8d2",
         "name": "World of Warcraft: The Adventure Game"
     },
     {
-        "id": "6171a4d80f905",
         "name": "Zombie Dice"
     },
     {
-        "id": "6171a4d80f938",
         "name": "Zombies!!!"
     },
     {
-        "id": "6171a4d80f96b",
         "name": "\u0411\u0410\u0422\u0410\u041b\u0418\u042f: \u0421\u044a\u0442\u0432\u043e\u0440\u044f\u0432\u0430\u043d\u0435"
     },
     {
-        "id": "6171a4d80f99d",
         "name": "\u0412\u044a\u0440\u043a\u043e\u043b\u0430\u0446\u0438"
     },
     {
-        "id": "6171a4d80f9d0",
         "name": "\u0417\u0430\u0441\u0435\u043b\u043d\u0438\u0446\u0438\u0442\u0435 \u043d\u0430 \u041a\u0430\u0442\u0430\u043d"
     },
     {
-        "id": "6171a4d80fa01",
         "name": "\u041a\u0430\u0440\u043a\u0430\u0441\u043e\u043d"
     },
     {
-        "id": "6171a4d80fa33",
         "name": "\u041a\u0438\u043d\u0433\u0434\u043e\u043c\u0438\u043d\u043e"
     },
     {
-        "id": "6171a4d80fa65",
         "name": "\u041a\u043e\u0434\u043e\u0432\u0438 \u0438\u043c\u0435\u043d\u0430: \u041a\u0430\u0440\u0442\u0438\u043d\u0438"
     },
     {
-        "id": "6171a4d80fa97",
         "name": "\u041a\u0440\u0430\u043b\u0435 \u0438 \u0412\u043b\u0430\u0434\u0435\u0442\u0435\u043b\u0438 \u043d\u0430 \u041a\u0430\u0442\u0430\u043d"
     },
     {
-        "id": "6171a4d80face",
         "name": "\u041a\u0440\u0430\u043b\u0441\u0442\u0432\u0430"
     },
     {
-        "id": "6171a4d80fb16",
         "name": "\u041a\u0440\u0430\u043b\u044f\u0442 \u043d\u0430 \u0411\u0430\u0440\u0434\u043e\u0432\u0435\u0442\u0435"
     },
     {
-        "id": "6171a4d80fb5f",
         "name": "\u041a\u0440\u0430\u043b\u044f\u0442 \u043d\u0430 \u0422\u043e\u043a\u0438\u043e"
     },
     {
-        "id": "6171a4d80fbaa",
         "name": "\u041b\u043e\u0432\u0446\u0438 \u0438 \u0421\u044a\u0431\u0438\u0440\u0430\u0447\u0438"
     },
     {
-        "id": "6171a4d80fbf4",
         "name": "\u041c\u043e\u043b \u041c\u0430\u0433\u0438\u043a\u0430"
     },
     {
-        "id": "6171a4d80fc3d",
         "name": "\u041f\u0430\u043d\u0434\u0435\u043c\u0438\u044f"
     },
     {
-        "id": "6171a4d80fc84",
         "name": "\u0421\u0435\u043b\u0438\u0449\u0435"
     },
     {
-        "id": "6171a4d80fccd",
         "name": "\u0422\u0435\u0440\u0438 \u041f\u0440\u0430\u0442\u0447\u0435\u0442: \u0412\u0435\u0449\u0438\u0446\u0438\u0442\u0435"
     },
     {
-        "id": "6171a4d80fd15",
         "name": "\u0423\u0431\u043e\u043d\u0433\u043e"
     }
 ]
