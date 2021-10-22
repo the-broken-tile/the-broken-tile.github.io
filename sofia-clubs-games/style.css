@@ -76,6 +76,10 @@ header h1 {
     background-image: url("./facebook.jpg");
 }
 
+.phone:after {
+    background-image: url("./phone.png");
+}
+
 #results {
     margin-top: 16px;
 }
