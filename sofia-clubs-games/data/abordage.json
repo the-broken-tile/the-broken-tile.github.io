@@ -1,0 +1,694 @@
+[
+    {
+        "id": "6171a4d800d91",
+        "name": "7 Wonders"
+    },
+    {
+        "id": "6171a4d800e13",
+        "name": "Activity"
+    },
+    {
+        "id": "6171a4d800e86",
+        "name": "Alchemists"
+    },
+    {
+        "id": "6171a4d800ef1",
+        "name": "Among Thieves"
+    },
+    {
+        "id": "6171a4d800f5c",
+        "name": "Among Thieves"
+    },
+    {
+        "id": "6171a4d800fc7",
+        "name": "Avalon"
+    },
+    {
+        "id": "6171a4d80102a",
+        "name": "Azul"
+    },
+    {
+        "id": "6171a4d801096",
+        "name": "Bang! The dice game"
+    },
+    {
+        "id": "6171a4d801100",
+        "name": "Bears vs. Babies"
+    },
+    {
+        "id": "6171a4d801168",
+        "name": "Betrayal at Baldur's Gate"
+    },
+    {
+        "id": "6171a4d8011d2",
+        "name": "Betrayal at the house on the hill"
+    },
+    {
+        "id": "6171a4d801241",
+        "name": "Bright Future"
+    },
+    {
+        "id": "6171a4d8012ae",
+        "name": "Call to Adventure"
+    },
+    {
+        "id": "6171a4d801316",
+        "name": "Carcassone"
+    },
+    {
+        "id": "6171a4d80137a",
+        "name": "Cards against humanity"
+    },
+    {
+        "id": "6171a4d8013d8",
+        "name": "Cards agaist muggles"
+    },
+    {
+        "id": "6171a4d80143c",
+        "name": "Catan"
+    },
+    {
+        "id": "6171a4d80149a",
+        "name": "Catan"
+    },
+    {
+        "id": "6171a4d8014f9",
+        "name": "Catan - \u043c\u043e\u0440\u0435\u043f\u043b\u0430\u0432\u0430\u0442\u0435\u043b\u0438"
+    },
+    {
+        "id": "6171a4d80155f",
+        "name": "Catan \u0440\u0430\u0437\u0448\u0438\u0440\u0435\u043d\u0438\u0435 5-6"
+    },
+    {
+        "id": "6171a4d8015c2",
+        "name": "Citadels"
+    },
+    {
+        "id": "6171a4d801626",
+        "name": "Codenames XXL"
+    },
+    {
+        "id": "6171a4d801688",
+        "name": "Colt Express"
+    },
+    {
+        "id": "6171a4d8016ee",
+        "name": "Concept"
+    },
+    {
+        "id": "6171a4d801754",
+        "name": "Corinth"
+    },
+    {
+        "id": "6171a4d8017bc",
+        "name": "Coup"
+    },
+    {
+        "id": "6171a4d801822",
+        "name": "Coup reformation EXP"
+    },
+    {
+        "id": "6171a4d801889",
+        "name": "Crossfire"
+    },
+    {
+        "id": "6171a4d8018ec",
+        "name": "Crusader Kings"
+    },
+    {
+        "id": "6171a4d801955",
+        "name": "Dark Stories"
+    },
+    {
+        "id": "6171a4d8019bc",
+        "name": "Dash Arena"
+    },
+    {
+        "id": "6171a4d801a31",
+        "name": "Dead of Winter"
+    },
+    {
+        "id": "6171a4d801aa5",
+        "name": "Deadwood 1876"
+    },
+    {
+        "id": "6171a4d801b19",
+        "name": "Deception: Murder in Hong Kong"
+    },
+    {
+        "id": "6171a4d801b8c",
+        "name": "Deep Blue"
+    },
+    {
+        "id": "6171a4d801c05",
+        "name": "Diplomacy"
+    },
+    {
+        "id": "6171a4d801c7a",
+        "name": "Dixit 10th Anniversary EXP"
+    },
+    {
+        "id": "6171a4d801cf3",
+        "name": "Dixit 8 Harmonies EXP"
+    },
+    {
+        "id": "6171a4d801d7c",
+        "name": "Dixit 7 Revelations EXP"
+    },
+    {
+        "id": "6171a4d801e03",
+        "name": "Dixit Odyssey"
+    },
+    {
+        "id": "6171a4d801e76",
+        "name": "Dobble"
+    },
+    {
+        "id": "6171a4d801eee",
+        "name": "Dominion"
+    },
+    {
+        "id": "6171a4d801f5b",
+        "name": "Dragonfire"
+    },
+    {
+        "id": "6171a4d801fd1",
+        "name": "Dungeon Mayhem"
+    },
+    {
+        "id": "6171a4d80203a",
+        "name": "Dwar7s Fall"
+    },
+    {
+        "id": "6171a4d8020ab",
+        "name": "Dwar7s Fall: Empires Expansion"
+    },
+    {
+        "id": "6171a4d80212b",
+        "name": "Elder Sign"
+    },
+    {
+        "id": "6171a4d80219f",
+        "name": "Elinor"
+    },
+    {
+        "id": "6171a4d80223a",
+        "name": "Exploding kittens"
+    },
+    {
+        "id": "6171a4d8022d7",
+        "name": "Exploding Kittens: NSFW Deck"
+    },
+    {
+        "id": "6171a4d80233e",
+        "name": "Five Tribes"
+    },
+    {
+        "id": "6171a4d802388",
+        "name": "Flick'em Up - Dead of Winter"
+    },
+    {
+        "id": "6171a4d8023c6",
+        "name": "Game of Thrones"
+    },
+    {
+        "id": "6171a4d802403",
+        "name": "Guards! Guards!"
+    },
+    {
+        "id": "6171a4d80243e",
+        "name": "Harry Potter: Hogwarts Battle"
+    },
+    {
+        "id": "6171a4d8024c7",
+        "name": "Hive"
+    },
+    {
+        "id": "6171a4d80252c",
+        "name": "Illumunati"
+    },
+    {
+        "id": "6171a4d80258c",
+        "name": "Innovation"
+    },
+    {
+        "id": "6171a4d8025e1",
+        "name": "Innovation: Echoes of the past EXP"
+    },
+    {
+        "id": "6171a4d802620",
+        "name": "Jamaica"
+    },
+    {
+        "id": "6171a4d80265c",
+        "name": "Jungle Speed"
+    },
+    {
+        "id": "6171a4d8026e2",
+        "name": "Junk art"
+    },
+    {
+        "id": "6171a4d80275a",
+        "name": "King of all bards"
+    },
+    {
+        "id": "6171a4d8027c7",
+        "name": "Lastiche"
+    },
+    {
+        "id": "6171a4d802845",
+        "name": "Libertalia"
+    },
+    {
+        "id": "6171a4d8028a4",
+        "name": "Love Letter"
+    },
+    {
+        "id": "6171a4d802914",
+        "name": "Mondo"
+    },
+    {
+        "id": "6171a4d802974",
+        "name": "Motion Pictures"
+    },
+    {
+        "id": "6171a4d8029f0",
+        "name": "Munchkin Booty"
+    },
+    {
+        "id": "6171a4d802a4e",
+        "name": "Mysterium"
+    },
+    {
+        "id": "6171a4d802ac0",
+        "name": "Mystic Scrolls"
+    },
+    {
+        "id": "6171a4d802b0a",
+        "name": "Mystic Scrolls"
+    },
+    {
+        "id": "6171a4d802b48",
+        "name": "One Night Ultimate Werewolf"
+    },
+    {
+        "id": "6171a4d802b84",
+        "name": "Overtime"
+    },
+    {
+        "id": "6171a4d802bbe",
+        "name": "Pandemic"
+    },
+    {
+        "id": "6171a4d802bf8",
+        "name": "Pandemic: On the Brink"
+    },
+    {
+        "id": "6171a4d802c50",
+        "name": "Paperback"
+    },
+    {
+        "id": "6171a4d802c8b",
+        "name": "Pirate Flux"
+    },
+    {
+        "id": "6171a4d802cc4",
+        "name": "Place in the sun"
+    },
+    {
+        "id": "6171a4d802cfd",
+        "name": "Plague Inc.: The Board Game"
+    },
+    {
+        "id": "6171a4d802d35",
+        "name": "Power Grid"
+    },
+    {
+        "id": "6171a4d802d6b",
+        "name": "Puerto Rico"
+    },
+    {
+        "id": "6171a4d802da3",
+        "name": "Quirkle"
+    },
+    {
+        "id": "6171a4d802e16",
+        "name": "Quoridor"
+    },
+    {
+        "id": "6171a4d802e52",
+        "name": "Rattle, Battle, Grab the Loot"
+    },
+    {
+        "id": "6171a4d802e8a",
+        "name": "Red Scare"
+    },
+    {
+        "id": "6171a4d802ec2",
+        "name": "Relic Runners"
+    },
+    {
+        "id": "6171a4d802efa",
+        "name": "Rick & Morty: Anatomy Park"
+    },
+    {
+        "id": "6171a4d802f32",
+        "name": "Rick & Morty: Close Rick-counters of the Rick kind"
+    },
+    {
+        "id": "6171a4d802f6a",
+        "name": "Rick & Morty: Monopoly"
+    },
+    {
+        "id": "6171a4d802fa1",
+        "name": "Rick and Morty: Munchkin"
+    },
+    {
+        "id": "6171a4d802fd9",
+        "name": "Rick & Morty: Total Rickall"
+    },
+    {
+        "id": "6171a4d80300f",
+        "name": "Saboteur"
+    },
+    {
+        "id": "6171a4d803048",
+        "name": "Safranito"
+    },
+    {
+        "id": "6171a4d80307f",
+        "name": "Sagrada"
+    },
+    {
+        "id": "6171a4d803111",
+        "name": "Salem 1692"
+    },
+    {
+        "id": "6171a4d803172",
+        "name": "Say Whaat"
+    },
+    {
+        "id": "6171a4d8031bd",
+        "name": "Scotland Yard"
+    },
+    {
+        "id": "6171a4d8031fe",
+        "name": "Secret Hitler"
+    },
+    {
+        "id": "6171a4d80323c",
+        "name": "Sheepland"
+    },
+    {
+        "id": "6171a4d803277",
+        "name": "Sheriff of Nottingham"
+    },
+    {
+        "id": "6171a4d8032b1",
+        "name": "Sheriff of Nottingham - Merry Men Exp"
+    },
+    {
+        "id": "6171a4d803321",
+        "name": "Skull"
+    },
+    {
+        "id": "6171a4d803371",
+        "name": "Sly Foxes\/ \u041b\u0443\u043a\u0430\u0432\u0438 \u043b\u0438\u0441\u0438\u0446\u0438"
+    },
+    {
+        "id": "6171a4d8033b3",
+        "name": "Smallworld"
+    },
+    {
+        "id": "6171a4d8033f1",
+        "name": "Splendor"
+    },
+    {
+        "id": "6171a4d80342d",
+        "name": "Splendor"
+    },
+    {
+        "id": "6171a4d803468",
+        "name": "Splendor: Expansion"
+    },
+    {
+        "id": "6171a4d8034a2",
+        "name": "SpyFall"
+    },
+    {
+        "id": "6171a4d8034db",
+        "name": "Star Realms"
+    },
+    {
+        "id": "6171a4d803514",
+        "name": "Star Realms: Colony Wars"
+    },
+    {
+        "id": "6171a4d80354c",
+        "name": "Stay out of my Dungeon"
+    },
+    {
+        "id": "6171a4d803584",
+        "name": "Stone Age"
+    },
+    {
+        "id": "6171a4d8035bd",
+        "name": "Survive: Escape from Atlantis"
+    },
+    {
+        "id": "6171a4d8035f6",
+        "name": "Sushi Go Party!"
+    },
+    {
+        "id": "6171a4d80362e",
+        "name": "Takenoko"
+    },
+    {
+        "id": "6171a4d803667",
+        "name": "Tash kalar"
+    },
+    {
+        "id": "6171a4d8036a0",
+        "name": "Terraforming Mars"
+    },
+    {
+        "id": "6171a4d8036d8",
+        "name": "The Bloody Inn"
+    },
+    {
+        "id": "6171a4d803710",
+        "name": "The Isle of Cats"
+    },
+    {
+        "id": "6171a4d803748",
+        "name": "The Isle of Cats: Late Arrivals"
+    },
+    {
+        "id": "6171a4d803780",
+        "name": "The Little Prince"
+    },
+    {
+        "id": "6171a4d8037b8",
+        "name": "The Resistance"
+    },
+    {
+        "id": "6171a4d8037f1",
+        "name": "The Resistance"
+    },
+    {
+        "id": "6171a4d803829",
+        "name": "Ticket to Ride - Europe"
+    },
+    {
+        "id": "6171a4d803862",
+        "name": "Ticket to Ride - USA"
+    },
+    {
+        "id": "6171a4d80389a",
+        "name": "Timeline"
+    },
+    {
+        "id": "6171a4d8038d3",
+        "name": "Timeline Star Wars"
+    },
+    {
+        "id": "6171a4d80390c",
+        "name": "Tortuga 1667"
+    },
+    {
+        "id": "6171a4d803945",
+        "name": "Trial by Trolley (Cyanide and Happiness; 18+)"
+    },
+    {
+        "id": "6171a4d80397d",
+        "name": "Ultimate Werewolf Deluxe"
+    },
+    {
+        "id": "6171a4d8039c4",
+        "name": "Uno"
+    },
+    {
+        "id": "6171a4d803a30",
+        "name": "Viral"
+    },
+    {
+        "id": "6171a4d803a66",
+        "name": "Welcome to the Dungeon"
+    },
+    {
+        "id": "6171a4d803a9b",
+        "name": "WheelVille"
+    },
+    {
+        "id": "6171a4d803ad1",
+        "name": "Wingspan"
+    },
+    {
+        "id": "6171a4d803b08",
+        "name": "Wingspan: European Expansion"
+    },
+    {
+        "id": "6171a4d803b3e",
+        "name": "Witless Wizards"
+    },
+    {
+        "id": "6171a4d803b75",
+        "name": "World of Warcraft + EXP (\u043d\u0435 \u0433\u043e \u0434\u0430\u0432\u0430\u043c\u0435)"
+    },
+    {
+        "id": "6171a4d803bac",
+        "name": "\u0410\u043b\u0435\u043d\u0430 \u0417\u043e\u0440\u0430"
+    },
+    {
+        "id": "6171a4d803be2",
+        "name": "\u0410\u0440\u0445\u0435\u043e\u043b\u043e\u0437\u0438 \u0441\u0440\u0435\u0449\u0443 \u0418\u043c\u0430\u043d\u044f\u0440\u0438"
+    },
+    {
+        "id": "6171a4d803c19",
+        "name": "\u0411\u0430\u0442\u0430\u043b\u0438\u044f: \u0421\u044a\u0442\u0432\u043e\u0440\u044f\u0432\u0430\u043d\u0435"
+    },
+    {
+        "id": "6171a4d803c4f",
+        "name": "\u0411\u0438\u043b\u0435\u0442 \u0437\u0430 \u043f\u044a\u0442"
+    },
+    {
+        "id": "6171a4d803c85",
+        "name": "\u0413\u044a\u0431\u043a\u0438"
+    },
+    {
+        "id": "6171a4d803cbb",
+        "name": "\u0414\u0436\u0435\u043d\u0433\u0430"
+    },
+    {
+        "id": "6171a4d803cf1",
+        "name": "\u0414\u043e\u043c \u043c\u0435\u0447\u0442\u0430"
+    },
+    {
+        "id": "6171a4d803d27",
+        "name": "\u0414\u0440\u044a\u0436 \u0441\u0435, \u0417\u0435\u043c\u044c\u043e"
+    },
+    {
+        "id": "6171a4d803d5d",
+        "name": "\u0418\u0433\u0440\u0430 \u0441 \u0434\u0443\u043c\u0438"
+    },
+    {
+        "id": "6171a4d803d94",
+        "name": "\u041a\u0430\u043a \u0434\u0430 \u043e\u0446\u0435\u043b\u0435\u0435\u0448 \u043a\u0430\u0442\u043e \u0440\u043e\u0434\u0438\u0442\u0435\u043b"
+    },
+    {
+        "id": "6171a4d803dca",
+        "name": "\u041a\u0430\u043a\u0430\u043e"
+    },
+    {
+        "id": "6171a4d803e00",
+        "name": "\u041a\u0438\u043d\u0433\u0434\u043e\u043c\u0438\u043d\u043e"
+    },
+    {
+        "id": "6171a4d803e36",
+        "name": "\u041a\u0438\u043d\u0433\u0434\u043e\u043c\u0438\u043d\u043e"
+    },
+    {
+        "id": "6171a4d803e6c",
+        "name": "\u041a\u043e\u0434\u043e\u0432\u0438 \u0438\u043c\u0435\u043d\u0430"
+    },
+    {
+        "id": "6171a4d803ea2",
+        "name": "\u041a\u043e\u0434\u043e\u0432\u0438 \u0438\u043c\u0435\u043d\u0430 \u043a\u0430\u0440\u0442\u0438\u043d\u0438"
+    },
+    {
+        "id": "6171a4d803ed9",
+        "name": "\u041a\u0440\u0430\u043b\u0441\u0442\u0432\u0430"
+    },
+    {
+        "id": "6171a4d803f0e",
+        "name": "\u041a\u0440\u0430\u043b\u044f\u0442 \u043d\u0430 \u0422\u043e\u043a\u0438\u043e"
+    },
+    {
+        "id": "6171a4d803f45",
+        "name": "\u041a\u0443\u043a\u0435\u0440"
+    },
+    {
+        "id": "6171a4d803f7b",
+        "name": "\u041b\u0430\u0441\u0442\u0438\u0447\u0435"
+    },
+    {
+        "id": "6171a4d803fb2",
+        "name": "\u041b\u043e\u0432\u0446\u0438 \u0438 \u0441\u044a\u0431\u0438\u0440\u0430\u0447\u0438"
+    },
+    {
+        "id": "6171a4d803fe8",
+        "name": "\u041c\u0430\u0441\u043a\u0430\u0440\u0430\u0434"
+    },
+    {
+        "id": "6171a4d80401e",
+        "name": "\u041d\u0430 \u0412\u0443\u0442\u0435 \u0434\u0430 \u043c\u0443 \u0435 \u0437\u043b\u0435"
+    },
+    {
+        "id": "6171a4d804055",
+        "name": "\u041f\u043e\u0440\u0442 \u0420\u043e\u044f\u043b"
+    },
+    {
+        "id": "6171a4d80408b",
+        "name": "\u0421\u043a\u0430\u0437\u0430\u043d\u0438\u0435"
+    },
+    {
+        "id": "6171a4d8040c1",
+        "name": "\u0421\u0442\u043e\u0439 \u0434\u0430\u043b\u0435\u0447"
+    },
+    {
+        "id": "6171a4d8040f7",
+        "name": "\u0423\u0431\u043e\u043d\u0433\u043e"
+    },
+    {
+        "id": "6171a4d80412d",
+        "name": "\u0424\u043e\u0442\u043e\u0441\u0438\u043d\u0442\u0435\u0437\u0430"
+    },
+    {
+        "id": "6171a4d804163",
+        "name": "\u0425\u0430\u0439\u0434\u0443\u0442\u0438"
+    },
+    {
+        "id": "6171a4d804199",
+        "name": "\u0426\u0430\u0440\u044f\u0442 \u043d\u0430 \u0438\u0441\u0442\u043e\u0440\u0438\u044f\u0442\u0430"
+    },
+    {
+        "id": "6171a4d8041cf",
+        "name": "\u0426\u0438\u0432\u0438\u043b\u0438\u0437\u0430\u0446\u0438\u044f"
+    },
+    {
+        "id": "6171a4d804205",
+        "name": "\u0427\u0435\u0439\u043d\u0447\u0430\u0434\u0436\u0438\u044f\u0442\u0430"
+    },
+    {
+        "id": "6171a4d80423b",
+        "name": "\u0428\u0430\u0445 \u0437\u0430 \u0442\u0440\u0438\u043c\u0430"
+    },
+    {
+        "id": "6171a4d804271",
+        "name": "TSAK - Box A"
+    },
+    {
+        "id": "6171a4d8042a7",
+        "name": "TSAK - Box B"
+    }
+]
