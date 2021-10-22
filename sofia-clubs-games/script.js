@@ -38,7 +38,7 @@ const renderClub = slug => {
     return `<li>${clubsBySlug[slug].name} ${clubsBySlug[slug].links.map(renderLink).join('')}</li>`
 };
 
-const renderClubs = clubs => `<ul>${clubs.map(renderClub).join('')}</ul>`;
+const renderClubs = memoize(clubs => `<ul>${clubs.map(renderClub).join('')}</ul>`);
 
 const renderResults = results => {
     return `<table>
