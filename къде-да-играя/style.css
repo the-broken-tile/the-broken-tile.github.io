@@ -4,6 +4,7 @@
     url("./fonts/SofiaSans-Regular.woff") format("woff");
 }
 body {
+    font-size: 16px;
     font-family: 'Sofia Sans', sans-serif;
     padding-top: 111px;
     background: whitesmoke;
@@ -14,6 +15,7 @@ header {
     top: 0;
     background: whitesmoke;
     width: 100%;
+    z-index: 1;
 }
 header h1 {
     margin: 8px;
@@ -66,18 +68,21 @@ header h1 {
     width: 16px;
     height: 16px;
     background-size: 16px 16px;
+    margin-left: 3px;
+    position: relative;
+    top: 2px;
 }
 
 .location:after {
-    background-image: url("./location.png");
+    background-image: url("./icons/location.png");
 }
 
 .facebook:after {
-    background-image: url("./facebook.jpg");
+    background-image: url("./icons/facebook.jpg");
 }
 
 .phone:after {
-    background-image: url("./phone.png");
+    background-image: url("./icons/phone.png");
 }
 
 #results {
