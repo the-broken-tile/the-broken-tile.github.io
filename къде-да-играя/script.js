@@ -3,7 +3,7 @@ let clubs = [];
 let games = [];
 const gamesByName = {};
 const clubsBySlug = {};
-const QUERY_REGEXP = /\?q=([^&$]+)/;
+const QUERY_REGEXP = /\?какво=([^&$]+)/;
 const trims = new RegExp([
     '\sa\s',
     '\sthe\s',
