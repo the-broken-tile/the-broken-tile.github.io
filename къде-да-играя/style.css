@@ -8,14 +8,19 @@ body {
     font-family: 'Sofia Sans', sans-serif;
     padding-top: 111px;
     background: whitesmoke;
+    margin: 0;
 }
 header {
-    border-bottom: 1px solid black;
+    box-shadow: 0 5px 5px gray;
     position: fixed;
     top: 0;
     background: whitesmoke;
     width: 100%;
     z-index: 1;
+}
+.header-content {
+    width: 75%;
+    margin: 0 auto;
 }
 header h1 {
     margin: 8px;
@@ -87,6 +92,7 @@ header h1 {
 
 #results {
     margin-top: 16px;
+    padding: 16px;
 }
 
 #results table {
@@ -121,8 +127,11 @@ ul {
 }
 
 @media(max-width:800px){
-    .hide-sm{
+    .hide-sm {
         display:none;
+    }
+    .header-content {
+        width: 100%;
     }
 }
 
