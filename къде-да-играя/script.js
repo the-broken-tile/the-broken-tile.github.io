@@ -5,13 +5,15 @@ const gamesByName = {};
 const clubsBySlug = {};
 const QUERY_REGEXP = /\?какво=([^&$]+)/;
 const trims = new RegExp([
-    '\sa\s',
-    '\sthe\s',
-    '\sat\s',
-    '\sof\s',
-    '\son\s',
-    '\sand\s',
-    '\set\s',
+    ...[
+        //English articles
+        'a', 'the', 'at', 'of', 'on', 'and',
+        //French articles
+        'et',
+        //Bulgarian articles
+        'на', 'за', 'и',
+    ].map(word => `\\b${word}\\b`),
+    //Punctuation
     '-',
     '–',
     ':',
@@ -24,7 +26,9 @@ const trims = new RegExp([
     ',',
     "'",
     '\\+'
-].join('|'), 'gi');
+    ]
+    .join('|'), 'gi');
+
 const trim = name => name.toLowerCase().replace(trims, '').replace(/\s+/g, '');
 const getTerm = () => {
     const matches = decodeURIComponent(location.search.replace(/\+/g, '%20')).match(QUERY_REGEXP);
