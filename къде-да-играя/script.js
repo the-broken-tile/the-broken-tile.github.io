@@ -47,7 +47,7 @@ const renderClub = slug => {
     return `<li>${clubsBySlug[slug].links.map(renderLink).join('')} ${clubsBySlug[slug].name} </li>`
 };
 
-const renderClubs = memoize(clubs => `<ul>${clubs.map(renderClub).join('')}</ul>`);
+const renderClubs = memoize(clubs => `<ul class="clubs">${clubs.map(renderClub).join('')}</ul>`);
 
 const renderResults = results => {
     // Double content FTW!

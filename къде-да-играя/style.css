@@ -1,25 +1,32 @@
+:root {
+    --main-color: #00738c;
+    --background-color: whitesmoke;
+    --shadow-color: #708090;
+}
+
 @font-face {
     font-family: "Sofia Sans";
     src: url("./fonts/SofiaSans-Regular.woff2") format("woff2"),
     url("./fonts/SofiaSans-Regular.woff") format("woff");
 }
+
 body {
     font-size: 16px;
     font-family: 'Sofia Sans', sans-serif;
     padding-top: 111px;
-    background: whitesmoke;
+    background: var(--background-color);
     margin: 0;
 }
 header {
-    box-shadow: 0 5px 5px gray;
+    box-shadow: 0 5px 15px var(--shadow-color);
     position: fixed;
     top: 0;
-    background: whitesmoke;
+    background: var(--background-color);
     width: 100%;
     z-index: 1;
 }
 .header-content {
-    width: 75%;
+    width: 50%;
     margin: 0 auto;
 }
 header h1 {
@@ -27,10 +34,6 @@ header h1 {
 }
 
 #form {
-    position: relative;
-    width: 30%;
-    left: 50%;
-    transform: translate(-50%, 0);
     margin-bottom: 8px;
 }
 
@@ -42,7 +45,7 @@ header h1 {
 
 .search-term {
     width: 100%;
-    border: 3px solid #00B4CC;
+    border: 3px solid var(--main-color);
     border-right: none;
     padding: 5px;
     height: 20px;
@@ -58,8 +61,8 @@ header h1 {
 .search-button {
     width: 40px;
     height: 36px;
-    border: 1px solid #00B4CC;
-    background: #00B4CC;
+    border: 1px solid var(--main-color);
+    background: var(--main-color);
     text-align: center;
     color: #fff;
     border-radius: 0 5px 5px 0;
@@ -68,7 +71,7 @@ header h1 {
 }
 
 .icon {
-    color: #00738c;
+    color: var(--main-color);
     margin-left: 3px;
 }
 
@@ -83,29 +86,29 @@ header h1 {
 }
 
 #results tr {
-    border-top: 1px solid #00B4CC;
+    border-top: 1px solid var(--main-color);
 }
-
+#results thead tr {
+    border-bottom: 2px solid var(--main-color);
+}
 #results tr:first-child {
     border-top: none;
 }
 
 #results th {
+    text-align: left;
     padding: 8px;
+    font-size: 1.2em;
 }
 
-#results td {
-    border-left: 1px solid #00B4CC;
-}
-
-#results td:first-child {
-    border-left: none;
-}
-
-ul {
+.clubs {
     padding: 0;
     margin: 8px;
     list-style: none;
+}
+
+.clubs li {
+    margin-bottom: 8px;
 }
 
 @media(max-width:800px){
@@ -113,7 +116,7 @@ ul {
         display:none;
     }
     .header-content {
-        width: 100%;
+        width: 90%;
     }
 }
 
