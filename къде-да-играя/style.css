@@ -2,6 +2,7 @@
     --main-color: #00738c;
     --background-color: whitesmoke;
     --shadow-color: #708090;
+    --input-color: #000;
 }
 
 @font-face {
@@ -18,23 +19,24 @@ body {
     margin: 0;
 }
 header {
-    box-shadow: 0 5px 15px var(--shadow-color);
+    box-shadow: 0 5px 5px var(--shadow-color);
     position: fixed;
     top: 0;
     background: var(--background-color);
     width: 100%;
     z-index: 1;
+    padding: 8px;
 }
 .header-content {
     width: 50%;
     margin: 0 auto;
 }
-header h1 {
-    margin: 8px;
+.header-content h1 {
+    text-align: center;
 }
-
+.header-content h1,
 #form {
-    margin-bottom: 8px;
+    margin: 0 0 8px 0;
 }
 
 .search {
@@ -51,11 +53,7 @@ header h1 {
     height: 20px;
     border-radius: 5px 0 0 5px;
     outline: none;
-    color: #9DBFAF;
-}
-
-.search-term:focus{
-    color: #00B4CC;
+    color: var(--input-color);
 }
 
 .search-button {
@@ -64,7 +62,7 @@ header h1 {
     border: 1px solid var(--main-color);
     background: var(--main-color);
     text-align: center;
-    color: #fff;
+    color: var(--background-color);
     border-radius: 0 5px 5px 0;
     cursor: pointer;
     font-size: 20px;
