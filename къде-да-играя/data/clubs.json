@@ -46,6 +46,10 @@
             {
                 "type": "facebook",
                 "value": "https:\/\/www.facebook.com\/LevelUpSofia"
+            },
+            {
+                "type": "phone",
+                "value": "tel:+359887330989"
             }
         ]
     },
