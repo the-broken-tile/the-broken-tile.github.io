@@ -1,0 +1,88 @@
+[
+    {
+        "name": "Mox Games",
+        "slug": "mox",
+        "links": [
+            {
+                "type": "location",
+                "value": "https:\/\/goo.gl\/maps\/1ndWurkf5quTP5JAA"
+            },
+            {
+                "type": "facebook",
+                "value": "https:\/\/www.facebook.com\/MoxGamesBG"
+            },
+            {
+                "type": "phone",
+                "value": "tel:+359884225468"
+            }
+        ]
+    },
+    {
+        "name": "Abordage",
+        "slug": "abordage",
+        "links": [
+            {
+                "type": "location",
+                "value": "https:\/\/g.page\/abordagebg?share"
+            },
+            {
+                "type": "facebook",
+                "value": "https:\/\/www.facebook.com\/abordagebg"
+            },
+            {
+                "type": "phone",
+                "value": "tel:+359889180993"
+            }
+        ]
+    },
+    {
+        "name": "Level Up Sofia",
+        "slug": "lvl-up",
+        "links": [
+            {
+                "type": "location",
+                "value": "https:\/\/goo.gl\/maps\/6UaTftq65uyp5bH86"
+            },
+            {
+                "type": "facebook",
+                "value": "https:\/\/www.facebook.com\/LevelUpSofia"
+            }
+        ]
+    },
+    {
+        "name": "\u0414\u0440\u0443\u0433\u0438\u044f\u0442 \u0437\u0430\u043c\u044a\u043a",
+        "slug": "castle",
+        "links": [
+            {
+                "type": "location",
+                "value": "https:\/\/g.page\/castle-bg?share"
+            },
+            {
+                "type": "facebook",
+                "value": "https:\/\/www.facebook.com\/castle.boardgames"
+            },
+            {
+                "type": "phone",
+                "value": "tel:+359883450549"
+            }
+        ]
+    },
+    {
+        "name": "Mythical 20",
+        "slug": "myth-20",
+        "links": [
+            {
+                "type": "location",
+                "value": "https:\/\/goo.gl\/maps\/DhoEqp43BVJij41TA"
+            },
+            {
+                "type": "facebook",
+                "value": "https:\/\/www.facebook.com\/mythical20sofia"
+            },
+            {
+                "type": "phone",
+                "value": "tel:+359889587800"
+            }
+        ]
+    }
+]

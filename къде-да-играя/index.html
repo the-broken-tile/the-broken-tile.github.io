@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Къде да играя</title>
+        <link rel="stylesheet" href="./style.css">
+        <script src="https://kit.fontawesome.com/4f2a019380.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div class="header-content">
+                <h1>Къде да играя?</h1>
+                <form id="form" class="wrap">
+                    <div class="search">
+                        <input name="какво" id="q" type="text" class="search-term" autofocus>
+                        <button type="submit" value="Търси" class="search-button">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </header>
+        <div id="results"></div>
+        <script src="/utils/loadJSON.js"></script>
+        <script src="/utils/memoize.js"></script>
+        <script src="./script.js"></script>
+    </body>
+</html>

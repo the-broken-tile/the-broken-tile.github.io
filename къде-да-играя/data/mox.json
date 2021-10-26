@@ -1,0 +1,797 @@
+[
+    {
+        "name": "5 Minute Marvel"
+    },
+    {
+        "name": "7 Wonders - \u0414\u0443\u0435\u043b"
+    },
+    {
+        "name": "\u0410\u0432\u0430\u043b\u043e\u043d"
+    },
+    {
+        "name": "\u0411\u0438\u0442\u043a\u0430\u0442\u0430 \u0437\u0430 \u0411\u0430\u043b\u043a\u0430\u043d\u0438\u0442\u0435: \u0415\u0440\u0430\u0442\u0430 \u043d\u0430 \u041a\u0430\u043b\u043e\u044f\u043d"
+    },
+    {
+        "name": "\u0412\u044a\u0440\u043a\u043e\u043b\u0430\u0446\u0438"
+    },
+    {
+        "name": "\u0413\u044a\u0431\u043a\u0438"
+    },
+    {
+        "name": "\u0414-\u0440 \u0415\u0432\u0440\u0438\u043a\u0430"
+    },
+    {
+        "name": "\u0414\u0430, \u0442\u044a\u043c\u043d\u0438 \u0433\u043e\u0441\u043f\u043e\u0434\u0430\u0440\u044e! - \u0447\u0435\u0440\u0432\u0435\u043d\u0430 \u043a\u0443\u0442\u0438\u044f"
+    },
+    {
+        "name": "\u0414\u0435\u043a\u0440\u0438\u043f\u0442\u043e"
+    },
+    {
+        "name": "\u0414\u0438\u043a\u0441\u0438\u0442"
+    },
+    {
+        "name": "\u0415\u0434\u0438\u043d \u043f\u0440\u0435\u043a\u0440\u0430\u0441\u0435\u043d \u0441\u0432\u044f\u0442"
+    },
+    {
+        "name": "\u0417\u0430\u0441\u0435\u043b\u043d\u0438\u0446\u0438\u0442\u0435 \u043d\u0430 \u041a\u0430\u0442\u0430\u043d"
+    },
+    {
+        "name": "\u0417\u0430\u0441\u0435\u043b\u043d\u0438\u0446\u0438\u0442\u0435 \u043d\u0430 \u041a\u0430\u0442\u0430\u043d: \u041c\u043e\u0440\u0435\u043f\u043b\u0430\u0432\u0430\u0442\u0435\u043b\u0438"
+    },
+    {
+        "name": "\u0417\u0430\u0441\u0435\u043b\u043d\u0438\u0446\u0438\u0442\u0435 \u043d\u0430 \u041a\u0430\u0442\u0430\u043d: \u0421\u044a\u043a\u0440\u043e\u0432\u0438\u0449\u0430, \u0434\u0440\u0430\u043a\u043e\u043d\u0438 \u0438 \u043e\u0442\u043a\u0440\u0438\u0432\u0430\u0442\u0435\u043b\u0438"
+    },
+    {
+        "name": "\u041a\u0430\u043a\u0430\u043e"
+    },
+    {
+        "name": "\u041a\u0430\u0440\u043a\u0430\u0441\u043e\u043d - \u0413\u043e\u043b\u044f\u043c\u0430 \u043a\u0443\u0442\u0438\u044f"
+    },
+    {
+        "name": "\u041a\u0430\u0442\u0430\u043d \u0437\u0430 \u0434\u0435\u0446\u0430"
+    },
+    {
+        "name": "\u041a\u0438\u043d\u0433\u0434\u043e\u043c\u0438\u043d\u043e"
+    },
+    {
+        "name": "\u041a\u043b\u0443\u0431 \u0414\u0435\u0442\u0435\u043a\u0442\u0438\u0432"
+    },
+    {
+        "name": "\u041a\u043e\u0434\u043e\u0432\u0438 \u0418\u043c\u0435\u043d\u0430"
+    },
+    {
+        "name": "\u041a\u043e\u043b\u0442 \u0415\u043a\u0441\u043f\u0440\u0435\u0441"
+    },
+    {
+        "name": "\u041a\u0440\u044a\u0432 \u0438 \u044f\u0440\u043e\u0441\u0442"
+    },
+    {
+        "name": "\u041b\u043e\u0432 \u043d\u0430 \u0442\u0430\u043b\u0430\u0441\u044a\u043c\u0438"
+    },
+    {
+        "name": "\u041b\u0443\u0434\u0430 \u041a\u0443\u043b\u0430"
+    },
+    {
+        "name": "\u041c\u0430\u0433\u043e\u0432\u0435"
+    },
+    {
+        "name": "\u041c\u0430\u0433\u043e\u0432\u0435 \u0435\u043a\u0441\u043f\u0435\u0440\u0442\u0438"
+    },
+    {
+        "name": "\u041c\u0430\u0433\u043e\u0432\u0435 \u0445\u043b\u0430\u043f\u0435\u0442\u0430"
+    },
+    {
+        "name": "\u041c\u0438\u043d\u0438 \u041c\u043e\u043d\u043e\u043f\u043e\u043b\u0438"
+    },
+    {
+        "name": "\u041c\u043e\u043b \u041c\u0430\u0433\u0438\u043a\u0430"
+    },
+    {
+        "name": "\u041e\u043a\u0435\u0430\u043d\u0438\u044f"
+    },
+    {
+        "name": "\u041f\u0430\u043d\u0434\u0435\u043c\u0438\u044f"
+    },
+    {
+        "name": "\u041f\u043e\u0440\u0442 \u0420\u043e\u044f\u043b"
+    },
+    {
+        "name": "\u0421\u0430\u0431\u043e\u0442\u044c\u043e\u0440 1+2"
+    },
+    {
+        "name": "\u0421\u043b\u043e\u0432\u0435\u0441\u043d\u0438 \u043a\u043b\u043e\u043f\u043a\u0438"
+    },
+    {
+        "name": "\u0421\u0442\u043e\u0439 \u0434\u0430\u043b\u0435\u0447!"
+    },
+    {
+        "name": "\u0421\u044a\u043f\u0440\u043e\u0442\u0438\u0432\u0430"
+    },
+    {
+        "name": "\u0422\u0435\u0440\u0430\u0444\u043e\u0440\u043c\u0438\u0440\u0430\u0439 \u041c\u0430\u0440\u0441"
+    },
+    {
+        "name": "\u0422\u0435\u0440\u0430\u0444\u043e\u0440\u043c\u0438\u0440\u0430\u0439 \u041c\u0430\u0440\u0441 - \u041a\u043e\u043b\u043e\u043d\u0438\u0438"
+    },
+    {
+        "name": "\u0422\u0435\u0440\u0430\u0444\u043e\u0440\u043c\u0438\u0440\u0430\u0439 \u041c\u0430\u0440\u0441 - \u041e\u0431\u0440\u0430\u0442\u0438"
+    },
+    {
+        "name": "\u0422\u0435\u0440\u0430\u0444\u043e\u0440\u043c\u0438\u0440\u0430\u0439 \u041c\u0430\u0440\u0441 - \u041f\u0440\u0435\u043b\u044e\u0434\u0438\u044f"
+    },
+    {
+        "name": "\u0422\u0435\u0440\u0430\u0444\u043e\u0440\u043c\u0438\u0440\u0430\u0439 \u041c\u0430\u0440\u0441 - \u0421\u043b\u0435\u0434\u0432\u0430 \u0412\u0435\u043d\u0435\u0440\u0430"
+    },
+    {
+        "name": "\u0422\u0435\u0440\u0430\u0444\u043e\u0440\u043c\u0438\u0440\u0430\u0439 \u041c\u0430\u0440\u0441 - \u0425\u0435\u043b\u0430\u0441 \u0438 \u0415\u043b\u0438\u0437\u0438\u0443\u043c"
+    },
+    {
+        "name": "\u0424\u043e\u0442\u043e\u0441\u0438\u043d\u0442\u0435\u0437\u0430"
+    },
+    {
+        "name": "\u0426\u0438\u0442\u0430\u0434\u0435\u043b\u0438"
+    },
+    {
+        "name": "\u0428\u0435\u0440\u0438\u0444\u044a\u0442 \u043d\u0430 \u041d\u043e\u0442\u0438\u043d\u0433\u0430\u043c"
+    },
+    {
+        "name": "A Game of Thrones"
+    },
+    {
+        "name": "A Game of Thrones: Hand of the King"
+    },
+    {
+        "name": "Alchemists"
+    },
+    {
+        "name": "Alhambra: Big Box Special Edition"
+    },
+    {
+        "name": "Alien Frontiers"
+    },
+    {
+        "name": "Among Thieves"
+    },
+    {
+        "name": "Amun-Re"
+    },
+    {
+        "name": "Arcadia Quest"
+    },
+    {
+        "name": "Arkham Horror Third Edition"
+    },
+    {
+        "name": "Around the World in 80 Days"
+    },
+    {
+        "name": "Azul"
+    },
+    {
+        "name": "Bang! The dice game"
+    },
+    {
+        "name": "Batman: The Animated Series \u2013 Gotham Under Siege"
+    },
+    {
+        "name": "Betrayal at House on the Hill"
+    },
+    {
+        "name": "Betrayal at Baldur's Gate"
+    },
+    {
+        "name": "Brass: Lancashire"
+    },
+    {
+        "name": "Bubblee Pop"
+    },
+    {
+        "name": "Bunny Kingdom"
+    },
+    {
+        "name": "Captain Sonar"
+    },
+    {
+        "name": "Cards Against Humanity"
+    },
+    {
+        "name": "Cards Against Humanity (UK Edition)"
+    },
+    {
+        "name": "Castles of Mad King Ludwig"
+    },
+    {
+        "name": "Catan: Starfarers"
+    },
+    {
+        "name": "CharterStone"
+    },
+    {
+        "name": "Citadels"
+    },
+    {
+        "name": "Cities: Skylines"
+    },
+    {
+        "name": "Coatl"
+    },
+    {
+        "name": "Codenames"
+    },
+    {
+        "name": "Codenames: Duet"
+    },
+    {
+        "name": "Coimbra"
+    },
+    {
+        "name": "Copenhagen"
+    },
+    {
+        "name": "The Crew"
+    },
+    {
+        "name": "Crusader Kings"
+    },
+    {
+        "name": "Crystal Palace"
+    },
+    {
+        "name": "Lords of Waterdeep"
+    },
+    {
+        "name": "The Legend of Drizzt"
+    },
+    {
+        "name": "Wrath of Ashardalon"
+    },
+    {
+        "name": "Assault of the Giants"
+    },
+    {
+        "name": "D&D Dungeon Mayhem Deluxe Edition"
+    },
+    {
+        "name": "Dead of Winter"
+    },
+    {
+        "name": "Deadwood 1876"
+    },
+    {
+        "name": "Deckscape: Test Time"
+    },
+    {
+        "name": "Descent: Legends of the Dark"
+    },
+    {
+        "name": "Detective: A Modern Crime"
+    },
+    {
+        "name": "Dinosaur Island"
+    },
+    {
+        "name": "Dinosaur Island Totally Liquid"
+    },
+    {
+        "name": "Dixit 10 Mirrors"
+    },
+    {
+        "name": "Dixit 2 Quest"
+    },
+    {
+        "name": "Dixit 4 Origins"
+    },
+    {
+        "name": "Dixit 5 Daydreams"
+    },
+    {
+        "name": "Dixit 6 Memories"
+    },
+    {
+        "name": "Dixit 7 Revelations"
+    },
+    {
+        "name": "Dixit 8 Harmonies"
+    },
+    {
+        "name": "Small World of Warcraft"
+    },
+    {
+        "name": "Drop It"
+    },
+    {
+        "name": "Dune Imperium"
+    },
+    {
+        "name": "Dungeons and Dragons The Adventure Begins"
+    },
+    {
+        "name": "Dungeons and Dragons Starter set: Stranger Things"
+    },
+    {
+        "name": "Epic Spell Wars of the Battle Wizards: Duel at Mt. Skullzfyre"
+    },
+    {
+        "name": "Escape Room: The Game"
+    },
+    {
+        "name": "Escape: The Curse of the Temple"
+    },
+    {
+        "name": "Euphoria: Build a Better Dystopia"
+    },
+    {
+        "name": "Euphoria: Ignorance is Bliss"
+    },
+    {
+        "name": "Everdell"
+    },
+    {
+        "name": "Everdell: Bellfaire"
+    },
+    {
+        "name": "Everdell: Pearlbook"
+    },
+    {
+        "name": "Expedition: Luxor"
+    },
+    {
+        "name": "Exploding Kittens: NSFW Edition"
+    },
+    {
+        "name": "Fallout Shelter"
+    },
+    {
+        "name": "Fallout: A Post-Nuclear Board Game"
+    },
+    {
+        "name": "Hey, That's My Fish!"
+    },
+    {
+        "name": "Marvel Champions: The Card Game"
+    },
+    {
+        "name": "Meadow"
+    },
+    {
+        "name": "MicroMacro: Crime city"
+    },
+    {
+        "name": "Star Wars: Rebellion"
+    },
+    {
+        "name": "Flick Em Up (Plastic Edition)"
+    },
+    {
+        "name": "Friends: Trivia Quiz"
+    },
+    {
+        "name": "Forbidden Desert"
+    },
+    {
+        "name": "Forbidden Sky"
+    },
+    {
+        "name": "Forgotten Waters: A Crossroads Game"
+    },
+    {
+        "name": "Fort"
+    },
+    {
+        "name": "Funkoverse Strategy Game: DC Comics 100"
+    },
+    {
+        "name": "Funkoverse Strategy Game: DC Comics 101"
+    },
+    {
+        "name": "The Grizzled"
+    },
+    {
+        "name": "Gloomhaven"
+    },
+    {
+        "name": "Gloomhaven - Jaws of the Lion"
+    },
+    {
+        "name": "Gloomhaven: Forgotten Circles"
+    },
+    {
+        "name": "Gunkimono"
+    },
+    {
+        "name": "Here to Slay"
+    },
+    {
+        "name": "Imperial Settlers"
+    },
+    {
+        "name": "Islebound"
+    },
+    {
+        "name": "Jenga"
+    },
+    {
+        "name": "Joking Hazard"
+    },
+    {
+        "name": "Journeys in Middle-Earth"
+    },
+    {
+        "name": "Judge Dredd: Helter Skelter"
+    },
+    {
+        "name": "Just One"
+    },
+    {
+        "name": "Kakerlaken Sushi"
+    },
+    {
+        "name": "Kanagawa"
+    },
+    {
+        "name": "Kanban: Driver's Edition"
+    },
+    {
+        "name": "King's Dilemma"
+    },
+    {
+        "name": "King Of New York"
+    },
+    {
+        "name": "King of New York - Power Up"
+    },
+    {
+        "name": "King of Tokyo"
+    },
+    {
+        "name": "King of Tokyo - Power Up"
+    },
+    {
+        "name": "King of Tokyo: Halloween"
+    },
+    {
+        "name": "KLASK"
+    },
+    {
+        "name": "Lanters The Harvest Festival"
+    },
+    {
+        "name": "Legends of Andor"
+    },
+    {
+        "name": "Letter Jam"
+    },
+    {
+        "name": "Little Town"
+    },
+    {
+        "name": "Loony Quest"
+    },
+    {
+        "name": "Loony Quest: The Lost City"
+    },
+    {
+        "name": "Lost Ruins of Arnak"
+    },
+    {
+        "name": "Love Letter"
+    },
+    {
+        "name": "Machi Koro"
+    },
+    {
+        "name": "Maximum apocalypse"
+    },
+    {
+        "name": "Maximum apocalypse: Bugpocalypse"
+    },
+    {
+        "name": "Maximum apocalypse: Jurassic Perils"
+    },
+    {
+        "name": "Mansions of Madness 2nd Edition"
+    },
+    {
+        "name": "Maracaibo"
+    },
+    {
+        "name": "Marvel Dice Masters: Uncanny X-Men"
+    },
+    {
+        "name": "Mascarade"
+    },
+    {
+        "name": "Master of Orion"
+    },
+    {
+        "name": "Minecraft Builders & Biomes"
+    },
+    {
+        "name": "Minecraft Farmer's Market"
+    },
+    {
+        "name": "Mission: Red Planet (Second Edition)"
+    },
+    {
+        "name": "Monopoly Star Wars: The Mandalorian Edition"
+    },
+    {
+        "name": "Monopoly: Jurassic Park"
+    },
+    {
+        "name": "Munchkin Deluxe"
+    },
+    {
+        "name": "Munchkin: Marvel Edition"
+    },
+    {
+        "name": "Munchkin: Rick and Morty"
+    },
+    {
+        "name": "Neurosima Hex 3.0"
+    },
+    {
+        "name": "Nemesis"
+    },
+    {
+        "name": "Newton"
+    },
+    {
+        "name": "Nidavellir"
+    },
+    {
+        "name": "Oath"
+    },
+    {
+        "name": "Oceans"
+    },
+    {
+        "name": "On Tour (USA and Europe)"
+    },
+    {
+        "name": "One Night Ultimate Werewolf"
+    },
+    {
+        "name": "Onitama"
+    },
+    {
+        "name": "Pairs: Deluxe Edition"
+    },
+    {
+        "name": "Pandemic: Legacy - Season Zero"
+    },
+    {
+        "name": "Pictures"
+    },
+    {
+        "name": "Pocket Invaders"
+    },
+    {
+        "name": "Project Elite"
+    },
+    {
+        "name": "Pyramid Homeworlds"
+    },
+    {
+        "name": "Pyramid Martian Chess"
+    },
+    {
+        "name": "Pyramid Nomids"
+    },
+    {
+        "name": "Raccoon Tycoon"
+    },
+    {
+        "name": "Res Arcana"
+    },
+    {
+        "name": "Resident Evil 2"
+    },
+    {
+        "name": "Rick and Morty: Close Rick-Counters of the Rick Kind"
+    },
+    {
+        "name": "Rise of Tribes"
+    },
+    {
+        "name": "Rising Sun"
+    },
+    {
+        "name": "Rising Sun: Dynasty Invasion"
+    },
+    {
+        "name": "Risk Legacy"
+    },
+    {
+        "name": "Roam"
+    },
+    {
+        "name": "Robinson Crusoe"
+    },
+    {
+        "name": "Root"
+    },
+    {
+        "name": "Root: The Clockwork Expansion"
+    },
+    {
+        "name": "Root: The Riverfolk Expansion"
+    },
+    {
+        "name": "Root: The Underworld Expansion"
+    },
+    {
+        "name": "Scythe"
+    },
+    {
+        "name": "Small World"
+    },
+    {
+        "name": "Small World Underground"
+    },
+    {
+        "name": "Small World: A Spider's Web"
+    },
+    {
+        "name": "Small World: Be not Afraid"
+    },
+    {
+        "name": "Small World: Cursed!"
+    },
+    {
+        "name": "Small World: Grand Dames of Small World"
+    },
+    {
+        "name": "Small World: Leaders of Small World"
+    },
+    {
+        "name": "Small World: Necromancer Island"
+    },
+    {
+        "name": "Small World: Reamls"
+    },
+    {
+        "name": "Small World: River World"
+    },
+    {
+        "name": "Small World: Royal Bonus"
+    },
+    {
+        "name": "Small World: Sky Islands"
+    },
+    {
+        "name": "Smash Up"
+    },
+    {
+        "name": "Solenia"
+    },
+    {
+        "name": "Spirit Island"
+    },
+    {
+        "name": "Splendor"
+    },
+    {
+        "name": "Sprawlopolis"
+    },
+    {
+        "name": "Spyfall 2"
+    },
+    {
+        "name": "Star Wars: Legion Core Set"
+    },
+    {
+        "name": "Star Wars: X-Wing miniatures game"
+    },
+    {
+        "name": "Stronghold 2nd Edition"
+    },
+    {
+        "name": "Super Mario Labyrinth"
+    },
+    {
+        "name": "Takenoko"
+    },
+    {
+        "name": "Tapestry"
+    },
+    {
+        "name": "Tash-Kalar: Arena of Legends"
+    },
+    {
+        "name": "The Batman Who Laughs Rising"
+    },
+    {
+        "name": "The Castles of Burgundy"
+    },
+    {
+        "name": "The City Of Kings"
+    },
+    {
+        "name": "The Isle of Cats"
+    },
+    {
+        "name": "The Isle of Cats: Late Arrivals"
+    },
+    {
+        "name": "Thief's Market"
+    },
+    {
+        "name": "This War of Mine"
+    },
+    {
+        "name": "Through The Ages"
+    },
+    {
+        "name": "Ticket to Ride: Europe"
+    },
+    {
+        "name": "Time Stories"
+    },
+    {
+        "name": "Trajan"
+    },
+    {
+        "name": "Treasure Island"
+    },
+    {
+        "name": "Trial by Trolley"
+    },
+    {
+        "name": "Trial by Trolley R-Rated Modifier Expansion"
+    },
+    {
+        "name": "Trial by Trolley R-Rated Track Expansion"
+    },
+    {
+        "name": "Unlock: Heroic Adventures"
+    },
+    {
+        "name": "Unlock: Secret Adventures"
+    },
+    {
+        "name": "Unmatched: Battle of Legends Vol 1"
+    },
+    {
+        "name": "Uno"
+    },
+    {
+        "name": "Unstable Unicorns"
+    },
+    {
+        "name": "Unstable Unicorns NSFW Expansion"
+    },
+    {
+        "name": "Unstable Unicorns Rainbow Apocalypse Expansion Pack"
+    },
+    {
+        "name": "Valeria: Card Kingdom"
+    },
+    {
+        "name": "Warhammer Underworlds: Direchasm"
+    },
+    {
+        "name": "Wavelength"
+    },
+    {
+        "name": "Welcome to the Dungeon"
+    },
+    {
+        "name": "Wingspan"
+    },
+    {
+        "name": "Wingspan: European Expansion"
+    },
+    {
+        "name": "Word Slam"
+    },
+    {
+        "name": "X-Men Mutant Insurrection"
+    },
+    {
+        "name": "Yellow & Yangtze"
+    },
+    {
+        "name": "Zombicide: Season 2: Prison Outbreak"
+    }
+]
