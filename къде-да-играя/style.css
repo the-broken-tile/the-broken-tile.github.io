@@ -67,27 +67,9 @@ header h1 {
     font-size: 20px;
 }
 
-.icon:after {
-    content: '';
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    background-size: 16px 16px;
+.icon {
+    color: #00738c;
     margin-left: 3px;
-    position: relative;
-    top: 2px;
-}
-
-.location:after {
-    background-image: url("./icons/location.png");
-}
-
-.facebook:after {
-    background-image: url("./icons/facebook.jpg");
-}
-
-.phone:after {
-    background-image: url("./icons/phone.png");
 }
 
 #results {

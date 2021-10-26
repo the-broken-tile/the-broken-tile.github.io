@@ -4,6 +4,11 @@ let games = [];
 const gamesByName = {};
 const clubsBySlug = {};
 const QUERY_REGEXP = /\?какво=([^&$]+)/;
+const ICONS_MAP = {
+    location: '<i class="icon fas fa-map-marked-alt"></i>',
+    facebook: '<i class="icon fab fa-facebook-f"></i>',
+    phone: '<i class="icon fas fa-phone"></i>',
+};
 const trims = new RegExp([
     ...[
         //English articles
@@ -36,10 +41,10 @@ const getTerm = () => {
     return matches ? matches[1].toLowerCase() : null;
 };
 
-const renderLink = ({type, value}) => `<a class="${type} icon" target="_blank" href="${value}"></a>`
+const renderLink = ({type, value}) => `<a target="_blank" href="${value}">${ICONS_MAP[type]}</a>`
 
 const renderClub = slug => {
-    return `<li>${clubsBySlug[slug].name} ${clubsBySlug[slug].links.map(renderLink).join('')}</li>`
+    return `<li>${clubsBySlug[slug].links.map(renderLink).join('')} ${clubsBySlug[slug].name} </li>`
 };
 
 const renderClubs = memoize(clubs => `<ul>${clubs.map(renderClub).join('')}</ul>`);
