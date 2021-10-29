@@ -1,13 +1,21 @@
+const API_KEY = 'AIzaSyCVedUcZGITxPFXe_tK9qcuA9Txpv_LCJE';
+
+const LINK_TYPE_LOCATION = 'location';
+const LINK_TYPE_FACEBOOK = 'facebook';
+const LINK_TYPE_PHONE = 'phone';
+
 const $results = document.getElementById('results');
-let clubs = [];
-let games = [];
+const $clubInfo = document.getElementById('club-info');
+const $clubInfoContent = document.getElementById('club-info-content');
+
+const clubs = [];
+const games = [];
 const gamesByName = {};
 const clubsBySlug = {};
 const QUERY_REGEXP = /\?какво=([^&$]+)/;
 const ICONS_MAP = {
-    location: '<i class="icon fas fa-map-marked-alt"></i>',
-    facebook: '<i class="icon fab fa-facebook-f"></i>',
-    phone: '<i class="icon fas fa-phone"></i>',
+    [LINK_TYPE_FACEBOOK]: '<i class="icon fab fa-facebook-f"></i>',
+    [LINK_TYPE_PHONE]: '<i class="icon fas fa-phone"></i>',
 };
 const trims = new RegExp([
     ...[
@@ -41,12 +49,11 @@ const getTerm = () => {
     return matches ? matches[1].toLowerCase() : null;
 };
 
-const renderLink = ({type, value}) => `<a target="_blank" href="${value}">${ICONS_MAP[type]}</a>`
-
-const renderClub = slug => {
-    return `<li>${clubsBySlug[slug].links.map(renderLink).join('')} ${clubsBySlug[slug].name} </li>`
-};
-
+const renderLink = ({type, value}) => `<li><a target="_blank" href="${value}">${ICONS_MAP[type]} ${value.replace(/^.+:\/{0,2}/, '')}</a></li>`
+const renderLinks = club => `<ul>${club.links.filter(({type}) => type !== LINK_TYPE_LOCATION).map(renderLink).join('')}</ul>`;
+const renderClub = slug => `<li><a href="#" class="club" data-slug="${slug}">${clubsBySlug[slug].name}</a></li>`;
+const renderMap = club => `<iframe loading="lazy" src="${club.links.find(({type}) => type === LINK_TYPE_LOCATION).value.replace(':key', API_KEY)}"></iframe>`;
+const renderClubInfo = club => `<h1>${club.name}</h1>${renderMap(club)}${renderLinks(club)}`;
 const renderClubs = memoize(clubs => `<ul class="clubs">${clubs.map(renderClub).join('')}</ul>`);
 
 const renderResults = results => {
@@ -102,7 +109,7 @@ const addGames = (gamesToAdd, club) => {
 };
 
 loadJSON('./data/clubs.json', response => {
-    clubs = response;
+    clubs.push(...response);
 
     let loadingGames = clubs.length;
     clubs.forEach(club => {
@@ -115,4 +122,23 @@ loadJSON('./data/clubs.json', response => {
             }
         });
     });
+});
+
+document.body.addEventListener('click', e => {
+    const { target } = e;
+    if (!target.classList.contains('club')) {
+        return;
+    }
+    e.preventDefault();
+    $clubInfo.classList.add('open');
+    document.body.classList.add('info-open');
+    $clubInfoContent.innerHTML = renderClubInfo(clubs.find(({slug}) => slug === target.dataset.slug));
+});
+document.body.addEventListener('click', e => {
+    const {target} = e;
+    if (!target.classList.contains('close-club-info')) {
+        return;
+    }
+    $clubInfo.classList.remove('open');
+    document.body.classList.remove('info-open');
 });

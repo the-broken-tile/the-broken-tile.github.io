@@ -13,7 +13,7 @@
                 <h1>Къде да играя?</h1>
                 <form id="form" class="wrap">
                     <div class="search">
-                        <input name="какво" id="q" type="text" class="search-term" autofocus>
+                        <input name="какво" id="q" type="search" class="search-term" autofocus>
                         <button type="submit" value="Търси" class="search-button">
                             <i class="fas fa-search"></i>
                         </button>
@@ -22,6 +22,11 @@
             </div>
         </header>
         <div id="results"></div>
+        <div id="cover" class="close-club-info"></div>
+        <div id="club-info">
+            <div id="club-info-content"></div>
+            <i class="fas fa-times close-club-info"></i>
+        </div>
         <script src="/utils/loadJSON.js"></script>
         <script src="/utils/memoize.js"></script>
         <script src="./script.js"></script>
