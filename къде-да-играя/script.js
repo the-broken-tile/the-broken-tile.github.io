@@ -75,13 +75,9 @@ const createMatcher = term => {
 }
 const init = () => {
     const term = getTerm();
-    if (!term) {
-        $results.innerHTML = 'Моля въведете име на игра, за да търсите';
-        return;
-    }
-    document.getElementById('q').value = term;
 
-    const results = games.filter(createMatcher(term));
+    document.getElementById('q').value = term;
+    const results = term ? games.filter(createMatcher(term)) : games;
     $results.innerHTML = results.length ? renderResults(results) : '<b>няма намерени резултати</b>';
 }
 
