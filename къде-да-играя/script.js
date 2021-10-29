@@ -52,7 +52,7 @@ const renderClubs = memoize(clubs => `<ul class="clubs">${clubs.map(renderClub).
 const renderResults = results => {
     // Double content FTW!
     return `<table>
-        <thead><tr><th>Какво</th><th class="hide-sm">Къде</th></tr></thead>
+        <thead class="hide-sm"><tr><th>Какво</th><th>Къде</th></tr></thead>
         <tbody>${results.map(game => {
             const clubs = renderClubs(game.clubs);
 
