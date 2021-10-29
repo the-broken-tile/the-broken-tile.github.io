@@ -134,7 +134,11 @@ document.body.addEventListener('click', e => {
     document.body.classList.add('info-open');
     $clubInfoContent.innerHTML = renderClubInfo(clubs.find(({slug}) => slug === target.dataset.slug));
 });
-document.getElementById('close-club-info').addEventListener('click', e => {
+document.body.addEventListener('click', e => {
+    const {target} = e;
+    if (!target.classList.contains('close-club-info')) {
+        return;
+    }
     $clubInfo.classList.remove('open');
     document.body.classList.remove('info-open');
 });

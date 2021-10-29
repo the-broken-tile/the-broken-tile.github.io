@@ -152,7 +152,7 @@ header {
     left: 10%;
 }
 
-#close-club-info {
+#club-info .close-club-info {
     position: absolute;
     top: 8px;
     right: 8px;
