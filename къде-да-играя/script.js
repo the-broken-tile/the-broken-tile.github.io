@@ -13,7 +13,6 @@ const gamesByName = {};
 const clubsBySlug = {};
 const QUERY_REGEXP = /\?какво=([^&$]+)/;
 const ICONS_MAP = {
-    [LINK_TYPE_LOCATION]: '<i class="icon fas fa-map-marked-alt"></i>',
     [LINK_TYPE_FACEBOOK]: '<i class="icon fab fa-facebook-f"></i>',
     [LINK_TYPE_PHONE]: '<i class="icon fas fa-phone"></i>',
 };
@@ -49,7 +48,7 @@ const getTerm = () => {
     return matches ? matches[1].toLowerCase() : null;
 };
 
-const renderLink = ({type, value}) => `<li><a target="_blank" href="${value}">${ICONS_MAP[type]} ${value}</a></li>`
+const renderLink = ({type, value}) => `<li><a target="_blank" href="${value}">${ICONS_MAP[type]} ${value.replace(/^.+:\/{0,2}/, '')}</a></li>`
 const renderLinks = club => `<ul>${club.links.filter(({type}) => type !== LINK_TYPE_LOCATION).map(renderLink).join('')}</ul>`;
 const renderClub = slug => {
     return `<li><a href="#" class="club" data-slug="${slug}">${clubsBySlug[slug].name}</a></li>`

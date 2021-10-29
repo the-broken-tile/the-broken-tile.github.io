@@ -30,6 +30,12 @@ a, a:visited {
 
 ul {
     list-style: none;
+    padding: 0;
+    margin: 8px;
+}
+
+li {
+    margin-bottom: 8px;
 }
 
 header {
@@ -111,15 +117,6 @@ header {
     text-align: left;
     padding: 8px;
     font-size: 1.2em;
-}
-
-.clubs {
-    padding: 0;
-    margin: 8px;
-}
-
-.clubs li {
-    margin-bottom: 8px;
 }
 
 #cover {
