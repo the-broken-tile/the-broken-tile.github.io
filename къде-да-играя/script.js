@@ -85,7 +85,10 @@ const addGames = (gamesToAdd, club) => {
     gamesToAdd.forEach(game => {
         const lowerName = trim(game.name);
         if (gamesByName[lowerName]) {
-            gamesByName[lowerName].clubs.push(club.slug);
+            if (!gamesByName[lowerName].clubs.includes(club.slug)) {
+                // Prevent duplicates.
+                gamesByName[lowerName].clubs.push(club.slug);
+            }
         } else {
             gamesByName[lowerName] = {
                 ...game,
