@@ -88,6 +88,8 @@ const addGames = (gamesToAdd, club) => {
             if (!gamesByName[lowerName].clubs.includes(club.slug)) {
                 // Prevent duplicates.
                 gamesByName[lowerName].clubs.push(club.slug);
+            } else {
+                console.warn(`${game.name} is already added to ${club.name}`);
             }
         } else {
             gamesByName[lowerName] = {
