@@ -31,5 +31,9 @@ const LINKS = [
         title: 'Viral Life',
         url: './viral-life',
         description: "An attempt to make Conway's Game of Life multiplayer",
+    }, {
+        title: 'Къде да играя',
+        url: './къде-да-играя',
+        description: 'Намерете в кой клуб може да играете търсената от вас игра',
     }
 ];
