@@ -9,6 +9,12 @@
         "name": "7 Wonders"
     },
     {
+        "name": "7 Wonders Duel"
+    },
+    {
+        "name": "7 Wonders Duel: Pantheon"
+    },
+    {
         "name": "7 Wonders: Cities"
     },
     {
@@ -148,6 +154,9 @@
     },
     {
         "name": "Calico"
+    },
+    {
+        "name": "Canvas"
     },
     {
         "name": "Capital Lux"
@@ -346,6 +355,9 @@
     },
     {
         "name": "Evolution"
+    },
+    {
+        "name": "Evolution: Climate"
     },
     {
         "name": "Ex Libris"
@@ -636,6 +648,9 @@
         "name": "Origin"
     },
     {
+        "name": "OverDrive"
+    },
+    {
         "name": "Pachisi"
     },
     {
@@ -885,6 +900,9 @@
         "name": "A Study in Emerald (Second Edition)"
     },
     {
+        "name": "Subastral"
+    },
+    {
         "name": "Sultaniya"
     },
     {
@@ -964,6 +982,12 @@
     },
     {
         "name": "Tiny Epic Zombies"
+    },
+    {
+        "name": "Tiny Towns"
+    },
+    {
+        "name": "Tournament at Avalon"
     },
     {
         "name": "Trellis"
