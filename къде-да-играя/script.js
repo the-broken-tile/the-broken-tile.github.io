@@ -110,6 +110,17 @@ const addGames = (gamesToAdd, club) => {
         }
     });
 };
+const openClubInfo = (content = '') => {
+    if (content) {
+        $clubInfoContent.innerHTML = content;
+    }
+    $clubInfo.classList.add('open');
+    document.body.classList.add('info-open');
+};
+const closeCLubInfo = () => {
+    $clubInfo.classList.remove('open');
+    document.body.classList.remove('info-open');
+};
 
 loadJSON('./data/clubs.json', response => {
     clubs.push(...response);
@@ -133,15 +144,22 @@ document.body.addEventListener('click', e => {
         return;
     }
     e.preventDefault();
-    $clubInfo.classList.add('open');
-    document.body.classList.add('info-open');
-    $clubInfoContent.innerHTML = renderClubInfo(clubs.find(({slug}) => slug === target.dataset.slug));
+    openClubInfo(renderClubInfo(clubs.find(({slug}) => slug === target.dataset.slug)));
 });
 document.body.addEventListener('click', e => {
     const {target} = e;
     if (!target.classList.contains('close-club-info')) {
         return;
     }
-    $clubInfo.classList.remove('open');
-    document.body.classList.remove('info-open');
+    closeCLubInfo();
+});
+document.body.addEventListener('swiped-right', e => {
+    if ($clubInfo.classList.contains('open')) {
+        closeCLubInfo();
+    }
+});
+document.body.addEventListener('swiped-left', () => {
+    if (document.getElementById('club-info-content').innerHTML && !$clubInfo.classList.contains('open')) {
+        openClubInfo();
+    }
 });
