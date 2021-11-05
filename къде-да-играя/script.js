@@ -8,6 +8,7 @@ const $results = document.getElementById('results');
 const $clubInfo = document.getElementById('club-info');
 const $clubInfoContent = document.getElementById('club-info-content');
 
+const translator = new Translator(LANGUAGE_BG);
 const clubs = [];
 const games = [];
 const gamesByName = {};
@@ -51,7 +52,8 @@ const getTerm = () => {
 
 const renderLink = ({type, value}) => `<li><a target="_blank" href="${value}">${ICONS_MAP[type]} ${value.replace(/^.+:\/{0,2}/, '')}</a></li>`
 const renderLinks = club => `<ul>${club.links.filter(({type}) => type !== LINK_TYPE_LOCATION).map(renderLink).join('')}</ul>`;
-const renderClub = slug => `<li><a href="#" class="club" data-slug="${slug}">${clubsBySlug[slug].name}</a></li>`;
+const renderCityName = ({city}) => `<span class="small">(${translator.trans(city, {}, 'city')})</span>`;
+const renderClub = slug => `<li><a href="#" class="club" data-slug="${slug}">${clubsBySlug[slug].name}</a> ${renderCityName(clubsBySlug[slug])}</li>`;
 const renderMap = club => `<iframe loading="lazy" src="${club.links.find(({type}) => type === LINK_TYPE_LOCATION).value.replace(':key', API_KEY)}"></iframe>`;
 const renderClubInfo = club => `<h1>${club.name}</h1>${renderMap(club)}${renderLinks(club)}`;
 const renderClubs = memoize(clubs => `<ul class="clubs">${clubs.map(renderClub).join('')}</ul>`);
@@ -80,12 +82,13 @@ const createMatcher = term => {
         return trimmedName.indexOf(trimmedTerm) !== -1;
     }
 }
+const sorter = (a, b) => a.name.localeCompare(b.name);
 const init = () => {
     const term = getTerm();
 
     document.getElementById('q').value = term;
     const results = term ? games.filter(createMatcher(term)) : games;
-    $results.innerHTML = results.length ? renderResults(results) : '<b>няма намерени резултати</b>';
+    $results.innerHTML = results.length ? renderResults(results.sort(sorter)) : '<b>няма намерени резултати</b>';
 }
 
 const addGames = (gamesToAdd, club) => {
