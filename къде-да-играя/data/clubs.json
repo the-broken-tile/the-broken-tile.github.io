@@ -2,14 +2,15 @@
     {
         "name": "Mox Games",
         "slug": "mox",
+        "city": "Sofia",
         "links": [
             {
                 "type": "location",
-                "value": "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJjxiXq3iFqkAROQwEhdR2bWA&key=:key"
+                "value": "https:\/\/www.google.com\/maps\/embed\/v1\/place?q=place_id:ChIJjxiXq3iFqkAROQwEhdR2bWA&key=:key"
             },
             {
                 "type": "facebook",
-                "value": "https://www.facebook.com/MoxGamesBG"
+                "value": "https:\/\/www.facebook.com\/MoxGamesBG"
             },
             {
                 "type": "phone",
@@ -20,14 +21,15 @@
     {
         "name": "Abordage",
         "slug": "abordage",
+        "city": "Sofia",
         "links": [
             {
                 "type": "location",
-                "value": "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJfeVLkmWFqkARESraP0YvEwY&key=:key"
+                "value": "https:\/\/www.google.com\/maps\/embed\/v1\/place?q=place_id:ChIJfeVLkmWFqkARESraP0YvEwY&key=:key"
             },
             {
                 "type": "facebook",
-                "value": "https://www.facebook.com/abordagebg"
+                "value": "https:\/\/www.facebook.com\/abordagebg"
             },
             {
                 "type": "phone",
@@ -38,14 +40,15 @@
     {
         "name": "Level Up Sofia",
         "slug": "lvl-up",
+        "city": "Sofia",
         "links": [
             {
                 "type": "location",
-                "value": "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJc8aDm2mFqkARKCfL-FWzV4Y&key=:key"
+                "value": "https:\/\/www.google.com\/maps\/embed\/v1\/place?q=place_id:ChIJc8aDm2mFqkARKCfL-FWzV4Y&key=:key"
             },
             {
                 "type": "facebook",
-                "value": "https://www.facebook.com/LevelUpSofia"
+                "value": "https:\/\/www.facebook.com\/LevelUpSofia"
             },
             {
                 "type": "phone",
@@ -56,14 +59,15 @@
     {
         "name": "\u0414\u0440\u0443\u0433\u0438\u044f\u0442 \u0437\u0430\u043c\u044a\u043a",
         "slug": "castle",
+        "city": "Sofia",
         "links": [
             {
                 "type": "location",
-                "value": "https://www.google.com/maps/embed/v1/place?q=place_id:ChIJZ8-L0HyGqkARenc0vK0tI9M&key=:key"
+                "value": "https:\/\/www.google.com\/maps\/embed\/v1\/place?q=place_id:ChIJZ8-L0HyGqkARenc0vK0tI9M&key=:key"
             },
             {
                 "type": "facebook",
-                "value": "https://www.facebook.com/castle.boardgames"
+                "value": "https:\/\/www.facebook.com\/castle.boardgames"
             },
             {
                 "type": "phone",
@@ -74,18 +78,57 @@
     {
         "name": "Mythical 20",
         "slug": "myth-20",
+        "city": "Sofia",
         "links": [
             {
                 "type": "location",
-                "value": "https://www.google.com/maps/embed/v1/place?q=ул.+„Елисавета+Багряна“+2А,+1113+Гео+Милев,+София&key=:key"
+                "value": "https:\/\/www.google.com\/maps\/embed\/v1\/place?q=\u0443\u043b.+\u201e\u0415\u043b\u0438\u0441\u0430\u0432\u0435\u0442\u0430+\u0411\u0430\u0433\u0440\u044f\u043d\u0430\u201c+2\u0410,+1113+\u0413\u0435\u043e+\u041c\u0438\u043b\u0435\u0432,+\u0421\u043e\u0444\u0438\u044f&key=:key"
             },
             {
                 "type": "facebook",
-                "value": "https://www.facebook.com/mythical20sofia"
+                "value": "https:\/\/www.facebook.com\/mythical20sofia"
             },
             {
                 "type": "phone",
                 "value": "tel:+359889587800"
+            }
+        ]
+    },
+    {
+        "name": "Offline Caf\u00e9",
+        "slug": "offline",
+        "city": "Plovdiv",
+        "links": [
+            {
+                "type": "location",
+                "value": "https:\/\/www.google.com\/maps\/embed\/v1\/place?q=place_id:ChIJUzaTclTRrBQRasuHzp6uY5M&key=:key"
+            },
+            {
+                "type": "facebook",
+                "value": "https:\/\/www.facebook.com\/OfflineCafePlovdiv"
+            },
+            {
+                "type": "phone",
+                "value": "tel:+359887436010"
+            }
+        ]
+    },
+    {
+        "name": "CoolDown",
+        "slug": "cooldown",
+        "city": "Plovdiv",
+        "links": [
+            {
+                "type": "location",
+                "value": "https:\/\/www.google.com\/maps\/embed\/v1\/place?q=place_id:ChIJ8bAWmmnRrBQRObLxNTIdx-A&key=:key"
+            },
+            {
+                "type": "facebook",
+                "value": "https:\/\/www.facebook.com\/CoolDownGamingPub"
+            },
+            {
+                "type": "phone",
+                "value": "tel:++359878333969"
             }
         ]
     }
