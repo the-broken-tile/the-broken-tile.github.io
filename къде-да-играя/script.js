@@ -82,12 +82,13 @@ const createMatcher = term => {
         return trimmedName.indexOf(trimmedTerm) !== -1;
     }
 }
+const sorter = (a, b) => a.name.localeCompare(b.name);
 const init = () => {
     const term = getTerm();
 
     document.getElementById('q').value = term;
     const results = term ? games.filter(createMatcher(term)) : games;
-    $results.innerHTML = results.length ? renderResults(results) : '<b>няма намерени резултати</b>';
+    $results.innerHTML = results.length ? renderResults(results.sort(sorter)) : '<b>няма намерени резултати</b>';
 }
 
 const addGames = (gamesToAdd, club) => {
