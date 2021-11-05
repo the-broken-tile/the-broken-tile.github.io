@@ -14,7 +14,7 @@
     box-sizing: border-box;
 }
 body {
-    font-size: 16px;
+    font-size: 18px;
     font-family: 'Sofia Sans', sans-serif;
     padding-top: 111px;
     background: var(--background-color);
@@ -26,6 +26,8 @@ body.info-open {
 
 a, a:visited {
     color: var(--main-color);
+    display: block;
+    padding: 10px 0;
 }
 
 ul {
@@ -179,6 +181,9 @@ header {
     }
     .header-content {
         width: 90%;
+    }
+    td {
+        padding-top: 10px;
     }
 }
 
