@@ -66,7 +66,7 @@ const renderResults = results => {
             const clubs = renderClubs(game.clubs);
 
             return `<tr>
-                <td>${game.name}<span class="hide-lg">${clubs}</span></td>
+                <td>${game.name}<div class="hide-lg">${clubs}</div></td>
                 <td class="hide-sm">${clubs}</td>
             </tr>`;
         }

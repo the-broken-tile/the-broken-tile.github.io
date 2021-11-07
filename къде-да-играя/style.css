@@ -33,7 +33,7 @@ a, a:visited {
 ul {
     list-style: none;
     padding: 0;
-    margin: 8px;
+    margin: 8px 0;
 }
 
 li {
@@ -184,6 +184,10 @@ header {
     }
     td {
         padding-top: 10px;
+    }
+    #results {
+        margin-top: 0;
+        padding: 8px;
     }
 }
 
