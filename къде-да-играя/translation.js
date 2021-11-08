@@ -6,7 +6,8 @@ const TRANSLATIONS = {
         },
         city: {
             Plovdiv: 'Пловдив',
-            Sofia: 'София'
+            Sofia: 'София',
+            'Veliko Tarnovo': 'Велико Търново',
         }
     },
 };
