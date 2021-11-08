@@ -52,7 +52,7 @@ const getTerm = () => {
 
 const renderLink = ({type, value}) => `<li><a target="_blank" href="${value}">${ICONS_MAP[type]} ${value.replace(/^.+:\/{0,2}/, '')}</a></li>`
 const renderLinks = club => `<ul>${club.links.filter(({type}) => type !== LINK_TYPE_LOCATION).map(renderLink).join('')}</ul>`;
-const renderCityName = ({city}) => `<span class="small">(${translator.trans(city, {}, 'city')})</span>`;
+const renderCityName = ({city}) => `<span class="small">${translator.trans(city, {}, 'city')}</span>`;
 const renderClub = slug => `<li><a href="#" class="club" data-slug="${slug}">${clubsBySlug[slug].name}</a> ${renderCityName(clubsBySlug[slug])}</li>`;
 const renderMap = club => `<iframe loading="lazy" src="${club.links.find(({type}) => type === LINK_TYPE_LOCATION).value.replace(':key', API_KEY)}"></iframe>`;
 const renderClubInfo = club => `<h1>${club.name}</h1>${renderMap(club)}${renderLinks(club)}`;
@@ -66,7 +66,7 @@ const renderResults = results => {
             const clubs = renderClubs(game.clubs);
 
             return `<tr>
-                <td>${game.name}<span class="hide-lg">${clubs}</span></td>
+                <td>${game.name}<div class="hide-lg">${clubs}</div></td>
                 <td class="hide-sm">${clubs}</td>
             </tr>`;
         }

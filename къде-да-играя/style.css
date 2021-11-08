@@ -14,7 +14,7 @@
     box-sizing: border-box;
 }
 body {
-    font-size: 16px;
+    font-size: 18px;
     font-family: 'Sofia Sans', sans-serif;
     padding-top: 111px;
     background: var(--background-color);
@@ -26,12 +26,14 @@ body.info-open {
 
 a, a:visited {
     color: var(--main-color);
+    display: block;
+    padding: 10px 0;
 }
 
 ul {
     list-style: none;
     padding: 0;
-    margin: 8px;
+    margin: 8px 0;
 }
 
 li {
@@ -179,6 +181,13 @@ header {
     }
     .header-content {
         width: 90%;
+    }
+    td {
+        padding-top: 10px;
+    }
+    #results {
+        margin-top: 0;
+        padding: 8px;
     }
 }
 
