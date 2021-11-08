@@ -9,15 +9,18 @@ const $clubInfo = document.getElementById('club-info');
 const $clubInfoContent = document.getElementById('club-info-content');
 
 const translator = new Translator(LANGUAGE_BG);
+
+//Data storage.
 const clubs = [];
 const games = [];
 const gamesByName = {};
 const clubsBySlug = {};
+
+//Querying.
+const tags = {};
+const TAGS_SEPARATOR = ',';
+const buildTagsQuery = () => Object.keys(tags).filter(key => tags[key]).join(TAGS_SEPARATOR);
 const QUERY_REGEXP = /\?какво=([^&$]+)/;
-const ICONS_MAP = {
-    [LINK_TYPE_FACEBOOK]: '<i class="icon fab fa-facebook-f"></i>',
-    [LINK_TYPE_PHONE]: '<i class="icon fas fa-phone"></i>',
-};
 const trims = new RegExp([
     ...[
         //English articles
@@ -50,9 +53,14 @@ const getTerm = () => {
     return matches ? matches[1].toLowerCase() : null;
 };
 
+//Rendering functions.
+const ICONS_MAP = {
+    [LINK_TYPE_FACEBOOK]: '<i class="icon fab fa-facebook-f"></i>',
+    [LINK_TYPE_PHONE]: '<i class="icon fas fa-phone"></i>',
+};
 const renderLink = ({type, value}) => `<li><a target="_blank" href="${value}">${ICONS_MAP[type]} ${value.replace(/^.+:\/{0,2}/, '')}</a></li>`
 const renderLinks = club => `<ul>${club.links.filter(({type}) => type !== LINK_TYPE_LOCATION).map(renderLink).join('')}</ul>`;
-const renderCityName = ({city}) => `<span class="small">${translator.trans(city, {}, 'city')}</span>`;
+const renderCityName = ({city}) => `<ul class="tags"><li class="tag ${TAGS[city.toLowerCase()]}" data-tag="${city.toLowerCase()}">${translator.trans(city, {}, 'city')}</li></ul>`;
 const renderClub = slug => `<li><a href="#" class="club" data-slug="${slug}">${clubsBySlug[slug].name}</a> ${renderCityName(clubsBySlug[slug])}</li>`;
 const renderMap = club => `<iframe loading="lazy" src="${club.links.find(({type}) => type === LINK_TYPE_LOCATION).value.replace(':key', API_KEY)}"></iframe>`;
 const renderClubInfo = club => `<h1>${club.name}</h1>${renderMap(club)}${renderLinks(club)}`;
@@ -110,6 +118,8 @@ const addGames = (gamesToAdd, club) => {
         }
     });
 };
+
+//Club panel handling.
 const openClubInfo = (content = '') => {
     if (content) {
         $clubInfoContent.innerHTML = content;
@@ -122,6 +132,7 @@ const closeCLubInfo = () => {
     document.body.classList.remove('info-open');
 };
 
+// Initial json load
 loadJSON('./data/clubs.json', response => {
     clubs.push(...response);
 
@@ -138,6 +149,7 @@ loadJSON('./data/clubs.json', response => {
     });
 });
 
+//Event listeners.
 document.body.addEventListener('click', e => {
     const { target } = e;
     if (!target.classList.contains('club')) {
@@ -162,4 +174,19 @@ document.body.addEventListener('swiped-left', () => {
     if (document.getElementById('club-info-content').innerHTML && !$clubInfo.classList.contains('open')) {
         openClubInfo();
     }
+});
+document.body.addEventListener('click', e => {
+    e.preventDefault();
+    const { target } = e;
+    if (!target.classList.contains('tag')) {
+        return;
+    }
+    const { classList, dataset } = target;
+    const active = classList.contains('active');
+    document.querySelectorAll(`.tag.tag-${dataset.tag}`).forEach(el => el.classList.toggle('active', !active));
+    tags[dataset.tag] = !active;
+    window.location.hash = buildTagsQuery();
+    // const url = new URL(window.location);
+    // url.searchParams.set('tags', buildTagsQuery());
+    // window.history.pushState({}, '', url);
 });
