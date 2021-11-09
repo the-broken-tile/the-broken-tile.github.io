@@ -1,90 +1,36 @@
 [
     {
-        "name": "Cartographers"
-    },
-    {
-        "name": "Cards Against Humanity"
-    },
-    {
-        "name": "Among Thieves"
-    },
-    {
-        "name": "Love Letter Batman"
-    },
-    {
-        "name": "Dungeon Mayhem + Expansions"
-    },
-    {
-        "name": "Hero Realms"
-    },
-    {
-        "name": "Throw, Throw Burrito"
-    },
-    {
-        "name": "Fluxx"
-    },
-    {
-        "name": "Coup + Expansion Reformation"
+        "name": "7 Wonders"
     },
     {
         "name": "A Game of Thrones - Hand of the King"
     },
     {
-        "name": "Pocket Invaders"
-    },
-    {
-        "name": "Mysterium Park"
-    },
-    {
         "name": "A Game of Thrones 2nd Edition"
     },
     {
-        "name": "Richard The Lionheart"
+        "name": "Among Thieves"
     },
     {
-        "name": "The Isle of Cats + Expansion"
+        "name": "Bright Future"
     },
     {
-        "name": "Flamme Rouge"
+        "name": "Carcassonne Big Box"
     },
     {
-        "name": "Maglev Metro"
+        "name": "Cards against humanity"
     },
     {
-        "name": "Crazy Karts"
-    },
-    {
-        "name": "K2"
-    },
-    {
-        "name": "Splendor"
-    },
-    {
-        "name": "Ticket to Ride Europe"
-    },
-    {
-        "name": "Pandemic"
-    },
-    {
-        "name": "Dixit"
-    },
-    {
-        "name": "Mississippi Queen"
+        "name": "Cartographers"
     },
     {
         "name": "Catan"
     },
     {
-        "name": "Near and Far"
-    },
-    {
         "name": "Championship Formula Racing"
     },
     {
-        "name": "King of Tokyo + King Kong Expansion"
-    },
-    {
-        "name": "Rivals for Catan"
+        "name": "Citadels"
     },
     {
         "name": "Codenames"
@@ -93,22 +39,58 @@
         "name": "Codenames Duet"
     },
     {
-        "name": "Carcassonne Big Box"
+        "name": "Coup + Expansion Reformation"
     },
     {
-        "name": "Exploding Kittens"
+        "name": "Crazy Karts"
     },
     {
         "name": "Cypher"
     },
     {
-        "name": "Zombie Dice"
+        "name": "Dixit"
     },
     {
-        "name": "\u0421\u043b\u043e\u0432\u0435\u0441\u043d\u0438 \u041a\u043b\u043e\u043f\u043a\u0438"
+        "name": "Dune + Ixians&Tleilaxu Expansion"
     },
     {
-        "name": "\u0421\u0430\u0431\u043e\u0442\u044c\u043e\u0440"
+        "name": "Dungeon Mayhem + Expansions"
+    },
+    {
+        "name": "Exploding kittens"
+    },
+    {
+        "name": "Flamme Rouge"
+    },
+    {
+        "name": "Fluxx"
+    },
+    {
+        "name": "Heaven&Ale"
+    },
+    {
+        "name": "Hero Realms"
+    },
+    {
+        "name": "House of Danger"
+    },
+    {
+        "name": "Imperial Settlers - Roll&Write"
+    },
+    {
+        "name": "K2"
+    },
+    {
+        "name": "King of Tokyo + King Kong Expansion"
+    },
+    {
+        "name": "Love Letter Batman"
+    },
+    {
+        "name": "Maglev Metro"
+    },
+    {
+        "name": "Meeple Circus"
     },
     {
         "name": "Micro Macro Crime City"
@@ -117,60 +99,78 @@
         "name": "Micro Macro Crime City Full House"
     },
     {
-        "name": "House of Danger"
-    },
-    {
-        "name": "Dune + Ixians&Tleilaxu Expansion"
-    },
-    {
-        "name": "Heaven&Ale"
-    },
-    {
-        "name": "Risk GodStorm"
-    },
-    {
-        "name": "Meeple Circus"
-    },
-    {
-        "name": "Small World of Warcraft"
-    },
-    {
-        "name": "Imperial Settlers - Roll&Write"
-    },
-    {
-        "name": "Bright Future"
-    },
-    {
-        "name": "Citadels"
-    },
-    {
-        "name": "\u0428\u0435\u0440\u0438\u0444\u044a\u0442 \u043d\u0430 \u041d\u043e\u0442\u0438\u043d\u0433\u0430\u043c"
-    },
-    {
-        "name": "7 Wonders"
-    },
-    {
-        "name": "Warrior Knights"
-    },
-    {
-        "name": "\u0412\u044a\u0440\u043a\u043e\u043b\u0430\u0446\u0438"
+        "name": "Mississippi Queen"
     },
     {
         "name": "Monopoly"
     },
     {
+        "name": "Mysterium Park"
+    },
+    {
+        "name": "Near and Far"
+    },
+    {
+        "name": "Pandemic"
+    },
+    {
+        "name": "Pocket Invaders"
+    },
+    {
+        "name": "Richard The Lionheart"
+    },
+    {
+        "name": "Risk GodStorm"
+    },
+    {
+        "name": "Rivals for Catan"
+    },
+    {
         "name": "Scrabble"
     },
     {
-        "name": "\u0426\u0430\u0440 \u043d\u0430 \u0418\u0441\u0442\u043e\u0440\u0438\u044f\u0442\u0430"
+        "name": "Small World of Warcraft"
+    },
+    {
+        "name": "Splendor"
+    },
+    {
+        "name": "The Isle of Cats + Expansion"
+    },
+    {
+        "name": "Throw, Throw Burrito"
+    },
+    {
+        "name": "Ticket to Ride Europe"
+    },
+    {
+        "name": "Warrior Knights"
+    },
+    {
+        "name": "Zombie Dice"
     },
     {
         "name": "\u0411\u0438\u0442\u043a\u0430\u0442\u0430 \u0437\u0430 \u0411\u0430\u043b\u043a\u0430\u043d\u0438\u0442\u0435"
     },
     {
+        "name": "\u0412\u044a\u0440\u043a\u043e\u043b\u0430\u0446\u0438"
+    },
+    {
         "name": "\u041f\u0440\u0435\u0445\u043e\u0434\u0430"
     },
     {
+        "name": "\u0421\u0430\u0431\u043e\u0442\u044c\u043e\u0440"
+    },
+    {
+        "name": "\u0421\u043b\u043e\u0432\u0435\u0441\u043d\u0438 \u043a\u043b\u043e\u043f\u043a\u0438"
+    },
+    {
         "name": "\u0425\u0430\u0439\u0434\u0443\u0442\u0438"
+    },
+    {
+        "name": "\u0426\u0430\u0440 \u043d\u0430 \u0418\u0441\u0442\u043e\u0440\u0438\u044f\u0442\u0430"
+    },
+    {
+        "name": "\u0428\u0435\u0440\u0438\u0444\u044a\u0442 \u043d\u0430 \u041d\u043e\u0442\u0438\u043d\u0433\u0430\u043c"
     }
 ]

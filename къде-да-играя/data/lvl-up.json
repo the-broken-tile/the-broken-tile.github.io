@@ -6,6 +6,12 @@
         "name": "7 Wonders Duel (Ukrainian\/Bulgarian\/Korean edition)"
     },
     {
+        "name": "A Game of Thrones: The Board Game (Second Edition)"
+    },
+    {
+        "name": "A Place in the Sun (English edition)"
+    },
+    {
         "name": "Abyss"
     },
     {
@@ -162,13 +168,7 @@
         "name": "Escape from the Aliens in Outer Space"
     },
     {
-        "name": "Exploding Kittens"
-    },
-    {
-        "name": "The Fox in the Forest"
-    },
-    {
-        "name": "A Game of Thrones: The Board Game (Second Edition)"
+        "name": "Exploding kittens"
     },
     {
         "name": "Game of Thrones: The Card Game"
@@ -261,10 +261,7 @@
         "name": "Mysterium (Bulgarian edition)"
     },
     {
-        "name": "Mysterium (Bulgarian edition)"
-    },
-    {
-        "name": "Mystic ScROLLS"
+        "name": "Mystic Scrolls"
     },
     {
         "name": "Night of the Grand Octopus"
@@ -288,9 +285,6 @@
         "name": "Pictomania (Second Edition)"
     },
     {
-        "name": "A Place in the Sun (English edition)"
-    },
-    {
         "name": "Port Royal"
     },
     {
@@ -312,12 +306,6 @@
         "name": "Raverun"
     },
     {
-        "name": "The Resistance"
-    },
-    {
-        "name": "The Resistance: Avalon"
-    },
-    {
         "name": "Rummikub"
     },
     {
@@ -334,9 +322,6 @@
     },
     {
         "name": "Sequence"
-    },
-    {
-        "name": "The Settlers of Catan"
     },
     {
         "name": "Sheriff of Nottingham"
@@ -357,9 +342,6 @@
         "name": "Splendor"
     },
     {
-        "name": "Splendor"
-    },
-    {
         "name": "Spyfall 2"
     },
     {
@@ -372,6 +354,21 @@
         "name": "Telestrations"
     },
     {
+        "name": "The Fox in the Forest"
+    },
+    {
+        "name": "The Resistance"
+    },
+    {
+        "name": "The Resistance: Avalon"
+    },
+    {
+        "name": "The Settlers of Catan"
+    },
+    {
+        "name": "The Witcher: The Adventure Card Game"
+    },
+    {
         "name": "Three-Dragon Ante"
     },
     {
@@ -379,9 +376,6 @@
     },
     {
         "name": "Ticket to Ride"
-    },
-    {
-        "name": "Ticket to Ride: Europe"
     },
     {
         "name": "Ticket to Ride: Europe"
@@ -402,7 +396,7 @@
         "name": "Ultimate Werewolf: Inquisition"
     },
     {
-        "name": "UNO"
+        "name": "Uno"
     },
     {
         "name": "Unstable Unicorns"
@@ -426,9 +420,6 @@
         "name": "When I Dream"
     },
     {
-        "name": "The Witcher: The Adventure Card Game"
-    },
-    {
         "name": "World of Warcraft: The Adventure Game"
     },
     {
@@ -438,7 +429,7 @@
         "name": "Zombies!!!"
     },
     {
-        "name": "\u0411\u0410\u0422\u0410\u041b\u0418\u042f: \u0421\u044a\u0442\u0432\u043e\u0440\u044f\u0432\u0430\u043d\u0435"
+        "name": "\u0411\u0430\u0442\u0430\u043b\u0438\u044f: \u0421\u044a\u0442\u0432\u043e\u0440\u044f\u0432\u0430\u043d\u0435"
     },
     {
         "name": "\u0412\u044a\u0440\u043a\u043e\u043b\u0430\u0446\u0438"
@@ -468,7 +459,7 @@
         "name": "\u041a\u0440\u0430\u043b\u044f\u0442 \u043d\u0430 \u0422\u043e\u043a\u0438\u043e"
     },
     {
-        "name": "\u041b\u043e\u0432\u0446\u0438 \u0438 \u0421\u044a\u0431\u0438\u0440\u0430\u0447\u0438"
+        "name": "\u041b\u043e\u0432\u0446\u0438 \u0438 \u0441\u044a\u0431\u0438\u0440\u0430\u0447\u0438"
     },
     {
         "name": "\u041c\u043e\u043b \u041c\u0430\u0433\u0438\u043a\u0430"

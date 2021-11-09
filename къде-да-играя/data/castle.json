@@ -21,7 +21,25 @@
         "name": "7 Wonders: Leaders"
     },
     {
-        "name": "The 7th Continent"
+        "name": "A Billion Suns: Interstellar Fleet Battles"
+    },
+    {
+        "name": "A Feast for Odin"
+    },
+    {
+        "name": "A Game of Thrones"
+    },
+    {
+        "name": "A Game of Thrones: The Board Game (Second Edition)"
+    },
+    {
+        "name": "A Game of Thrones: The Card Game"
+    },
+    {
+        "name": "A Study in Emerald (Second Edition)"
+    },
+    {
+        "name": "A War of Whispers"
     },
     {
         "name": "Above and Below"
@@ -34,9 +52,6 @@
     },
     {
         "name": "Alibi"
-    },
-    {
-        "name": "The Ancient World"
     },
     {
         "name": "Android: Netrunner"
@@ -108,12 +123,6 @@
         "name": "Biblios"
     },
     {
-        "name": "The Big Book of Madness"
-    },
-    {
-        "name": "A Billion Suns: Interstellar Fleet Battles"
-    },
-    {
         "name": "Blood Rage"
     },
     {
@@ -127,9 +136,6 @@
     },
     {
         "name": "Blood Red Skies: Battle of Britain"
-    },
-    {
-        "name": "The Bloody Inn"
     },
     {
         "name": "Brass: Lancashire"
@@ -177,9 +183,6 @@
         "name": "Cargo Noir"
     },
     {
-        "name": "The Castles of Burgundy"
-    },
-    {
         "name": "Castles of Mad King Ludwig"
     },
     {
@@ -210,9 +213,6 @@
         "name": "Citadels"
     },
     {
-        "name": "Citadels"
-    },
-    {
         "name": "Citadels: The Dark City"
     },
     {
@@ -225,7 +225,7 @@
         "name": "Clank!: A Deck-Building Adventure"
     },
     {
-        "name": "C\u00f3atl"
+        "name": "Coatl"
     },
     {
         "name": "Codenames"
@@ -252,13 +252,7 @@
         "name": "Cottage Garden"
     },
     {
-        "name": "The Court of Miracles"
-    },
-    {
         "name": "Court of the Dead: Dark Harvest"
-    },
-    {
-        "name": "The Crew: The Quest for Planet Nine"
     },
     {
         "name": "Cthulhu Realms"
@@ -366,16 +360,10 @@
         "name": "Ex Libris"
     },
     {
-        "name": "The Expanse Board Game"
-    },
-    {
         "name": "Fantasy Realms"
     },
     {
         "name": "Favor of the Pharaoh"
-    },
-    {
-        "name": "A Feast for Odin"
     },
     {
         "name": "Fertility"
@@ -393,9 +381,6 @@
         "name": "Fort"
     },
     {
-        "name": "The Fox in the Forest"
-    },
-    {
         "name": "Fuji"
     },
     {
@@ -403,15 +388,6 @@
     },
     {
         "name": "Galactic Emperor"
-    },
-    {
-        "name": "A Game of Thrones"
-    },
-    {
-        "name": "A Game of Thrones: The Board Game (Second Edition)"
-    },
-    {
-        "name": "A Game of Thrones: The Card Game"
     },
     {
         "name": "Gaslands: Post-Apocalyptic Vehicular Combat"
@@ -451,9 +427,6 @@
     },
     {
         "name": "HMS Dolores"
-    },
-    {
-        "name": "The Hobbit: An Unexpected Journey \u2013 Journey to the Lonely Mountain Strategy Game"
     },
     {
         "name": "Homeworlds"
@@ -549,16 +522,7 @@
         "name": "Loony Quest"
     },
     {
-        "name": "The Lord of the Rings"
-    },
-    {
-        "name": "The Lord of the Rings: The Card Game"
-    },
-    {
         "name": "Lords of Waterdeep"
-    },
-    {
-        "name": "The Lost Expedition"
     },
     {
         "name": "Lost Ruins of Arnak"
@@ -600,7 +564,7 @@
         "name": "Merchant of Venus (Second Edition)"
     },
     {
-        "name": "MicroMacro: Crime City"
+        "name": "MicroMacro: Crime city"
     },
     {
         "name": "Monolith Arena"
@@ -690,9 +654,6 @@
         "name": "Quarto"
     },
     {
-        "name": "The Quest for El Dorado"
-    },
-    {
         "name": "Race for the Galaxy"
     },
     {
@@ -718,9 +679,6 @@
     },
     {
         "name": "Res Arcana: Lux et Tenebrae"
-    },
-    {
-        "name": "The Resistance: Avalon"
     },
     {
         "name": "Rex: Final Days of an Empire"
@@ -900,9 +858,6 @@
         "name": "Stone Age"
     },
     {
-        "name": "A Study in Emerald (Second Edition)"
-    },
-    {
         "name": "Subastral"
     },
     {
@@ -939,9 +894,6 @@
         "name": "Tarot"
     },
     {
-        "name": "The Tarot of Loka"
-    },
-    {
         "name": "Teotihuacan: City of Gods"
     },
     {
@@ -949,6 +901,66 @@
     },
     {
         "name": "That's a Question!"
+    },
+    {
+        "name": "The 7th Continent"
+    },
+    {
+        "name": "The Ancient World"
+    },
+    {
+        "name": "The Big Book of Madness"
+    },
+    {
+        "name": "The Bloody Inn"
+    },
+    {
+        "name": "The Castles of Burgundy"
+    },
+    {
+        "name": "The Court of Miracles"
+    },
+    {
+        "name": "The Crew: The Quest for Planet Nine"
+    },
+    {
+        "name": "The Expanse Board Game"
+    },
+    {
+        "name": "The Fox in the Forest"
+    },
+    {
+        "name": "The Hobbit: An Unexpected Journey \u2013 Journey to the Lonely Mountain Strategy Game"
+    },
+    {
+        "name": "The Lord of the Rings"
+    },
+    {
+        "name": "The Lord of the Rings: The Card Game"
+    },
+    {
+        "name": "The Lost Expedition"
+    },
+    {
+        "name": "The Quest for El Dorado"
+    },
+    {
+        "name": "The Resistance: Avalon"
+    },
+    {
+        "name": "The Tarot of Loka"
+    },
+    {
+        "name": "The Whatnot Cabinet"
+    },
+    {
+        "name": "The Witcher: The Adventure Card Game"
+    },
+    {
+        "name": "The Witches: A Discworld Game"
+    },
+    {
+        "name": "The World of Smog: On Her Majesty's Service"
     },
     {
         "name": "They Who Were 8"
@@ -1068,9 +1080,6 @@
         "name": "War Chest"
     },
     {
-        "name": "A War of Whispers"
-    },
-    {
         "name": "Warehouse 51"
     },
     {
@@ -1095,19 +1104,7 @@
         "name": "Werewolf"
     },
     {
-        "name": "The Whatnot Cabinet"
-    },
-    {
         "name": "Wingspan"
-    },
-    {
-        "name": "The Witcher: The Adventure Card Game"
-    },
-    {
-        "name": "The Witches: A Discworld Game"
-    },
-    {
-        "name": "The World of Smog: On Her Majesty's Service"
     },
     {
         "name": "World of Tanks: Rush"

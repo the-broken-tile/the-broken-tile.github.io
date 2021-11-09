@@ -1,12 +1,15 @@
 [
     {
+        "name": "A Game of Thrones: Catan \u2013 Brotherhood of the Watch"
+    },
+    {
         "name": "Among Thieves"
     },
     {
         "name": "Backgammon"
     },
     {
-        "name": "BANG! The Dice Game"
+        "name": "Bang! The dice game"
     },
     {
         "name": "Bluff Jubil\u00e4umsausgabe"
@@ -15,7 +18,7 @@
         "name": "Brass: Birmingham"
     },
     {
-        "name": "Cards Against Humanity"
+        "name": "Cards against humanity"
     },
     {
         "name": "Catan"
@@ -90,9 +93,6 @@
         "name": "Gaia Project"
     },
     {
-        "name": "A Game of Thrones: Catan \u2013 Brotherhood of the Watch"
-    },
-    {
         "name": "Go"
     },
     {
@@ -144,6 +144,6 @@
         "name": "Ticket to Ride: Germany"
     },
     {
-        "name": "UNO"
+        "name": "Uno"
     }
 ]

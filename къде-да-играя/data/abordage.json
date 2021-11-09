@@ -12,9 +12,6 @@
         "name": "Among Thieves"
     },
     {
-        "name": "Among Thieves"
-    },
-    {
         "name": "Avalon"
     },
     {
@@ -46,9 +43,6 @@
     },
     {
         "name": "Cards agaist muggles"
-    },
-    {
-        "name": "Catan"
     },
     {
         "name": "Catan"
@@ -111,10 +105,10 @@
         "name": "Dixit 10th Anniversary EXP"
     },
     {
-        "name": "Dixit 8 Harmonies EXP"
+        "name": "Dixit 7 Revelations EXP"
     },
     {
-        "name": "Dixit 7 Revelations EXP"
+        "name": "Dixit 8 Harmonies EXP"
     },
     {
         "name": "Dixit Odyssey"
@@ -213,9 +207,6 @@
         "name": "Mystic Scrolls"
     },
     {
-        "name": "Mystic Scrolls"
-    },
-    {
         "name": "One Night Ultimate Werewolf"
     },
     {
@@ -270,10 +261,10 @@
         "name": "Rick & Morty: Monopoly"
     },
     {
-        "name": "Rick and Morty: Munchkin"
+        "name": "Rick & Morty: Total Rickall"
     },
     {
-        "name": "Rick & Morty: Total Rickall"
+        "name": "Rick and Morty: Munchkin"
     },
     {
         "name": "Saboteur"
@@ -313,9 +304,6 @@
     },
     {
         "name": "Smallworld"
-    },
-    {
-        "name": "Splendor"
     },
     {
         "name": "Splendor"
@@ -369,9 +357,6 @@
         "name": "The Resistance"
     },
     {
-        "name": "The Resistance"
-    },
-    {
         "name": "Ticket to Ride - Europe"
     },
     {
@@ -388,6 +373,12 @@
     },
     {
         "name": "Trial by Trolley (Cyanide and Happiness; 18+)"
+    },
+    {
+        "name": "TSAK - Box A"
+    },
+    {
+        "name": "TSAK - Box B"
     },
     {
         "name": "Ultimate Werewolf Deluxe"
@@ -456,9 +447,6 @@
         "name": "\u041a\u0438\u043d\u0433\u0434\u043e\u043c\u0438\u043d\u043e"
     },
     {
-        "name": "\u041a\u0438\u043d\u0433\u0434\u043e\u043c\u0438\u043d\u043e"
-    },
-    {
         "name": "\u041a\u043e\u0434\u043e\u0432\u0438 \u0438\u043c\u0435\u043d\u0430"
     },
     {
@@ -514,11 +502,5 @@
     },
     {
         "name": "\u0428\u0430\u0445 \u0437\u0430 \u0442\u0440\u0438\u043c\u0430"
-    },
-    {
-        "name": "TSAK - Box A"
-    },
-    {
-        "name": "TSAK - Box B"
     }
 ]

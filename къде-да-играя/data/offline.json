@@ -1,797 +1,785 @@
 [
     {
-        "name": "Roll Camera"
-    },
-    {
-        "name": "The Dead Eye"
-    },
-    {
-        "name": "Lords of Zanora"
-    },
-    {
-        "name": "Cascadia"
-    },
-    {
-        "name": "\u041a\u043e\u0430\u0442\u044a\u043b"
-    },
-    {
-        "name": "Machi Koro: Deluxe Edition"
-    },
-    {
-        "name": "Spyfall"
-    },
-    {
-        "name": "\u041a\u0430\u043a\u0430\u043e"
-    },
-    {
-        "name": "Melee"
-    },
-    {
-        "name": "Meeple Circus"
-    },
-    {
-        "name": "Funkoverse Strategy Game: Game of Thrones"
-    },
-    {
-        "name": "Superhot: The Card Game"
+        "name": "7 Wonders"
     },
     {
         "name": "A Place in the Sun"
     },
     {
-        "name": "Danger Park"
-    },
-    {
-        "name": "Kanagawa"
-    },
-    {
-        "name": "Mission: Red Planet"
-    },
-    {
-        "name": "Cash and Guns (Second Edition)"
-    },
-    {
-        "name": "Ishtar: Gardens of Babylon"
-    },
-    {
-        "name": "Holding On: The Troubled Life of Billy Kerr"
-    },
-    {
-        "name": "\u041a\u0430\u0440\u043a\u0430\u0441\u043e\u043d"
-    },
-    {
-        "name": "\u041a\u043e\u043d\u0446\u0435\u043f\u0442"
-    },
-    {
-        "name": "Regicide"
-    },
-    {
-        "name": "The Crew: The Quest for Planet Nine"
-    },
-    {
-        "name": "Lanterns Dice: Lights in the Sky"
-    },
-    {
-        "name": "Clash of the Ardennes"
-    },
-    {
-        "name": "Lastich\u00e9"
-    },
-    {
-        "name": "Monopoly: Here and Now \u2013 The World Edition"
-    },
-    {
-        "name": "\u041d\u0435 \u0441\u0435 \u0441\u044a\u0440\u0434\u0438 \u0447\u043e\u0432\u0435\u0447\u0435"
-    },
-    {
-        "name": "Mikado"
-    },
-    {
-        "name": "Domino"
-    },
-    {
-        "name": "\u0412\u044a\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u0435"
-    },
-    {
-        "name": "Paku Paku"
-    },
-    {
-        "name": "The Resistance"
-    },
-    {
-        "name": "Avalon"
-    },
-    {
-        "name": "Zombie Dice"
-    },
-    {
-        "name": "Spot it! (Dobble)"
-    },
-    {
-        "name": "Chair Up"
-    },
-    {
-        "name": "Legendary Forests"
-    },
-    {
-        "name": "\u041d\u0435\u0444\u0442\u043e\u043f\u0443\u043a\u043b\u044c\u043e\u0432\u0446\u0438\u0442\u0435"
-    },
-    {
-        "name": "Small Samurai Empires"
-    },
-    {
-        "name": "Disciple Detectives"
-    },
-    {
-        "name": "Captain Bluff"
-    },
-    {
-        "name": "\u0415\u043a\u0441\u043f\u043b\u043e\u0434\u0438\u0440\u0430\u0449\u0438 \u043a\u043e\u0442\u0435\u0442\u0430"
-    },
-    {
-        "name": "conQUIZtador"
-    },
-    {
-        "name": "Apocalypse Universe: Galactic Arena"
-    },
-    {
-        "name": "Untold: Adventures Await"
-    },
-    {
-        "name": "Unlock! (9 \u0438\u0433\u0440\u0438)"
-    },
-    {
-        "name": "\u0412\u044a\u0440\u043a\u043e\u043b\u0430\u0446\u0438"
-    },
-    {
-        "name": "Impact: Battle of Elements"
-    },
-    {
-        "name": "Imhotep: The Duel"
-    },
-    {
-        "name": "Kingdomino Duel"
-    },
-    {
-        "name": "Red Stories"
-    },
-    {
-        "name": "Black Stories"
-    },
-    {
-        "name": "Qwirkle"
-    },
-    {
-        "name": "Scrabble"
-    },
-    {
-        "name": "NMBR 9"
-    },
-    {
-        "name": "\u041e\u0431\u0438\u043a\u043d\u043e\u0432\u0435\u043d\u0438 \u043a\u0430\u0440\u0442\u0438 \u0437\u0430 \u0438\u0433\u0440\u0430"
-    },
-    {
-        "name": "Uno"
-    },
-    {
-        "name": "\u0428\u0430\u0445"
-    },
-    {
-        "name": "Pile-Up Rush"
-    },
-    {
-        "name": "Dixit + Dixit: Odyssey"
-    },
-    {
-        "name": "Scape"
-    },
-    {
-        "name": "Suburbia: Collector\u2019s Edition"
-    },
-    {
-        "name": "\u0429\u0430\u0441\u0442\u043b\u0438\u0432\u0438 \u043f\u0438\u0440\u0430\u0442\u0438"
-    },
-    {
-        "name": "Memory: The Board Game"
-    },
-    {
-        "name": "Pig 10"
-    },
-    {
-        "name": "The Chameleon"
-    },
-    {
-        "name": "Spycon"
-    },
-    {
-        "name": "Stew"
-    },
-    {
-        "name": "Sprawlopolis"
-    },
-    {
-        "name": "\u0421\u043b\u043e\u0432\u0435\u0441\u043d\u0438 \u041a\u043b\u043e\u043f\u043a\u0438"
-    },
-    {
-        "name": "Rory\u2019s Story Cubes"
-    },
-    {
-        "name": "Catan: Family Edition"
-    },
-    {
-        "name": "PUSH"
-    },
-    {
-        "name": "Criss Cross"
-    },
-    {
-        "name": "Artbox"
-    },
-    {
-        "name": "Curios"
-    },
-    {
-        "name": "Draftosaurus"
-    },
-    {
-        "name": "Qwixx"
-    },
-    {
-        "name": "\u0414\u043e\u043c \u041c\u0435\u0447\u0442\u0430"
-    },
-    {
-        "name": "Illusion"
-    },
-    {
-        "name": "Traxx"
-    },
-    {
-        "name": "Libraria"
-    },
-    {
-        "name": "Kingdom Run"
-    },
-    {
-        "name": "Mini Curling Game"
-    },
-    {
-        "name": "UFO Farmer"
-    },
-    {
-        "name": "Junior Labyrinth"
-    },
-    {
-        "name": "No Thanks!"
-    },
-    {
-        "name": "Labyrinth"
-    },
-    {
-        "name": "Menara"
+        "name": "A Tale of Pirates"
     },
     {
         "name": "Age of War"
     },
     {
-        "name": "Start Player"
-    },
-    {
-        "name": "Conspiracy: Abyss Universe"
-    },
-    {
-        "name": "Bandida"
-    },
-    {
-        "name": "Fubi 2.0"
-    },
-    {
-        "name": "TZAAR"
-    },
-    {
-        "name": "Watergate"
-    },
-    {
-        "name": "New York Slice"
-    },
-    {
-        "name": "\u0421\u0430\u0431\u043e\u0442\u044c\u043e\u0440 1 + 2"
-    },
-    {
-        "name": "Detective Club"
-    },
-    {
-        "name": "The Little Prince: Make Me a Planet"
-    },
-    {
-        "name": "Catch the Moon"
-    },
-    {
-        "name": "Bang! The Dice Game"
-    },
-    {
-        "name": "The Color Monster"
-    },
-    {
-        "name": "Candy Lab"
-    },
-    {
-        "name": "Reef"
-    },
-    {
-        "name": "On tour (Second Edition)"
-    },
-    {
-        "name": "Oceanos"
-    },
-    {
-        "name": "Monolith Arena"
-    },
-    {
-        "name": "King of Tokyo"
-    },
-    {
-        "name": "Codinca"
-    },
-    {
-        "name": "\u041c\u043e\u043d\u0434\u043e"
-    },
-    {
-        "name": "\u041b\u0435\u0433\u0435\u043d\u0434\u0438\u0442\u0435 \u043d\u0430 \u0410\u043d\u0434\u043e\u0440"
-    },
-    {
-        "name": "Imperial Settlers: Empires of the North"
-    },
-    {
-        "name": "Port Royal"
-    },
-    {
-        "name": "Barony"
-    },
-    {
-        "name": "\u041a\u043e\u0434\u043e\u0432\u0438 \u0438\u043c\u0435\u043d\u0430: \u041a\u0430\u0440\u0442\u0438\u043d\u0438"
-    },
-    {
-        "name": "Codenames: Duet"
-    },
-    {
-        "name": "\u041a\u043e\u0434\u043e\u0432\u0438 \u0438\u043c\u0435\u043d\u0430"
-    },
-    {
-        "name": "Sunflower: The Card Game"
-    },
-    {
-        "name": "Paranormal Detectives"
-    },
-    {
-        "name": "Oh, Fox"
-    },
-    {
-        "name": "Chartae"
-    },
-    {
-        "name": "Similio"
-    },
-    {
-        "name": "Burning Suns"
-    },
-    {
-        "name": "The Game: Face to Face"
-    },
-    {
-        "name": "A Tale of Pirates"
-    },
-    {
-        "name": "Banjooli Xeet (Second Edition)"
-    },
-    {
-        "name": "Concept Kids: Animals"
-    },
-    {
-        "name": "Dr. Eureka"
-    },
-    {
-        "name": "\u0411\u0438\u043b\u0435\u0442 \u0437\u0430 \u043f\u044a\u0442: \u041f\u044a\u0440\u0432\u043e \u043f\u044a\u0442\u0435\u0448\u0435\u0441\u0442\u0432\u0438\u0435"
-    },
-    {
-        "name": "Doodle Rush"
-    },
-    {
-        "name": "Push It"
-    },
-    {
-        "name": "Dimension"
-    },
-    {
-        "name": "\u041a\u0440\u0430\u043b\u0441\u0442\u0432\u0430"
-    },
-    {
-        "name": "Terra"
-    },
-    {
-        "name": "Ubongo"
-    },
-    {
-        "name": "Hanabi"
-    },
-    {
-        "name": "Unicorn Fever"
-    },
-    {
-        "name": "Coloretto"
-    },
-    {
-        "name": "Furnace"
-    },
-    {
-        "name": "High Society"
-    },
-    {
-        "name": "Dubbe"
-    },
-    {
-        "name": "Thrive"
-    },
-    {
-        "name": "Biblios"
-    },
-    {
-        "name": "Samurai"
-    },
-    {
-        "name": "Era: Medieval Age"
-    },
-    {
-        "name": "Once Upon a Time: The Storytelling Card Game"
-    },
-    {
-        "name": "Calico"
-    },
-    {
-        "name": "Project L"
-    },
-    {
-        "name": "Circle the Wagons"
-    },
-    {
-        "name": "Enchanters (Deluxe Edition)"
-    },
-    {
-        "name": "Dungeon Mayhem"
-    },
-    {
-        "name": "Awkward Guests"
-    },
-    {
-        "name": "Tapestry"
-    },
-    {
-        "name": "Miyabi"
-    },
-    {
-        "name": "Bilder"
-    },
-    {
-        "name": "Pharaon"
-    },
-    {
-        "name": "Trails of Tucana"
-    },
-    {
-        "name": "It\u2019s a Wondergul World"
-    },
-    {
-        "name": "Hadara"
-    },
-    {
-        "name": "Point Salad"
-    },
-    {
-        "name": "Jamaica"
-    },
-    {
-        "name": "Wildlands"
-    },
-    {
-        "name": "Qwinto"
-    },
-    {
-        "name": "Knaster"
-    },
-    {
-        "name": "Eynsteyn"
-    },
-    {
-        "name": "Volt"
-    },
-    {
-        "name": "Blue Lagoon"
-    },
-    {
-        "name": "Res Arcana"
-    },
-    {
-        "name": "Shy Monsters"
-    },
-    {
-        "name": "Timeline Challenge"
-    },
-    {
-        "name": "Boomerang"
-    },
-    {
-        "name": "Quadropolis"
-    },
-    {
-        "name": "Betrayal Legacy"
-    },
-    {
-        "name": "Root"
-    },
-    {
-        "name": "New Frontiers"
-    },
-    {
-        "name": "Truck Off: The Food Truck Frenzy"
-    },
-    {
-        "name": "Pyramid Arcade"
-    },
-    {
-        "name": "Automobiles"
-    },
-    {
-        "name": "The Mind"
-    },
-    {
-        "name": "Carpe Diem"
-    },
-    {
-        "name": "Ice Cool 1+2"
-    },
-    {
-        "name": "Drop It"
-    },
-    {
-        "name": "Werewords Deluxe Edition"
-    },
-    {
-        "name": "Big Deal"
-    },
-    {
-        "name": "Luxor"
-    },
-    {
-        "name": "Gizmos"
-    },
-    {
-        "name": "Master of Orion: The Board Game"
-    },
-    {
-        "name": "Scarabya"
-    },
-    {
-        "name": "Spoils of War"
-    },
-    {
-        "name": "Travelin\u2019"
-    },
-    {
-        "name": "Barbaria"
-    },
-    {
-        "name": "Rhino Hero: Super Battle"
-    },
-    {
-        "name": "Pulsar 2849"
-    },
-    {
-        "name": "CV"
-    },
-    {
-        "name": "Krazy Wordz"
-    },
-    {
-        "name": "Fantasy Realms"
-    },
-    {
-        "name": "Arena: For the Gods"
-    },
-    {
-        "name": "Sushi Go Party!"
-    },
-    {
-        "name": "The Quest to El Dorado"
-    },
-    {
-        "name": "First Class: All Aboard the Orient Express"
-    },
-    {
-        "name": "Concordia"
-    },
-    {
-        "name": "Barenpark"
-    },
-    {
-        "name": "Citadels (2016)"
-    },
-    {
-        "name": "Maze Racers"
-    },
-    {
-        "name": "Splatter Shoot"
-    },
-    {
-        "name": "Stockpile"
-    },
-    {
-        "name": "Junk Art"
-    },
-    {
-        "name": "Capital \/ Warsaw: City of Ruins"
-    },
-    {
-        "name": "Sponsio"
-    },
-    {
-        "name": "Super Fantasy Brawl"
-    },
-    {
-        "name": "Bohemian Villages"
-    },
-    {
-        "name": "Deus"
-    },
-    {
-        "name": "Indigo"
-    },
-    {
-        "name": "Dungeon Fighter"
-    },
-    {
-        "name": "7 Wonders"
-    },
-    {
-        "name": "Kingsburg (Second Edition)"
-    },
-    {
-        "name": "Q. E."
-    },
-    {
-        "name": "Era of Tribes"
-    },
-    {
-        "name": "Tiny Towns"
-    },
-    {
-        "name": "Gaia Project"
-    },
-    {
-        "name": "Ethnos"
-    },
-    {
-        "name": "Santorini"
-    },
-    {
-        "name": "Blindes Huhn (\u0421\u043b\u0435\u043f\u0438\u0442\u0435 \u043a\u043e\u043a\u043e\u0448\u043a\u0438)"
-    },
-    {
-        "name": "Food Chain Magnate"
-    },
-    {
-        "name": "Flick \u2019em Up!"
-    },
-    {
-        "name": "Legendary Encounters: an ALIEN Deck Building Game"
-    },
-    {
-        "name": "Ticket to Ride"
-    },
-    {
-        "name": "The Castles of Burgundy"
-    },
-    {
-        "name": "Sub Terra"
-    },
-    {
-        "name": "Last Night on Earth: The Zombie Game"
-    },
-    {
-        "name": "Through the Ages: A New Story of Civilization"
+        "name": "Apocalypse Universe: Galactic Arena"
     },
     {
         "name": "Archipelago"
     },
     {
-        "name": "Time Barons"
+        "name": "Arena: For the Gods"
     },
     {
-        "name": "Robinson Crusoe: Adventures on the Cursed Island"
+        "name": "Artbox"
     },
     {
-        "name": "Nine Tiles Panic"
+        "name": "Automobiles"
     },
     {
-        "name": "Less: Like Chess But Less"
+        "name": "Avalon"
     },
     {
-        "name": "One Key"
+        "name": "Awkward Guests"
     },
     {
-        "name": "Feelinks: Revelations (16+)"
+        "name": "Azul"
     },
     {
-        "name": "Dany  (16+)"
+        "name": "Bandida"
     },
     {
-        "name": "Itchy Monkey"
+        "name": "Bang! The dice game"
     },
     {
-        "name": "\u041c\u043e\u043b \u041c\u0430\u0433\u0438\u043a\u0430"
+        "name": "Banjooli Xeet (Second Edition)"
     },
     {
-        "name": "Cortex Challenge (Braintopia)"
+        "name": "Barbaria"
     },
     {
-        "name": "\u041a\u0440\u0438\u043c\u0438\u043d\u0430\u043b\u043d\u0438 \u0445\u0440\u043e\u043d\u0438\u043a\u0438"
+        "name": "B\u00e4renpark"
     },
     {
-        "name": "\u041a\u043e\u043b\u0435\u0434\u043d\u043e \u0441\u0435\u043b\u0446\u0435"
+        "name": "Barony"
     },
     {
-        "name": "The Genius Square"
+        "name": "Betrayal Legacy"
     },
     {
-        "name": "Estoril 1942: City of Spies"
+        "name": "Biblios"
     },
     {
-        "name": "Dragon Castle"
+        "name": "Big Deal"
     },
     {
-        "name": "La Cucaracha"
+        "name": "Bilder"
     },
     {
-        "name": "Operators"
+        "name": "Black Stories"
     },
     {
-        "name": "When I Dream"
-    },
-    {
-        "name": "The Game of 49"
+        "name": "Blindes Huhn (\u0421\u043b\u0435\u043f\u0438\u0442\u0435 \u043a\u043e\u043a\u043e\u0448\u043a\u0438)"
     },
     {
         "name": "Blue Lagoon"
     },
     {
-        "name": "Wildlands"
+        "name": "Bohemian Villages"
     },
     {
-        "name": "Modern Art (\u041b\u0443\u043a\u0441\u043e\u0437\u043d\u043e \u0438\u0437\u0434\u0430\u043d\u0438\u0435)"
+        "name": "Boomerang"
     },
     {
-        "name": "Karuba"
+        "name": "Burning Suns"
     },
     {
-        "name": "Scarabya"
+        "name": "Calico"
     },
     {
-        "name": "The Little Prince: Make Me a Planet"
+        "name": "Candy Lab"
     },
     {
-        "name": "\u0415\u0434\u043d\u0430 \u0434\u0443\u043c\u0430"
+        "name": "Capital \/ Warsaw: City of Ruins"
+    },
+    {
+        "name": "Captain Bluff"
+    },
+    {
+        "name": "Carpe Diem"
+    },
+    {
+        "name": "Cascadia"
+    },
+    {
+        "name": "Cash and Guns (Second Edition)"
+    },
+    {
+        "name": "Catan: Family Edition"
+    },
+    {
+        "name": "Catch the Moon"
+    },
+    {
+        "name": "Chair Up"
+    },
+    {
+        "name": "Chartae"
+    },
+    {
+        "name": "Circle the Wagons"
+    },
+    {
+        "name": "Citadels (2016)"
+    },
+    {
+        "name": "Clash of the Ardennes"
     },
     {
         "name": "Cockroach Poker"
     },
     {
-        "name": "AZUL"
+        "name": "Codenames: Duet"
     },
     {
-        "name": "WAR CHEST"
+        "name": "Codinca"
+    },
+    {
+        "name": "Coloretto"
+    },
+    {
+        "name": "Concept Kids: Animals"
+    },
+    {
+        "name": "Concordia"
+    },
+    {
+        "name": "conQUIZtador"
+    },
+    {
+        "name": "Conspiracy: Abyss Universe"
+    },
+    {
+        "name": "Cortex Challenge (Braintopia)"
+    },
+    {
+        "name": "Criss Cross"
+    },
+    {
+        "name": "Curios"
+    },
+    {
+        "name": "CV"
+    },
+    {
+        "name": "Danger Park"
+    },
+    {
+        "name": "Dany  (16+)"
+    },
+    {
+        "name": "Detective Club"
+    },
+    {
+        "name": "Deus"
+    },
+    {
+        "name": "Dimension"
+    },
+    {
+        "name": "Disciple Detectives"
+    },
+    {
+        "name": "Dixit + Dixit: Odyssey"
+    },
+    {
+        "name": "Domino"
+    },
+    {
+        "name": "Doodle Rush"
+    },
+    {
+        "name": "Dr. Eureka"
+    },
+    {
+        "name": "Draftosaurus"
+    },
+    {
+        "name": "Dragon Castle"
+    },
+    {
+        "name": "Drop It"
+    },
+    {
+        "name": "Dubbe"
+    },
+    {
+        "name": "Dungeon Fighter"
+    },
+    {
+        "name": "Dungeon Mayhem"
+    },
+    {
+        "name": "Enchanters (Deluxe Edition)"
+    },
+    {
+        "name": "Era of Tribes"
+    },
+    {
+        "name": "Era: Medieval Age"
+    },
+    {
+        "name": "Estoril 1942: City of Spies"
+    },
+    {
+        "name": "Ethnos"
+    },
+    {
+        "name": "Eynsteyn"
+    },
+    {
+        "name": "Fantasy Realms"
+    },
+    {
+        "name": "Feelinks: Revelations (16+)"
+    },
+    {
+        "name": "First Class: All Aboard the Orient Express"
+    },
+    {
+        "name": "Flick \u2019em Up!"
+    },
+    {
+        "name": "Food Chain Magnate"
+    },
+    {
+        "name": "Fubi 2.0"
+    },
+    {
+        "name": "Funkoverse Strategy Game: Game of Thrones"
+    },
+    {
+        "name": "Furnace"
+    },
+    {
+        "name": "Gaia Project"
+    },
+    {
+        "name": "Gizmos"
+    },
+    {
+        "name": "Hadara"
+    },
+    {
+        "name": "Hanabi"
+    },
+    {
+        "name": "High Society"
+    },
+    {
+        "name": "Holding On: The Troubled Life of Billy Kerr"
+    },
+    {
+        "name": "Ice Cool 1+2"
+    },
+    {
+        "name": "Illusion"
+    },
+    {
+        "name": "Imhotep: The Duel"
+    },
+    {
+        "name": "Impact: Battle of Elements"
+    },
+    {
+        "name": "Imperial Settlers: Empires of the North"
+    },
+    {
+        "name": "Indigo"
+    },
+    {
+        "name": "Ishtar: Gardens of Babylon"
+    },
+    {
+        "name": "It\u2019s a Wondergul World"
+    },
+    {
+        "name": "Itchy Monkey"
+    },
+    {
+        "name": "Jamaica"
+    },
+    {
+        "name": "Junior Labyrinth"
+    },
+    {
+        "name": "Junk art"
+    },
+    {
+        "name": "Kanagawa"
+    },
+    {
+        "name": "Karuba"
+    },
+    {
+        "name": "King of Tokyo"
+    },
+    {
+        "name": "Kingdom Run"
+    },
+    {
+        "name": "Kingdomino Duel"
+    },
+    {
+        "name": "Kingsburg (Second Edition)"
+    },
+    {
+        "name": "Knaster"
+    },
+    {
+        "name": "Krazy Wordz"
+    },
+    {
+        "name": "La Cucaracha"
+    },
+    {
+        "name": "Labyrinth"
+    },
+    {
+        "name": "Lanterns Dice: Lights in the Sky"
+    },
+    {
+        "name": "Last Night on Earth: The Zombie Game"
+    },
+    {
+        "name": "Lastiche"
+    },
+    {
+        "name": "Legendary Encounters: an ALIEN Deck Building Game"
+    },
+    {
+        "name": "Legendary Forests"
+    },
+    {
+        "name": "Less: Like Chess But Less"
+    },
+    {
+        "name": "Libraria"
+    },
+    {
+        "name": "Lords of Zanora"
+    },
+    {
+        "name": "Luxor"
+    },
+    {
+        "name": "Machi Koro: Deluxe Edition"
+    },
+    {
+        "name": "Master of Orion: The Board Game"
+    },
+    {
+        "name": "Maze Racers"
+    },
+    {
+        "name": "Meeple Circus"
+    },
+    {
+        "name": "Melee"
+    },
+    {
+        "name": "Memory: The Board Game"
+    },
+    {
+        "name": "Menara"
+    },
+    {
+        "name": "Mikado"
+    },
+    {
+        "name": "Mini Curling Game"
+    },
+    {
+        "name": "Mission: Red Planet"
+    },
+    {
+        "name": "Miyabi"
+    },
+    {
+        "name": "Modern Art (\u041b\u0443\u043a\u0441\u043e\u0437\u043d\u043e \u0438\u0437\u0434\u0430\u043d\u0438\u0435)"
+    },
+    {
+        "name": "Monolith Arena"
+    },
+    {
+        "name": "Monopoly: Here and Now \u2013 The World Edition"
+    },
+    {
+        "name": "New Frontiers"
+    },
+    {
+        "name": "New York Slice"
+    },
+    {
+        "name": "Nine Tiles Panic"
+    },
+    {
+        "name": "NMBR 9"
+    },
+    {
+        "name": "No Thanks!"
+    },
+    {
+        "name": "Oceanos"
+    },
+    {
+        "name": "Oh, Fox"
+    },
+    {
+        "name": "On tour (Second Edition)"
+    },
+    {
+        "name": "Once Upon a Time: The Storytelling Card Game"
+    },
+    {
+        "name": "One Key"
+    },
+    {
+        "name": "Operators"
+    },
+    {
+        "name": "Paku Paku"
+    },
+    {
+        "name": "Paranormal Detectives"
+    },
+    {
+        "name": "Pharaon"
+    },
+    {
+        "name": "PICTOMANIA \u2013 SECOND EDITION"
+    },
+    {
+        "name": "Pig 10"
+    },
+    {
+        "name": "Pile-Up Rush"
+    },
+    {
+        "name": "Point Salad"
+    },
+    {
+        "name": "Port Royal"
     },
     {
         "name": "POTION EXPLOSION"
     },
     {
-        "name": "PICTOMANIA \u2013 SECOND EDITION"
+        "name": "Project L"
+    },
+    {
+        "name": "Pulsar 2849"
+    },
+    {
+        "name": "PUSH"
+    },
+    {
+        "name": "Push It"
+    },
+    {
+        "name": "Pyramid Arcade"
+    },
+    {
+        "name": "Q. E."
+    },
+    {
+        "name": "Quadropolis"
+    },
+    {
+        "name": "Qwinto"
+    },
+    {
+        "name": "Qwirkle"
+    },
+    {
+        "name": "Qwixx"
+    },
+    {
+        "name": "Red Stories"
+    },
+    {
+        "name": "Reef"
+    },
+    {
+        "name": "Regicide"
+    },
+    {
+        "name": "Res Arcana"
+    },
+    {
+        "name": "Rhino Hero: Super Battle"
+    },
+    {
+        "name": "Robinson Crusoe: Adventures on the Cursed Island"
+    },
+    {
+        "name": "Roll Camera"
+    },
+    {
+        "name": "Root"
+    },
+    {
+        "name": "Rory\u2019s Story Cubes"
+    },
+    {
+        "name": "Samurai"
+    },
+    {
+        "name": "Santorini"
+    },
+    {
+        "name": "Scape"
+    },
+    {
+        "name": "Scarabya"
+    },
+    {
+        "name": "Scrabble"
+    },
+    {
+        "name": "Shy Monsters"
+    },
+    {
+        "name": "Similio"
+    },
+    {
+        "name": "Small Samurai Empires"
+    },
+    {
+        "name": "Splatter Shoot"
+    },
+    {
+        "name": "Spoils of War"
+    },
+    {
+        "name": "Sponsio"
+    },
+    {
+        "name": "Spot it! (Dobble)"
+    },
+    {
+        "name": "Sprawlopolis"
+    },
+    {
+        "name": "Spycon"
+    },
+    {
+        "name": "SpyFall"
+    },
+    {
+        "name": "Start Player"
+    },
+    {
+        "name": "Stew"
+    },
+    {
+        "name": "Stockpile"
+    },
+    {
+        "name": "Sub Terra"
+    },
+    {
+        "name": "Suburbia: Collector\u2019s Edition"
+    },
+    {
+        "name": "Sunflower: The Card Game"
+    },
+    {
+        "name": "Super Fantasy Brawl"
+    },
+    {
+        "name": "Superhot: The Card Game"
+    },
+    {
+        "name": "Sushi Go Party!"
+    },
+    {
+        "name": "Tapestry"
+    },
+    {
+        "name": "Terra"
+    },
+    {
+        "name": "The Castles of Burgundy"
+    },
+    {
+        "name": "The Chameleon"
+    },
+    {
+        "name": "The Color Monster"
+    },
+    {
+        "name": "The Crew: The Quest for Planet Nine"
+    },
+    {
+        "name": "The Dead Eye"
+    },
+    {
+        "name": "The Game of 49"
+    },
+    {
+        "name": "The Game: Face to Face"
+    },
+    {
+        "name": "The Genius Square"
+    },
+    {
+        "name": "The Little Prince: Make Me a Planet"
+    },
+    {
+        "name": "The Mind"
+    },
+    {
+        "name": "The Quest to El Dorado"
+    },
+    {
+        "name": "The Resistance"
+    },
+    {
+        "name": "Thrive"
+    },
+    {
+        "name": "Through the Ages: A New Story of Civilization"
+    },
+    {
+        "name": "Ticket to Ride"
+    },
+    {
+        "name": "Time Barons"
+    },
+    {
+        "name": "Timeline Challenge"
+    },
+    {
+        "name": "Tiny Towns"
+    },
+    {
+        "name": "Trails of Tucana"
+    },
+    {
+        "name": "Travelin\u2019"
+    },
+    {
+        "name": "Traxx"
+    },
+    {
+        "name": "Truck Off: The Food Truck Frenzy"
+    },
+    {
+        "name": "TZAAR"
+    },
+    {
+        "name": "Ubongo"
+    },
+    {
+        "name": "UFO Farmer"
+    },
+    {
+        "name": "Unicorn Fever"
+    },
+    {
+        "name": "Unlock! (9 \u0438\u0433\u0440\u0438)"
+    },
+    {
+        "name": "Uno"
+    },
+    {
+        "name": "Untold: Adventures Await"
+    },
+    {
+        "name": "Volt"
+    },
+    {
+        "name": "War Chest"
+    },
+    {
+        "name": "Watergate"
+    },
+    {
+        "name": "Werewords Deluxe Edition"
+    },
+    {
+        "name": "When I Dream"
+    },
+    {
+        "name": "Wildlands"
+    },
+    {
+        "name": "Zombie Dice"
+    },
+    {
+        "name": "\u0411\u0438\u043b\u0435\u0442 \u0437\u0430 \u043f\u044a\u0442: \u041f\u044a\u0440\u0432\u043e \u043f\u044a\u0442\u0435\u0448\u0435\u0441\u0442\u0432\u0438\u0435"
+    },
+    {
+        "name": "\u0412\u044a\u043e\u0431\u0440\u0430\u0436\u0435\u043d\u0438\u0435"
+    },
+    {
+        "name": "\u0412\u044a\u0440\u043a\u043e\u043b\u0430\u0446\u0438"
+    },
+    {
+        "name": "\u0414\u043e\u043c \u043c\u0435\u0447\u0442\u0430"
+    },
+    {
+        "name": "\u0415\u0434\u043d\u0430 \u0434\u0443\u043c\u0430"
+    },
+    {
+        "name": "\u0415\u043a\u0441\u043f\u043b\u043e\u0434\u0438\u0440\u0430\u0449\u0438 \u043a\u043e\u0442\u0435\u0442\u0430"
+    },
+    {
+        "name": "\u041a\u0430\u043a\u0430\u043e"
+    },
+    {
+        "name": "\u041a\u0430\u0440\u043a\u0430\u0441\u043e\u043d"
+    },
+    {
+        "name": "\u041a\u043e\u0430\u0442\u044a\u043b"
+    },
+    {
+        "name": "\u041a\u043e\u0434\u043e\u0432\u0438 \u0438\u043c\u0435\u043d\u0430"
+    },
+    {
+        "name": "\u041a\u043e\u0434\u043e\u0432\u0438 \u0438\u043c\u0435\u043d\u0430: \u041a\u0430\u0440\u0442\u0438\u043d\u0438"
+    },
+    {
+        "name": "\u041a\u043e\u043b\u0435\u0434\u043d\u043e \u0441\u0435\u043b\u0446\u0435"
+    },
+    {
+        "name": "\u041a\u043e\u043d\u0446\u0435\u043f\u0442"
+    },
+    {
+        "name": "\u041a\u0440\u0430\u043b\u0441\u0442\u0432\u0430"
+    },
+    {
+        "name": "\u041a\u0440\u0438\u043c\u0438\u043d\u0430\u043b\u043d\u0438 \u0445\u0440\u043e\u043d\u0438\u043a\u0438"
+    },
+    {
+        "name": "\u041b\u0435\u0433\u0435\u043d\u0434\u0438\u0442\u0435 \u043d\u0430 \u0410\u043d\u0434\u043e\u0440"
+    },
+    {
+        "name": "\u041c\u043e\u043b \u041c\u0430\u0433\u0438\u043a\u0430"
+    },
+    {
+        "name": "\u041c\u043e\u043d\u0434\u043e"
+    },
+    {
+        "name": "\u041d\u0435 \u0441\u0435 \u0441\u044a\u0440\u0434\u0438 \u0447\u043e\u0432\u0435\u0447\u0435"
+    },
+    {
+        "name": "\u041d\u0435\u0444\u0442\u043e\u043f\u0443\u043a\u043b\u044c\u043e\u0432\u0446\u0438\u0442\u0435"
+    },
+    {
+        "name": "\u041e\u0431\u0438\u043a\u043d\u043e\u0432\u0435\u043d\u0438 \u043a\u0430\u0440\u0442\u0438 \u0437\u0430 \u0438\u0433\u0440\u0430"
+    },
+    {
+        "name": "\u0421\u0430\u0431\u043e\u0442\u044c\u043e\u0440 1 + 2"
+    },
+    {
+        "name": "\u0421\u043b\u043e\u0432\u0435\u0441\u043d\u0438 \u043a\u043b\u043e\u043f\u043a\u0438"
+    },
+    {
+        "name": "\u0428\u0430\u0445"
+    },
+    {
+        "name": "\u0429\u0430\u0441\u0442\u043b\u0438\u0432\u0438 \u043f\u0438\u0440\u0430\u0442\u0438"
     }
 ]
