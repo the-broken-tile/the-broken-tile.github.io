@@ -12,9 +12,6 @@
         "name": "Among Thieves"
     },
     {
-        "name": "Among Thieves"
-    },
-    {
         "name": "Avalon"
     },
     {
@@ -51,13 +48,10 @@
         "name": "Catan"
     },
     {
-        "name": "Catan"
+        "name": "Catan - мореплаватели"
     },
     {
-        "name": "Catan - \u043c\u043e\u0440\u0435\u043f\u043b\u0430\u0432\u0430\u0442\u0435\u043b\u0438"
-    },
-    {
-        "name": "Catan \u0440\u0430\u0437\u0448\u0438\u0440\u0435\u043d\u0438\u0435 5-6"
+        "name": "Catan разширение 5-6"
     },
     {
         "name": "Citadels"
@@ -111,10 +105,10 @@
         "name": "Dixit 10th Anniversary EXP"
     },
     {
-        "name": "Dixit 8 Harmonies EXP"
+        "name": "Dixit 7 Revelations EXP"
     },
     {
-        "name": "Dixit 7 Revelations EXP"
+        "name": "Dixit 8 Harmonies EXP"
     },
     {
         "name": "Dixit Odyssey"
@@ -213,9 +207,6 @@
         "name": "Mystic Scrolls"
     },
     {
-        "name": "Mystic Scrolls"
-    },
-    {
         "name": "One Night Ultimate Werewolf"
     },
     {
@@ -270,10 +261,10 @@
         "name": "Rick & Morty: Monopoly"
     },
     {
-        "name": "Rick and Morty: Munchkin"
+        "name": "Rick & Morty: Total Rickall"
     },
     {
-        "name": "Rick & Morty: Total Rickall"
+        "name": "Rick and Morty: Munchkin"
     },
     {
         "name": "Saboteur"
@@ -309,13 +300,10 @@
         "name": "Skull"
     },
     {
-        "name": "Sly Foxes\/ \u041b\u0443\u043a\u0430\u0432\u0438 \u043b\u0438\u0441\u0438\u0446\u0438"
+        "name": "Sly Foxes\/ Лукави лисици"
     },
     {
         "name": "Smallworld"
-    },
-    {
-        "name": "Splendor"
     },
     {
         "name": "Splendor"
@@ -369,9 +357,6 @@
         "name": "The Resistance"
     },
     {
-        "name": "The Resistance"
-    },
-    {
         "name": "Ticket to Ride - Europe"
     },
     {
@@ -388,6 +373,12 @@
     },
     {
         "name": "Trial by Trolley (Cyanide and Happiness; 18+)"
+    },
+    {
+        "name": "TSAK - Box A"
+    },
+    {
+        "name": "TSAK - Box B"
     },
     {
         "name": "Ultimate Werewolf Deluxe"
@@ -417,108 +408,99 @@
         "name": "Witless Wizards"
     },
     {
-        "name": "World of Warcraft + EXP (\u043d\u0435 \u0433\u043e \u0434\u0430\u0432\u0430\u043c\u0435)"
+        "name": "World of Warcraft + EXP (не го даваме)"
     },
     {
-        "name": "\u0410\u043b\u0435\u043d\u0430 \u0417\u043e\u0440\u0430"
+        "name": "Алена Зора"
     },
     {
-        "name": "\u0410\u0440\u0445\u0435\u043e\u043b\u043e\u0437\u0438 \u0441\u0440\u0435\u0449\u0443 \u0418\u043c\u0430\u043d\u044f\u0440\u0438"
+        "name": "Археолози срещу Иманяри"
     },
     {
-        "name": "\u0411\u0430\u0442\u0430\u043b\u0438\u044f: \u0421\u044a\u0442\u0432\u043e\u0440\u044f\u0432\u0430\u043d\u0435"
+        "name": "Баталия: Сътворяване"
     },
     {
-        "name": "\u0411\u0438\u043b\u0435\u0442 \u0437\u0430 \u043f\u044a\u0442"
+        "name": "Билет за път"
     },
     {
-        "name": "\u0413\u044a\u0431\u043a\u0438"
+        "name": "Гъбки"
     },
     {
-        "name": "\u0414\u0436\u0435\u043d\u0433\u0430"
+        "name": "Дженга"
     },
     {
-        "name": "\u0414\u043e\u043c \u043c\u0435\u0447\u0442\u0430"
+        "name": "Дом мечта"
     },
     {
-        "name": "\u0414\u0440\u044a\u0436 \u0441\u0435, \u0417\u0435\u043c\u044c\u043e"
+        "name": "Дръж се, Земьо"
     },
     {
-        "name": "\u0418\u0433\u0440\u0430 \u0441 \u0434\u0443\u043c\u0438"
+        "name": "Игра с думи"
     },
     {
-        "name": "\u041a\u0430\u043a \u0434\u0430 \u043e\u0446\u0435\u043b\u0435\u0435\u0448 \u043a\u0430\u0442\u043e \u0440\u043e\u0434\u0438\u0442\u0435\u043b"
+        "name": "Как да оцелееш като родител"
     },
     {
-        "name": "\u041a\u0430\u043a\u0430\u043e"
+        "name": "Какао"
     },
     {
-        "name": "\u041a\u0438\u043d\u0433\u0434\u043e\u043c\u0438\u043d\u043e"
+        "name": "Кингдомино"
     },
     {
-        "name": "\u041a\u0438\u043d\u0433\u0434\u043e\u043c\u0438\u043d\u043e"
+        "name": "Кодови имена"
     },
     {
-        "name": "\u041a\u043e\u0434\u043e\u0432\u0438 \u0438\u043c\u0435\u043d\u0430"
+        "name": "Кодови имена картини"
     },
     {
-        "name": "\u041a\u043e\u0434\u043e\u0432\u0438 \u0438\u043c\u0435\u043d\u0430 \u043a\u0430\u0440\u0442\u0438\u043d\u0438"
+        "name": "Кралства"
     },
     {
-        "name": "\u041a\u0440\u0430\u043b\u0441\u0442\u0432\u0430"
+        "name": "Кралят на Токио"
     },
     {
-        "name": "\u041a\u0440\u0430\u043b\u044f\u0442 \u043d\u0430 \u0422\u043e\u043a\u0438\u043e"
+        "name": "Кукер"
     },
     {
-        "name": "\u041a\u0443\u043a\u0435\u0440"
+        "name": "Ластиче"
     },
     {
-        "name": "\u041b\u0430\u0441\u0442\u0438\u0447\u0435"
+        "name": "Ловци и събирачи"
     },
     {
-        "name": "\u041b\u043e\u0432\u0446\u0438 \u0438 \u0441\u044a\u0431\u0438\u0440\u0430\u0447\u0438"
+        "name": "Маскарад"
     },
     {
-        "name": "\u041c\u0430\u0441\u043a\u0430\u0440\u0430\u0434"
+        "name": "На Вуте да му е зле"
     },
     {
-        "name": "\u041d\u0430 \u0412\u0443\u0442\u0435 \u0434\u0430 \u043c\u0443 \u0435 \u0437\u043b\u0435"
+        "name": "Порт Роял"
     },
     {
-        "name": "\u041f\u043e\u0440\u0442 \u0420\u043e\u044f\u043b"
+        "name": "Сказание"
     },
     {
-        "name": "\u0421\u043a\u0430\u0437\u0430\u043d\u0438\u0435"
+        "name": "Стой далеч"
     },
     {
-        "name": "\u0421\u0442\u043e\u0439 \u0434\u0430\u043b\u0435\u0447"
+        "name": "Убонго"
     },
     {
-        "name": "\u0423\u0431\u043e\u043d\u0433\u043e"
+        "name": "Фотосинтеза"
     },
     {
-        "name": "\u0424\u043e\u0442\u043e\u0441\u0438\u043d\u0442\u0435\u0437\u0430"
+        "name": "Хайдути"
     },
     {
-        "name": "\u0425\u0430\u0439\u0434\u0443\u0442\u0438"
+        "name": "Царят на историята"
     },
     {
-        "name": "\u0426\u0430\u0440\u044f\u0442 \u043d\u0430 \u0438\u0441\u0442\u043e\u0440\u0438\u044f\u0442\u0430"
+        "name": "Цивилизация"
     },
     {
-        "name": "\u0426\u0438\u0432\u0438\u043b\u0438\u0437\u0430\u0446\u0438\u044f"
+        "name": "Чейнчаджията"
     },
     {
-        "name": "\u0427\u0435\u0439\u043d\u0447\u0430\u0434\u0436\u0438\u044f\u0442\u0430"
-    },
-    {
-        "name": "\u0428\u0430\u0445 \u0437\u0430 \u0442\u0440\u0438\u043c\u0430"
-    },
-    {
-        "name": "TSAK - Box A"
-    },
-    {
-        "name": "TSAK - Box B"
+        "name": "Шах за трима"
     }
 ]
