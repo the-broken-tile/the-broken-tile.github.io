@@ -1,24 +1,5 @@
 [
     {
-        "name": "Mox Games",
-        "slug": "mox",
-        "city": "Sofia",
-        "links": [
-            {
-                "type": "location",
-                "value": "https:\/\/www.google.com\/maps\/embed\/v1\/place?q=place_id:ChIJjxiXq3iFqkAROQwEhdR2bWA&key=:key"
-            },
-            {
-                "type": "facebook",
-                "value": "https:\/\/www.facebook.com\/MoxGamesBG"
-            },
-            {
-                "type": "phone",
-                "value": "tel:+359884225468"
-            }
-        ]
-    },
-    {
         "name": "Abordage",
         "slug": "abordage",
         "city": "Sofia",
@@ -34,6 +15,25 @@
             {
                 "type": "phone",
                 "value": "tel:+359889180993"
+            }
+        ]
+    },
+    {
+        "name": "Cybar",
+        "slug": "cybar",
+        "city": "Veliko Tarnovo",
+        "links": [
+            {
+                "type": "location",
+                "value": "https:\/\/www.google.com\/maps\/embed\/v1\/place?q=place_id:ChIJ-TLwCAsmqUARsjErSB7xxI4&key=:key"
+            },
+            {
+                "type": "facebook",
+                "value": "https:\/\/www.facebook.com\/powwow.bg"
+            },
+            {
+                "type": "phone",
+                "value": "tel:+359893506150"
             }
         ]
     },
@@ -57,7 +57,26 @@
         ]
     },
     {
-        "name": "\u0414\u0440\u0443\u0433\u0438\u044f\u0442 \u0437\u0430\u043c\u044a\u043a",
+        "name": "Mox Games",
+        "slug": "mox",
+        "city": "Sofia",
+        "links": [
+            {
+                "type": "location",
+                "value": "https:\/\/www.google.com\/maps\/embed\/v1\/place?q=place_id:ChIJjxiXq3iFqkAROQwEhdR2bWA&key=:key"
+            },
+            {
+                "type": "facebook",
+                "value": "https:\/\/www.facebook.com\/MoxGamesBG"
+            },
+            {
+                "type": "phone",
+                "value": "tel:+359884225468"
+            }
+        ]
+    },
+    {
+        "name": "Другият замък",
         "slug": "castle",
         "city": "Sofia",
         "links": [
@@ -82,7 +101,7 @@
         "links": [
             {
                 "type": "location",
-                "value": "https:\/\/www.google.com\/maps\/embed\/v1\/place?q=\u0443\u043b.+\u201e\u0415\u043b\u0438\u0441\u0430\u0432\u0435\u0442\u0430+\u0411\u0430\u0433\u0440\u044f\u043d\u0430\u201c+2\u0410,+1113+\u0413\u0435\u043e+\u041c\u0438\u043b\u0435\u0432,+\u0421\u043e\u0444\u0438\u044f&key=:key"
+                "value": "https:\/\/www.google.com\/maps\/embed\/v1\/place?q=ул.+„Елисавета+Багряна“+2А,+1113+Гео+Милев,+София&key=:key"
             },
             {
                 "type": "facebook",
@@ -95,7 +114,7 @@
         ]
     },
     {
-        "name": "Offline Caf\u00e9",
+        "name": "Offline Café",
         "slug": "offline",
         "city": "Plovdiv",
         "links": [
@@ -129,25 +148,6 @@
             {
                 "type": "phone",
                 "value": "tel:++359878333969"
-            }
-        ]
-    },
-    {
-        "name": "Cybar",
-        "slug": "cybar",
-        "city": "Veliko Tarnovo",
-        "links": [
-            {
-                "type": "location",
-                "value": "https:\/\/www.google.com\/maps\/embed\/v1\/place?q=place_id:ChIJ-TLwCAsmqUARsjErSB7xxI4&key=:key"
-            },
-            {
-                "type": "facebook",
-                "value": "https:\/\/www.facebook.com\/powwow.bg"
-            },
-            {
-                "type": "phone",
-                "value": "tel:+359893506150"
             }
         ]
     }
