@@ -1,5 +1,5 @@
 const API_KEY = 'AIzaSyCVedUcZGITxPFXe_tK9qcuA9Txpv_LCJE';
-
+const LOADING_FILES_COUNT  = 7;
 const LINK_TYPE_LOCATION = 'location';
 const LINK_TYPE_FACEBOOK = 'facebook';
 const LINK_TYPE_PHONE = 'phone';
@@ -9,10 +9,28 @@ const $clubInfo = document.getElementById('club-info');
 const $clubInfoContent = document.getElementById('club-info-content');
 
 const translator = new Translator(LANGUAGE_BG);
-const clubs = [];
-const games = [];
-const gamesByName = {};
-const clubsBySlug = {};
+let clubs;
+let games;
+let artists;
+let categories;
+let designers;
+let families;
+let mechanics;
+
+const prepareData = () => {
+    Object.values(clubs).forEach(club => {
+        club.games = club.games.map(gameId => {
+            const game = games[gameId];
+            game.clubs = game.clubs || [];
+            game.clubs.push(club);
+
+            return game;
+        });
+    });
+
+    initApp();
+};
+
 const QUERY_REGEXP = /\?какво=([^&$]+)/;
 const ICONS_MAP = {
     [LINK_TYPE_FACEBOOK]: '<i class="icon fab fa-facebook-f"></i>',
@@ -52,11 +70,13 @@ const getTerm = () => {
 
 const renderLink = ({type, value}) => `<li><a target="_blank" href="${value}">${ICONS_MAP[type]} ${value.replace(/^.+:\/{0,2}/, '')}</a></li>`
 const renderLinks = club => `<ul>${club.links.filter(({type}) => type !== LINK_TYPE_LOCATION).map(renderLink).join('')}</ul>`;
-const renderCityName = ({city}) => `<span class="small">${translator.trans(city, {}, 'city')}</span>`;
-const renderClub = slug => `<li><a href="#" class="club" data-slug="${slug}">${clubsBySlug[slug].name}</a> ${renderCityName(clubsBySlug[slug])}</li>`;
+const renderCityName = city => `<span class="small">${translator.trans(city, {}, 'city')}</span>`;
+const renderClub = ({ slug, name, city }) => `<li><a href="#" class="club" data-slug="${slug}">${name}</a> ${renderCityName(city)}</li>`;
 const renderMap = club => `<iframe loading="lazy" src="${club.links.find(({type}) => type === LINK_TYPE_LOCATION).value.replace(':key', API_KEY)}"></iframe>`;
 const renderClubInfo = club => `<h1>${club.name}</h1>${renderMap(club)}${renderLinks(club)}`;
-const renderClubs = memoize(clubs => `<ul class="clubs">${clubs.map(renderClub).join('')}</ul>`);
+const renderClubs = clubs => {
+  return `<ul class="clubs">${clubs.map(renderClub).join('')}</ul>`;
+}
 
 const renderResults = results => {
     // Double content FTW!
@@ -83,33 +103,15 @@ const createMatcher = term => {
     }
 }
 const sorter = (a, b) => a.name.localeCompare(b.name);
-const init = () => {
+const initApp = () => {
     const term = getTerm();
+    const gamesArr = Object.values(games);
 
     document.getElementById('q').value = term;
-    const results = term ? games.filter(createMatcher(term)) : games;
+    const results = term ? gamesArr.filter(createMatcher(term)) : gamesArr;
     $results.innerHTML = results.length ? renderResults(results.sort(sorter)) : '<b>няма намерени резултати</b>';
 }
 
-const addGames = (gamesToAdd, club) => {
-    gamesToAdd.forEach(game => {
-        const lowerName = trim(game.name);
-        if (gamesByName[lowerName]) {
-            if (!gamesByName[lowerName].clubs.includes(club.slug)) {
-                // Prevent duplicates.
-                gamesByName[lowerName].clubs.push(club.slug);
-            } else {
-                console.warn(`${game.name} is already added to ${club.name}`);
-            }
-        } else {
-            gamesByName[lowerName] = {
-                ...game,
-                clubs: [club.slug],
-            };
-            games.push(gamesByName[lowerName]);
-        }
-    });
-};
 const openClubInfo = (content = '') => {
     if (content) {
         $clubInfoContent.innerHTML = content;
@@ -122,21 +124,44 @@ const closeCLubInfo = () => {
     document.body.classList.remove('info-open');
 };
 
-loadJSON('./data/clubs.json', response => {
-    clubs.push(...response);
-
-    let loadingGames = clubs.length;
-    clubs.forEach(club => {
-        clubsBySlug[club.slug] = club;
-        loadJSON(`./data/${club.slug}.json`, clubGames => {
-            addGames(clubGames, club);
-            loadingGames--;
-            if (loadingGames === 0) {
-                init();
-            }
-        });
+const init = () => {
+    let loading = LOADING_FILES_COUNT;
+    loadJSON('./data/club.json', response => {
+        loading--;
+        clubs = response;
+        loading === 0 && prepareData();
     });
-});
+    loadJSON('./data/game.json', response => {
+        loading--;
+        games = response;
+        loading === 0 && prepareData();
+    });
+    loadJSON('./data/artist.json', response => {
+        loading--;
+        artists = response;
+        loading === 0 && prepareData();
+    });
+    loadJSON('./data/category.json', response => {
+        loading--;
+        categories = response;
+        loading === 0 && prepareData();
+    });
+    loadJSON('./data/designer.json', response => {
+        loading--;
+        designers = response;
+        loading === 0 && prepareData();
+    });
+    loadJSON('./data/family.json', response => {
+        loading--;
+        families = response;
+        loading === 0 && prepareData();
+    });
+    loadJSON('./data/mechanic.json', response => {
+        loading--;
+        mechanics = response;
+        loading === 0 && prepareData();
+    });
+};
 
 document.body.addEventListener('click', e => {
     const { target } = e;
@@ -144,7 +169,7 @@ document.body.addEventListener('click', e => {
         return;
     }
     e.preventDefault();
-    openClubInfo(renderClubInfo(clubs.find(({slug}) => slug === target.dataset.slug)));
+    openClubInfo(renderClubInfo(clubs[target.dataset.slug]));
 });
 document.body.addEventListener('click', e => {
     const {target} = e;
@@ -163,3 +188,5 @@ document.body.addEventListener('swiped-left', () => {
         openClubInfo();
     }
 });
+
+init();
