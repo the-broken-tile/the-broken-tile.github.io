@@ -188,9 +188,9 @@
             "036a1bd7-a31c-4571-992a-f13be3ef0e17"
         ]
     },
-    "cybar": {
+    "cy-bar": {
         "name": "Cybar",
-        "slug": "cybar",
+        "slug": "cy-bar",
         "city": "Veliko Tarnovo",
         "links": [
             {
@@ -258,9 +258,9 @@
             "135e7ef7-fc62-4bc4-b463-e36213d20d8f"
         ]
     },
-    "lvl-up": {
+    "level-up": {
         "name": "Level Up Sofia",
-        "slug": "lvl-up",
+        "slug": "level-up",
         "city": "Sofia",
         "links": [
             {
@@ -724,9 +724,9 @@
             "695a9d8c-6e66-4d76-8b23-1dd9cc3c6aed"
         ]
     },
-    "castle": {
+    "other-castle": {
         "name": "Другият замък",
-        "slug": "castle",
+        "slug": "other-castle",
         "city": "Sofia",
         "links": [
             {
@@ -1120,9 +1120,9 @@
             "3b7178da-1020-4c90-87da-b2f816fbddab"
         ]
     },
-    "myth-20": {
+    "mythical-20": {
         "name": "Mythical 20",
-        "slug": "myth-20",
+        "slug": "mythical-20",
         "city": "Sofia",
         "links": [
             {
