@@ -1,5 +1,4 @@
 const API_KEY = 'AIzaSyCVedUcZGITxPFXe_tK9qcuA9Txpv_LCJE';
-const LOADING_FILES_COUNT  = 7;
 const LINK_TYPE_LOCATION = 'location';
 const LINK_TYPE_FACEBOOK = 'facebook';
 const LINK_TYPE_PHONE = 'phone';
@@ -16,6 +15,8 @@ let categories;
 let designers;
 let families;
 let mechanics;
+let compilations;
+const LOADING_FILES_COUNT  = 8;
 
 const prepareData = () => {
     Object.values(clubs).forEach(club => {
@@ -159,6 +160,11 @@ const init = () => {
     loadJSON('./data/mechanic.json', response => {
         loading--;
         mechanics = response;
+        loading === 0 && prepareData();
+    });
+    loadJSON('./data/compilation.json', response => {
+        loading--;
+        compilations = response;
         loading === 0 && prepareData();
     });
 };
