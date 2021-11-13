@@ -100,23 +100,25 @@ const renderFilterMenu = () => {
     return `<ul>
         <li>
             <label for="city">${translator.trans('city_label')}:</label>
-            <select id="city" multiple name="city[]">
+            <select id="city" multiple>
                 ${Object.keys(cities)
                     .map(id => cities[id])
                     .sort(sorter)
                     .map(({name}) => `<option value="${name}">${translator.trans(name, {}, 'city')}</option>`)
                         .join('')}
             </select>
+            <input type="hidden" name="city" value="">
         </li>
         <li>
             <label for="club">${translator.trans('club_label')}</label>
-            <select multiple id="club" name="club[]">
+            <select multiple id="club">
                 ${Object.keys(clubs)
                     .map(slug => clubs[slug])
                     .sort(sorter)
                     .map(({slug, name}) => `<option value="${slug}">${name}</option>`)
                         .join('')}
             </select>
+            <input type="hidden" name="club" value="">
         </li>
         <li>
             <label for="players">${translator.trans('players_label')}</label>
@@ -132,53 +134,58 @@ const renderFilterMenu = () => {
         </li>
         <li>
             <label for="designer">${translator.trans('designer_label')}</label>
-            <select multiple id="designer" name="designer[]">
+            <select multiple id="designer">
                 ${Object.keys(designers)
                     .map(id => designers[id])
                     .sort(valueSorter)
                     .map(valueOption)
                         .join('')}
             </select>
+            <input type="hidden" name="designer" value="">
         </li>
         <li>
             <label for="artist">${translator.trans('artist_label')}</label>
-            <select multiple id="artist" name="artist[]">
+            <select multiple id="artist">
                 ${Object.keys(artists)
                     .map(id => artists[id])
                     .sort(valueSorter)
                     .map(valueOption)
                         .join('')}
-            </select>        
+            </select>
+            <input type="hidden" name="artist" value="">
         </li>
         <li>
             <label for="category">${translator.trans('category_label')}</label>
-            <select multiple id="category" name="category[]">
+            <select multiple id="category">
                 ${Object.keys(categories)
                     .map(id => categories[id])
                     .sort(valueSorter)
                     .map(valueOption)
                         .join('')}
             </select>
+            <input type="hidden" name="category" value="">
         </li>
         <li>
             <label for="family">${translator.trans('family_label')}</label>
-            <select multiple id="family" name="family[]">
+            <select multiple id="family">
                 ${Object.keys(families)
                     .map(id => families[id])
                     .sort(valueSorter)
                     .map(valueOption)
                         .join('')}
             </select>
+            <input type="hidden" name="family" value="">
         </li>
         <li>
             <label for="mechanics">${translator.trans('mechanic_label')}</label>
-            <select multiple id="mechanics" name="mechanics[]">
+            <select multiple id="mechanics">
                 ${Object.keys(mechanics)
                     .map(id => mechanics[id])
                     .sort(valueSorter)
                     .map(valueOption)
                         .join('')}
             </select>
+            <input type="hidden" name="mechanics" value="">
         </li>
     </ul>`;
 };
@@ -318,6 +325,23 @@ document.body.addEventListener('swiped-left', () => {
 document.getElementById('open-filter-menu').addEventListener('click', () => {
     $sidePanelContent.innerHTML = renderFilterMenu();
     openSidePanel();
+});
+document.body.addEventListener('input', e => {
+    const { target } = e;
+    if (!target.multiple) {
+        return;
+    }
+    const values = [...target.options]
+        .filter(option => option.selected)
+        .map(option => option.value);
+    const hiddenInput = document.querySelector(`input[type="hidden"][name="${target.id}"]`);
+    hiddenInput.value = values.join(',');
+});
+document.getElementById('form').addEventListener('submit', e => {
+    //Remove empty values from URL.
+    [...e.target.querySelectorAll('input')]
+        .filter(input => !input.value)
+        .forEach(filter => filter.disabled = true);
 });
 
 init();
