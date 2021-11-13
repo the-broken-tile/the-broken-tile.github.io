@@ -136,7 +136,7 @@ header {
     display: block;
 }
 
-#club-info {
+#side-panel {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -150,22 +150,22 @@ header {
     z-index: 3;
 }
 
-#club-info.open {
+#side-panel.open {
     left: 10%;
 }
 
-#club-info .close-club-info {
+#side-panel .close-side-panel {
     position: absolute;
     top: 8px;
     right: 8px;
     cursor: pointer;
 }
 
-#club-info-content {
+#side-panel-content {
     padding: 8px;
 }
 
-#club-info-content iframe {
+#side-panel-content iframe {
     border: none;
     display: block;
     width: 100%;

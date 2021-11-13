@@ -4,8 +4,8 @@ const LINK_TYPE_FACEBOOK = 'facebook';
 const LINK_TYPE_PHONE = 'phone';
 
 const $results = document.getElementById('results');
-const $clubInfo = document.getElementById('club-info');
-const $clubInfoContent = document.getElementById('club-info-content');
+const $sidePanel = document.getElementById('side-panel');
+const $sidePanelContent = document.getElementById('side-panel-content');
 
 const translator = new Translator(LANGUAGE_BG);
 let clubs;
@@ -120,13 +120,13 @@ const initApp = () => {
 
 const openClubInfo = (content = '') => {
     if (content) {
-        $clubInfoContent.innerHTML = content;
+        $sidePanelContent.innerHTML = content;
     }
-    $clubInfo.classList.add('open');
+    $sidePanel.classList.add('open');
     document.body.classList.add('info-open');
 };
 const closeCLubInfo = () => {
-    $clubInfo.classList.remove('open');
+    $sidePanel.classList.remove('open');
     document.body.classList.remove('info-open');
 };
 
@@ -184,18 +184,18 @@ document.body.addEventListener('click', e => {
 });
 document.body.addEventListener('click', e => {
     const {target} = e;
-    if (!target.classList.contains('close-club-info')) {
+    if (!target.classList.contains('close-side-panel')) {
         return;
     }
     closeCLubInfo();
 });
 document.body.addEventListener('swiped-right', e => {
-    if ($clubInfo.classList.contains('open')) {
+    if ($sidePanel.classList.contains('open')) {
         closeCLubInfo();
     }
 });
 document.body.addEventListener('swiped-left', () => {
-    if (document.getElementById('club-info-content').innerHTML && !$clubInfo.classList.contains('open')) {
+    if (document.getElementById('side-panel-content').innerHTML && !$sidePanel.classList.contains('open')) {
         openClubInfo();
     }
 });
