@@ -144,6 +144,7 @@ header {
 
 #side-panel {
     position: fixed;
+    overflow: auto;
     top: 0;
     bottom: 0;
     left: 100%;
@@ -176,6 +177,13 @@ header {
     display: block;
     width: 100%;
     height: 300px;
+}
+#more-filters,
+#show-more-filters {
+    display: none;
+}
+:checked ~ #more-filters {
+    display: block;
 }
 .small {
     font-size: 0.7em;

@@ -97,96 +97,102 @@ const renderFilterMenu = () => {
     const players = getMixMaxFromArray('players');
     const playingType = getMixMaxFromArray('playingTime');
 
-    return `<ul>
-        <li>
-            <label for="city">${translator.trans('city_label')}:</label>
-            <select id="city" multiple>
-                ${Object.keys(cities)
-                    .map(id => cities[id])
-                    .sort(sorter)
-                    .map(({name}) => `<option value="${name}">${translator.trans(name, {}, 'city')}</option>`)
-                        .join('')}
-            </select>
-            <input type="hidden" name="city" value="">
-        </li>
-        <li>
-            <label for="club">${translator.trans('club_label')}</label>
-            <select multiple id="club">
-                ${Object.keys(clubs)
-                    .map(slug => clubs[slug])
-                    .sort(sorter)
-                    .map(({slug, name}) => `<option value="${slug}">${name}</option>`)
-                        .join('')}
-            </select>
-            <input type="hidden" name="club" value="">
-        </li>
-        <li>
-            <label for="players">${translator.trans('players_label')}</label>
-            <input id="players" name="players" type="number" step="1" min="${players.min}" max="${players.max}">
-        </li>
-        <li>
-            <label for="playing-time">${translator.trans('playing_time_label')}</label>
-            <input id="playing-time" name="playing-time" type="number" step="5" min="${playingType.min}" max="${playingType.max}">
-        </li>
-        <li>
-            <label for="year-published">${translator.trans('year_published_label')}</label>
-            <input id="year-published" name="year-published" type="number" step="1" min="${yearPublished.min}" max="${yearPublished.max}">
-        </li>
-        <li>
-            <label for="designer">${translator.trans('designer_label')}</label>
-            <select multiple id="designer">
-                ${Object.keys(designers)
-                    .map(id => designers[id])
-                    .sort(valueSorter)
-                    .map(valueOption)
-                        .join('')}
-            </select>
-            <input type="hidden" name="designer" value="">
-        </li>
-        <li>
-            <label for="artist">${translator.trans('artist_label')}</label>
-            <select multiple id="artist">
-                ${Object.keys(artists)
-                    .map(id => artists[id])
-                    .sort(valueSorter)
-                    .map(valueOption)
-                        .join('')}
-            </select>
-            <input type="hidden" name="artist" value="">
-        </li>
-        <li>
-            <label for="category">${translator.trans('category_label')}</label>
-            <select multiple id="category">
-                ${Object.keys(categories)
-                    .map(id => categories[id])
-                    .sort(valueSorter)
-                    .map(valueOption)
-                        .join('')}
-            </select>
-            <input type="hidden" name="category" value="">
-        </li>
-        <li>
-            <label for="family">${translator.trans('family_label')}</label>
-            <select multiple id="family">
-                ${Object.keys(families)
-                    .map(id => families[id])
-                    .sort(valueSorter)
-                    .map(valueOption)
-                        .join('')}
-            </select>
-            <input type="hidden" name="family" value="">
-        </li>
-        <li>
-            <label for="mechanics">${translator.trans('mechanic_label')}</label>
-            <select multiple id="mechanics">
-                ${Object.keys(mechanics)
-                    .map(id => mechanics[id])
-                    .sort(valueSorter)
-                    .map(valueOption)
-                        .join('')}
-            </select>
-            <input type="hidden" name="mechanics" value="">
-        </li>
+    return `<div>
+        <ul>
+            <li>
+                <label for="city">${translator.trans('city_label')}:</label>
+                <select id="city" multiple>
+                    ${Object.keys(cities)
+                        .map(id => cities[id])
+                        .sort(sorter)
+                        .map(({name}) => `<option value="${name}">${translator.trans(name, {}, 'city')}</option>`)
+                            .join('')}
+                </select>
+                <input type="hidden" name="city" value="">
+            </li>
+            <li>
+                <label for="club">${translator.trans('club_label')}</label>
+                <select multiple id="club">
+                    ${Object.keys(clubs)
+                        .map(slug => clubs[slug])
+                        .sort(sorter)
+                        .map(({slug, name}) => `<option value="${slug}">${name}</option>`)
+                            .join('')}
+                </select>
+                <input type="hidden" name="club" value="">
+            </li>
+            <li>
+                <label for="players">${translator.trans('players_label')}</label>
+                <input id="players" name="players" type="number" step="1" min="${players.min}" max="${players.max}">
+            </li>
+            <li>
+                <label for="playing-time">${translator.trans('playing_time_label')}</label>
+                <input id="playing-time" name="playing-time" type="number" step="5" min="${playingType.min}" max="${playingType.max}">
+            </li>
+        </div>
+        <label for="show-more-filters">${translator.trans('show_more_filters_label')}</label>
+        <input type="checkbox" id="show-more-filters">
+        <ul id="more-filters">
+            <li>
+                <label for="year-published">${translator.trans('year_published_label')}</label>
+                <input id="year-published" name="year-published" type="number" step="1" min="${yearPublished.min}" max="${yearPublished.max}">
+            </li>
+            <li>
+                <label for="designer">${translator.trans('designer_label')}</label>
+                <select multiple id="designer">
+                    ${Object.keys(designers)
+                        .map(id => designers[id])
+                        .sort(valueSorter)
+                        .map(valueOption)
+                            .join('')}
+                </select>
+                <input type="hidden" name="designer" value="">
+            </li>
+            <li>
+                <label for="artist">${translator.trans('artist_label')}</label>
+                <select multiple id="artist">
+                    ${Object.keys(artists)
+                        .map(id => artists[id])
+                        .sort(valueSorter)
+                        .map(valueOption)
+                            .join('')}
+                </select>
+                <input type="hidden" name="artist" value="">
+            </li>
+            <li>
+                <label for="category">${translator.trans('category_label')}</label>
+                <select multiple id="category">
+                    ${Object.keys(categories)
+                        .map(id => categories[id])
+                        .sort(valueSorter)
+                        .map(valueOption)
+                            .join('')}
+                </select>
+                <input type="hidden" name="category" value="">
+            </li>
+            <li>
+                <label for="family">${translator.trans('family_label')}</label>
+                <select multiple id="family">
+                    ${Object.keys(families)
+                        .map(id => families[id])
+                        .sort(valueSorter)
+                        .map(valueOption)
+                            .join('')}
+                </select>
+                <input type="hidden" name="family" value="">
+            </li>
+            <li>
+                <label for="mechanics">${translator.trans('mechanic_label')}</label>
+                <select multiple id="mechanics">
+                    ${Object.keys(mechanics)
+                        .map(id => mechanics[id])
+                        .sort(valueSorter)
+                        .map(valueOption)
+                            .join('')}
+                </select>
+                <input type="hidden" name="mechanics" value="">
+            </li>
+        </ul>
     </ul>`;
 };
 const renderLink = ({type, value}) => `<li><a target="_blank" href="${value}">${ICONS_MAP[type]} ${value.replace(/^.+:\/{0,2}/, '')}</a></li>`
