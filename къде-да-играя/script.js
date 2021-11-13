@@ -77,7 +77,8 @@ const renderMap = club => `<iframe loading="lazy" src="${club.links.find(({type}
 const renderClubInfo = club => `<h1>${club.name}</h1>${renderMap(club)}${renderLinks(club)}`;
 const renderClubs = clubs => {
   return `<ul class="clubs">${clubs.map(renderClub).join('')}</ul>`;
-}
+};
+const renderThumbnail = () => '';// ({thumbnail}) => thumbnail ? `<span class="thumbnail" style="background-image: url('./data/images/${thumbnail}')"></span>` : '';
 
 const renderResults = results => {
     // Double content FTW!
@@ -87,7 +88,11 @@ const renderResults = results => {
             const clubs = renderClubs(game.clubs);
 
             return `<tr>
-                <td>${game.name}<div class="hide-lg">${clubs}</div></td>
+                <td>
+                    ${renderThumbnail(game)}
+                    ${game.name}
+                    <div class="hide-lg">${clubs}</div>
+                </td>
                 <td class="hide-sm">${clubs}</td>
             </tr>`;
         }
