@@ -16,7 +16,8 @@ let designers;
 let families;
 let mechanics;
 let compilations;
-const LOADING_FILES_COUNT  = 8;
+let cities;
+const LOADING_FILES_COUNT  = 9;
 
 const prepareData = () => {
     Object.values(clubs).forEach(club => {
@@ -71,8 +72,8 @@ const getTerm = () => {
 
 const renderLink = ({type, value}) => `<li><a target="_blank" href="${value}">${ICONS_MAP[type]} ${value.replace(/^.+:\/{0,2}/, '')}</a></li>`
 const renderLinks = club => `<ul>${club.links.filter(({type}) => type !== LINK_TYPE_LOCATION).map(renderLink).join('')}</ul>`;
-const renderCityName = city => `<span class="small">${translator.trans(city, {}, 'city')}</span>`;
-const renderClub = ({ slug, name, city }) => `<li><a href="#" class="club" data-slug="${slug}">${name}</a> ${renderCityName(city)}</li>`;
+const renderCity = ({name}) => `<span class="small">${translator.trans(name, {}, 'city')}</span>`;
+const renderClub = ({ slug, name, city }) => `<li><a href="#" class="club" data-slug="${slug}">${name}</a> ${renderCity(cities[city])}</li>`;
 const renderMap = club => `<iframe loading="lazy" src="${club.links.find(({type}) => type === LINK_TYPE_LOCATION).value.replace(':key', API_KEY)}"></iframe>`;
 const renderClubInfo = club => `<h1>${club.name}</h1>${renderMap(club)}${renderLinks(club)}`;
 const renderClubs = clubs => {
@@ -170,6 +171,11 @@ const init = () => {
     loadJSON('./data/compilation.json', response => {
         loading--;
         compilations = response;
+        loading === 0 && prepareData();
+    });
+    loadJSON('./data/city.json', response => {
+        loading--;
+        cities = response;
         loading === 0 && prepareData();
     });
 };

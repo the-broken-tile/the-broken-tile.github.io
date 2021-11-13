@@ -2,7 +2,7 @@
     "abordage": {
         "name": "Abordage",
         "slug": "abordage",
-        "city": "Sofia",
+        "city": "c0a28ce5-ea4a-4cef-ae57-95a37d0a8098",
         "links": [
             {
                 "type": "location",
@@ -191,7 +191,7 @@
     "cy-bar": {
         "name": "Cybar",
         "slug": "cy-bar",
-        "city": "Veliko Tarnovo",
+        "city": "f78a98ef-f622-4d9f-87c1-8c02226b9702",
         "links": [
             {
                 "type": "location",
@@ -261,7 +261,7 @@
     "level-up": {
         "name": "Level Up Sofia",
         "slug": "level-up",
-        "city": "Sofia",
+        "city": "c0a28ce5-ea4a-4cef-ae57-95a37d0a8098",
         "links": [
             {
                 "type": "location",
@@ -441,7 +441,7 @@
     "mox": {
         "name": "Mox Games",
         "slug": "mox",
-        "city": "Sofia",
+        "city": "c0a28ce5-ea4a-4cef-ae57-95a37d0a8098",
         "links": [
             {
                 "type": "location",
@@ -727,7 +727,7 @@
     "other-castle": {
         "name": "Другият замък",
         "slug": "other-castle",
-        "city": "Sofia",
+        "city": "c0a28ce5-ea4a-4cef-ae57-95a37d0a8098",
         "links": [
             {
                 "type": "location",
@@ -1123,7 +1123,7 @@
     "mythical-20": {
         "name": "Mythical 20",
         "slug": "mythical-20",
-        "city": "Sofia",
+        "city": "c0a28ce5-ea4a-4cef-ae57-95a37d0a8098",
         "links": [
             {
                 "type": "location",
@@ -1202,7 +1202,7 @@
     "offline": {
         "name": "Offline Café",
         "slug": "offline",
-        "city": "Plovdiv",
+        "city": "9a018605-c871-4b2d-8b2e-bfa5e09d96de",
         "links": [
             {
                 "type": "location",
@@ -1484,7 +1484,7 @@
     "cooldown": {
         "name": "CoolDown",
         "slug": "cooldown",
-        "city": "Plovdiv",
+        "city": "9a018605-c871-4b2d-8b2e-bfa5e09d96de",
         "links": [
             {
                 "type": "location",
