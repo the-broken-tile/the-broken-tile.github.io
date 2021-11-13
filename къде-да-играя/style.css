@@ -57,7 +57,7 @@ header {
     text-align: center;
 }
 .header-content h1,
-#form {
+#search-input-wrapper {
     margin: 0 0 8px 0;
 }
 
@@ -134,6 +134,12 @@ header {
 }
 .info-open #cover {
     display: block;
+}
+#open-filter-menu {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    cursor: pointer;
 }
 
 #side-panel {

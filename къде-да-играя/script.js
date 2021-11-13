@@ -38,6 +38,10 @@ const ICONS_MAP = {
     [LINK_TYPE_FACEBOOK]: '<i class="icon fab fa-facebook-f"></i>',
     [LINK_TYPE_PHONE]: '<i class="icon fas fa-phone"></i>',
 };
+const createSorter = prop => (a, b) => a[prop].localeCompare(b[prop]);
+const sorter = createSorter('name');
+const valueSorter = createSorter('value');
+
 const trims = new RegExp([
     ...[
         //English articles
@@ -69,7 +73,115 @@ const getTerm = () => {
 
     return matches ? matches[1].toLowerCase() : null;
 };
+const renderFilterMenu = () => {
+    const valueOption = ({id, value}) => `<option value="${id}">${value}</option>`;
+    const gamesArray = Object.keys(games).map(id => games[id]);
+    const getMixMaxFromArray = arrayProp => gamesArray.reduce(({min, max}, game) => {
+        if (!game[arrayProp]) {
+            return {min, max};
+        }
+        return {
+            min: Math.min(min, game[arrayProp][0]),
+            max: Math.max(max, game[arrayProp][1]),
+        };
+    }, {min: 9999, max: -1});
+    const yearPublished = gamesArray.reduce(({min, max}, {yearPublished}) => {
+        if (yearPublished === undefined) {
+            return {min, max};
+        }
+        return {
+            min: Math.min(min, yearPublished),
+            max: Math.max(max, yearPublished),
+        };
+    }, {min: 9999, max: 0});
+    const players = getMixMaxFromArray('players');
+    const playingType = getMixMaxFromArray('playingTime');
 
+    return `<ul>
+        <li>
+            <label for="city">${translator.trans('city_label')}:</label>
+            <select id="city" multiple name="city[]">
+                ${Object.keys(cities)
+                    .map(id => cities[id])
+                    .sort(sorter)
+                    .map(({name}) => `<option value="${name}">${translator.trans(name, {}, 'city')}</option>`)
+                        .join('')}
+            </select>
+        </li>
+        <li>
+            <label for="club">${translator.trans('club_label')}</label>
+            <select multiple id="club" name="club[]">
+                ${Object.keys(clubs)
+                    .map(slug => clubs[slug])
+                    .sort(sorter)
+                    .map(({slug, name}) => `<option value="${slug}">${name}</option>`)
+                        .join('')}
+            </select>
+        </li>
+        <li>
+            <label for="players">${translator.trans('players_label')}</label>
+            <input id="players" name="players" type="number" step="1" min="${players.min}" max="${players.max}">
+        </li>
+        <li>
+            <label for="playing-time">${translator.trans('playing_time_label')}</label>
+            <input id="playing-time" name="playing-time" type="number" step="5" min="${playingType.min}" max="${playingType.max}">
+        </li>
+        <li>
+            <label for="year-published">${translator.trans('year_published_label')}</label>
+            <input id="year-published" name="year-published" type="number" step="1" min="${yearPublished.min}" max="${yearPublished.max}">
+        </li>
+        <li>
+            <label for="designer">${translator.trans('designer_label')}</label>
+            <select multiple id="designer" name="designer[]">
+                ${Object.keys(designers)
+                    .map(id => designers[id])
+                    .sort(valueSorter)
+                    .map(valueOption)
+                        .join('')}
+            </select>
+        </li>
+        <li>
+            <label for="artist">${translator.trans('artist_label')}</label>
+            <select multiple id="artist" name="artist[]">
+                ${Object.keys(artists)
+                    .map(id => artists[id])
+                    .sort(valueSorter)
+                    .map(valueOption)
+                        .join('')}
+            </select>        
+        </li>
+        <li>
+            <label for="category">${translator.trans('category_label')}</label>
+            <select multiple id="category" name="category[]">
+                ${Object.keys(categories)
+                    .map(id => categories[id])
+                    .sort(valueSorter)
+                    .map(valueOption)
+                        .join('')}
+            </select>
+        </li>
+        <li>
+            <label for="family">${translator.trans('family_label')}</label>
+            <select multiple id="family" name="family[]">
+                ${Object.keys(families)
+                    .map(id => families[id])
+                    .sort(valueSorter)
+                    .map(valueOption)
+                        .join('')}
+            </select>
+        </li>
+        <li>
+            <label for="mechanics">${translator.trans('mechanic_label')}</label>
+            <select multiple id="mechanics" name="mechanics[]">
+                ${Object.keys(mechanics)
+                    .map(id => mechanics[id])
+                    .sort(valueSorter)
+                    .map(valueOption)
+                        .join('')}
+            </select>
+        </li>
+    </ul>`;
+};
 const renderLink = ({type, value}) => `<li><a target="_blank" href="${value}">${ICONS_MAP[type]} ${value.replace(/^.+:\/{0,2}/, '')}</a></li>`
 const renderLinks = club => `<ul>${club.links.filter(({type}) => type !== LINK_TYPE_LOCATION).map(renderLink).join('')}</ul>`;
 const renderCity = ({name}) => `<span class="small">${translator.trans(name, {}, 'city')}</span>`;
@@ -109,7 +221,7 @@ const createMatcher = term => {
         return trimmedName.indexOf(trimmedTerm) !== -1;
     }
 }
-const sorter = (a, b) => a.name.localeCompare(b.name);
+
 const initApp = () => {
     const term = getTerm();
     const gamesArr = Object.values(games);
@@ -119,14 +231,11 @@ const initApp = () => {
     $results.innerHTML = results.length ? renderResults(results.sort(sorter)) : '<b>няма намерени резултати</b>';
 }
 
-const openClubInfo = (content = '') => {
-    if (content) {
-        $sidePanelContent.innerHTML = content;
-    }
+const openSidePanel = () => {
     $sidePanel.classList.add('open');
     document.body.classList.add('info-open');
 };
-const closeCLubInfo = () => {
+const closeSidePanel = () => {
     $sidePanel.classList.remove('open');
     document.body.classList.remove('info-open');
 };
@@ -186,24 +295,29 @@ document.body.addEventListener('click', e => {
         return;
     }
     e.preventDefault();
-    openClubInfo(renderClubInfo(clubs[target.dataset.slug]));
+    $sidePanelContent.innerHTML = renderClubInfo(clubs[target.dataset.slug]);
+    openSidePanel();
 });
 document.body.addEventListener('click', e => {
     const {target} = e;
     if (!target.classList.contains('close-side-panel')) {
         return;
     }
-    closeCLubInfo();
+    closeSidePanel();
 });
 document.body.addEventListener('swiped-right', e => {
     if ($sidePanel.classList.contains('open')) {
-        closeCLubInfo();
+        closeSidePanel();
     }
 });
 document.body.addEventListener('swiped-left', () => {
     if (document.getElementById('side-panel-content').innerHTML && !$sidePanel.classList.contains('open')) {
-        openClubInfo();
+        openSidePanel();
     }
+});
+document.getElementById('open-filter-menu').addEventListener('click', () => {
+    $sidePanelContent.innerHTML = renderFilterMenu();
+    openSidePanel();
 });
 
 init();

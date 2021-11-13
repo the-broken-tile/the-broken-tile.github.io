@@ -10,25 +10,28 @@
         <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-KNBSHRG66V');</script>
     </head>
     <body>
-        <header>
-            <div class="header-content">
-                <h1>Къде да играя?</h1>
-                <form id="form" class="wrap">
-                    <div class="search">
-                        <input name="какво" id="q" type="search" class="search-term" autofocus>
-                        <button type="submit" value="Търси" class="search-button">
-                            <i class="fas fa-search"></i>
-                        </button>
+        <form>
+            <header>
+                <div class="header-content">
+                    <h1>Къде да играя?</h1>
+                    <div id="search-input-wrapper">
+                        <div class="search">
+                            <input name="какво" id="q" type="search" class="search-term" autofocus>
+                            <button type="submit" value="Търси" class="search-button">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
                     </div>
-                </form>
+                    <i class="fas fa-bars" id="open-filter-menu"></i>
+                </div>
+            </header>
+            <div id="side-panel">
+                <div id="side-panel-content"></div>
+                <i class="fas fa-times close-side-panel"></i>
             </div>
-        </header>
+        </form>
         <div id="results"></div>
         <div id="cover" class="close-side-panel"></div>
-        <div id="side-panel">
-            <div id="side-panel-content"></div>
-            <i class="fas fa-times close-side-panel"></i>
-        </div>
 
         <script src="https://kit.fontawesome.com/4f2a019380.js" crossorigin="anonymous"></script>
         <script src="/utils/loadJSON.js"></script>
