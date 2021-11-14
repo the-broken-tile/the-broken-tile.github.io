@@ -286,7 +286,7 @@ const linkFilter = (queryKey) => {
     };
 }
 const paramsMatcher = game => {
-    const { clubs, designers, families } = game;
+    const { clubs, designers, families, artists, categories, mechanics } = game;
 
     return clubs.filter(clubFilter).length !== 0
         && clubs.filter(cityFilter).length !== 0
@@ -294,7 +294,10 @@ const paramsMatcher = game => {
         && playingTimeFilter(game)
         && yearPublishedFilter(game)
         && (designers || [-1]).filter(linkFilter('designer')).length !== 0
-        && (families || [-1]).filter(linkFilter('family')).length !== 0;
+        && (families || [-1]).filter(linkFilter('family')).length !== 0
+        && (artists || [-1]).filter(linkFilter('artist')).length !== 0
+        && (categories || [-1]).filter(linkFilter('category')).length !== 0
+        && (mechanics || [-1]).filter(linkFilter('mechanics')).length !== 0;
 };
 
 const initApp = () => {
