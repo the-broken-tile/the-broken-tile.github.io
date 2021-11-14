@@ -246,11 +246,26 @@ const cityFilter = ({ city }) => {
     return !query || query.split(',').includes(city.name);
 };
 
+const playersFilter = ({ players }) => {
+    const query = queryParams.get('players');
+
+    if (query === null) {
+        return true;
+    }
+    if (!players) {
+        return false;
+    }
+    const numPlayers = parseInt(query, 10);
+
+    return numPlayers >= players[0] && numPlayers <= players[1];
+};
+
 const paramsMatcher = game => {
     const { clubs } = game;
 
     return clubs.filter(clubFilter).length !== 0
-        && clubs.filter(cityFilter).length !== 0;
+        && clubs.filter(cityFilter).length !== 0
+        && playersFilter(game);
 };
 
 const initApp = () => {
