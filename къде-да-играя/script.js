@@ -70,8 +70,17 @@ const trims = new RegExp([
     .join('|'), 'gi');
 
 const trim = name => name.toLowerCase().replace(trims, '').replace(/\s+/g, '');
-const renderFilterMenu = () => {
-    const valueOption = ({id, value}) => `<option value="${id}">${value}</option>`;
+const renderFilterMenu = $element => {
+    const selectOptions = {
+        multiple: true,
+        disableSelectAll: true,
+        //Defaults for links (most of the selects).
+        valueKey: 'id',
+        labelKey: 'value',
+        silentInitialValueSet: true,
+        showDropboxAsPopup: false,// popup breaks on "clear" with the side-panel... z-index or somethin'
+        searchPlaceholderText: translator.trans('search_placeholder')
+    };
     const gamesArray = Object.keys(games).map(id => games[id]);
     const getMixMaxFromArray = arrayProp => gamesArray.reduce(({min, max}, game) => {
         if (!game[arrayProp]) {
@@ -94,28 +103,14 @@ const renderFilterMenu = () => {
     const players = getMixMaxFromArray('players');
     const playingType = getMixMaxFromArray('playingTime');
 
-    return `<div>
+    $element.innerHTML = `<div>
         <ul>
             <li>
-                <label for="city">${translator.trans('city_label')}:</label>
-                <select id="city" multiple>
-                    ${Object.keys(cities)
-                        .map(id => cities[id])
-                        .sort(sorter)
-                        .map(({name}) => `<option value="${name}">${translator.trans(name, {}, 'city')}</option>`)
-                            .join('')}
-                </select>
+                <div id="city"></div>
                 <input type="hidden" name="city" value="">
             </li>
             <li>
-                <label for="club">${translator.trans('club_label')}</label>
-                <select multiple id="club">
-                    ${Object.keys(clubs)
-                        .map(slug => clubs[slug])
-                        .sort(sorter)
-                        .map(({slug, name}) => `<option value="${slug}">${name}</option>`)
-                            .join('')}
-                </select>
+                <div id="club"></div>
                 <input type="hidden" name="club" value="">
             </li>
             <li>
@@ -135,62 +130,88 @@ const renderFilterMenu = () => {
                 <input id="year-published" name="year-published" type="number" step="1" min="${yearPublished.min}" max="${yearPublished.max}">
             </li>
             <li>
-                <label for="designer">${translator.trans('designer_label')}</label>
-                <select multiple id="designer">
-                    ${Object.keys(designers)
-                        .map(id => designers[id])
-                        .sort(valueSorter)
-                        .map(valueOption)
-                            .join('')}
-                </select>
+                <div id="designer"></div>
                 <input type="hidden" name="designer" value="">
             </li>
             <li>
-                <label for="artist">${translator.trans('artist_label')}</label>
-                <select multiple id="artist">
-                    ${Object.keys(artists)
-                        .map(id => artists[id])
-                        .sort(valueSorter)
-                        .map(valueOption)
-                            .join('')}
-                </select>
+                <div id="artist"></div>
                 <input type="hidden" name="artist" value="">
             </li>
             <li>
-                <label for="category">${translator.trans('category_label')}</label>
-                <select multiple id="category">
-                    ${Object.keys(categories)
-                        .map(id => categories[id])
-                        .sort(valueSorter)
-                        .map(valueOption)
-                            .join('')}
-                </select>
+                <div id="category"></div>
                 <input type="hidden" name="category" value="">
             </li>
             <li>
-                <label for="family">${translator.trans('family_label')}</label>
-                <select multiple id="family">
-                    ${Object.keys(families)
-                        .map(id => families[id])
-                        .sort(valueSorter)
-                        .map(valueOption)
-                            .join('')}
-                </select>
+                <div id="family"></div>
                 <input type="hidden" name="family" value="">
             </li>
             <li>
-                <label for="mechanics">${translator.trans('mechanic_label')}</label>
-                <select multiple id="mechanics">
-                    ${Object.keys(mechanics)
-                        .map(id => mechanics[id])
-                        .sort(valueSorter)
-                        .map(valueOption)
-                            .join('')}
-                </select>
+                <div id="mechanics"></div>
                 <input type="hidden" name="mechanics" value="">
             </li>
         </ul>
     </ul>`;
+
+    VirtualSelect.init({
+        ...selectOptions,
+        ele: '#city',
+        valueKey: 'name',
+        labelKey: 'name',
+        placeholder: translator.trans('city_label'),
+        options: Object.keys(cities)
+            .map(id => cities[id])
+            .sort(sorter),
+    });
+    VirtualSelect.init({
+        ...selectOptions,
+        ele: '#club',
+        valueKey: 'slug',
+        labelKey: 'name',
+        placeholder: translator.trans('club_label'),
+        options: Object.keys(clubs)
+            .map(slug => clubs[slug])
+            .sort(sorter),
+    });
+    VirtualSelect.init({
+        ...selectOptions,
+        ele: '#designer',
+        placeholder: translator.trans('designer_label'),
+        options: Object.keys(designers)
+            .map(id => designers[id])
+            .sort(valueSorter),
+    });
+    VirtualSelect.init({
+        ...selectOptions,
+        ele: '#artist',
+        placeholder: translator.trans('artist_label'),
+        options: Object.keys(artists)
+            .map(id => artists[id])
+            .sort(valueSorter),
+    });
+    VirtualSelect.init({
+        ...selectOptions,
+        ele: '#category',
+        placeholder: translator.trans('category_label'),
+        options: Object.keys(categories)
+            .map(id => categories[id])
+            .sort(valueSorter),
+    });
+    VirtualSelect.init({
+        ...selectOptions,
+        ele: '#family',
+        placeholder: translator.trans('family_label'),
+        options: Object.keys(families)
+            .map(id => families[id])
+            .sort(valueSorter),
+    });
+    VirtualSelect.init({
+        ...selectOptions,
+        ele: '#mechanics',
+        placeholder: translator.trans('mechanic_label'),
+        options: Object.keys(mechanics)
+            .map(id => mechanics[id])
+            .sort(valueSorter),
+    });
 };
 const renderLink = ({type, value}) => `<li><a target="_blank" href="${value}">${ICONS_MAP[type]} ${value.replace(/^.+:\/{0,2}/, '')}</a></li>`
 const renderLinks = club => `<ul>${club.links.filter(({type}) => type !== LINK_TYPE_LOCATION).map(renderLink).join('')}</ul>`;
@@ -396,19 +417,17 @@ document.body.addEventListener('swiped-left', () => {
     }
 });
 document.getElementById('open-filter-menu').addEventListener('click', () => {
-    $sidePanelContent.innerHTML = renderFilterMenu();
+    renderFilterMenu($sidePanelContent);
     openSidePanel();
 });
-document.body.addEventListener('input', e => {
+document.body.addEventListener('change', e => {
     const { target } = e;
-    if (!target.multiple) {
+    if (!target.classList.contains('vscomp-ele')) {
         return;
     }
-    const values = [...target.options]
-        .filter(option => option.selected)
-        .map(option => option.value);
+
     const hiddenInput = document.querySelector(`input[type="hidden"][name="${target.id}"]`);
-    hiddenInput.value = values.join(',');
+    hiddenInput.value = target.value.join(',');
 });
 document.getElementById('form').addEventListener('submit', e => {
     //Remove empty values from URL.
