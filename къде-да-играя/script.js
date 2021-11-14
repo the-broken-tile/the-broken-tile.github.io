@@ -250,12 +250,25 @@ const playersFilter = ({ players }) => {
     return numPlayers >= players[0] && numPlayers <= players[1];
 };
 
+const playingTimeFilter = ({ playingTime }) => {
+    const query = queryParams.get('playing-time');
+    if (query === null) {
+        return true;
+    }
+    if (!playingTime) {
+        return false;
+    }
+    const time = parseInt(query, 10);
+
+    return time >= playingTime[0] && time <= playingTime[1];
+};
 const paramsMatcher = game => {
     const { clubs } = game;
 
     return clubs.filter(clubFilter).length !== 0
         && clubs.filter(cityFilter).length !== 0
-        && playersFilter(game);
+        && playersFilter(game)
+        && playingTimeFilter(game);
 };
 
 const initApp = () => {
