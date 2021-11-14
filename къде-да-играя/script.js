@@ -205,7 +205,7 @@ const renderClub = ({ slug, name, city }) => `<li><a href="#" class="club" data-
 const renderMap = club => `<iframe loading="lazy" src="${club.links.find(({type}) => type === LINK_TYPE_LOCATION).value.replace(':key', API_KEY)}"></iframe>`;
 const renderClubInfo = club => `<h1>${club.name}</h1>${renderMap(club)}${renderLinks(club)}`;
 const renderClubs = clubs => {
-  return `<ul class="clubs">${clubs.filter(clubFilter).map(renderClub).join('')}</ul>`;
+  return `<ul class="clubs">${clubs.filter(clubFilter).filter(cityFilter).map(renderClub).join('')}</ul>`;
 };
 const renderThumbnail = () => '';// ({thumbnail}) => thumbnail ? `<span class="thumbnail" style="background-image: url('./data/images/${thumbnail}')"></span>` : '';
 
@@ -241,12 +241,16 @@ const clubFilter = ({ slug }) => {
     return !query || query.split(',').includes(slug);
 };
 
-const paramsMatcher = game => {
+const cityFilter = ({ city }) => {
+    const query = queryParams.get('city');
+    return !query || query.split(',').includes(city.name);
+};
 
-    const city = (queryParams.get('city') || '').split(',');
+const paramsMatcher = game => {
     const { clubs } = game;
 
-    return clubs.filter(clubFilter).length !== 0;
+    return clubs.filter(clubFilter).length !== 0
+        && clubs.filter(cityFilter).length !== 0;
 };
 
 const initApp = () => {
