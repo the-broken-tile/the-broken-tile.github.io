@@ -286,13 +286,14 @@ const linkFilter = (queryKey) => {
     };
 }
 const paramsMatcher = game => {
-    const { clubs, families } = game;
+    const { clubs, designers, families } = game;
 
     return clubs.filter(clubFilter).length !== 0
         && clubs.filter(cityFilter).length !== 0
         && playersFilter(game)
         && playingTimeFilter(game)
         && yearPublishedFilter(game)
+        && (designers || [-1]).filter(linkFilter('designer')).length !== 0
         && (families || [-1]).filter(linkFilter('family')).length !== 0;
 };
 
