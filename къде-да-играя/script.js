@@ -274,14 +274,26 @@ const yearPublishedFilter = ({ yearPublished }) => {
 
     return yearPublished === parseInt(query, 10);
 };
+const linkFilter = (queryKey) => {
+    const query = queryParams.get(queryKey);
+
+    return linkId => {
+        if (query === null) {
+            return true;
+        }
+
+        return query.split(',').map(id => parseInt(id, 10)).includes(linkId);
+    };
+}
 const paramsMatcher = game => {
-    const { clubs } = game;
+    const { clubs, families } = game;
 
     return clubs.filter(clubFilter).length !== 0
         && clubs.filter(cityFilter).length !== 0
         && playersFilter(game)
         && playingTimeFilter(game)
-        && yearPublishedFilter(game);
+        && yearPublishedFilter(game)
+        && (families || [-1]).filter(linkFilter('family')).length !== 0;
 };
 
 const initApp = () => {
