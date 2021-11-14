@@ -19,6 +19,8 @@ let compilations;
 let cities;
 const LOADING_FILES_COUNT  = 9;
 
+const queryParams = new URLSearchParams(document.location.search);
+
 const prepareData = () => {
     Object.values(clubs).forEach(club => {
         club.games = club.games.map(gameId => {
@@ -28,6 +30,7 @@ const prepareData = () => {
 
             return game;
         });
+        club.city = cities[club.city];
     });
 
     initApp();
@@ -198,11 +201,11 @@ const renderFilterMenu = () => {
 const renderLink = ({type, value}) => `<li><a target="_blank" href="${value}">${ICONS_MAP[type]} ${value.replace(/^.+:\/{0,2}/, '')}</a></li>`
 const renderLinks = club => `<ul>${club.links.filter(({type}) => type !== LINK_TYPE_LOCATION).map(renderLink).join('')}</ul>`;
 const renderCity = ({name}) => `<span class="small">${translator.trans(name, {}, 'city')}</span>`;
-const renderClub = ({ slug, name, city }) => `<li><a href="#" class="club" data-slug="${slug}">${name}</a> ${renderCity(cities[city])}</li>`;
+const renderClub = ({ slug, name, city }) => `<li><a href="#" class="club" data-slug="${slug}">${name}</a> ${renderCity(city)}</li>`;
 const renderMap = club => `<iframe loading="lazy" src="${club.links.find(({type}) => type === LINK_TYPE_LOCATION).value.replace(':key', API_KEY)}"></iframe>`;
 const renderClubInfo = club => `<h1>${club.name}</h1>${renderMap(club)}${renderLinks(club)}`;
 const renderClubs = clubs => {
-  return `<ul class="clubs">${clubs.map(renderClub).join('')}</ul>`;
+  return `<ul class="clubs">${clubs.filter(clubFilter).map(renderClub).join('')}</ul>`;
 };
 const renderThumbnail = () => '';// ({thumbnail}) => thumbnail ? `<span class="thumbnail" style="background-image: url('./data/images/${thumbnail}')"></span>` : '';
 
@@ -226,22 +229,36 @@ const renderResults = results => {
     </table>`
 };
 
-const createMatcher = term => {
-    const trimmedTerm = trim(term);
-    return game => {
-        const trimmedName = trim(game.name);
-
-        return trimmedName.indexOf(trimmedTerm) !== -1;
+const termMatcher = term => {
+    if (!term) {
+        return () => true;
     }
+
+    return game =>  trim(game.name).indexOf(trim(term)) !== -1;
 }
+const clubFilter = ({ slug }) => {
+    const query = queryParams.get('club');
+    return !query || query.split(',').includes(slug);
+};
+
+const paramsMatcher = game => {
+
+    const city = (queryParams.get('city') || '').split(',');
+    const { clubs } = game;
+
+    return clubs.filter(clubFilter).length !== 0;
+};
 
 const initApp = () => {
     const term = getTerm();
     const gamesArr = Object.values(games);
 
     document.getElementById('q').value = term;
-    const results = term ? gamesArr.filter(createMatcher(term)) : gamesArr;
-    $results.innerHTML = results.length ? renderResults(results.sort(sorter)) : '<b>няма намерени резултати</b>';
+    const results = gamesArr
+        .filter(termMatcher(term))
+        .filter(paramsMatcher)
+        .sort(sorter);
+    $results.innerHTML = results.length ? renderResults(results) : '<b>няма намерени резултати</b>';
 }
 
 const openSidePanel = () => {
