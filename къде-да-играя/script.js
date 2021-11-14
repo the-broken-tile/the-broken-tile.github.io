@@ -160,6 +160,7 @@ const renderFilterMenu = $element => {
         placeholder: translator.trans('city_label'),
         options: Object.keys(cities)
             .map(id => cities[id])
+            .map(({ name }) => ({name: translator.trans(name, {}, 'city')}))
             .sort(sorter),
         selectedValue: getSelectedValue('city'),
     });
