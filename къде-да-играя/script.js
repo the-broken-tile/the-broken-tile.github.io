@@ -104,8 +104,7 @@ const renderFilterMenu = $element => {
     const players = getMixMaxFromArray('players');
     const playingType = getMixMaxFromArray('playingTime');
 
-    $element.innerHTML = `<div>
-        <ul>
+    $element.innerHTML = `<ul>
             <li>
                 <div id="city"></div>
                 <input type="hidden" name="city" value="">
@@ -122,7 +121,7 @@ const renderFilterMenu = $element => {
                 <label for="playing-time">${translator.trans('playing_time_label')}</label>
                 <input id="playing-time" name="playing-time" type="number" step="5" min="${playingType.min}" max="${playingType.max}">
             </li>
-        </div>
+        </ul>
         <label for="show-more-filters">${translator.trans('show_more_filters_label')}</label>
         <input type="checkbox" id="show-more-filters">
         <ul id="more-filters">
