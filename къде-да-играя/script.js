@@ -262,13 +262,26 @@ const playingTimeFilter = ({ playingTime }) => {
 
     return time >= playingTime[0] && time <= playingTime[1];
 };
+
+const yearPublishedFilter = ({ yearPublished }) => {
+    const query = queryParams.get('year-published');
+    if (query === null) {
+        return true;
+    }
+    if (yearPublished === undefined) {
+        return false;
+    }
+
+    return yearPublished === parseInt(query, 10);
+};
 const paramsMatcher = game => {
     const { clubs } = game;
 
     return clubs.filter(clubFilter).length !== 0
         && clubs.filter(cityFilter).length !== 0
         && playersFilter(game)
-        && playingTimeFilter(game);
+        && playingTimeFilter(game)
+        && yearPublishedFilter(game);
 };
 
 const initApp = () => {
