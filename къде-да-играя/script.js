@@ -82,6 +82,7 @@ const renderFilterMenu = $element => {
         searchPlaceholderText: translator.trans('search_placeholder')
     };
     const gamesArray = Object.keys(games).map(id => games[id]);
+    const getSelectedValue = key => (queryParams.get(key) || '').split(',');
     const getMixMaxFromArray = arrayProp => gamesArray.reduce(({min, max}, game) => {
         if (!game[arrayProp]) {
             return {min, max};
@@ -161,6 +162,7 @@ const renderFilterMenu = $element => {
         options: Object.keys(cities)
             .map(id => cities[id])
             .sort(sorter),
+        selectedValue: getSelectedValue('city'),
     });
     VirtualSelect.init({
         ...selectOptions,
@@ -171,6 +173,7 @@ const renderFilterMenu = $element => {
         options: Object.keys(clubs)
             .map(slug => clubs[slug])
             .sort(sorter),
+        selectedValue: getSelectedValue('club'),
     });
     VirtualSelect.init({
         ...selectOptions,
@@ -179,6 +182,7 @@ const renderFilterMenu = $element => {
         options: Object.keys(designers)
             .map(id => designers[id])
             .sort(valueSorter),
+        selectedValue: getSelectedValue('designer'),
     });
     VirtualSelect.init({
         ...selectOptions,
@@ -187,6 +191,7 @@ const renderFilterMenu = $element => {
         options: Object.keys(artists)
             .map(id => artists[id])
             .sort(valueSorter),
+        selectedValue: getSelectedValue('artist'),
     });
     VirtualSelect.init({
         ...selectOptions,
@@ -203,6 +208,7 @@ const renderFilterMenu = $element => {
         options: Object.keys(families)
             .map(id => families[id])
             .sort(valueSorter),
+        selectedValue: getSelectedValue('family'),
     });
     VirtualSelect.init({
         ...selectOptions,
@@ -211,6 +217,7 @@ const renderFilterMenu = $element => {
         options: Object.keys(mechanics)
             .map(id => mechanics[id])
             .sort(valueSorter),
+        selectedValue: getSelectedValue('mechanics'),
     });
 };
 const renderLink = ({type, value}) => `<li><a target="_blank" href="${value}">${ICONS_MAP[type]} ${value.replace(/^.+:\/{0,2}/, '')}</a></li>`
@@ -295,7 +302,7 @@ const yearPublishedFilter = ({ yearPublished }) => {
 
     return yearPublished === parseInt(query, 10);
 };
-const linkFilter = (queryKey) => {
+const linkFilter = queryKey => {
     const query = queryParams.get(queryKey);
 
     return linkId => {
