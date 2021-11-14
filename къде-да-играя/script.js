@@ -20,7 +20,8 @@ let cities;
 const LOADING_FILES_COUNT  = 9;
 
 const queryParams = new URLSearchParams(document.location.search);
-
+const QUERY_TERM_KEY = 'какво';
+const term = queryParams.get(QUERY_TERM_KEY) ?? '';
 const prepareData = () => {
     Object.values(clubs).forEach(club => {
         club.games = club.games.map(gameId => {
@@ -35,8 +36,6 @@ const prepareData = () => {
 
     initApp();
 };
-
-const QUERY_REGEXP = /\?какво=([^&$]+)/;
 const ICONS_MAP = {
     [LINK_TYPE_FACEBOOK]: '<i class="icon fab fa-facebook-f"></i>',
     [LINK_TYPE_PHONE]: '<i class="icon fas fa-phone"></i>',
@@ -71,11 +70,6 @@ const trims = new RegExp([
     .join('|'), 'gi');
 
 const trim = name => name.toLowerCase().replace(trims, '').replace(/\s+/g, '');
-const getTerm = () => {
-    const matches = decodeURIComponent(location.search.replace(/\+/g, '%20')).match(QUERY_REGEXP);
-
-    return matches ? matches[1].toLowerCase() : null;
-};
 const renderFilterMenu = () => {
     const valueOption = ({id, value}) => `<option value="${id}">${value}</option>`;
     const gamesArray = Object.keys(games).map(id => games[id]);
@@ -229,13 +223,9 @@ const renderResults = results => {
     </table>`
 };
 
-const termMatcher = term => {
-    if (!term) {
-        return () => true;
-    }
+const termFilter = game =>
+    !term || trim(game.name).indexOf(trim(term)) !== -1;
 
-    return game =>  trim(game.name).indexOf(trim(term)) !== -1;
-}
 const clubFilter = ({ slug }) => {
     const query = queryParams.get('club');
     return !query || query.split(',').includes(slug);
@@ -269,12 +259,11 @@ const paramsMatcher = game => {
 };
 
 const initApp = () => {
-    const term = getTerm();
     const gamesArr = Object.values(games);
 
     document.getElementById('q').value = term;
     const results = gamesArr
-        .filter(termMatcher(term))
+        .filter(termFilter)
         .filter(paramsMatcher)
         .sort(sorter);
     $results.innerHTML = results.length ? renderResults(results) : '<b>няма намерени резултати</b>';
