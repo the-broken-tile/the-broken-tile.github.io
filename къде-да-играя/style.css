@@ -170,6 +170,8 @@ header {
 
 #side-panel-content {
     padding: 26px 8px;
+    max-width: 90%;
+    margin: 0 auto;
 }
 
 #side-panel-content iframe {
@@ -197,6 +199,32 @@ header {
     min-height: 200px;
     max-width: 100%;
 }
+.dropdown {
+    color: var(--input-color);
+}
+.vscomp-ele {
+    max-width: none;
+}
+#filters {
+    max-width: 90%;
+    margin: 0 auto;
+}
+input[type="number"] {
+    /*display: flex;*/
+    position: relative;
+    align-items: center;
+    width: 100%;
+    padding: 7px 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+input[type="number"]:focus,
+input[type="number"]:focus-visible{
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),
+        0 3px 1px -2px rgba(0,0,0,0.12),
+        0 1px 5px 0 rgba(0,0,0,0.2);
+    outline: none;
+}
 
 @media(max-width:800px){
     .hide-sm {
@@ -211,6 +239,9 @@ header {
     #results {
         margin-top: 0;
         padding: 8px;
+    }
+    #side-panel-content {
+        max-width: 100%;
     }
 }
 

@@ -79,7 +79,8 @@ const renderFilterMenu = $element => {
         labelKey: 'value',
         silentInitialValueSet: true,
         showDropboxAsPopup: false,// popup breaks on "clear" with the side-panel... z-index or somethin'
-        searchPlaceholderText: translator.trans('search_placeholder')
+        searchPlaceholderText: translator.trans('search_placeholder'),
+        additionalClasses: 'dropdown'
     };
     const gamesArray = Object.keys(games).map(id => games[id]);
     const getSelectedValue = key => (queryParams.get(key) || '').split(',');
@@ -155,12 +156,12 @@ const renderFilterMenu = $element => {
     VirtualSelect.init({
         ...selectOptions,
         ele: '#city',
-        valueKey: 'name',
+        valueKey: 'id',
         labelKey: 'name',
         placeholder: translator.trans('city_label'),
         options: Object.keys(cities)
             .map(id => cities[id])
-            .map(({ name }) => ({name: translator.trans(name, {}, 'city')}))
+            .map(({ name }) => ({id: name, name: translator.trans(name, {}, 'city')}))
             .sort(sorter),
         selectedValue: getSelectedValue('city'),
     });
