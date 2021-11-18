@@ -24,8 +24,21 @@ let compilations;
 let cities;
 const LOADING_FILES_COUNT  = 9;
 
-const queryParams = new URLSearchParams(document.location.search);
 const QUERY_TERM_KEY = 'какво';
+const QUERY_CLUB = 'club';
+const QUERY_DESIGNER = 'designer';
+const QUERY_FAMILY = 'family';
+const QUERY_ARTIST = 'artist';
+const QUERY_CATEGORY = 'category';
+const QUERY_MECHANICS = 'mechanics';
+const QUERY_CITY = 'city';
+const QUERY_PLAYERS = 'players';
+const QUERY_YEAR = 'year-published';
+const QUERY_PLAYING_TIME = 'playing-time';
+
+const queryParams = new URLSearchParams(document.location.search);
+const getSelectedValue = key => (queryParams.get(key) || '').split(',').filter(value => value);
+
 const term = queryParams.get(QUERY_TERM_KEY) ?? '';
 const prepareData = () => {
     Object.values(clubs).forEach(club => {
@@ -88,7 +101,6 @@ const renderFilterMenu = $element => {
         additionalClasses: 'dropdown'
     };
     const gamesArray = Object.keys(games).map(id => games[id]);
-    const getSelectedValue = key => (queryParams.get(key) || '').split(',');
     const getMixMaxFromArray = arrayProp => gamesArray.reduce(({min, max}, game) => {
         if (!game[arrayProp]) {
             return {min, max};
@@ -109,51 +121,73 @@ const renderFilterMenu = $element => {
     }, {min: 9999, max: 0});
     const players = getMixMaxFromArray('players');
     const playingType = getMixMaxFromArray('playingTime');
+    const MORE_FILTERS_OPEN = queryParams.get(QUERY_YEAR) !== null
+        || getSelectedValue(QUERY_DESIGNER).length !== 0
+        || getSelectedValue(QUERY_ARTIST).length !== 0
+        || getSelectedValue(QUERY_CATEGORY).length !== 0
+        || getSelectedValue(QUERY_FAMILY).length !== 0
+        || getSelectedValue(QUERY_MECHANICS).length !== 0;
 
     $element.innerHTML = `<ul>
             <li>
                 <div id="city"></div>
-                <input type="hidden" name="city" value="">
+                <input type="hidden" name="city" value="${getSelectedValue(QUERY_CITY)}">
             </li>
             <li>
                 <div id="club"></div>
-                <input type="hidden" name="club" value="">
+                <input type="hidden" name="club" value="${getSelectedValue(QUERY_CLUB)}">
             </li>
             <li>
                 <label for="players">${translator.trans('players_label')}</label>
                 <input id="players" name="players" type="number" step="1" min="${players.min}" max="${players.max}">
             </li>
             <li>
-                <label for="playing-time">${translator.trans('playing_time_label')}</label>
-                <input id="playing-time" name="playing-time" type="number" step="5" min="${playingType.min}" max="${playingType.max}">
+                <label for="${QUERY_PLAYING_TIME}">${translator.trans('playing_time_label')}</label>
+                <input 
+                    id="${QUERY_PLAYING_TIME}"
+                    value="${queryParams.get(QUERY_PLAYING_TIME)}"
+                    name="${QUERY_PLAYING_TIME}"
+                    type="number"
+                    step="5"
+                    min="${playingType.min}"
+                    max="${playingType.max}"
+                >
             </li>
         </ul>
         <label for="show-more-filters">${translator.trans('show_more_filters_label')}</label>
-        <input type="checkbox" id="show-more-filters">
+        <input type="checkbox" id="show-more-filters"${MORE_FILTERS_OPEN ? 'checked' : ''}>
         <ul id="more-filters">
             <li>
-                <label for="year-published">${translator.trans('year_published_label')}</label>
-                <input id="year-published" name="year-published" type="number" step="1" min="${yearPublished.min}" max="${yearPublished.max}">
+                <label for="${QUERY_YEAR}">${translator.trans('year_published_label')}</label>
+                <input
+                    id="${QUERY_YEAR}"
+                    value="${queryParams.get(QUERY_YEAR) ?? ''}"
+                    name="${QUERY_YEAR}"
+                    type="number"
+                    step="1"
+                    min="${yearPublished.min}"
+                    max="${yearPublished.max}"
+                >
             </li>
             <li>
-                <div id="designer"></div>
-                <input type="hidden" name="designer" value="">
+                <div id="${QUERY_DESIGNER}"></div>
+                <input type="hidden" name="${QUERY_DESIGNER}" value="${getSelectedValue(QUERY_DESIGNER)}">
             </li>
             <li>
-                <div id="artist"></div>
-                <input type="hidden" name="artist" value="">
+                <div id="${QUERY_ARTIST}"></div>
+                <input type="hidden" name="${QUERY_ARTIST}" value="${getSelectedValue(QUERY_ARTIST)}">
             </li>
             <li>
-                <div id="category"></div>
-                <input type="hidden" name="category" value="">
+                <div id="${QUERY_CATEGORY}"></div>
+                <input type="hidden" name="${QUERY_CATEGORY}" value="${getSelectedValue(QUERY_CATEGORY)}">
             </li>
             <li>
-                <div id="family"></div>
-                <input type="hidden" name="family" value="">
+                <div id="${QUERY_FAMILY}"></div>
+                <input type="hidden" name="${QUERY_FAMILY}" value="${getSelectedValue(QUERY_FAMILY)}">
             </li>
             <li>
-                <div id="mechanics"></div>
-                <input type="hidden" name="mechanics" value="">
+                <div id="${QUERY_MECHANICS}"></div>
+                <input type="hidden" name="${QUERY_MECHANICS}" value="${getSelectedValue(QUERY_MECHANICS)}">
             </li>
         </ul>
     </ul>`;
@@ -168,7 +202,7 @@ const renderFilterMenu = $element => {
             .map(id => cities[id])
             .map(({ name }) => ({id: name, name: translator.trans(name, {}, 'city')}))
             .sort(sorter),
-        selectedValue: getSelectedValue('city'),
+        selectedValue: getSelectedValue(QUERY_CITY),
     });
     VirtualSelect.init({
         ...selectOptions,
@@ -179,7 +213,7 @@ const renderFilterMenu = $element => {
         options: Object.keys(clubs)
             .map(slug => clubs[slug])
             .sort(sorter),
-        selectedValue: getSelectedValue('club'),
+        selectedValue: getSelectedValue(QUERY_CLUB),
     });
     VirtualSelect.init({
         ...selectOptions,
@@ -188,7 +222,7 @@ const renderFilterMenu = $element => {
         options: Object.keys(designers)
             .map(id => designers[id])
             .sort(valueSorter),
-        selectedValue: getSelectedValue('designer'),
+        selectedValue: getSelectedValue(QUERY_DESIGNER),
     });
     VirtualSelect.init({
         ...selectOptions,
@@ -197,7 +231,7 @@ const renderFilterMenu = $element => {
         options: Object.keys(artists)
             .map(id => artists[id])
             .sort(valueSorter),
-        selectedValue: getSelectedValue('artist'),
+        selectedValue: getSelectedValue(QUERY_ARTIST),
     });
     VirtualSelect.init({
         ...selectOptions,
@@ -206,6 +240,7 @@ const renderFilterMenu = $element => {
         options: Object.keys(categories)
             .map(id => categories[id])
             .sort(valueSorter),
+        selectedValue: getSelectedValue(QUERY_CATEGORY)
     });
     VirtualSelect.init({
         ...selectOptions,
@@ -214,7 +249,7 @@ const renderFilterMenu = $element => {
         options: Object.keys(families)
             .map(id => families[id])
             .sort(valueSorter),
-        selectedValue: getSelectedValue('family'),
+        selectedValue: getSelectedValue(QUERY_FAMILY),
     });
     VirtualSelect.init({
         ...selectOptions,
@@ -223,7 +258,7 @@ const renderFilterMenu = $element => {
         options: Object.keys(mechanics)
             .map(id => mechanics[id])
             .sort(valueSorter),
-        selectedValue: getSelectedValue('mechanics'),
+        selectedValue: getSelectedValue(QUERY_MECHANICS),
     });
 };
 const renderLink = ({type, value}) => `<li><a target="_blank" href="${value}">${ICONS_MAP[type]} ${value.replace(/^.+:\/{0,2}/, '')}</a></li>`
@@ -261,17 +296,17 @@ const termFilter = game =>
     !term || trim(game.name).indexOf(trim(term)) !== -1;
 
 const clubFilter = ({ slug }) => {
-    const query = queryParams.get('club');
+    const query = queryParams.get(QUERY_CLUB);
     return !query || query.split(',').includes(slug);
 };
 
 const cityFilter = ({ city }) => {
-    const query = queryParams.get('city');
+    const query = queryParams.get(QUERY_CITY);
     return !query || query.split(',').includes(city.name);
 };
 
 const playersFilter = ({ players }) => {
-    const query = queryParams.get('players');
+    const query = queryParams.get(QUERY_PLAYERS);
 
     if (query === null) {
         return true;
@@ -327,11 +362,11 @@ const paramsMatcher = game => {
         && playersFilter(game)
         && playingTimeFilter(game)
         && yearPublishedFilter(game)
-        && (designers || [-1]).filter(linkFilter('designer')).length !== 0
-        && (families || [-1]).filter(linkFilter('family')).length !== 0
-        && (artists || [-1]).filter(linkFilter('artist')).length !== 0
-        && (categories || [-1]).filter(linkFilter('category')).length !== 0
-        && (mechanics || [-1]).filter(linkFilter('mechanics')).length !== 0;
+        && (designers || [-1]).filter(linkFilter(QUERY_DESIGNER)).length !== 0
+        && (families || [-1]).filter(linkFilter(QUERY_FAMILY)).length !== 0
+        && (artists || [-1]).filter(linkFilter(QUERY_ARTIST)).length !== 0
+        && (categories || [-1]).filter(linkFilter(QUERY_CATEGORY)).length !== 0
+        && (mechanics || [-1]).filter(linkFilter(QUERY_MECHANICS)).length !== 0;
 };
 
 const initApp = () => {
