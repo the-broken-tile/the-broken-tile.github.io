@@ -3,9 +3,14 @@ const LINK_TYPE_LOCATION = 'location';
 const LINK_TYPE_FACEBOOK = 'facebook';
 const LINK_TYPE_PHONE = 'phone';
 
+const SIDE_PANEL_FILTER = 'side-panel-filter';
+const SIDE_PANEL_CLUB = 'side-panel-club';
+let currentSidePanel = null;
+
 const $results = document.getElementById('results');
 const $sidePanel = document.getElementById('side-panel');
-const $sidePanelContent = document.getElementById('side-panel-content');
+const $clubInfo = document.getElementById('club-info');
+const $filterMenu = document.getElementById('filter-menu');
 
 const translator = new Translator(LANGUAGE_BG);
 let clubs;
@@ -340,8 +345,16 @@ const initApp = () => {
     $results.innerHTML = results.length ? renderResults(results) : '<b>няма намерени резултати</b>';
 }
 
-const openSidePanel = () => {
+const openSidePanel = (type = null) => {
+    if (type) {
+        currentSidePanel = type;
+    }
+    if (!currentSidePanel) {
+        return;
+    }
+    $sidePanel.className = '';
     $sidePanel.classList.add('open');
+    $sidePanel.classList.add(currentSidePanel);
     document.body.classList.add('info-open');
 };
 const closeSidePanel = () => {
@@ -404,8 +417,8 @@ document.body.addEventListener('click', e => {
         return;
     }
     e.preventDefault();
-    $sidePanelContent.innerHTML = renderClubInfo(clubs[target.dataset.slug]);
-    openSidePanel();
+    $clubInfo.innerHTML = renderClubInfo(clubs[target.dataset.slug]);
+    openSidePanel(SIDE_PANEL_CLUB);
 });
 document.body.addEventListener('click', e => {
     const {target} = e;
@@ -425,8 +438,8 @@ document.body.addEventListener('swiped-left', () => {
     }
 });
 document.getElementById('open-filter-menu').addEventListener('click', () => {
-    renderFilterMenu($sidePanelContent);
-    openSidePanel();
+    renderFilterMenu($filterMenu);
+    openSidePanel(SIDE_PANEL_FILTER);
 });
 document.body.addEventListener('change', e => {
     const { target } = e;
