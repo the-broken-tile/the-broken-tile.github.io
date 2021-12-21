@@ -17,7 +17,7 @@ const LINKS = [
         description: 'A design challenge mechanics generator.',
     }, {
         title: 'Eternal Card Game Heroes quiz',
-        url: './eternal-heroes',
+        url: './eternal/heroes',
         description: 'A fill-in-the-wholes quiz for Eternal Card Game heroes names and titles',
     }, {
         title: 'BGG Alignments',
