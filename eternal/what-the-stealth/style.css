@@ -1,0 +1,40 @@
+body {
+    padding-top: 3em;
+    font-size: 18px;
+    background-color: whitesmoke;
+}
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+.questions-group {
+    margin-bottom: 0.75em;
+}
+
+#try-again {
+    display: none;
+}
+
+#answer.error,
+#answer.skip {
+    color: red;
+}
+#answer.success {
+    color: green;
+}
+
+.influence-icon {
+    position: relative;
+    top: 6px;
+}
+
+#errors-stats {
+    display: none;
+}
+.playing-with-errors #errors-stats {
+    display: block
+}

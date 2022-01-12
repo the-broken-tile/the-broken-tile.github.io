@@ -38,4 +38,4 @@ function Timer() {
     this.onTimeUp = cb => {
         ontTimeUp = cb;
     };
-};
+}
