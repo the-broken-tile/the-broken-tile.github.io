@@ -1,5 +1,10 @@
 const LINKS = [
     {
+        title: 'The Broken Tile',
+        url: 'https://www.facebook.com/thebrokentile/',
+        description: 'The Broken Tile е основана с целта да се популяризира настолната игра Carcassonne и по-конкретно базовата ѝ, спортна версия.',
+        external: true,
+    }, {
         title: 'The Great Randomo',
         url: './the-great-randomo',
         description: 'Generate the name of the next huge board game hit!',
