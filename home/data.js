@@ -1,12 +1,18 @@
 const LINKS = [
     {
+        title: 'The Broken Tile',
+        url: 'https://www.facebook.com/thebrokentile/',
+        description: 'The Broken Tile е основана с целта да се популяризира настолната игра Carcassonne и по-конкретно базовата ѝ, спортна версия.',
+        external: true,
+    }, {
         title: 'The Great Randomo',
         url: './the-great-randomo',
         description: 'Generate the name of the next huge board game hit!',
     }, {
         title: 'Board Games House Rules',
-        url: './house-rules',
+        url: 'https://boardgamegeek.com/geeklist/294785/house-rules',
         description: 'A collection of board games house rules. ',
+        external: true,
     }, {
         title: '10 Games 10 Times Challenge Tracker',
         url: './10-10-challenge',
@@ -35,5 +41,10 @@ const LINKS = [
         title: 'Къде да играя',
         url: './къде-да-играя',
         description: 'Намерете в кой клуб може да играете търсената от вас игра',
+    }, {
+        title: '@boardgameswithgooglyeyes',
+        url: 'https://www.instagram.com/boardgameswithgooglyeyes/',
+        description: 'Board games with googly eyes on them.',
+        external: true,
     }
 ];

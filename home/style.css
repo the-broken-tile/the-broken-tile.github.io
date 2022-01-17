@@ -38,6 +38,18 @@ a {
     box-sizing: border-box;
     padding: 8px;
 }
+
+a[rel="external"]::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAA8klEQVQ4T4WTyQrCQBBEX9zA/Xs9CB4Fv9YNxZ0KU7EdJxoIyUz3vFRXdyreVw+4ATNgB3TTOqR8vc6qtDUALkAfuAIj4Ag4XoJM9SEljFOyIU5+ppcSxGqfDjq59KU2lYJcFdRhyTkB918FAxPgAHwoEEC1y8D8WgIb4BwOdYBHSqxLECCvcwXotqnqiNS5Q/atCMjNmwPboCCa3QqwIiuQ7OhPY36phLwkGbcPLXW8frYBlJ+3OK4bz0oA7dlldyWa/KHQgGHWKrteGosiQCAfsnFtMxUBPStYAwsgDsk/QD2NAtR/1Z8RjmGdUcka/f4LZGNLH/27DEUAAAAASUVORK5CYII=);
+    position: relative;
+    top: 3px;
+    margin-right: 2px;
+}
+
 @media (max-width:801px)  {
     .flexy-panel {
         width: 50%;
