@@ -1,0 +1,27 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+tr {
+    height: 33px;
+}
+td, th {
+    border: 1px solid black;
+}
+#solution {
+    margin-bottom: 1em;
+}
+#solution th {
+    width: 9.090909090909092%;
+}
+.solution-cell {
+    cursor: pointer;
+}
