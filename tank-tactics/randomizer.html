@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <title>Tank Tactics Randomizer</title>
+    <style rel="stylesheet">
+        textarea {
+            display: block;
+            width: 98%;
+            min-height: 10em;
+            margin-bottom: 1em;
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+</head>
+<body>
+    <form id="form" method="POST" action="/">
+        <textarea id="input"></textarea>
+        <input type="submit">
+    </form>
+    <pre id="output"></pre>
+<script>
+    const input = document.getElementById('input');
+    const output = document.getElementById('output');
+    const SIZE = 20;
+    const numbers = Array.from(Array(SIZE).keys()).map(i => i + 1);
+    const A = 'A'.charCodeAt(0);
+    const letters = numbers.map(i => String.fromCharCode(A + i - 1));
+    let names = [];
+    const pick = items => items[Math.floor(Math.random()*items.length)];
+    document.getElementsByTagName('form')[0].addEventListener('submit', function (e) {
+        e.preventDefault();
+        names = input.value.split("\n").map(n => n.trim());
+        const coords = [];
+        const result = names.map(function (name) {
+            let coord;
+            do {
+                const letter = pick(letters);
+                const number = pick(numbers);
+                coord = `${letter}x${number}`;
+            } while (coords.includes(coord));
+
+            return `${name} ${coord}`;
+        }).join("\n");
+
+        output.innerText = result;
+    });
+
+
+</script>
+</body>
+</html>
