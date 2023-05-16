@@ -31,18 +31,17 @@
         e.preventDefault();
         names = input.value.split("\n").map(n => n.trim());
         const coords = [];
-        const result = names.map(function (name) {
+        output.innerText = names.map(function (name) {
             let coord;
             do {
                 const letter = pick(letters);
                 const number = pick(numbers);
                 coord = `${letter}x${number}`;
             } while (coords.includes(coord));
+            coords[] = coord;
 
             return `${name} ${coord}`;
         }).join("\n");
-
-        output.innerText = result;
     });
 
 
