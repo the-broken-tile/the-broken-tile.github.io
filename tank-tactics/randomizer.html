@@ -38,7 +38,7 @@
                 const number = pick(numbers);
                 coord = `${letter}x${number}`;
             } while (coords.includes(coord));
-            coords[] = coord;
+            coords.push(coord);
 
             return `${name} ${coord}`;
         }).join("\n");
