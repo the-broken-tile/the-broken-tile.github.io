@@ -1,0 +1,49 @@
+<html lang="en" data-bs-theme="dark">
+    <head>
+        <title>Terraforming Mars</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <form id="form" method="POST" class="container">
+            <div class="row">
+                <div class="col">
+                    <ul class="list-group" id="players">
+                        <li class="list-group-item player-row">
+                            <label>Player <span class="player-number">1: </span><input class="player" data-save-me="p1"></label>
+                        </li>
+                        <li class="list-group-item player-row">
+                            <label>Player <span class="player-number">2: </span><input class="player" data-save-me="p2"></label>
+                        </li>
+                    </ul>
+                    <span class="material-icons" id="add-player">person_add</span>
+                </div>
+
+                <div class="col">
+                    <ul class="list-group" id="expansions"></ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label class="d-block"><input type="checkbox" id="choose-corporations"> Choose corporations</label>
+                    <label class="d-block"><input type="checkbox" disabled id="hide-corporations"> Hide corporations</label>
+                    <label class="d-block">Choose from: <input disabled type="number" min="2" step="1" max="5" value="2" id="choose-corporations-from"></label>
+                </div>
+            </div>
+            <input type="submit" class="btn btn-primary">
+            <div class="row">
+                <div class="col" id="result">
+
+                </div>
+            </div>
+        </form>
+        <script src="/utils/random.js"></script>
+        <script src="/utils/array-shuffle.js"></script>
+        <script src="/scripts/save_me.js"></script>
+        <script src="./script.js"></script>
+        <script src="/bootstrap/js/bootstrap.bundle.js"></script>
+    </body>
+</html>

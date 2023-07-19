@@ -1,6 +1,6 @@
 const PREFIX = 'save_me_';
-const save = (k, v) => localStorage.setItem(PREFIX+k, JSON.stringify(v));
-const load = k => JSON.parse(localStorage.getItem(PREFIX+k));
+const save = (k, v) => localStorage.setItem(PREFIX + k, JSON.stringify(v));
+const load = k => JSON.parse(localStorage.getItem(PREFIX + k));
 
 const DATA_ATTR = 'data-save-me';
 
