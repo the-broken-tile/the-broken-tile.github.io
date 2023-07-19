@@ -1,0 +1,11 @@
+.material-icons {
+    cursor: pointer;
+}
+
+#players .player:nth-child(-n+2) .remove-player {
+    display: none;
+}
+
+.blur {
+    filter: blur(10px);
+}
