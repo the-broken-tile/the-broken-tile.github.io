@@ -268,7 +268,6 @@ const renderResult = () => {
         result += `<div>Colonies: ${colonies.map(({ name }) => name).join(', ')}</div>`;
     }
     $result.innerHTML = result;
-    // $result.innerHTML = JSON.stringify(gameState, null, 2);
 };
 
 $form.addEventListener('submit', e => {
@@ -286,8 +285,6 @@ $form.addEventListener('submit', e => {
     gameState.players[firstPlayer].first = true;
 
     // Expansions
-    // gameState.expansions = [];
-
     gameState.expansions = [...document.querySelectorAll('.expansion:checked')]
         .map(({ value }) => EXPANSIONS.find(({id}) => value === id));
 
