@@ -26,149 +26,140 @@ const EXPANSIONS = [
         isDefault: true,
         name: 'Base',
         maps: [
-            {
-                name: 'Tharsis',
-            },
+            {name: 'Tharsis'},
         ],
         corporations: [
-            {
-                name: 'Tharsis Republic',
-            }, {
-                name: 'Helion',
-            }, {
-                name: 'ThorGate',
-            }, {
-                name: 'Phobolog',
-            }, {
-                name: 'Inventrix',
-            }, {
-                name: 'Interplanetary Cinematics',
-            }, {
-                name: 'United Nations Mars Initiative',
-            }, {
-                name: 'Mining Guild',
-            }, {
-                name: 'Ecoline',
-            }, {
-                name: 'Credicor',
-            },
+            {name: 'Tharsis Republic'},
+            {name: 'Helion'},
+            {name: 'ThorGate'},
+            {name: 'Phobolog'},
+            {name: 'Inventrix'},
+            {name: 'Interplanetary Cinematics'},
+            {name: 'United Nations Mars Initiative'},
+            {name: 'Mining Guild'},
+            {name: 'Ecoline'},
+            {name: 'Credicor'},
         ],
-    }, {
+    },
+    {
         id: 'corporate-era',
         hidden: false,
         isDefault: true,
         name: 'Corporate Era',
         corporations: [
-            {
-                name: 'Teractor',
-            }, {
-                name: 'Saturn Systems',
-            },
+            {name: 'Teractor'},
+            {name: 'Saturn Systems'},
         ],
-    }, {
+    },
+    {
         id: 'prelude',
         isDefault: true,
         name: 'Prelude',
         corporations: [
-            {
-                name: 'Point Luna',
-            }, {
-                name: 'Vitor',
-            }, {
-                name: 'Robinson Industries',
-            }, {
-                name: 'Valley Trust',
-            }, {
-                name: 'Cheung Shing Mars',
-            },
+            {name: 'Point Luna'},
+            {name: 'Vitor'},
+            {name: 'Robinson Industries'},
+            {name: 'Valley Trust'},
+            {name: 'Cheung Shing Mars'},
         ],
-    }, {
+    },
+    {
         id: 'venus-next',
         isDefault: true,
         name: 'Venus Next',
         corporations: [
-            {
-                name: 'Morning Star Incorporated',
-            }, {
-                name: 'Manutech',
-            }, {
-                name: 'Aphrodite',
-            }, {
-                name: 'Viron',
-            }, {
-                name: 'Celestic',
-            },
+            {name: 'Morning Star Incorporated'},
+            {name: 'Manutech'},
+            {name: 'Aphrodite'},
+            {name: 'Viron'},
+            {name: 'Celestic'},
         ],
-    }, {
+    },
+    {
         id: 'colonies',
         isDefault: true,
         name: 'Colonies',
         colonies: [
-            {
-                name: 'Europa',
-            }, {
-                name: 'Triton',
-            }, {
-                name: 'Callisto',
-            }, {
-                name: 'Ceres',
-            }, {
-                name: 'Enceladus',
-            }, {
-                name: 'Titan',
-            }, {
-                name: 'Miranda',
-            }, {
-                name: 'Ganymede',
-            }, {
-                name: 'Luna',
-            }, {
-                name: 'Io',
-            }, {
-                name: 'Pluto',
-            }
+            {name: 'Europa'},
+            {name: 'Triton'},
+            {name: 'Callisto'},
+            {name: 'Ceres'},
+            {name: 'Enceladus'},
+            {name: 'Titan'},
+            {name: 'Miranda'},
+            {name: 'Ganymede'},
+            {name: 'Luna'},
+            {name: 'Io'},
+            {name: 'Pluto'},
         ],
         corporations: [
-            {
-                name: 'Poseidon',
-            }, {
-                name: 'Stormcraft Incorporated',
-            }, {
-                name: 'Aridor',
-            }, {
-                name: 'Polyphemos',
-            }, {
-                name: 'Arklight',
-            },
+            {name: 'Poseidon'},
+            {name: 'Stormcraft Incorporated'},
+            {name: 'Aridor'},
+            {name: 'Polyphemos'},
+            {name: 'Arklight'},
         ],
-    }, {
+    },
+    {
         id: 'hellas-elysium',
         isDefault: true,
         name: 'Hellas & Elysium',
         maps: [
-            {
-                name: 'Hellas'
-            }, {
-                name: 'Elysium',
-            },
+            {name: 'Hellas'},
+            {name: 'Elysium'},
         ],
-    }, {
+    },
+    {
         id: 'turmoil',
         isDefault: false,
         name: 'Turmoil',
-    }, {
+    },
+    {
         id: 'big-box',
         name: 'Big Box',
         hidden: false,
         isDefault: true,
         corporations: [
-            {
-                name: 'Astrodrill',
-            }, {
-                name: 'Pharmacy Union',
-            },
+            {name: 'Astrodrill'},
+            {name: 'Pharmacy Union'},
         ],
-    }
+    },
+    {
+        id: 'terra-crimmeria',
+        name: 'Terra Cimmeria',
+        hidden: false,
+        isDefault: false,
+        maps: [
+            {name: 'Terra Cimmeria'},
+        ],
+    },
+    {
+        id: 'vastitas-borealis',
+        name: 'Vastitas Borealis',
+        hidden: false,
+        isDefault: false,
+        maps: [
+            {name: 'Vastitas Borealis'},
+        ],
+    },
+    {
+        id: 'utopia-planitia',
+        name: 'Utopia Planitia',
+        hidden: false,
+        isDefault: false,
+        maps: [
+            {name: 'Utopia Planitia'},
+        ],
+    },
+    {
+        id: 'amazonis-planitia',
+        name: 'Amazonis Planitia',
+        hidden: false,
+        isDefault: false,
+        maps: [
+            {name: 'Amazonis Planitia'},
+        ],
+    },
 ];
 
 const removeIcon = '<span class="material-icons align-middle remove-player">person_remove</span>';
