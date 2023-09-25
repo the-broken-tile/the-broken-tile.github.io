@@ -1,0 +1,26 @@
+{
+  "name": "Festy",
+  "version": "0.1",
+  "manifest_version": 1,
+  "author": "Rusi \"tazzadar\" Papazov",
+  "background_color": "black",
+  "theme_color": "black",
+  "display": "standalone",
+  "description": "Festy is a simple web app that helps you organize your fest.",
+  "start_url": "./",
+  "scope": ".",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "../hits-counter/icons/mecatol-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    }, {
+      "src": "../hits-counter/icons/mecatol-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ]
+}
