@@ -57,7 +57,7 @@ header {
     text-align: center;
 }
 .header-content h1,
-#form {
+#search-input-wrapper {
     margin: 0 0 8px 0;
 }
 
@@ -135,44 +135,100 @@ header {
 .info-open #cover {
     display: block;
 }
+#open-filter-menu {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    cursor: pointer;
+}
 
-#club-info {
+#side-panel {
     position: fixed;
+    overflow: auto;
     top: 0;
     bottom: 0;
     left: 100%;
     width: 90%;
+    padding: 26px 8px;
     background-color: var(--background-color);
-
-    /*box-shadow: -3px -3px 3px gray;*/
     box-shadow: 0 5px 5px var(--shadow-color);
     transition: left 0.5s;
     z-index: 3;
 }
 
-#club-info.open {
+#side-panel.open {
     left: 10%;
 }
 
-#club-info .close-club-info {
+#side-panel > *{
+    display: none;
+}
+
+#side-panel .close-side-panel {
     position: absolute;
+    display: inline-block;
     top: 8px;
     right: 8px;
     cursor: pointer;
 }
 
-#club-info-content {
-    padding: 8px;
-}
-
-#club-info-content iframe {
+#club-info iframe {
     border: none;
     display: block;
     width: 100%;
     height: 300px;
 }
+
+.side-panel-club #club-info,
+.side-panel-filter  #filter-menu {
+    display: block;
+}
+
+#more-filters,
+#show-more-filters {
+    display: none;
+}
+
+:checked ~ #more-filters {
+    display: block;
+}
 .small {
     font-size: 0.7em;
+}
+.thumbnail {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: inline-block;
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 100%;
+}
+.dropdown {
+    color: var(--input-color);
+}
+.vscomp-ele {
+    max-width: none;
+}
+#filters {
+    max-width: 90%;
+    margin: 0 auto;
+}
+input[type="number"] {
+    /*display: flex;*/
+    position: relative;
+    align-items: center;
+    width: 100%;
+    padding: 7px 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+input[type="number"]:focus,
+input[type="number"]:focus-visible{
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),
+        0 3px 1px -2px rgba(0,0,0,0.12),
+        0 1px 5px 0 rgba(0,0,0,0.2);
+    outline: none;
 }
 
 @media(max-width:800px){
@@ -188,6 +244,9 @@ header {
     #results {
         margin-top: 0;
         padding: 8px;
+    }
+    #side-panel-content {
+        max-width: 100%;
     }
 }
 
