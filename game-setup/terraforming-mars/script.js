@@ -128,7 +128,7 @@ const EXPANSIONS = [
         id: 'terra-crimmeria',
         name: 'Terra Cimmeria',
         hidden: false,
-        isDefault: false,
+        isDefault: true,
         maps: [
             {name: 'Terra Cimmeria'},
         ],
@@ -137,7 +137,7 @@ const EXPANSIONS = [
         id: 'vastitas-borealis',
         name: 'Vastitas Borealis',
         hidden: false,
-        isDefault: false,
+        isDefault: true,
         maps: [
             {name: 'Vastitas Borealis'},
         ],
@@ -146,7 +146,7 @@ const EXPANSIONS = [
         id: 'utopia-planitia',
         name: 'Utopia Planitia',
         hidden: false,
-        isDefault: false,
+        isDefault: true,
         maps: [
             {name: 'Utopia Planitia'},
         ],
@@ -155,7 +155,7 @@ const EXPANSIONS = [
         id: 'amazonis-planitia',
         name: 'Amazonis Planitia',
         hidden: false,
-        isDefault: false,
+        isDefault: true,
         maps: [
             {name: 'Amazonis Planitia'},
         ],
