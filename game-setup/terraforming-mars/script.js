@@ -6,6 +6,7 @@ const $hideCorporations = document.getElementById('hide-corporations');
 const $chooseCorporationsFrom = document.getElementById('choose-corporations-from');
 const $form = document.getElementById('form');
 const $result = document.getElementById('result');
+let $toggleAllExpansions;
 
 const gameState = {
     players: [],
@@ -162,6 +163,9 @@ const storage = {
 
 const removeIcon = '<span class="material-icons align-middle remove-player">person_remove</span>';
 const MAX_PLAYERS = 5;
+const MIN_COLONIES_COUNT = 5;
+const MAX_COLONIES_COUNT = 7;
+
 let nextPlayer = 1
 
 const addPlayerInput = (name = '') => {
@@ -171,11 +175,61 @@ const addPlayerInput = (name = '') => {
     $players.innerHTML += `<li class="list-group-item player-row"><label>Player <span class="player-number">${nextPlayer++}: </span><input class="player" value="${name}"> ${nextPlayer >= 4 ? removeIcon : ''}</label></li>`;
 }
 
-const getColoniesCount = playersCount => Math.max(5, playersCount + 2);
+const getColoniesCount = playersCount => Math.min(MAX_COLONIES_COUNT, Math.max(MIN_COLONIES_COUNT, playersCount + 2));
 
-EXPANSIONS.forEach(({hidden, id, name}) => {
-    $expansions.innerHTML += `<li class="list-group-item${hidden ? ' d-none' : ''}"><label class="w-100"><input class="expansion" type="checkbox" value="${id}" checked> ${name}</label></li>`;
-});
+const NO_SELECTED_EXPANSIONS = 0;
+const SOME_EXPANSIONS_SELECTED = 1;
+const ALL_EXPANSIONS_SELECTED = 2;
+
+const getSelectedExpansionsState = () => {
+    const selectedExpansionsCount = storage.get('expansions').length;
+
+    if (selectedExpansionsCount === 0) {
+        return NO_SELECTED_EXPANSIONS;
+    }
+
+    return selectedExpansionsCount === EXPANSIONS.filter(({hidden}) => !hidden).length
+        ? ALL_EXPANSIONS_SELECTED
+        : SOME_EXPANSIONS_SELECTED;
+}
+
+const updateToggleAllExpansionsState = () => {
+    const selectedExpansionsState = getSelectedExpansionsState();
+    if (
+        selectedExpansionsState === SOME_EXPANSIONS_SELECTED
+    ) {
+        $toggleAllExpansions.indeterminate = true;
+    } else {
+        $toggleAllExpansions.indeterminate = false;
+        $toggleAllExpansions.checked = selectedExpansionsState === ALL_EXPANSIONS_SELECTED;
+    }
+}
+const initExpansions = () => {
+    const selectedExpansions = storage.get('expansions') ?? EXPANSIONS
+        .filter(({hidden}) => !hidden)
+        .map(({id}) => id);
+    storage.set('expansions', selectedExpansions);
+
+    EXPANSIONS.forEach(({hidden, id, name}) => {
+        $expansions.innerHTML += `<li class="list-group-item${hidden ? ' d-none' : ''}"><label class="w-100"><input class="expansion" type="checkbox" value="${id}" ${selectedExpansions.includes(id) ? ' checked' : ''}> ${name}</label></li>`;
+    });
+    $expansions.innerHTML += '<li class="list-group-item"></li>';
+    $expansions.innerHTML += '<li class="list-group-item"><label class="w-100"><input type="checkbox" id="toggle-all-expansions"> Toggle all</label></li>';
+
+    $toggleAllExpansions = document.getElementById('toggle-all-expansions');
+
+    updateToggleAllExpansionsState();
+
+    $toggleAllExpansions.addEventListener('change', e => {
+        const selected = e.target.checked
+        $expansions.querySelectorAll('.expansion').forEach(expansion => expansion.checked = selected);
+        if (!selected) {
+            storage.set('expansions', [])
+        } else {
+            storage.set('expansions', EXPANSIONS.filter(({hidden}) => !hidden).map(({id}) => id));
+        }
+    });
+}
 
 $expansions.addEventListener('change', e => {
     const {target} = e;
@@ -183,7 +237,7 @@ $expansions.addEventListener('change', e => {
         return;
     }
 
-    let expansions = storage.get('expansions') ?? []
+    let expansions = storage.get('expansions');
 
     if (target.checked) {
         expansions.push(target.value)
@@ -192,6 +246,7 @@ $expansions.addEventListener('change', e => {
     }
 
     storage.set('expansions', expansions)
+    updateToggleAllExpansionsState();
 })
 
 $addPlayer.addEventListener('click', e => {
@@ -250,20 +305,10 @@ $hideCorporations.addEventListener('change', e => {
 });
 
 const init = () => {
+    initExpansions();
+
     const players = storage.get('players') ?? ['', '']
     players.forEach(addPlayerInput);
-    const savedExpansions = storage.get('expansions')
-    if (!savedExpansions) {
-        storage.set('expansions', EXPANSIONS
-            .map(({id}) => id));
-    } else {
-        // Deselect all.
-        $expansions.querySelectorAll('.expansion').forEach(expansion => expansion.checked = false)
-        // Then select previously selected ones.
-        savedExpansions.forEach(
-            id => $expansions.querySelector(`.expansion[value="${id}"]`).checked = true
-        )
-    }
 };
 
 const renderResult = () => {
