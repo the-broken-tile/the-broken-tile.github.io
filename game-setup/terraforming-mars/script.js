@@ -23,7 +23,6 @@ const EXPANSIONS = [
     {
         id: 'base',
         hidden: true,
-        isDefault: true,
         name: 'Base',
         maps: [
             {name: 'Tharsis'},
@@ -44,7 +43,6 @@ const EXPANSIONS = [
     {
         id: 'corporate-era',
         hidden: false,
-        isDefault: true,
         name: 'Corporate Era',
         corporations: [
             {name: 'Teractor'},
@@ -53,7 +51,6 @@ const EXPANSIONS = [
     },
     {
         id: 'prelude',
-        isDefault: true,
         name: 'Prelude',
         corporations: [
             {name: 'Point Luna'},
@@ -65,7 +62,6 @@ const EXPANSIONS = [
     },
     {
         id: 'venus-next',
-        isDefault: true,
         name: 'Venus Next',
         corporations: [
             {name: 'Morning Star Incorporated'},
@@ -77,7 +73,6 @@ const EXPANSIONS = [
     },
     {
         id: 'colonies',
-        isDefault: true,
         name: 'Colonies',
         colonies: [
             {name: 'Europa'},
@@ -102,7 +97,6 @@ const EXPANSIONS = [
     },
     {
         id: 'hellas-elysium',
-        isDefault: true,
         name: 'Hellas & Elysium',
         maps: [
             {name: 'Hellas'},
@@ -111,14 +105,12 @@ const EXPANSIONS = [
     },
     {
         id: 'turmoil',
-        isDefault: false,
         name: 'Turmoil',
     },
     {
         id: 'big-box',
         name: 'Big Box',
         hidden: false,
-        isDefault: true,
         corporations: [
             {name: 'Astrodrill'},
             {name: 'Pharmacy Union'},
@@ -128,7 +120,6 @@ const EXPANSIONS = [
         id: 'terra-crimmeria',
         name: 'Terra Cimmeria',
         hidden: false,
-        isDefault: true,
         maps: [
             {name: 'Terra Cimmeria'},
         ],
@@ -137,7 +128,6 @@ const EXPANSIONS = [
         id: 'vastitas-borealis',
         name: 'Vastitas Borealis',
         hidden: false,
-        isDefault: true,
         maps: [
             {name: 'Vastitas Borealis'},
         ],
@@ -146,7 +136,6 @@ const EXPANSIONS = [
         id: 'utopia-planitia',
         name: 'Utopia Planitia',
         hidden: false,
-        isDefault: true,
         maps: [
             {name: 'Utopia Planitia'},
         ],
@@ -155,7 +144,6 @@ const EXPANSIONS = [
         id: 'amazonis-planitia',
         name: 'Amazonis Planitia',
         hidden: false,
-        isDefault: true,
         maps: [
             {name: 'Amazonis Planitia'},
         ],
@@ -185,9 +173,26 @@ const addPlayerInput = (name = '') => {
 
 const getColoniesCount = playersCount => Math.max(5, playersCount + 2);
 
-EXPANSIONS.forEach(({hidden, id, isDefault, name}) => {
-    $expansions.innerHTML += `<li class="list-group-item${hidden ? ' d-none' : ''}"><label class="w-100"><input class="expansion" type="checkbox" value="${id}"${isDefault ? ' checked' : ''}> ${name}</label></li>`;
+EXPANSIONS.forEach(({hidden, id, name}) => {
+    $expansions.innerHTML += `<li class="list-group-item${hidden ? ' d-none' : ''}"><label class="w-100"><input class="expansion" type="checkbox" value="${id}" checked> ${name}</label></li>`;
 });
+
+$expansions.addEventListener('change', e => {
+    const {target} = e;
+    if (!target.classList.contains('expansion')) {
+        return;
+    }
+
+    let expansions = storage.get('expansions') ?? []
+
+    if (target.checked) {
+        expansions.push(target.value)
+    } else {
+        expansions = expansions.filter(expansion => expansion !== target.value)
+    }
+
+    storage.set('expansions', expansions)
+})
 
 $addPlayer.addEventListener('click', e => {
     e.preventDefault();
@@ -247,6 +252,18 @@ $hideCorporations.addEventListener('change', e => {
 const init = () => {
     const players = storage.get('players') ?? ['', '']
     players.forEach(addPlayerInput);
+    const savedExpansions = storage.get('expansions')
+    if (!savedExpansions) {
+        storage.set('expansions', EXPANSIONS
+            .map(({id}) => id));
+    } else {
+        // Deselect all.
+        $expansions.querySelectorAll('.expansion').forEach(expansion => expansion.checked = false)
+        // Then select previously selected ones.
+        savedExpansions.forEach(
+            id => $expansions.querySelector(`.expansion[value="${id}"]`).checked = true
+        )
+    }
 };
 
 const renderResult = () => {
@@ -291,9 +308,9 @@ $form.addEventListener('submit', e => {
     e.preventDefault();
     gameState.players = [];
     // Players
-    gameState.players = [...document.querySelectorAll('.player')]
-        .map(({value}) => ({
-            name: value,
+    gameState.players = storage.get('players')
+        .map(name => ({
+            name,
             first: false,
             corporations: [],
         }))
@@ -302,8 +319,8 @@ $form.addEventListener('submit', e => {
     gameState.players[firstPlayer].first = true;
 
     // Expansions
-    gameState.expansions = [...document.querySelectorAll('.expansion:checked')]
-        .map(({ value }) => EXPANSIONS.find(({id}) => value === id));
+    gameState.expansions = storage.get('expansions')
+        .map(value => EXPANSIONS.find(({id}) => id === value));
 
     // Maps
     const maps = gameState.expansions.map(({ maps }) => maps)
