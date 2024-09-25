@@ -161,16 +161,26 @@ const EXPANSIONS = [
         ],
     },
 ];
+const STORAGE_PREFIX = 'tm_'
+const storage = {
+    get: key => {
+        const value = localStorage.getItem(STORAGE_PREFIX + key);
+        return value ? JSON.parse(value) : null;
+    },
+    set: (key, value) => {
+        localStorage.setItem(STORAGE_PREFIX + key, JSON.stringify(value));
+    }
+}
 
 const removeIcon = '<span class="material-icons align-middle remove-player">person_remove</span>';
 const MAX_PLAYERS = 5;
-let nextPlayer = 3;
+let nextPlayer = 1
 
-const addPlayerInput = () => {
+const addPlayerInput = (name = '') => {
     if (nextPlayer > MAX_PLAYERS) {
         return;
     }
-    $players.innerHTML += `<li class="list-group-item player-row"><label>Player <span class="player-number">${nextPlayer++}: </span><input class="player"> ${nextPlayer >= 4 ? removeIcon : ''}</label></li>`;
+    $players.innerHTML += `<li class="list-group-item player-row"><label>Player <span class="player-number">${nextPlayer++}: </span><input class="player" value="${name}"> ${nextPlayer >= 4 ? removeIcon : ''}</label></li>`;
 }
 
 const getColoniesCount = playersCount => Math.max(5, playersCount + 2);
@@ -199,6 +209,17 @@ $players.addEventListener('click', e => {
     nextPlayer--;
 });
 
+$players.addEventListener('input', e => {
+    const { target } = e;
+    if (!target.classList.contains('player')) {
+        return;
+    }
+    const players = [...document.querySelectorAll('.player')].map(({value}) => value)
+        .filter(value => value);
+
+    storage.set('players', players);
+})
+
 $chooseCorporations.addEventListener('change', e => {
     const { target } = e;
     const { checked } = target;
@@ -222,6 +243,11 @@ $hideCorporations.addEventListener('change', e => {
     const { checked } = target;
     gameState.corporations.hide = checked;
 });
+
+const init = () => {
+    const players = storage.get('players') ?? ['', '']
+    players.forEach(addPlayerInput);
+};
 
 const renderResult = () => {
     let result = '';
@@ -316,3 +342,5 @@ $result.addEventListener('click', e => {
 
     blur.classList.toggle('blur');
 });
+
+init();
