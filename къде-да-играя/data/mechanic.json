@@ -1,0 +1,622 @@
+{
+    "2047": {
+        "id": 2047,
+        "value": "Memory"
+    },
+    "2035": {
+        "id": 2035,
+        "value": "Roll \/ Spin and Move"
+    },
+    "2939": {
+        "id": 2939,
+        "value": "Track Movement"
+    },
+    "2082": {
+        "id": 2082,
+        "value": "Worker Placement"
+    },
+    "2884": {
+        "id": 2884,
+        "value": "Sudden Death Ending"
+    },
+    "2856": {
+        "id": 2856,
+        "value": "Die Icon Resolution"
+    },
+    "2661": {
+        "id": 2661,
+        "value": "Push Your Luck"
+    },
+    "2676": {
+        "id": 2676,
+        "value": "Grid Movement"
+    },
+    "2958": {
+        "id": 2958,
+        "value": "Moving Multiple Units"
+    },
+    "2914": {
+        "id": 2914,
+        "value": "Increase Value of Unchosen Resources"
+    },
+    "2019": {
+        "id": 2019,
+        "value": "Team-Based Game"
+    },
+    "2685": {
+        "id": 2685,
+        "value": "Player Elimination"
+    },
+    "2909": {
+        "id": 2909,
+        "value": "Random Production"
+    },
+    "2980": {
+        "id": 2980,
+        "value": "Ladder Climbing"
+    },
+    "2861": {
+        "id": 2861,
+        "value": "Static Capture"
+    },
+    "2967": {
+        "id": 2967,
+        "value": "Hidden Movement"
+    },
+    "2078": {
+        "id": 2078,
+        "value": "Point to Point Movement"
+    },
+    "2916": {
+        "id": 2916,
+        "value": "Alliances"
+    },
+    "2965": {
+        "id": 2965,
+        "value": "Multiple Maps"
+    },
+    "2910": {
+        "id": 2910,
+        "value": "Investment"
+    },
+    "2849": {
+        "id": 2849,
+        "value": "Tech Trees \/ Tech Tracks"
+    },
+    "2048": {
+        "id": 2048,
+        "value": "Pattern Building"
+    },
+    "2018": {
+        "id": 2018,
+        "value": "Campaign \/ Battle Card Driven"
+    },
+    "2012": {
+        "id": 2012,
+        "value": "Auction\/Bidding"
+    },
+    "2023": {
+        "id": 2023,
+        "value": "Cooperative Game"
+    },
+    "2844": {
+        "id": 2844,
+        "value": "Order Counters"
+    },
+    "2911": {
+        "id": 2911,
+        "value": "Ownership"
+    },
+    "2829": {
+        "id": 2829,
+        "value": "Turn Order: Claim Action"
+    },
+    "2833": {
+        "id": 2833,
+        "value": "Turn Order: Role Order"
+    },
+    "2927": {
+        "id": 2927,
+        "value": "Multiple-Lot Auction"
+    },
+    "2013": {
+        "id": 2013,
+        "value": "Commodity Speculation"
+    },
+    "2912": {
+        "id": 2912,
+        "value": "Contracts"
+    },
+    "3005": {
+        "id": 3005,
+        "value": "Slide\/Push"
+    },
+    "2079": {
+        "id": 2079,
+        "value": "Variable Phase Order"
+    },
+    "2892": {
+        "id": 2892,
+        "value": "Roles with Asymmetric Information"
+    },
+    "2839": {
+        "id": 2839,
+        "value": "Action Retrieval"
+    },
+    "2978": {
+        "id": 2978,
+        "value": "Grid Coverage"
+    },
+    "2017": {
+        "id": 2017,
+        "value": "Voting"
+    },
+    "3000": {
+        "id": 3000,
+        "value": "Hot Potato"
+    },
+    "2947": {
+        "id": 2947,
+        "value": "Movement Points"
+    },
+    "2046": {
+        "id": 2046,
+        "value": "Area Movement"
+    },
+    "2984": {
+        "id": 2984,
+        "value": "Drafting"
+    },
+    "2041": {
+        "id": 2041,
+        "value": "Card Drafting"
+    },
+    "2055": {
+        "id": 2055,
+        "value": "Paper-and-Pencil"
+    },
+    "2989": {
+        "id": 2989,
+        "value": "Physical Removal"
+    },
+    "2009": {
+        "id": 2009,
+        "value": "Trick-taking"
+    },
+    "2891": {
+        "id": 2891,
+        "value": "Hidden Roles"
+    },
+    "2935": {
+        "id": 2935,
+        "value": "Worker Placement with Dice Workers"
+    },
+    "2820": {
+        "id": 2820,
+        "value": "Semi-Cooperative Game"
+    },
+    "2038": {
+        "id": 2038,
+        "value": "Singing"
+    },
+    "2847": {
+        "id": 2847,
+        "value": "Advantage Token"
+    },
+    "2956": {
+        "id": 2956,
+        "value": "Chaining"
+    },
+    "2906": {
+        "id": 2906,
+        "value": "I Cut, You Choose"
+    },
+    "2944": {
+        "id": 2944,
+        "value": "Three Dimensional Movement"
+    },
+    "2003": {
+        "id": 2003,
+        "value": "Rock-Paper-Scissors"
+    },
+    "2060": {
+        "id": 2060,
+        "value": "Pattern Recognition"
+    },
+    "2948": {
+        "id": 2948,
+        "value": "Resource to Move"
+    },
+    "2999": {
+        "id": 2999,
+        "value": "Bingo"
+    },
+    "2686": {
+        "id": 2686,
+        "value": "Take That"
+    },
+    "2933": {
+        "id": 2933,
+        "value": "Worker Placement, Different Worker Types"
+    },
+    "2039": {
+        "id": 2039,
+        "value": "Line Drawing"
+    },
+    "2008": {
+        "id": 2008,
+        "value": "Trading"
+    },
+    "2002": {
+        "id": 2002,
+        "value": "Tile Placement"
+    },
+    "2689": {
+        "id": 2689,
+        "value": "Action Queue"
+    },
+    "2001": {
+        "id": 2001,
+        "value": "Action Points"
+    },
+    "2991": {
+        "id": 2991,
+        "value": "Speed Matching"
+    },
+    "2962": {
+        "id": 2962,
+        "value": "Move Through Deck"
+    },
+    "2663": {
+        "id": 2663,
+        "value": "Time Track"
+    },
+    "2866": {
+        "id": 2866,
+        "value": "Targeted Clues"
+    },
+    "2836": {
+        "id": 2836,
+        "value": "Lose a Turn"
+    },
+    "3002": {
+        "id": 3002,
+        "value": "Deduction"
+    },
+    "2853": {
+        "id": 2853,
+        "value": "Stat Check Resolution"
+    },
+    "2824": {
+        "id": 2824,
+        "value": "Legacy Game"
+    },
+    "2874": {
+        "id": 2874,
+        "value": "Victory Points as a Resource"
+    },
+    "2028": {
+        "id": 2028,
+        "value": "Role Playing"
+    },
+    "2897": {
+        "id": 2897,
+        "value": "Variable Set-up"
+    },
+    "2814": {
+        "id": 2814,
+        "value": "Traitor Game"
+    },
+    "2850": {
+        "id": 2850,
+        "value": "Events"
+    },
+    "2823": {
+        "id": 2823,
+        "value": "Score-and-Reset Game"
+    },
+    "2016": {
+        "id": 2016,
+        "value": "Secret Unit Deployment"
+    },
+    "3001": {
+        "id": 3001,
+        "value": "Layering"
+    },
+    "2828": {
+        "id": 2828,
+        "value": "Turn Order: Progressive"
+    },
+    "2883": {
+        "id": 2883,
+        "value": "Connections"
+    },
+    "2072": {
+        "id": 2072,
+        "value": "Dice Rolling"
+    },
+    "2838": {
+        "id": 2838,
+        "value": "Action Drafting"
+    },
+    "2931": {
+        "id": 2931,
+        "value": "Auction: Fixed Placement"
+    },
+    "2813": {
+        "id": 2813,
+        "value": "Rondel"
+    },
+    "2822": {
+        "id": 2822,
+        "value": "Scenario \/ Mission \/ Campaign Game"
+    },
+    "2851": {
+        "id": 2851,
+        "value": "Narrative Choice \/ Paragraph"
+    },
+    "2040": {
+        "id": 2040,
+        "value": "Hand Management"
+    },
+    "2901": {
+        "id": 2901,
+        "value": "Delayed Purchase"
+    },
+    "2913": {
+        "id": 2913,
+        "value": "Bribery"
+    },
+    "2014": {
+        "id": 2014,
+        "value": "Betting and Bluffing"
+    },
+    "2886": {
+        "id": 2886,
+        "value": "King of the Hill"
+    },
+    "2875": {
+        "id": 2875,
+        "value": "End Game Bonuses"
+    },
+    "2893": {
+        "id": 2893,
+        "value": "Communication Limits"
+    },
+    "2961": {
+        "id": 2961,
+        "value": "Map Deformation"
+    },
+    "2827": {
+        "id": 2827,
+        "value": "Turn Order: Auction"
+    },
+    "2902": {
+        "id": 2902,
+        "value": "Income"
+    },
+    "2027": {
+        "id": 2027,
+        "value": "Storytelling"
+    },
+    "2888": {
+        "id": 2888,
+        "value": "Tug of War"
+    },
+    "2981": {
+        "id": 2981,
+        "value": "Melding and Splaying"
+    },
+    "3007": {
+        "id": 3007,
+        "value": "Matching"
+    },
+    "2876": {
+        "id": 2876,
+        "value": "Race"
+    },
+    "2834": {
+        "id": 2834,
+        "value": "Action Timer"
+    },
+    "2073": {
+        "id": 2073,
+        "value": "Acting"
+    },
+    "2005": {
+        "id": 2005,
+        "value": "Stock Holding"
+    },
+    "2915": {
+        "id": 2915,
+        "value": "Negotiation"
+    },
+    "2924": {
+        "id": 2924,
+        "value": "Auction: Dutch"
+    },
+    "2988": {
+        "id": 2988,
+        "value": "Stacking and Balancing"
+    },
+    "2043": {
+        "id": 2043,
+        "value": "Enclosure"
+    },
+    "2903": {
+        "id": 2903,
+        "value": "Automatic Resource Growth"
+    },
+    "2011": {
+        "id": 2011,
+        "value": "Modular Board"
+    },
+    "2885": {
+        "id": 2885,
+        "value": "Finale Ending"
+    },
+    "2081": {
+        "id": 2081,
+        "value": "Network and Route Building"
+    },
+    "2919": {
+        "id": 2919,
+        "value": "Auction: Turn Order Until Pass"
+    },
+    "2826": {
+        "id": 2826,
+        "value": "Turn Order: Stat-Based"
+    },
+    "2021": {
+        "id": 2021,
+        "value": "Area-Impulse"
+    },
+    "2004": {
+        "id": 2004,
+        "value": "Set Collection"
+    },
+    "3004": {
+        "id": 3004,
+        "value": "Deck Construction"
+    },
+    "2015": {
+        "id": 2015,
+        "value": "Variable Player Powers"
+    },
+    "2887": {
+        "id": 2887,
+        "value": "Catch the Leader"
+    },
+    "2964": {
+        "id": 2964,
+        "value": "Pieces as Map"
+    },
+    "2900": {
+        "id": 2900,
+        "value": "Market"
+    },
+    "2819": {
+        "id": 2819,
+        "value": "Solo \/ Solitaire Game"
+    },
+    "2940": {
+        "id": 2940,
+        "value": "Square Grid"
+    },
+    "2920": {
+        "id": 2920,
+        "value": "Auction: Sealed Bid"
+    },
+    "2007": {
+        "id": 2007,
+        "value": "Pick-up and Deliver"
+    },
+    "2843": {
+        "id": 2843,
+        "value": "Follow"
+    },
+    "2846": {
+        "id": 2846,
+        "value": "Once-Per-Game Abilities"
+    },
+    "2928": {
+        "id": 2928,
+        "value": "Closed Economy Auction"
+    },
+    "2870": {
+        "id": 2870,
+        "value": "Re-rolling and Locking"
+    },
+    "2020": {
+        "id": 2020,
+        "value": "Simultaneous Action Selection"
+    },
+    "3006": {
+        "id": 3006,
+        "value": "Predictive Bid"
+    },
+    "2664": {
+        "id": 2664,
+        "value": "Deck, Bag, and Pool Building"
+    },
+    "2830": {
+        "id": 2830,
+        "value": "Turn Order: Pass Order"
+    },
+    "2865": {
+        "id": 2865,
+        "value": "Player Judge"
+    },
+    "2946": {
+        "id": 2946,
+        "value": "Pattern Movement"
+    },
+    "2953": {
+        "id": 2953,
+        "value": "Programmed Movement"
+    },
+    "2882": {
+        "id": 2882,
+        "value": "Elapsed Real Time Ending"
+    },
+    "2080": {
+        "id": 2080,
+        "value": "Area Majority \/ Influence"
+    },
+    "2959": {
+        "id": 2959,
+        "value": "Map Addition"
+    },
+    "2987": {
+        "id": 2987,
+        "value": "Hidden Victory Points"
+    },
+    "2857": {
+        "id": 2857,
+        "value": "Card Play Conflict Resolution"
+    },
+    "2070": {
+        "id": 2070,
+        "value": "Simulation"
+    },
+    "2821": {
+        "id": 2821,
+        "value": "Single Loser Game"
+    },
+    "2831": {
+        "id": 2831,
+        "value": "Real-Time"
+    },
+    "2932": {
+        "id": 2932,
+        "value": "Auction: Dutch Priority"
+    },
+    "2975": {
+        "id": 2975,
+        "value": "Line of Sight"
+    },
+    "2889": {
+        "id": 2889,
+        "value": "Highest-Lowest Scoring"
+    },
+    "2864": {
+        "id": 2864,
+        "value": "Force Commitment"
+    },
+    "2904": {
+        "id": 2904,
+        "value": "Loans"
+    },
+    "2026": {
+        "id": 2026,
+        "value": "Hexagon Grid"
+    },
+    "2957": {
+        "id": 2957,
+        "value": "Bias"
+    },
+    "2922": {
+        "id": 2922,
+        "value": "Constrained Bidding"
+    }
+}
